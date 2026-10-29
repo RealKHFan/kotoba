@@ -1,0 +1,674 @@
+# Kotoba grammar, JLPT N4. Same format as grammar-n5.txt.
+## 4
+
+= potential
+title: Potential form
+meaning: can; be able to
+form: る → られる (ichidan) / u-sound → e-sound + る (godan) / する → できる, 来る → 来られる
+note: The potential form is the short way to say "can": 読める (can read), 食べられる (can eat). It changes like an ichidan verb: 読めます, 読めない.
+note: The object often takes が instead of を: 漢字が読めます. In speech, ichidan verbs often drop ら: 見れる, 来れる.
+ex: 私は漢字が読めます。|わたしはかんじがよめます。|I can read kanji.
+ex: 納豆が食べられません。|なっとうがたべられません。|I can't eat natto.
+ex: 明日は来られますか。|あしたはこられますか。|Can you come tomorrow?
+q: 私はピアノが弾＿＿。|I can play the piano.|けます|きます|かれます|こえます
+q: 一人で着物が＿＿か。(着る)|Can you put on a kimono by yourself?|着られます|着れられます|着ります|着えます
+
+= volitional
+title: Volitional form
+meaning: let's (casual); I'll ...
+form: る → よう (ichidan) / u-sound → o-sound + う (godan) / する → しよう, 来る → 来よう
+note: The volitional form is the casual version of ～ましょう: 行こう (let's go), 食べよう (let's eat).
+note: It also shows the speaker's will, and it is the base of ～ようと思う.
+ex: 一緒に帰ろう。|いっしょにかえろう。|Let's go home together.
+ex: 少し休もう。|すこしやすもう。|Let's take a little break.
+ex: 明日は早く起きよう。|あしたははやくおきよう。|I'll get up early tomorrow.
+q: 週末、海へ行＿＿よ。|Let's go to the beach this weekend!|こう|きよう|くよう|かう
+q: 晩ご飯、何を＿＿か。(食べる)|What shall we have for dinner?|食べよう|食べろう|食べおう|食べよ
+
+= you-to-omou
+title: ～ようと思う
+meaning: I'm thinking of ...; I intend to ...
+form: Volitional form + と 思います / 思っています
+note: This shares a plan or intention. ～ようと思っています suggests you have been thinking about it for a while.
+note: Use it for your own plans. For other people's plans, ～つもりだそうです is more natural.
+ex: 来年、日本へ行こうと思っています。|らいねん、にほんへいこうとおもっています。|I'm thinking of going to Japan next year.
+ex: 今晩は早く寝ようと思います。|こんばんははやくねようとおもいます。|I think I'll go to bed early tonight.
+ex: 新しいパソコンを買おうと思っています。|あたらしいパソコンをかおうとおもっています。|I'm thinking of buying a new computer.
+q: 週末は部屋を掃除＿＿と思います。|I think I'll clean my room this weekend.|しよう|しろう|すろう|しおう
+q: 夏休みに国へ帰ろう＿＿思っています。|I'm thinking of going back home over the summer vacation.|と|を|に|が
+
+= tsumori
+title: ～つもりです
+meaning: plan to; intend to
+form: Verb dictionary form / ない-form + つもりです
+note: つもり states a fairly firm intention. "I don't intend to" is ～ないつもりです.
+note: It sounds a little more decided than ～ようと思っています.
+ex: 大学を卒業したら、日本で働くつもりです。|だいがくをそつぎょうしたら、にほんではたらくつもりです。|After I graduate, I intend to work in Japan.
+ex: 今年は旅行しないつもりです。|ことしはりょこうしないつもりです。|I don't plan to travel this year.
+ex: 夏休みに何をするつもりですか。|なつやすみになにをするつもりですか。|What are you planning to do over the summer vacation?
+q: 来年、車を買う＿＿です。|I plan to buy a car next year.|つもり|ため|よう|ところ
+q: もうお酒は飲ま＿＿つもりです。|I don't intend to drink any more.|ない|ます|なく|ず
+
+= yotei
+title: ～予定です
+meaning: be scheduled to; plan to
+form: Verb dictionary form / Noun の + 予定です
+note: 予定 is for things that are scheduled or arranged, often with other people: meetings, trips, events.
+note: つもり is about your own will; 予定 is about the schedule.
+ex: 会議は三時に始まる予定です。|かいぎはさんじにはじまるよていです。|The meeting is scheduled to start at three.
+ex: 来週、大阪へ出張する予定です。|らいしゅう、おおさかへしゅっちょうするよていです。|I'm going on a business trip to Osaka next week.
+ex: 明日の予定は何ですか。|あしたのよていはなんですか。|What are your plans for tomorrow?
+q: 飛行機は十時に着く＿＿です。|The plane is scheduled to arrive at ten.|予定|つもり|ため|ように
+q: 来月結婚＿＿予定です。|I'm planning to get married next month.|する|して|した|しよう
+
+= to-omou
+title: ～と思う
+meaning: I think that ...
+form: Plain form + と 思います
+note: と思います softens an opinion or a guess. The part before と is always plain style: 雨が降ると思います, 便利だと思います.
+note: Nouns and な-adjectives need だ: 学生だと思います. The negative goes inside: 来ないと思います (I don't think he'll come).
+ex: 明日は晴れると思います。|あしたははれるとおもいます。|I think it will be sunny tomorrow.
+ex: この映画は面白いと思います。|このえいがはおもしろいとおもいます。|I think this movie is good.
+ex: 田中さんは来ないと思います。|たなかさんはこないとおもいます。|I don't think Mr. Tanaka will come.
+q: 彼は学生＿＿と思います。|I think he is a student.|だ|です|の|な
+q: この問題は難しい＿＿思います。|I think this problem is difficult.|と|を|に|が
+
+= to-iu
+title: ～と言う・～という
+meaning: say that ...; called ...
+form: Quote + と 言う / Name + という + Noun
+note: と marks what someone says. 「 」 shows a direct quote; without brackets it is reported speech in plain style.
+note: AというB means "a B called A": さくらという店 (a shop called Sakura).
+ex: 田中さんは明日来ると言いました。|たなかさんはあしたくるといいました。|Mr. Tanaka said he would come tomorrow.
+ex: 母は「早く寝なさい」と言いました。|ははは「はやくねなさい」といいました。|My mother said, "Go to bed early."
+ex: これは何という花ですか。|これはなんというはなですか。|What is this flower called?
+q: 先生は明日テストがある＿＿言いました。|The teacher said there will be a test tomorrow.|と|を|に|が
+q: 「こころ」＿＿小説を読みました。|I read a novel called "Kokoro".|という|といった|と|の
+
+= kamoshirenai
+title: ～かもしれない
+meaning: might; maybe
+form: Plain form (Noun・な-adj without だ) + かもしれません
+note: かもしれない shows a possibility, often 50% or less. It is less sure than でしょう.
+note: Nouns and な-adjectives drop だ: 病気かもしれません.
+ex: 明日は雨が降るかもしれません。|あしたはあめがふるかもしれません。|It might rain tomorrow.
+ex: 彼は来ないかもしれません。|かれはこないかもしれません。|He might not come.
+ex: あの人は先生かもしれません。|あのひとはせんせいかもしれません。|That person might be a teacher.
+q: 道が込んでいるから、遅れる＿＿。|The roads are busy, so I might be late.|かもしれません|ましょう|たいです|ください
+q: あの店は今日休み＿＿。|That shop might be closed today.|かもしれません|だかもしれません|のかもしれません|にかもしれません
+
+= hazu
+title: ～はずです
+meaning: should be; is expected to
+form: Plain form / な-adj + な / Noun + の + はずです
+note: はず is a confident expectation based on facts: "it should be so".
+note: ～はずがない means "there's no way that ...".
+ex: 彼はもう家に着いたはずです。|かれはもういえについたはずです。|He should be home by now.
+ex: 今日は日曜日だから、銀行は休みのはずです。|きょうはにちようびだから、ぎんこうはやすみのはずです。|It's Sunday, so the bank should be closed.
+ex: 荷物は明日届くはずです。|にもつはあしたとどくはずです。|The package should arrive tomorrow.
+q: 十時の電車に乗ったから、もうすぐ着く＿＿です。|She took the ten o'clock train, so she should arrive soon.|はず|つもり|ため|ながら
+q: 彼は医者＿＿はずです。|He should be a doctor.|の|な|だ|に
+
+= sou-looks
+title: ～そうです (looks like)
+meaning: looks ...; seems about to ...
+form: Adj-い without い / な-adj + そう; Verb stem + そう
+note: This そう describes how something looks to you: おいしそう (looks tasty), 雨が降りそう (looks like rain).
+note: Exceptions: いい → よさそう, ない → なさそう. It works like a な-adjective: おいしそうなケーキ.
+ex: このケーキはおいしそうですね。|このケーキはおいしそうですね。|This cake looks delicious.
+ex: 今にも雨が降りそうです。|いまにもあめがふりそうです。|It looks like it's going to rain any minute.
+ex: 彼は元気そうでした。|かれはげんきそうでした。|He looked well.
+q: このかばんは高＿＿ですね。|This bag looks expensive.|そう|らしい|よう|みたい
+q: 天気がよ＿＿ですね。|The weather looks nice.|さそう|そう|いそう|くそう
+
+= sou-hearsay
+title: ～そうです (I heard)
+meaning: I heard that ...; they say ...
+form: Plain form + そうです
+note: This そう passes on information you heard or read. It comes after the full plain form: 降るそうです (I hear it will rain).
+note: Compare 降りそうです (looks like rain) with 降るそうです (I heard it will rain). The source can come first with によると: 天気予報によると.
+ex: 天気予報によると、明日は雪が降るそうです。|てんきよほうによると、あしたはゆきがふるそうです。|According to the forecast, it will snow tomorrow.
+ex: 田中さんは来月結婚するそうです。|たなかさんはらいげつけっこんするそうです。|I heard Mr. Tanaka is getting married next month.
+ex: あの店はとても有名だそうです。|あのみせはとてもゆうめいだそうです。|I heard that shop is very famous.
+q: ニュースによると、昨日大きい地震があった＿＿です。|According to the news, there was a big earthquake yesterday.|そう|ため|はず|つもり
+q: 彼女の弟は医者＿＿そうです。|I heard her younger brother is a doctor.|だ|の|な|に
+
+= you-da
+title: ～ようです・～みたいです
+meaning: it seems; it looks like; like
+form: Plain form / な-adj + な / Noun + の + ようです; Plain form (Noun・な-adj without だ) + みたいです
+note: ようです is a judgment from what you see or know: 誰もいないようです (It seems no one is here).
+note: みたいです is the casual version. Both also mean "like": 子供のよう, 子供みたい.
+ex: 田中さんは風邪をひいたようです。|たなかさんはかぜをひいたようです。|It seems Mr. Tanaka has caught a cold.
+ex: 外は寒いみたいです。|そとはさむいみたいです。|It looks cold outside.
+ex: 彼女はまるで子供のようです。|かのじょはまるでこどものようです。|She is just like a child.
+q: 電気が消えています。誰もいない＿＿です。|The lights are off. It seems no one is home.|よう|ため|つもり|ところ
+q: 彼は先生＿＿ようです。|He seems to be a teacher.|の|な|だ|に
+
+= rashii
+title: ～らしい
+meaning: apparently; typical of
+form: Plain form (Noun・な-adj without だ) + らしい
+note: らしい reports something you heard or read, with a little distance: "apparently". It is common in speech.
+note: Noun + らしい also means "typical of": 男らしい (manly), 春らしい天気 (real spring weather).
+ex: あのレストランはおいしいらしいです。|あのレストランはおいしいらしいです。|Apparently that restaurant is good.
+ex: 明日は雨らしいです。|あしたはあめらしいです。|Apparently it'll rain tomorrow.
+ex: 今日は春らしい天気ですね。|きょうははるらしいてんきですね。|Today feels just like spring.
+q: 山田さんは会社を辞めた＿＿です。|Apparently Mr. Yamada quit his job.|らしい|ながら|ため|つもり
+q: 彼は病気＿＿です。|Apparently he's sick.|らしい|だらしい|ならしい|のらしい
+
+= ba
+title: ～ば (if)
+meaning: if ...
+form: Verb: u-sound → e-sound + ば / Adj-い → ければ / Noun・な-adj → なら
+note: ～ば is a general "if": if A happens, B follows. It often gives a condition or advice: 急げば間に合います (If you hurry, you'll make it).
+note: The negative is ～なければ (if you don't). ～ばよかった means "I should have ...".
+ex: 急げば、間に合います。|いそげば、まにあいます。|If you hurry, you'll make it.
+ex: 安ければ、買います。|やすければ、かいます。|If it's cheap, I'll buy it.
+ex: もっと勉強すればよかったです。|もっとべんきょうすればよかったです。|I should have studied more.
+q: この薬を飲め＿＿、すぐ治ります。|If you take this medicine, you'll get better soon.|ば|ない|と|て
+q: 天気が＿＿、山に登ります。(いい)|If the weather is good, I'll climb the mountain.|よければ|いければ|いいば|よいれば
+
+= tara
+title: ～たら
+meaning: if; when (after)
+form: Verb / Adj た-form + ら; Noun・な-adj + だったら
+note: ～たら is the most common "if" in conversation. It also means "when / once A happens": 駅に着いたら電話します.
+note: The second part can be a request, plan or suggestion. ～たらどうですか gives advice: "Why don't you ...?"
+ex: 駅に着いたら、電話してください。|えきについたら、でんわしてください。|Please call me when you get to the station.
+ex: 雨だったら、行きません。|あめだったら、いきません。|If it rains, I won't go.
+ex: 医者に行ったらどうですか。|いしゃにいったらどうですか。|Why don't you see a doctor?
+q: 仕事が終わっ＿＿、飲みに行きましょう。|When work is over, let's go for a drink.|たら|ば|と|ても
+q: 暇＿＿、遊びに来てください。|If you're free, come over.|だったら|かったら|たら|でたら
+
+= to-conditional
+title: ～と (whenever)
+meaning: when; whenever; if (natural result)
+form: Verb dictionary form / ない-form + と, result
+note: This と shows a natural or automatic result: whenever A happens, B happens. It is used for machines, nature, directions and habits.
+note: The second part can't be a request, plan or invitation; use たら for those.
+ex: 春になると、桜が咲きます。|はるになると、さくらがさきます。|When spring comes, the cherry blossoms bloom.
+ex: このボタンを押すと、お釣りが出ます。|このボタンをおすと、おつりがでます。|Press this button and your change comes out.
+ex: まっすぐ行くと、左に駅があります。|まっすぐいくと、ひだりにえきがあります。|Go straight and the station is on your left.
+q: 右に曲がる＿＿、銀行があります。|If you turn right, there's a bank.|と|たら|ば|から
+q: 冬になる＿＿、雪が降ります。|When winter comes, it snows.|と|ので|まで|ても
+
+= nara
+title: ～なら
+meaning: if (that's the case); if it's ... you want
+form: Plain form / Noun / な-adj + なら
+note: なら picks up a topic or situation, often something the other person just said, and gives advice about it: 京都へ行くなら、春がいいですよ (If you're going to Kyoto, spring is best).
+note: Nouns go straight before なら: すしなら (if it's sushi).
+ex: 日本語を勉強するなら、この本がいいですよ。|にほんごをべんきょうするなら、このほんがいいですよ。|If you're going to study Japanese, this book is good.
+ex: 時間がないなら、タクシーで行きましょう。|じかんがないなら、タクシーでいきましょう。|If we have no time, let's take a taxi.
+ex: すしなら、あの店がおいしいです。|すしなら、あのみせがおいしいです。|If it's sushi you want, that place is good.
+q: 旅行に行く＿＿、北海道がいいですよ。|If you're going on a trip, Hokkaido is nice.|なら|たら|ので|ても
+q: カメラを買う＿＿、この店が安いです。|If you're going to buy a camera, this store is cheap.|なら|と|ので|でも
+
+= temo
+title: ～ても
+meaning: even if; even though; no matter
+form: Verb / Adj-い て-form + も; Noun・な-adj + でも
+note: ～ても means the result doesn't change: 雨が降っても行きます (I'll go even if it rains).
+note: With question words it means "no matter ...": 何を食べても太らない (No matter what I eat, I don't gain weight).
+ex: 雨が降っても、試合をします。|あめがふっても、しあいをします。|We'll play the match even if it rains.
+ex: 高くても、買いたいです。|たかくても、かいたいです。|I want to buy it even if it's expensive.
+ex: 何回聞いても、分かりません。|なんかいきいても、わかりません。|No matter how many times I ask, I don't get it.
+q: 薬を飲ん＿＿、よくなりません。|Even though I take medicine, I don't get better.|でも|だら|では|だり
+q: 暇＿＿、テレビは見ません。|Even when I'm free, I don't watch TV.|でも|くても|だから|なら
+
+= passive
+title: Passive form
+meaning: be done (to); have something happen to you
+form: る → られる (ichidan) / u-sound → a-sound + れる (godan) / する → される, 来る → 来られる
+note: The passive shows who was affected: 先生に褒められました (I was praised by the teacher). The doer takes に.
+note: Japanese also uses it when something annoying happens to you: 雨に降られました (I got caught in the rain).
+ex: 先生に褒められました。|せんせいにほめられました。|I was praised by my teacher.
+ex: 電車で足を踏まれました。|でんしゃであしをふまれました。|Someone stepped on my foot on the train.
+ex: この寺は八百年前に建てられました。|このてらははっぴゃくねんまえにたてられました。|This temple was built 800 years ago.
+q: 母に＿＿ました。(叱る)|I was scolded by my mother.|叱られ|叱させ|叱れ|叱り
+q: 弟にケーキを食べ＿＿ました。|My little brother ate my cake (on me).|られ|させ|て|たら
+
+= causative
+title: Causative form
+meaning: make or let someone do
+form: る → させる (ichidan) / u-sound → a-sound + せる (godan) / する → させる, 来る → 来させる
+note: The causative means making or letting someone do something: 子供に野菜を食べさせます (I make my child eat vegetables).
+note: ～させてください politely asks to be allowed to do something yourself: 休ませてください (Please let me take the day off).
+ex: 母は弟に部屋を掃除させました。|はははおとうとにへやをそうじさせました。|My mother made my younger brother clean his room.
+ex: 子供を公園で遊ばせます。|こどもをこうえんであそばせます。|I let the children play in the park.
+ex: 少し考えさせてください。|すこしかんがえさせてください。|Please let me think about it a little.
+q: 先生は学生に作文を書か＿＿ました。|The teacher had the students write an essay.|せ|れ|させ|され
+q: 今日は早く帰ら＿＿ください。|Please let me go home early today.|せて|れて|させて|て
+
+= causative-passive
+title: Causative-passive
+meaning: be made to do
+form: る → させられる (ichidan) / a-sound + される or せられる (godan) / する → させられる
+note: This means being made to do something you didn't want to do: 飲まされる (be made to drink).
+note: Godan verbs usually shorten せられる to される: 待たせられる → 待たされる. Verbs ending in す keep せられる: 話させられる.
+ex: 子供のとき、毎日ピアノを練習させられました。|こどものとき、まいにちピアノをれんしゅうさせられました。|As a child I was made to practice the piano every day.
+ex: 駅で一時間も待たされました。|えきでいちじかんもまたされました。|I was kept waiting at the station for a whole hour.
+ex: 先輩にお酒を飲まされました。|せんぱいにおさけをのまされました。|An older colleague made me drink.
+q: 母に野菜を食べ＿＿。|My mother made me eat vegetables.|させられました|られさせました|させました|られました
+q: 部長に残業を＿＿。(する)|My manager made me work overtime.|させられました|されさせました|させました|しられました
+
+= ageru-kureru-morau
+title: ～てあげる・～てくれる・～てもらう
+meaning: do for someone / someone does for me / get someone to do
+form: Verb て-form + あげる / くれる / もらう
+note: てあげる: I do something for someone else. てくれる: someone does something for me or my group. てもらう: I get someone to do something; the helper takes に.
+note: They show who benefits. For people above you, use ～てさしあげる, ～てくださる, ～ていただく.
+ex: 友達に日本語を教えてあげました。|ともだちににほんごをおしえてあげました。|I taught my friend Japanese.
+ex: 母がお弁当を作ってくれました。|ははがおべんとうをつくってくれました。|My mother made me a lunch box.
+ex: 兄に宿題を手伝ってもらいました。|あににしゅくだいをてつだってもらいました。|I got my older brother to help me with my homework.
+q: 田中さんが駅まで送って＿＿ました。|Mr. Tanaka gave me a ride to the station.|くれ|あげ|もらい|やり
+q: 私は友達に写真を撮って＿＿ました。|I had my friend take a photo of me.|もらい|くれ|あげ|させ
+
+= te-miru
+title: ～てみる
+meaning: try doing
+form: Verb て-form + みる
+note: ～てみる means doing something to see what it's like: 食べてみる (try eating it).
+note: ～てみたい (want to try) is very common.
+ex: この服を着てみてもいいですか。|このふくをきてみてもいいですか。|May I try this on?
+ex: 一度、着物を着てみたいです。|いちど、きものをきてみたいです。|I'd like to try wearing a kimono once.
+ex: 新しいレストランに行ってみました。|あたらしいレストランにいってみました。|I tried the new restaurant.
+q: 日本の料理を作って＿＿ました。|I tried making Japanese food.|み|おき|しまい|あり
+q: このケーキ、食べて＿＿ください。|Please try this cake.|みて|おいて|しまって|あって
+
+= te-oku
+title: ～ておく
+meaning: do in advance; leave as it is
+form: Verb て-form + おく
+note: ～ておく means doing something now to be ready for later: 予約しておく (book in advance).
+note: It also means leaving something in a state: 窓を開けておいてください (Leave the window open). In speech it becomes ～とく: 買っとく.
+ex: 旅行の前に、ホテルを予約しておきます。|りょこうのまえに、ホテルをよやくしておきます。|I'll book a hotel before the trip.
+ex: パーティーの前に、飲み物を買っておきました。|パーティーのまえに、のみものをかっておきました。|I bought drinks ahead of the party.
+ex: 窓を開けておいてください。|まどをあけておいてください。|Please leave the window open.
+q: 会議の前に、資料を読んで＿＿ください。|Please read the documents before the meeting.|おいて|しまって|あって|いって
+q: お客さんが来るから、部屋を掃除して＿＿ます。|Guests are coming, so I'll clean the room beforehand.|おき|しまい|あり|くれ
+
+= te-shimau
+title: ～てしまう
+meaning: end up doing; do completely
+form: Verb て-form + しまう
+note: ～てしまう shows that something is completely finished, or that something happened that you regret: 財布をなくしてしまいました (I've gone and lost my wallet).
+note: In speech it becomes ～ちゃう / ～じゃう: 忘れちゃった, 飲んじゃった.
+ex: 宿題を忘れてしまいました。|しゅくだいをわすれてしまいました。|I forgot my homework.
+ex: 本を全部読んでしまいました。|ほんをぜんぶよんでしまいました。|I've read the whole book.
+ex: 電車の中で寝てしまいました。|でんしゃのなかでねてしまいました。|I fell asleep on the train.
+q: 大切なコップを割って＿＿ました。|I broke an important glass.|しまい|おき|み|あげ
+q: ケーキを全部食べ＿＿しまいました。|I ate all of the cake.|て|た|に|ないで
+
+= te-aru
+title: ～てある
+meaning: has been done (and stays that way)
+form: Transitive verb て-form + ある
+note: ～てある describes a state someone created on purpose. The thing takes が: 窓が開けてあります (The window has been opened).
+note: Compare 窓が開いています (the window is open) with 窓が開けてあります (someone opened it, for a reason).
+ex: 壁に絵が掛けてあります。|かべにえがかけてあります。|A picture has been hung on the wall.
+ex: 冷蔵庫にビールが冷やしてあります。|れいぞうこにビールがひやしてあります。|There's beer chilling in the fridge.
+ex: ホテルはもう予約してあります。|ホテルはもうよやくしてあります。|The hotel has already been booked.
+q: 机の上に花が飾って＿＿。|Flowers have been put on the desk.|あります|います|おきます|みます
+q: 黒板に名前が書いて＿＿。|A name is written on the blackboard.|あります|います|しまいます|みます
+
+= te-iku-kuru
+title: ～ていく・～てくる
+meaning: go/come doing; change over time
+form: Verb て-form + いく / くる
+note: ～ていく means an action moves away or continues into the future; ～てくる means it comes toward the speaker or has gone on until now.
+note: They also mean going somewhere and coming back: ちょっと買ってきます (I'll go buy it and be right back).
+ex: ちょっとパンを買ってきます。|ちょっとパンをかってきます。|I'll just pop out and buy some bread.
+ex: だんだん寒くなってきました。|だんだんさむくなってきました。|It has been getting colder.
+ex: これからも日本語を勉強していきます。|これからもにほんごをべんきょうしていきます。|I'll keep on studying Japanese.
+q: 傘を持って＿＿ください。雨が降りそうです。|Take an umbrella with you. It looks like rain.|いって|きて|あって|しまって
+q: 最近、日本に来る外国人が増えて＿＿。|Recently more and more foreigners have been coming to Japan.|きました|いきました|しまいました|おきました
+
+= koto-ni-suru
+title: ～ことにする・～ことになる
+meaning: decide to / it has been decided that
+form: Verb dictionary form / ない-form + ことにする / ことになる
+note: ことにする is your own decision: 毎日走ることにしました (I've decided to run every day).
+note: ことになる is a decision made by others or by circumstances: 転勤することになりました (It's been decided that I'll be transferred).
+ex: 来年、日本に留学することにしました。|らいねん、にほんにりゅうがくすることにしました。|I've decided to study in Japan next year.
+ex: 来月から大阪で働くことになりました。|らいげつからおおさかではたらくことになりました。|It's been decided that I'll work in Osaka from next month.
+ex: 今日からお酒を飲まないことにします。|きょうからおさけをのまないことにします。|From today on, I'm not drinking.
+q: 健康のために、毎朝歩く＿＿しました。|For my health, I've decided to walk every morning.|ことに|ように|ために|ところ
+q: 会議は来週の月曜日にすること＿＿なりました。|It's been decided that the meeting will be next Monday.|に|が|を|で
+
+= you-ni-suru-naru
+title: ～ようにする・～ようになる
+meaning: try to make a habit of / come to (be able to)
+form: Verb dictionary form / ない-form + ようにする; Verb (often potential) + ようになる
+note: ようにする means making an effort to do something regularly: 野菜を食べるようにしています (I try to eat vegetables).
+note: ようになる describes a change: 泳げるようになりました (I've learned to swim).
+ex: 毎日日本語を話すようにしています。|まいにちにほんごをはなすようにしています。|I try to speak Japanese every day.
+ex: 夜遅く食べないようにしています。|よるおそくたべないようにしています。|I try not to eat late at night.
+ex: 漢字が読めるようになりました。|かんじがよめるようになりました。|I've become able to read kanji.
+q: 自転車に乗れる＿＿なりました。|I've learned to ride a bicycle.|ように|ことに|ために|そうに
+q: 毎朝早く起きる＿＿しています。|I try to get up early every morning.|ように|ために|そうに|はずに
+
+= noni
+title: ～のに
+meaning: even though (with surprise or regret)
+form: Plain form (Noun・な-adj + な) + のに
+note: のに joins two facts that don't fit together, often with surprise, disappointment or complaint: 約束したのに来なかった (He promised, but he didn't come).
+note: Nouns and な-adjectives take な: 日曜日なのに働いています.
+ex: たくさん勉強したのに、試験に落ちました。|たくさんべんきょうしたのに、しけんにおちました。|Even though I studied a lot, I failed the exam.
+ex: 日曜日なのに、会社へ行きました。|にちようびなのに、かいしゃへいきました。|Even though it was Sunday, I went to the office.
+ex: 薬を飲んだのに、まだ頭が痛いです。|くすりをのんだのに、まだあたまがいたいです。|Even though I took medicine, I still have a headache.
+q: 約束した＿＿、彼は来ませんでした。|Even though he promised, he didn't come.|のに|ので|から|ために
+q: 静か＿＿のに、眠れません。|Even though it's quiet, I can't sleep.|な|だ|の|に
+
+= node
+title: ～ので
+meaning: because; since
+form: Plain form (Noun・な-adj + な) + ので
+note: ので gives a reason like から, but sounds softer and more objective. It suits polite explanations and excuses.
+note: Nouns and な-adjectives take な: 雨なので, 静かなので.
+ex: 熱があるので、今日は休みます。|ねつがあるので、きょうはやすみます。|I have a fever, so I'll stay home today.
+ex: 雨なので、出かけません。|あめなので、でかけません。|It's raining, so I won't go out.
+ex: 道が込んでいたので、遅れました。|みちがこんでいたので、おくれました。|The roads were busy, so I was late.
+q: 頭が痛い＿＿、早く帰ってもいいですか。|I have a headache, so may I go home early?|ので|のに|ても|まで
+q: 明日は休み＿＿ので、遊びに行きます。|Tomorrow is a day off, so I'm going out.|な|だ|の|に
+
+= tame-ni
+title: ～ために
+meaning: in order to; for; because of
+form: Verb dictionary form / Noun の + ために
+note: ために shows a purpose. Both actions belong to the same person, and the verb is something you can control: 日本で働くために日本語を勉強します.
+note: Noun + のために means "for (someone)": 家族のために働く. It can also mean "because of": 事故のために電車が遅れた.
+ex: 家を買うために、お金をためています。|いえをかうために、おかねをためています。|I'm saving money to buy a house.
+ex: 家族のために働いています。|かぞくのためにはたらいています。|I work for my family.
+ex: 日本の大学に入るために、毎日勉強しています。|にほんのだいがくにはいるために、まいにちべんきょうしています。|I study every day to get into a Japanese university.
+q: 健康の＿＿、毎日歩いています。|I walk every day for my health.|ために|ように|ので|のに
+q: 写真を撮る＿＿、カメラを買いました。|I bought a camera to take photos.|ために|ように|ので|ながら
+
+= you-ni
+title: ～ように
+meaning: so that; in order that
+form: Verb dictionary form / ない-form / potential form + ように
+note: ように shows a goal that isn't fully in your control, often with potential or negative verbs: 忘れないように (so as not to forget), 聞こえるように (so that people can hear).
+note: Compare ために, which goes with verbs you control.
+ex: 忘れないように、メモしておきます。|わすれないように、メモしておきます。|I'll make a note so I don't forget.
+ex: 後ろの人にも聞こえるように、大きい声で話してください。|うしろのひとにもきこえるように、おおきいこえではなしてください。|Please speak up so the people at the back can hear.
+ex: 風邪をひかないように、気をつけてください。|かぜをひかないように、きをつけてください。|Take care not to catch a cold.
+q: 日本語が話せる＿＿、毎日練習しています。|I practice every day so that I can speak Japanese.|ように|ために|ので|のに
+q: 子供にも分かる＿＿、簡単な言葉で説明しました。|I explained in simple words so that even children could understand.|ように|ために|のに|そうに
+
+= sugiru
+title: ～すぎる
+meaning: too much; too ...
+form: Verb stem / Adj-い without い / な-adj + すぎる
+note: すぎる means "too much": 食べすぎる (eat too much), 高すぎる (too expensive). It changes like an ichidan verb.
+note: いい becomes よすぎる, and ない becomes なさすぎる.
+ex: 昨日は飲みすぎました。|きのうはのみすぎました。|I drank too much yesterday.
+ex: この靴は高すぎます。|このくつはたかすぎます。|These shoes are too expensive.
+ex: この問題は簡単すぎます。|このもんだいはかんたんすぎます。|This question is too easy.
+q: このカレーは辛＿＿ます。|This curry is too spicy.|すぎ|そう|やすい|にくい
+q: ゲームを＿＿すぎて、目が痛いです。(する)|I played games too much and my eyes hurt.|し|する|して|した
+
+= yasui-nikui
+title: ～やすい・～にくい
+meaning: easy to ... / hard to ...
+form: Verb stem + やすい / にくい
+note: Add やすい or にくい to a verb stem: 読みやすい (easy to read), 使いにくい (hard to use). They are い-adjectives.
+note: ～づらい is close to にくい but stresses discomfort.
+ex: この本は字が大きくて読みやすいです。|このほんはじがおおきくてよみやすいです。|This book has large print and is easy to read.
+ex: この靴は歩きにくいです。|このくつはあるきにくいです。|These shoes are hard to walk in.
+ex: 先生の説明は分かりやすいです。|せんせいのせつめいはわかりやすいです。|The teacher's explanations are easy to understand.
+q: このペンはとても書き＿＿です。|This pen is very easy to write with.|やすい|すぎ|そう|たい
+q: この薬は苦くて飲み＿＿です。|This medicine is bitter and hard to swallow.|にくい|やすい|たい|ながら
+
+= kata
+title: ～方
+meaning: how to; way of doing
+form: Verb stem + 方 (かた)
+note: Verb stem + 方 makes a noun for "the way of doing": 作り方 (how to make), 読み方 (how to read).
+note: The object takes の instead of を: 漢字の書き方 (how to write kanji).
+ex: この漢字の読み方を教えてください。|このかんじのよみかたをおしえてください。|Please tell me how to read this kanji.
+ex: 駅への行き方が分かりません。|えきへのいきかたがわかりません。|I don't know how to get to the station.
+ex: 母にカレーの作り方を習いました。|ははにカレーのつくりかたをならいました。|My mother taught me how to make curry.
+q: 切符の買い＿＿を教えてください。|Please show me how to buy a ticket.|方|物|事|所
+q: この機械の＿＿方が分かりません。(使う)|I don't know how to use this machine.|使い|使う|使って|使わ
+
+= shi
+title: ～し
+meaning: and also; what's more (listing reasons)
+form: Plain form + し, plain form + し
+note: し lists reasons or points, suggesting there may be more: 安いし、おいしいし (It's cheap, it's tasty ...).
+note: The conclusion often comes at the end, and is sometimes left unsaid.
+ex: この店は安いし、おいしいし、よく来ます。|このみせはやすいし、おいしいし、よくきます。|This place is cheap and tasty, so I come often.
+ex: 雨も降っているし、今日は家にいます。|あめもふっているし、きょうはいえにいます。|It's raining and all, so I'll stay home today.
+ex: 彼は頭もいいし、優しいです。|かれはあたまもいいし、やさしいです。|He's smart, and kind as well.
+q: 今日は疲れた＿＿、早く寝ます。|I'm tired today, so I'll go to bed early.|し|のに|ても|まで
+q: この部屋は広い＿＿、駅にも近いです。|This room is spacious, and it's close to the station too.|し|のに|ても|ので
+
+= bakari
+title: ～たばかり・～ばかり
+meaning: have just done / nothing but
+form: Verb た-form + ばかり; Noun + ばかり
+note: ～たばかり means something happened only a short time ago, as the speaker feels it: 日本に来たばかりです.
+note: Noun + ばかり means "nothing but": 肉ばかり食べる (eat nothing but meat).
+ex: 今、起きたばかりです。|いま、おきたばかりです。|I've only just got up.
+ex: 先月日本に来たばかりです。|せんげつにほんにきたばかりです。|I only came to Japan last month.
+ex: 弟はゲームばかりしています。|おとうとはゲームばかりしています。|My little brother does nothing but play games.
+q: さっき昼ご飯を食べた＿＿です。|I just had lunch a moment ago.|ばかり|はず|だけ|まで
+q: 買った＿＿のパソコンが壊れました。|The computer I just bought broke.|ばかり|ところ|だけ|まで
+
+= tokoro
+title: ～ところ
+meaning: about to / in the middle of / just did
+form: Verb dictionary form / ている / た-form + ところです
+note: ところ shows the stage of an action: 出かけるところ (about to leave), 食べているところ (in the middle of eating), 着いたところ (just arrived).
+note: ～たところ means "just now", like ～たばかり but stricter about time.
+ex: 今から出かけるところです。|いまからでかけるところです。|I'm just about to go out.
+ex: 今、晩ご飯を作っているところです。|いま、ばんごはんをつくっているところです。|I'm in the middle of making dinner.
+ex: 今、駅に着いたところです。|いま、えきについたところです。|I've just arrived at the station.
+q: 今から寝る＿＿です。|I'm just about to go to bed.|ところ|ばかり|はず|ため
+q: 今、宿題をしている＿＿です。|I'm in the middle of doing my homework.|ところ|ばかり|つもり|ため
+
+= n-desu
+title: ～んです・～のです
+meaning: explaining; asking for an explanation
+form: Plain form (Noun・な-adj + な) + んです
+note: んです adds explanation or background: どうしたんですか (What happened?), 頭が痛いんです (It's that I have a headache).
+note: In many situations it sounds warmer and more natural than a bare question. Nouns and な-adjectives take な: 休みなんです.
+ex: どうしたんですか。|どうしたんですか。|What's wrong?
+ex: 明日は試験なんです。|あしたはしけんなんです。|You see, I have an exam tomorrow.
+ex: どこへ行くんですか。|どこへいくんですか。|Where are you off to?
+q: 遅かったですね。…電車が遅れた＿＿。|You're late. …The train was delayed, you see.|んです|ようです|ましょう|でしょう
+q: 今日は休み＿＿んです。|Today is my day off, you see.|な|だ|の|に
+
+= ka-dou-ka
+title: ～か・～かどうか
+meaning: whether; questions inside sentences
+form: Question word ... plain form + か / Plain form + かどうか
+note: A question inside a sentence ends with か: 何時に始まるか知っていますか (Do you know what time it starts?).
+note: For yes/no questions use かどうか: 行くかどうか分かりません (I don't know whether I'll go). Nouns and な-adjectives drop だ.
+ex: 駅がどこにあるか教えてください。|えきがどこにあるかおしえてください。|Please tell me where the station is.
+ex: 明日来るかどうか分かりません。|あしたくるかどうかわかりません。|I don't know whether he'll come tomorrow.
+ex: 会議は何時からか知っていますか。|かいぎはなんじからかしっていますか。|Do you know what time the meeting starts?
+q: この店がおいしい＿＿食べてみます。|I'll eat here to find out whether this place is good.|かどうか|ように|ために|のに
+q: 彼が何時に来る＿＿聞いてください。|Please ask him what time he's coming.|か|かどうか|と|に
+
+= aida
+title: ～間・～間に
+meaning: while; during
+form: Verb ている / Noun の + 間 / 間に
+note: 間 means "for the whole time": 夏休みの間、ずっと国にいました.
+note: 間に means "at some point during": 子供が寝ている間に、掃除をしました (I cleaned while the children were asleep).
+ex: 夏休みの間、ずっと国にいました。|なつやすみのあいだ、ずっとくににいました。|I was back home for the whole summer vacation.
+ex: 子供が寝ている間に、本を読みました。|こどもがねているあいだに、ほんをよみました。|I read a book while the children were asleep.
+ex: 留守の間に、友達が来ました。|るすのあいだに、ともだちがきました。|A friend came by while I was out.
+q: 待っている＿＿、雑誌を読みました。|I read a magazine while I was waiting.|間|前|後|中
+q: 冬休みの間＿＿、引っ越しをしました。|I moved house during the winter break.|に|で|を|が
+
+= made-ni
+title: ～までに
+meaning: by (a deadline)
+form: Time / Verb dictionary form + までに
+note: までに is a deadline: something happens before that point. まで alone means an action goes on until that point.
+note: Compare 五時まで働きます (I work until five) with 五時までに帰ります (I'll be home by five).
+ex: 金曜日までにレポートを出してください。|きんようびまでにレポートをだしてください。|Please hand in the report by Friday.
+ex: 十時までに帰ります。|じゅうじまでにかえります。|I'll be home by ten.
+ex: 夏休みが終わるまでに、この本を読みたいです。|なつやすみがおわるまでに、このほんをよみたいです。|I want to read this book before summer vacation ends.
+q: 明日の朝＿＿この仕事をしてください。|Please get this work done by tomorrow morning.|までに|まで|から|に
+q: 六時＿＿ここで待っています。|I'll wait here until six.|まで|までに|より|ので
+
+= sonkeigo
+title: Honorific speech (尊敬語)
+meaning: respectful forms for other people's actions
+form: お + Verb stem + に なる / special verbs
+note: 尊敬語 raises the person doing the action: customers, teachers, bosses. お読みになる is a respectful "read".
+note: Special forms: いる・行く・来る → いらっしゃる, 言う → おっしゃる, 食べる・飲む → 召し上がる, 見る → ご覧になる, する → なさる.
+ex: 社長はもうお帰りになりました。|しゃちょうはもうおかえりになりました。|The president has already gone home.
+ex: 先生は何とおっしゃいましたか。|せんせいはなんとおっしゃいましたか。|What did the teacher say?
+ex: どうぞ召し上がってください。|どうぞめしあがってください。|Please help yourself.
+q: 先生は研究室に＿＿。(いる)|The professor is in her office.|いらっしゃいます|おります|参ります|ございます
+q: 社長はもうお帰りに＿＿。|The president has already gone home.|なりました|しました|いたしました|ありました
+
+= kenjougo
+title: Humble speech (謙譲語)
+meaning: humble forms for your own actions
+form: お / ご + Verb stem + する (いたす) / special verbs
+note: 謙譲語 lowers yourself to show respect to the listener: お持ちします (Let me carry that for you).
+note: Special forms: 行く・来る → 参る, 言う → 申す, 食べる・もらう → いただく, 訪ねる・聞く → 伺う, いる → おる, する → いたす.
+ex: 私が荷物をお持ちします。|わたしがにもつをおもちします。|Let me carry your bags.
+ex: 山田と申します。|やまだともうします。|My name is Yamada.
+ex: 明日、そちらに伺います。|あした、そちらにうかがいます。|I'll come and see you tomorrow.
+q: はじめまして。田中と＿＿。|Nice to meet you. My name is Tanaka.|申します|おっしゃいます|なさいます|いらっしゃいます
+q: 私が駅までご案内＿＿。|I'll show you the way to the station.|します|なります|なさいます|いらっしゃいます
+
+= nasai
+title: ～なさい
+meaning: do ... (instruction)
+form: Verb stem + なさい
+note: なさい is an instruction from parents to children, teachers to students, and in test questions: 早く寝なさい.
+note: It is firm but not rude. Don't use it to people above you.
+ex: 早く起きなさい。|はやくおきなさい。|Get up, quick.
+ex: 野菜も食べなさい。|やさいもたべなさい。|Eat your vegetables too.
+ex: 正しい答えを選びなさい。|ただしいこたえをえらびなさい。|Choose the correct answer.
+q: もう九時ですよ。早く寝＿＿。|It's already nine. Go to bed.|なさい|ました|たい|ません
+q: 次の文を＿＿なさい。(読む)|Read the following sentence.|読み|読む|読んで|読ま
+
+= imperative
+title: Command and prohibition (～ろ・～な)
+meaning: do it! / don't do it!
+form: る → ろ (ichidan) / u-sound → e-sound (godan) / する → しろ, 来る → 来い; Dictionary form + な
+note: The plain command is very strong. You hear it in emergencies, sports, on signs, between close male friends, and in quotes: 止まれ (Stop).
+note: Dictionary form + な is a strong "don't": 触るな (Don't touch!).
+ex: 危ない！止まれ！|あぶない！とまれ！|Look out! Stop!
+ex: ここに入るな。|ここにはいるな。|Don't come in here.
+ex: 早く来い。|はやくこい。|Come here, quick!
+q: 頑張＿＿！|Keep it up! (cheering)|れ|ろ|る|ら
+q: このボタンに触る＿＿。|Don't touch this button.|な|ね|よ|ろ
+
+= te-hoshii
+title: ～てほしい
+meaning: want someone to do
+form: Person に + Verb て-form + ほしい
+note: ～てほしい says what you want someone else to do: 早く来てほしい (I want you to come soon).
+note: The negative is ～ないでほしい (I don't want you to ...). It can sound direct, so soften it: ～てほしいんですが.
+ex: もっとゆっくり話してほしいです。|もっとゆっくりはなしてほしいです。|I'd like you to speak more slowly.
+ex: 母に元気でいてほしいです。|ははにげんきでいてほしいです。|I want my mother to stay healthy.
+ex: このことは誰にも言わないでほしいです。|このことはだれにもいわないでほしいです。|I don't want you to tell anyone about this.
+q: 友達にパーティーに来て＿＿です。|I want my friends to come to the party.|ほしい|たい|もらい|くれ
+q: 心配しない＿＿ほしいです。|I don't want you to worry.|で|て|と|に
+
+= koto-ga-aru
+title: ～ことがある
+meaning: sometimes ...; there are times when
+form: Verb dictionary form / ない-form + ことが ある
+note: With the dictionary form, ことがある means "sometimes" or "on occasion": 寝坊することがあります.
+note: Don't confuse it with ～たことがある (have done before).
+ex: 朝ご飯を食べないことがあります。|あさごはんをたべないことがあります。|Sometimes I skip breakfast.
+ex: 電車が遅れることがあります。|でんしゃがおくれることがあります。|The trains are sometimes late.
+ex: 時々、会社に遅れることがあります。|ときどき、かいしゃにおくれることがあります。|Now and then I'm late for work.
+q: 忙しいとき、昼ご飯を食べない＿＿があります。|When I'm busy, I sometimes skip lunch.|こと|もの|ところ|はず
+q: 日曜日も働く＿＿。|I sometimes work on Sundays too.|ことがあります|ことにします|ことです|ことができます
+
+= hou-ga-ii
+title: ～たほうがいい
+meaning: had better; should
+form: Verb た-form + ほうがいい / ない-form + ほうがいい
+note: ～たほうがいい gives advice: 医者に行ったほうがいいですよ (You'd better see a doctor).
+note: For negative advice use the ない-form: 無理しないほうがいい (You shouldn't overdo it).
+ex: 早く寝たほうがいいですよ。|はやくねたほうがいいですよ。|You'd better go to bed early.
+ex: 傘を持っていったほうがいいですよ。|かさをもっていったほうがいいですよ。|You should take an umbrella.
+ex: 夜一人で歩かないほうがいいです。|よるひとりであるかないほうがいいです。|You shouldn't walk alone at night.
+q: 熱があるなら、休んだ＿＿いいですよ。|If you have a fever, you'd better rest.|ほうが|ことが|ために|ので
+q: お酒はあまり＿＿ほうがいいです。(飲む)|You shouldn't drink much alcohol.|飲まない|飲んだない|飲みない|飲めない
+
+= relative
+title: Describing nouns with sentences
+meaning: the ... that ...; who; which
+form: Plain form + Noun
+note: A whole sentence can describe a noun. It comes before the noun, in plain form: 私が買った本 (the book that I bought).
+note: Inside it, the subject takes が (or の), not は: 母が作った料理, 背の高い人.
+ex: これは昨日買った本です。|これはきのうかったほんです。|This is the book I bought yesterday.
+ex: 眼鏡をかけている人が田中さんです。|めがねをかけているひとがたなかさんです。|The person wearing glasses is Mr. Tanaka.
+ex: 母が作った料理はおいしいです。|ははがつくったりょうりはおいしいです。|The food my mother makes is delicious.
+q: 私＿＿撮った写真を見てください。|Please look at the photos I took.|が|を|に|で
+q: これは父＿＿くれた時計です。|This is the watch my father gave me.|が|を|へ|で
+
+= nominalizer
+title: ～の・～こと (verbs as nouns)
+meaning: turning a verb into a noun ("-ing")
+form: Plain form + の / こと
+note: の or こと turns a verb phrase into a noun: 泳ぐのが好きです (I like swimming).
+note: With seeing and hearing verbs use の: 彼が歌うのを聞きました. Some set phrases use こと: 趣味は写真を撮ることです, ことができる.
+ex: 私は料理を作るのが好きです。|わたしはりょうりをつくるのがすきです。|I like cooking.
+ex: 趣味は本を読むことです。|しゅみはほんをよむことです。|My hobby is reading.
+ex: かぎをかけるのを忘れました。|かぎをかけるのをわすれました。|I forgot to lock the door.
+q: 私の夢は世界を旅行する＿＿です。|My dream is to travel the world.|こと|の|もの|ところ
+q: 子供が遊んでいる＿＿を見ました。|I watched the children playing.|の|こと|もの|ため
+
+= ba-ii
+title: ～ばいい・～たらいい
+meaning: should; what should I ...?
+form: Verb ば-form + いい / た-form + ら いい
+note: ～ばいいですか and ～たらいいですか ask for advice: どうすればいいですか (What should I do?).
+note: As an answer they suggest a simple way: この電車に乗ればいいですよ (Just take this train).
+ex: どうすればいいですか。|どうすればいいですか。|What should I do?
+ex: 駅までどうやって行ったらいいですか。|えきまでどうやっていったらいいですか。|How do I get to the station?
+ex: 分からなかったら、先生に聞けばいいですよ。|わからなかったら、せんせいにきけばいいですよ。|If you don't understand, just ask the teacher.
+q: 何時に来れ＿＿いいですか。|What time should I come?|ば|たら|と|て
+q: このお金はどこで＿＿らいいですか。(払う)|Where should I pay this?|払った|払う|払って|払え
+
+= compound-verbs
+title: ～始める・～終わる・～出す
+meaning: start / finish / suddenly start doing
+form: Verb stem + 始める / 終わる / 出す / 続ける
+note: Add these to a verb stem: 読み始める (start reading), 書き終わる (finish writing), 泣き出す (burst into tears), 歩き続ける (keep walking).
+note: 出す shows a sudden, unplanned start: 雨が降り出しました.
+ex: 三年前に日本語を勉強し始めました。|さんねんまえににほんごをべんきょうしはじめました。|I started studying Japanese three years ago.
+ex: その本はもう読み終わりました。|そのほんはもうよみおわりました。|I've already finished reading that book.
+ex: 急に雨が降り出しました。|きゅうにあめがふりだしました。|It suddenly started to rain.
+q: 手紙を書き＿＿ましたか。|Have you finished writing the letter?|終わり|始め|出し|続け
+q: 赤ちゃんが急に泣き＿＿ました。|The baby suddenly started crying.|出し|終わり|過ぎ|方
+
+= sa
+title: ～さ (adjective → noun)
+meaning: -ness; degree
+form: Adj-い without い / な-adj + さ
+note: さ turns an adjective into a noun for size or degree: 高い → 高さ (height), 大きい → 大きさ (size), 大切 → 大切さ (importance).
+note: It is common with measurements: この山の高さは三千メートルです.
+ex: この箱の大きさはどのぐらいですか。|このはこのおおきさはどのぐらいですか。|How big is this box?
+ex: 富士山の高さを知っていますか。|ふじさんのたかさをしっていますか。|Do you know how high Mount Fuji is?
+ex: 家族の大切さが分かりました。|かぞくのたいせつさがわかりました。|I came to understand how important family is.
+q: この川の深＿＿は二メートルです。|The depth of this river is two meters.|さ|い|く|な
+q: 東京の夏の暑＿＿にびっくりしました。|I was surprised by how hot Tokyo summers are.|さ|く|い|に
+
+= naide
+title: ～ないで
+meaning: without doing
+form: Verb ない-form + で
+note: ～ないで + verb means doing one thing without doing another: 朝ご飯を食べないで出かけました (I went out without eating breakfast).
+note: Don't confuse it with ～なくて, which gives a reason: 分からなくて困りました.
+ex: 朝ご飯を食べないで、学校へ行きました。|あさごはんをたべないで、がっこうへいきました。|I went to school without eating breakfast.
+ex: 辞書を使わないで、読んでみてください。|じしょをつかわないで、よんでみてください。|Try reading it without a dictionary.
+ex: 傘を持たないで、出かけました。|かさをもたないで、でかけました。|I went out without an umbrella.
+q: 砂糖を入れ＿＿コーヒーを飲みます。|I drink my coffee without sugar.|ないで|なくて|なければ|ない
+q: 昨日は寝＿＿で勉強しました。|Yesterday I studied without sleeping.|ない|なく|ず|ません

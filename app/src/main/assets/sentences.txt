@@ -1,0 +1,213 @@
+# Kotoba sentences.
+# "## <JLPT level> <topic>" starts a group. Lines are "japanese|reading|english".
+# Spaces split a sentence into the chunks used for the word-order exercise;
+# the reading has exactly the same chunks.
+
+## 5 Introductions
+私は 学生です。|わたしは がくせいです。|I am a student.
+私の 名前は アンナです。|わたしの なまえは アンナです。|My name is Anna.
+ドイツから 来ました。|ドイツから きました。|I came from Germany.
+どうぞ よろしく お願いします。|どうぞ よろしく おねがいします。|Pleased to meet you.
+お仕事は 何ですか。|おしごとは なんですか。|What do you do for work?
+私は 会社員です。|わたしは かいしゃいんです。|I am a company employee.
+日本語を 勉強して います。|にほんごを べんきょうして います。|I am studying Japanese.
+好きな 食べ物は すしです。|すきな たべものは すしです。|My favorite food is sushi.
+あの 人は 誰ですか。|あの ひとは だれですか。|Who is that person?
+こちらは 田中さんです。|こちらは たなかさんです。|This is Mr. Tanaka.
+
+## 5 Daily routine
+毎朝 六時に 起きます。|まいあさ ろくじに おきます。|I get up at six every morning.
+朝ご飯を 食べました。|あさごはんを たべました。|I ate breakfast.
+電車で 会社に 行きます。|でんしゃで かいしゃに いきます。|I go to the office by train.
+昼ご飯は いつも 食堂で 食べます。|ひるごはんは いつも しょくどうで たべます。|I always eat lunch in the cafeteria.
+夜 テレビを 見ます。|よる テレビを みます。|I watch TV at night.
+毎晩 十一時に 寝ます。|まいばん じゅういちじに ねます。|I go to bed at eleven every night.
+お風呂に 入ります。|おふろに はいります。|I take a bath.
+歯を 磨きます。|はを みがきます。|I brush my teeth.
+シャワーを 浴びました。|シャワーを あびました。|I took a shower.
+部屋を 掃除しました。|へやを そうじしました。|I cleaned my room.
+日曜日は 洗濯を します。|にちようびは せんたくを します。|I do the laundry on Sundays.
+家に 帰ります。|いえに かえります。|I'm going home.
+
+## 5 Food & drink
+コーヒーを 一つ お願いします。|コーヒーを ひとつ おねがいします。|One coffee, please.
+これは とても おいしいです。|これは とても おいしいです。|This is very delicious.
+水を ください。|みずを ください。|Water, please.
+肉と 魚と どちらが 好きですか。|にくと さかなと どちらが すきですか。|Which do you like better, meat or fish?
+野菜は あまり 好きじゃ ありません。|やさいは あまり すきじゃ ありません。|I don't like vegetables very much.
+一緒に 昼ご飯を 食べませんか。|いっしょに ひるごはんを たべませんか。|Would you like to have lunch together?
+お腹が すきました。|おなかが すきました。|I'm hungry.
+この カレーは 辛いです。|この カレーは からいです。|This curry is spicy.
+お茶を 飲みませんか。|おちゃを のみませんか。|Would you like some tea?
+晩ご飯は 何を 食べましたか。|ばんごはんは なにを たべましたか。|What did you eat for dinner?
+卵を 二つ 買いました。|たまごを ふたつ かいました。|I bought two eggs.
+
+## 5 Shopping
+これは いくらですか。|これは いくらですか。|How much is this?
+その かばんを 見せて ください。|その かばんを みせて ください。|Please show me that bag.
+もう 少し 安いのは ありますか。|もう すこし やすいのは ありますか。|Do you have a slightly cheaper one?
+赤い 傘を 買いました。|あかい かさを かいました。|I bought a red umbrella.
+この 靴は 高いです。|この くつは たかいです。|These shoes are expensive.
+デパートで 服を 買いました。|デパートで ふくを かいました。|I bought clothes at the department store.
+全部で 三千円です。|ぜんぶで さんぜんえんです。|That's 3,000 yen in total.
+これを ください。|これを ください。|I'll take this one.
+もっと 大きいのは ありますか。|もっと おおきいのは ありますか。|Do you have a bigger one?
+本屋で 雑誌を 買いました。|ほんやで ざっしを かいました。|I bought a magazine at the bookstore.
+
+## 5 Places & directions
+駅は どこですか。|えきは どこですか。|Where is the station?
+トイレは あそこです。|トイレは あそこです。|The toilet is over there.
+銀行は 郵便局の 隣に あります。|ぎんこうは ゆうびんきょくの となりに あります。|The bank is next to the post office.
+まっすぐ 行って ください。|まっすぐ いって ください。|Please go straight ahead.
+次の 角を 右に 曲がって ください。|つぎの かどを みぎに まがって ください。|Please turn right at the next corner.
+公園の 前に 大きい 木が あります。|こうえんの まえに おおきい きが あります。|There is a big tree in front of the park.
+図書館は ここから 遠いですか。|としょかんは ここから とおいですか。|Is the library far from here?
+机の 上に 本が あります。|つくえの うえに ほんが あります。|There is a book on the desk.
+猫は 椅子の 下に います。|ねこは いすの したに います。|The cat is under the chair.
+駅の 近くに 住んで います。|えきの ちかくに すんで います。|I live near the station.
+
+## 5 Time & plans
+今 何時ですか。|いま なんじですか。|What time is it now?
+三時半です。|さんじはんです。|It's half past three.
+明日は 何を しますか。|あしたは なにを しますか。|What will you do tomorrow?
+土曜日に 友達と 映画を 見ます。|どようびに ともだちと えいがを みます。|I'll watch a movie with a friend on Saturday.
+来年 日本へ 行きたいです。|らいねん にほんへ いきたいです。|I want to go to Japan next year.
+誕生日は いつですか。|たんじょうびは いつですか。|When is your birthday?
+私の 誕生日は 五月 五日です。|わたしの たんじょうびは ごがつ いつかです。|My birthday is May 5th.
+銀行は 九時から 三時までです。|ぎんこうは くじから さんじまでです。|The bank is open from nine to three.
+もう 宿題を しましたか。|もう しゅくだいを しましたか。|Have you done your homework yet?
+いいえ、 まだです。|いいえ、 まだです。|No, not yet.
+昨日は とても 忙しかったです。|きのうは とても いそがしかったです。|I was very busy yesterday.
+
+## 5 Family & friends
+家族は 四人です。|かぞくは よにんです。|There are four people in my family.
+兄が 一人 います。|あにが ひとり います。|I have one older brother.
+妹は 大学生です。|いもうとは だいがくせいです。|My younger sister is a university student.
+父は 銀行で 働いて います。|ちちは ぎんこうで はたらいて います。|My father works at a bank.
+母は 料理が 上手です。|ははは りょうりが じょうずです。|My mother is good at cooking.
+友達に 手紙を 書きました。|ともだちに てがみを かきました。|I wrote a letter to a friend.
+両親は 東京に 住んで います。|りょうしんは とうきょうに すんで います。|My parents live in Tokyo.
+弟は サッカーが 好きです。|おとうとは サッカーが すきです。|My younger brother likes soccer.
+
+## 5 Weather & seasons
+今日は いい 天気ですね。|きょうは いい てんきですね。|Nice weather today, isn't it?
+明日は 雨が 降るでしょう。|あしたは あめが ふるでしょう。|It will probably rain tomorrow.
+東京の 夏は とても 暑いです。|とうきょうの なつは とても あついです。|Summer in Tokyo is very hot.
+冬は 雪が たくさん 降ります。|ふゆは ゆきが たくさん ふります。|It snows a lot in winter.
+今日は 風が 強いです。|きょうは かぜが つよいです。|The wind is strong today.
+春は 花が きれいです。|はるは はなが きれいです。|The flowers are pretty in spring.
+秋は 涼しくて いいです。|あきは すずしくて いいです。|Autumn is nice and cool.
+外は 寒いですか。|そとは さむいですか。|Is it cold outside?
+
+## 5 Hobbies
+音楽を 聞くのが 好きです。|おんがくを きくのが すきです。|I like listening to music.
+日曜日は よく 散歩を します。|にちようびは よく さんぽを します。|I often take a walk on Sundays.
+ギターを 弾く ことが できます。|ギターを ひく ことが できます。|I can play the guitar.
+一緒に 歌を 歌いましょう。|いっしょに うたを うたいましょう。|Let's sing a song together.
+この 映画は 面白かったです。|この えいがは おもしろかったです。|This movie was interesting.
+海で 泳ぎました。|うみで およぎました。|I swam in the sea.
+写真を 撮っても いいですか。|しゃしんを とっても いいですか。|May I take a photo?
+犬と 公園で 遊びました。|いぬと こうえんで あそびました。|I played in the park with the dog.
+
+## 5 School & work
+先生、 質問が あります。|せんせい、 しつもんが あります。|Teacher, I have a question.
+この 漢字は 難しいです。|この かんじは むずかしいです。|This kanji is difficult.
+もう 一度 言って ください。|もう いちど いって ください。|Please say it once more.
+すみません、 分かりません。|すみません、 わかりません。|Sorry, I don't understand.
+ゆっくり 話して ください。|ゆっくり はなして ください。|Please speak slowly.
+この 言葉の 意味は 何ですか。|この ことばの いみは なんですか。|What does this word mean?
+これは 日本語で 何と 言いますか。|これは にほんごで なんと いいますか。|What is this called in Japanese?
+宿題を 忘れました。|しゅくだいを わすれました。|I forgot my homework.
+明日 テストが あります。|あした テストが あります。|There is a test tomorrow.
+仕事は 何時に 終わりますか。|しごとは なんじに おわりますか。|What time does work finish?
+
+## 5 Health & feelings
+頭が 痛いです。|あたまが いたいです。|I have a headache.
+風邪を ひきました。|かぜを ひきました。|I caught a cold.
+薬を 飲んで ください。|くすりを のんで ください。|Please take the medicine.
+とても 疲れました。|とても つかれました。|I'm very tired.
+大丈夫ですか。|だいじょうぶですか。|Are you all right?
+今日は 元気が ありません。|きょうは げんきが ありません。|I don't have much energy today.
+
+## 4 Plans
+来年 日本に 留学する つもりです。|らいねん にほんに りゅうがくする つもりです。|I plan to study in Japan next year.
+週末は 家で ゆっくり しようと 思って います。|しゅうまつは いえで ゆっくり しようと おもって います。|I'm thinking of taking it easy at home this weekend.
+夏休みに 北海道へ 行く 予定です。|なつやすみに ほっかいどうへ いく よていです。|I'm planning to go to Hokkaido in the summer vacation.
+明日から 毎朝 走る ことに しました。|あしたから まいあさ はしる ことに しました。|I've decided to run every morning from tomorrow.
+来月から 大阪で 働く ことに なりました。|らいげつから おおさかで はたらく ことに なりました。|It's been decided that I'll work in Osaka from next month.
+もっと 野菜を 食べる ように して います。|もっと やさいを たべる ように して います。|I'm trying to eat more vegetables.
+旅行の 前に ホテルを 予約して おきます。|りょこうの まえに ホテルを よやくして おきます。|I'll book a hotel before the trip.
+今度の 日曜日、 一緒に 出かけませんか。|こんどの にちようび、 いっしょに でかけませんか。|Shall we go out together this Sunday?
+
+## 4 Experiences
+日本へ 行った ことが ありますか。|にほんへ いった ことが ありますか。|Have you ever been to Japan?
+すしを 食べた ことが あります。|すしを たべた ことが あります。|I have eaten sushi before.
+富士山に 登った ことは ありません。|ふじさんに のぼった ことは ありません。|I have never climbed Mount Fuji.
+日本語が 話せる ように なりました。|にほんごが はなせる ように なりました。|I've become able to speak Japanese.
+財布を なくして しまいました。|さいふを なくして しまいました。|I've lost my wallet.
+昨日 初めて 着物を 着て みました。|きのう はじめて きものを きて みました。|Yesterday I tried on a kimono for the first time.
+
+## 4 Requests & favors
+ちょっと 手伝って くれませんか。|ちょっと てつだって くれませんか。|Could you help me for a moment?
+窓を 開けても いいですか。|まどを あけても いいですか。|May I open the window?
+友達が 駅まで 送って くれました。|ともだちが えきまで おくって くれました。|My friend took me to the station.
+先生に 作文を 直して もらいました。|せんせいに さくぶんを なおして もらいました。|I had my teacher correct my essay.
+妹に 本を 貸して あげました。|いもうとに ほんを かして あげました。|I lent my younger sister a book.
+ここに 名前を 書いて いただけますか。|ここに なまえを かいて いただけますか。|Could you write your name here?
+すみませんが、 写真を 撮って もらえませんか。|すみませんが、 しゃしんを とって もらえませんか。|Excuse me, could you take a photo for me?
+少し 静かに して ほしいです。|すこし しずかに して ほしいです。|I'd like you to be a little quieter.
+
+## 4 Opinions & guesses
+明日は 雨が 降るかもしれません。|あしたは あめが ふるかもしれません。|It might rain tomorrow.
+この 店は 高そうですね。|この みせは たかそうですね。|This shop looks expensive.
+田中さんは 病気だ そうです。|たなかさんは びょうきだ そうです。|I heard that Mr. Tanaka is sick.
+彼は もう 帰った ようです。|かれは もう かえった ようです。|It seems he has already gone home.
+この 問題は 簡単だと 思います。|この もんだいは かんたんだと おもいます。|I think this problem is easy.
+あの 店は 安くて おいしいらしいです。|あの みせは やすくて おいしいらしいです。|Apparently that place is cheap and tasty.
+彼女は もうすぐ 来る はずです。|かのじょは もうすぐ くる はずです。|She should be here soon.
+日本語は 漢字が 多いので 難しいです。|にほんごは かんじが おおいので むずかしいです。|Japanese is hard because there are so many kanji.
+
+## 4 Travel
+空港まで どのぐらい かかりますか。|くうこうまで どのぐらい かかりますか。|How long does it take to get to the airport?
+次の 駅で 乗り換えて ください。|つぎの えきで のりかえて ください。|Please change trains at the next station.
+この 電車は 京都に 止まりますか。|この でんしゃは きょうとに とまりますか。|Does this train stop at Kyoto?
+道に 迷って しまいました。|みちに まよって しまいました。|I've got lost.
+ホテルの 場所を 教えて いただけませんか。|ホテルの ばしょを おしえて いただけませんか。|Could you tell me where the hotel is?
+お土産を 買うのを 忘れました。|おみやげを かうのを わすれました。|I forgot to buy souvenirs.
+バスが 遅れて、 会議に 間に合いませんでした。|バスが おくれて、 かいぎに まにあいませんでした。|The bus was late, so I didn't make it to the meeting.
+雨が 降ったら、 旅行は やめます。|あめが ふったら、 りょこうは やめます。|If it rains, I'll call off the trip.
+
+## 4 Work & study
+会議は 何時からですか。|かいぎは なんじからですか。|What time does the meeting start?
+説明が 分かりやすかったです。|せつめいが わかりやすかったです。|The explanation was easy to understand.
+この 漢字は 書きにくいです。|この かんじは かきにくいです。|This kanji is hard to write.
+試験に 合格する ために、 毎日 勉強して います。|しけんに ごうかくする ために、 まいにち べんきょうして います。|I study every day so I can pass the exam.
+仕事が 終わったら、 電話して ください。|しごとが おわったら、 でんわして ください。|Please call me when you finish work.
+明日までに レポートを 出さなければ なりません。|あしたまでに レポートを ださなければ なりません。|I have to hand in the report by tomorrow.
+もう 少し 考えさせて ください。|もう すこし かんがえさせて ください。|Please let me think about it a little longer.
+部長に 呼ばれました。|ぶちょうに よばれました。|I was called by the department head.
+
+## 4 Rules & advice
+ここで たばこを 吸っては いけません。|ここで たばこを すっては いけません。|You must not smoke here.
+早く 寝た ほうが いいですよ。|はやく ねた ほうが いいですよ。|You'd better go to bed early.
+薬を 飲めば、 すぐ 治りますよ。|くすりを のめば、 すぐ なおりますよ。|If you take the medicine, you'll soon get better.
+お酒を 飲みすぎない ように して ください。|おさけを のみすぎない ように して ください。|Please try not to drink too much.
+図書館では 静かに しなさい。|としょかんでは しずかに しなさい。|Be quiet in the library.
+ボタンを 押すと、 ドアが 開きます。|ボタンを おすと、 ドアが あきます。|When you press the button, the door opens.
+
+## 4 Everyday trouble
+パソコンが 壊れて しまいました。|パソコンが こわれて しまいました。|My computer has broken.
+電車の 中に 傘を 忘れて しまいました。|でんしゃの なかに かさを わすれて しまいました。|I left my umbrella on the train.
+雨に 降られて、 服が ぬれました。|あめに ふられて、 ふくが ぬれました。|I got caught in the rain and my clothes got wet.
+弟に ケーキを 食べられました。|おとうとに ケーキを たべられました。|My younger brother ate my cake.
+母に 部屋を 掃除させられました。|ははに へやを そうじさせられました。|My mother made me clean my room.
+寝坊して、 授業に 遅れました。|ねぼうして、 じゅぎょうに おくれました。|I overslept and was late for class.
+約束を 忘れて、 友達を 怒らせて しまいました。|やくそくを わすれて、 ともだちを おこらせて しまいました。|I forgot our plans and made my friend angry.
+
+## 4 Polite speech
+社長は もう お帰りに なりました。|しゃちょうは もう おかえりに なりました。|The president has already left for home.
+少々 お待ち ください。|しょうしょう おまち ください。|Please wait a moment.
+私が お持ちします。|わたしが おもちします。|Let me carry that for you.
+明日 そちらに 伺います。|あした そちらに うかがいます。|I will come to see you tomorrow.
+先生は いらっしゃいますか。|せんせいは いらっしゃいますか。|Is the teacher in?
+何を 召し上がりますか。|なにを めしあがりますか。|What would you like to eat?

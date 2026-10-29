@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 言 ("word") from Noto Serif CJK JP Bold (SIL Open Font License), as a path. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF" android:pathData="M38.17 33.05 38.59 34.54H68.66C69.41 34.54 69.94 34.28 70.1 33.69C67.75 31.72 64.02 29 64.02 29L60.66 33.05ZM38.17 47.6 38.59 49.1H69.3C70.04 49.1 70.63 48.83 70.79 48.24C68.5 46.32 64.87 43.66 64.87 43.66L61.73 47.6ZM38.22 54.96 38.65 56.45H69.51C70.31 56.45 70.84 56.19 71 55.6C68.77 53.73 65.14 51.07 65.14 51.07L61.89 54.96ZM29.21 40.3 29.69 41.79H77.29C78.09 41.79 78.63 41.53 78.79 40.94C76.44 38.86 72.5 35.88 72.5 35.88L68.98 40.3ZM63.7 63.59V73.67H44.03V63.59ZM37.8 62.1V79H38.65C41.26 79 44.03 77.56 44.03 76.97V75.22H63.7V78.47H64.77C66.85 78.47 70.15 77.4 70.2 77.03V64.77C71.38 64.55 72.12 64.02 72.5 63.59L66.15 58.8L63.12 62.1H44.46L37.8 59.49Z" />
+</vector>

@@ -1,0 +1,285 @@
+# Kotoba kanji list.
+# "## <JLPT level> <group>" starts a group. Lines are
+# "kanji|meaning|on readings|kun readings|examples".
+# Readings are separated by "、"; a dot in a kun reading marks where the okurigana starts.
+# Examples are "word reading meaning", separated by "; ".
+
+## 5 Numbers
+一|one|イチ、イツ|ひと、ひと.つ|一つ ひとつ one (thing); 一人 ひとり one person; 一番 いちばん number one
+二|two|ニ|ふた、ふた.つ|二つ ふたつ two (things); 二人 ふたり two people
+三|three|サン|み、み.つ、みっ.つ|三つ みっつ three (things); 三月 さんがつ March
+四|four|シ|よ、よ.つ、よっ.つ、よん|四つ よっつ four (things); 四月 しがつ April
+五|five|ゴ|いつ、いつ.つ|五つ いつつ five (things); 五日 いつか the 5th
+六|six|ロク|む、む.つ、むっ.つ|六つ むっつ six (things); 六月 ろくがつ June
+七|seven|シチ|なな、なな.つ、なの|七つ ななつ seven (things); 七日 なのか the 7th
+八|eight|ハチ|や、や.つ、やっ.つ、よう|八つ やっつ eight (things); 八百屋 やおや greengrocer
+九|nine|キュウ、ク|ここの、ここの.つ|九つ ここのつ nine (things); 九月 くがつ September
+十|ten|ジュウ、ジッ|とお、と|十 じゅう ten; 十日 とおか the 10th
+百|hundred|ヒャク||百 ひゃく hundred; 八百屋 やおや greengrocer
+千|thousand|セン|ち|千 せん thousand
+万|ten thousand|マン、バン||一万 いちまん ten thousand
+円|yen; circle|エン|まる.い|円 えん yen; 百円 ひゃくえん 100 yen
+
+## 5 Days of the week
+日|day; sun|ニチ、ジツ|ひ、か|日本 にほん Japan; 毎日 まいにち every day; 日曜日 にちようび Sunday
+月|moon; month|ゲツ、ガツ|つき|月曜日 げつようび Monday; 一月 いちがつ January; 毎月 まいつき every month
+火|fire|カ|ひ|火曜日 かようび Tuesday; 火 ひ fire
+水|water|スイ|みず|水曜日 すいようび Wednesday; 水 みず water
+木|tree; wood|モク、ボク|き|木曜日 もくようび Thursday; 木 き tree
+金|gold; money|キン、コン|かね|金曜日 きんようび Friday; お金 おかね money
+土|earth; soil|ド、ト|つち|土曜日 どようび Saturday; 土 つち soil
+
+## 5 People
+人|person|ジン、ニン|ひと|人 ひと person; 日本人 にほんじん Japanese person; 三人 さんにん three people
+子|child|シ、ス|こ|子供 こども child; 女の子 おんなのこ girl
+女|woman|ジョ、ニョ|おんな、め|女 おんな woman; 彼女 かのじょ she
+男|man|ダン、ナン|おとこ|男 おとこ man; 男の子 おとこのこ boy
+父|father|フ|ちち|父 ちち (my) father; 祖父 そふ grandfather
+母|mother|ボ|はは|母 はは (my) mother; 祖母 そぼ grandmother
+友|friend|ユウ|とも|友達 ともだち friend
+
+## 5 Time
+年|year|ネン|とし|来年 らいねん next year; 毎年 まいとし every year; 去年 きょねん last year
+時|time; hour|ジ|とき|時間 じかん time; 時 とき when; 時々 ときどき sometimes
+分|minute; part; understand|ブン、フン、ブ|わ.ける、わ.かる|五分 ごふん five minutes; 半分 はんぶん half; 分かる わかる to understand
+半|half|ハン|なか.ば|半分 はんぶん half; 半 はん half past
+午|noon|ゴ||午前 ごぜん a.m.; 午後 ごご p.m.
+前|before; front|ゼン|まえ|前 まえ before; 午前 ごぜん a.m.; 名前 なまえ name
+後|after; behind|ゴ、コウ|のち、うし.ろ、あと|後 あと after; 午後 ごご p.m.; 後ろ うしろ behind
+今|now|コン、キン|いま|今 いま now; 今週 こんしゅう this week; 今度 こんど next time
+毎|every|マイ|ごと|毎日 まいにち every day; 毎朝 まいあさ every morning
+間|interval; between|カン、ケン|あいだ、ま|時間 じかん time; 間 あいだ between; 間に合う まにあう to be in time
+
+## 5 Position
+上|up; above|ジョウ|うえ、あ.がる、あ.げる、のぼ.る|上 うえ above; 上手 じょうず skillful; 上がる あがる to go up
+下|down; below|カ、ゲ|した、さ.がる、さ.げる、くだ.さる、お.りる|下 した below; 地下鉄 ちかてつ subway; 靴下 くつした socks
+中|middle; inside|チュウ|なか|中 なか inside; 中学校 ちゅうがっこう junior high school
+外|outside|ガイ、ゲ|そと、ほか|外 そと outside; 外国 がいこく foreign country
+右|right|ウ、ユウ|みぎ|右 みぎ right
+左|left|サ|ひだり|左 ひだり left
+東|east|トウ|ひがし|東 ひがし east; 東京 とうきょう Tokyo
+西|west|セイ、サイ|にし|西 にし west
+南|south|ナン|みなみ|南 みなみ south
+北|north|ホク|きた|北 きた north
+
+## 5 Describing
+大|big|ダイ、タイ|おお、おお.きい|大きい おおきい big; 大学 だいがく university; 大切 たいせつ important
+小|small|ショウ|ちい.さい、こ、お|小さい ちいさい small; 小学校 しょうがっこう elementary school
+長|long; chief|チョウ|なが.い|長い ながい long; 社長 しゃちょう company president
+高|high; expensive|コウ|たか.い|高い たかい expensive; 高校 こうこう high school
+白|white|ハク|しろ、しろ.い|白い しろい white
+
+## 5 Nature
+山|mountain|サン|やま|山 やま mountain; 富士山 ふじさん Mount Fuji
+川|river|セン|かわ|川 かわ river
+天|heaven; sky|テン|あめ、あま|天気 てんき weather
+気|spirit; air|キ、ケ||天気 てんき weather; 元気 げんき healthy; 病気 びょうき illness
+雨|rain|ウ|あめ、あま|雨 あめ rain
+
+## 5 School
+本|book; origin|ホン|もと|本 ほん book; 日本 にほん Japan
+学|study|ガク|まな.ぶ|学生 がくせい student; 大学 だいがく university
+校|school|コウ||学校 がっこう school; 高校 こうこう high school
+生|life; be born|セイ、ショウ|い.きる、う.まれる、なま|学生 がくせい student; 先生 せんせい teacher; 生まれる うまれる to be born
+先|ahead; previous|セン|さき|先生 せんせい teacher; 先週 せんしゅう last week
+名|name|メイ、ミョウ|な|名前 なまえ name; 有名 ゆうめい famous
+語|language; word|ゴ|かた.る|日本語 にほんご Japanese; 英語 えいご English
+国|country|コク|くに|国 くに country; 外国 がいこく foreign country
+何|what|カ|なに、なん|何 なに what; 何曜日 なんようび what day of the week
+
+## 5 Verbs
+行|go|コウ、ギョウ|い.く、おこな.う|行く いく to go; 銀行 ぎんこう bank; 旅行 りょこう trip
+来|come|ライ|く.る|来る くる to come; 来週 らいしゅう next week
+出|go out|シュツ|で.る、だ.す|出る でる to go out; 出口 でぐち exit; 出す だす to take out
+入|enter|ニュウ|はい.る、い.れる|入る はいる to enter; 入口 いりぐち entrance
+見|see|ケン|み.る、み.せる|見る みる to see; 見せる みせる to show
+聞|hear; ask|ブン、モン|き.く|聞く きく to listen; 新聞 しんぶん newspaper
+読|read|ドク|よ.む|読む よむ to read
+書|write|ショ|か.く|書く かく to write; 辞書 じしょ dictionary; 図書館 としょかん library
+話|talk|ワ|はな.す、はなし|話す はなす to speak; 電話 でんわ telephone; 話 はなし story
+食|eat; food|ショク|た.べる|食べる たべる to eat; 食堂 しょくどう cafeteria
+休|rest|キュウ|やす.む|休む やすむ to rest; 休み やすみ holiday
+電|electricity|デン||電気 でんき electricity; 電車 でんしゃ train
+車|car; vehicle|シャ|くるま|車 くるま car; 自転車 じてんしゃ bicycle
+
+## 4 Family & people
+兄|older brother|ケイ、キョウ|あに|兄 あに (my) older brother; 兄弟 きょうだい siblings
+弟|younger brother|テイ、ダイ|おとうと|弟 おとうと younger brother
+姉|older sister|シ|あね|姉 あね (my) older sister
+妹|younger sister|マイ|いもうと|妹 いもうと younger sister
+親|parent; intimate|シン|おや、した.しい|親 おや parent; 両親 りょうしん parents; 親切 しんせつ kind
+族|family; tribe|ゾク||家族 かぞく family
+家|house|カ、ケ|いえ、や|家 いえ house; 家族 かぞく family
+私|I; private|シ|わたくし、わたし|私 わたし I
+自|oneself|ジ、シ|みずか.ら|自分 じぶん oneself; 自転車 じてんしゃ bicycle
+主|master; main|シュ|ぬし、おも|主人 しゅじん husband
+者|person (who does)|シャ|もの|医者 いしゃ doctor; 学者 がくしゃ scholar
+員|member|イン||会社員 かいしゃいん company employee; 店員 てんいん shop clerk
+
+## 4 Body
+体|body|タイ|からだ|体 からだ body
+手|hand|シュ|て|手 て hand; 上手 じょうず skillful; 切手 きって stamp
+足|foot; be enough|ソク|あし、た.りる|足 あし foot; 足りる たりる to be enough
+目|eye|モク|め|目 め eye
+口|mouth|コウ、ク|くち|口 くち mouth; 入口 いりぐち entrance; 人口 じんこう population
+心|heart; mind|シン|こころ|心 こころ heart; 心配 しんぱい worry
+力|power|リョク、リキ|ちから|力 ちから power
+病|illness|ビョウ|や.む|病気 びょうき illness; 病院 びょういん hospital
+医|medicine|イ||医者 いしゃ doctor; 医学 いがく medicine (field)
+
+## 4 Time & seasons
+朝|morning|チョウ|あさ|朝 あさ morning; 毎朝 まいあさ every morning
+昼|daytime|チュウ|ひる|昼 ひる noon; 昼ご飯 ひるごはん lunch
+夕|evening|セキ|ゆう|夕方 ゆうがた evening; 夕べ ゆうべ last night
+夜|night|ヤ|よる、よ|夜 よる night; 今夜 こんや tonight
+春|spring|シュン|はる|春 はる spring
+夏|summer|カ|なつ|夏 なつ summer; 夏休み なつやすみ summer vacation
+秋|autumn|シュウ|あき|秋 あき autumn
+冬|winter|トウ|ふゆ|冬 ふゆ winter
+週|week|シュウ||今週 こんしゅう this week; 週末 しゅうまつ weekend
+曜|day of the week|ヨウ||日曜日 にちようび Sunday; 何曜日 なんようび what day of the week
+去|leave; past|キョ、コ|さ.る|去年 きょねん last year
+代|era; replace|ダイ、タイ|か.わる、よ|時代 じだい era
+早|early|ソウ|はや.い|早い はやい early
+度|degree; times|ド|たび|今度 こんど next time; 一度 いちど once
+
+## 4 Colors & looks
+赤|red|セキ|あか、あか.い|赤い あかい red; 赤ちゃん あかちゃん baby
+青|blue|セイ|あお、あお.い|青い あおい blue
+黒|black|コク|くろ、くろ.い|黒い くろい black
+色|color|ショク、シキ|いろ|色 いろ color; 茶色 ちゃいろ brown
+同|same|ドウ|おな.じ|同じ おなじ same
+新|new|シン|あたら.しい|新しい あたらしい new; 新聞 しんぶん newspaper
+古|old|コ|ふる.い|古い ふるい old
+明|bright|メイ、ミョウ|あか.るい|明るい あかるい bright; 説明 せつめい explanation
+強|strong|キョウ、ゴウ|つよ.い|強い つよい strong; 勉強 べんきょう study
+重|heavy|ジュウ、チョウ|おも.い、かさ.ねる|重い おもい heavy
+近|near|キン|ちか.い|近い ちかい near; 近所 きんじょ neighborhood
+多|many|タ|おお.い|多い おおい many
+少|few; a little|ショウ|すく.ない、すこ.し|少ない すくない few; 少し すこし a little
+広|wide|コウ|ひろ.い|広い ひろい wide
+悪|bad|アク|わる.い|悪い わるい bad
+正|correct|セイ、ショウ|ただ.しい|正しい ただしい correct; 正月 しょうがつ New Year
+安|cheap; peaceful|アン|やす.い|安い やすい cheap; 安心 あんしん relief
+真|true|シン|ま|写真 しゃしん photo; 真面目 まじめ serious
+有|have; exist|ユウ、ウ|あ.る|有名 ゆうめい famous
+特|special|トク||特別 とくべつ special; 特急 とっきゅう limited express
+別|separate|ベツ|わか.れる|特別 とくべつ special
+不|not; un-|フ、ブ||不便 ふべん inconvenient
+元|origin|ゲン、ガン|もと|元気 げんき healthy
+
+## 4 Places
+町|town|チョウ|まち|町 まち town
+京|capital|キョウ、ケイ||東京 とうきょう Tokyo
+駅|station|エキ||駅 えき station
+館|large building|カン|やかた|図書館 としょかん library; 映画館 えいがかん cinema
+店|shop|テン|みせ|店 みせ shop; 店員 てんいん shop clerk; 喫茶店 きっさてん café
+屋|shop; roof|オク|や|本屋 ほんや bookstore; 部屋 へや room
+室|room|シツ|むろ|教室 きょうしつ classroom; 会議室 かいぎしつ meeting room
+院|institution|イン||病院 びょういん hospital; 入院 にゅういん hospitalization
+堂|hall|ドウ||食堂 しょくどう cafeteria
+場|place|ジョウ|ば|場所 ばしょ place; 会場 かいじょう venue; 工場 こうじょう factory
+地|ground|チ、ジ||地図 ちず map; 地下鉄 ちかてつ subway; 地震 じしん earthquake
+道|road; way|ドウ|みち|道 みち road; 道路 どうろ road; 道具 どうぐ tool
+海|sea|カイ|うみ|海 うみ sea
+世|world; generation|セイ、セ|よ|世界 せかい world; 世話 せわ care
+界|world; boundary|カイ||世界 せかい world
+田|rice field|デン|た|田んぼ たんぼ rice paddy; 田舎 いなか countryside
+野|field|ヤ|の|野菜 やさい vegetable
+空|sky; empty|クウ|そら、あ.く、から|空 そら sky; 空港 くうこう airport; 空気 くうき air
+風|wind|フウ|かぜ|風 かぜ wind; 台風 たいふう typhoon
+公|public|コウ|おおやけ|公園 こうえん park
+台|stand; platform|ダイ、タイ||台所 だいどころ kitchen; 台風 たいふう typhoon
+
+## 4 Actions
+会|meet|カイ、エ|あ.う|会う あう to meet; 会社 かいしゃ company; 会議 かいぎ meeting
+開|open|カイ|ひら.く、あ.く、あ.ける|開ける あける to open; 開く あく to open (by itself)
+立|stand|リツ|た.つ、た.てる|立つ たつ to stand; 立派 りっぱ splendid
+通|pass through|ツウ|とお.る、かよ.う|通る とおる to pass; 通う かよう to commute; 交通 こうつう traffic
+言|say|ゲン、ゴン|い.う、こと|言う いう to say; 言葉 ことば word
+動|move|ドウ|うご.く|動く うごく to move; 動物 どうぶつ animal
+作|make|サク、サ|つく.る|作る つくる to make; 作文 さくぶん essay
+用|use; business|ヨウ|もち.いる|用事 ようじ errand; 用意 ようい preparation
+持|hold|ジ|も.つ|持つ もつ to hold; お金持ち おかねもち rich person
+思|think|シ|おも.う|思う おもう to think; 思い出す おもいだす to recall
+知|know|チ|し.る|知る しる to know
+考|consider|コウ|かんが.える|考える かんがえる to think about
+集|gather|シュウ|あつ.まる、あつ.める|集める あつめる to collect; 集まる あつまる to gather
+使|use|シ|つか.う|使う つかう to use; 大使館 たいしかん embassy
+始|begin|シ|はじ.める、はじ.まる|始める はじめる to begin; 始まる はじまる to begin
+終|end|シュウ|お.わる|終わる おわる to end
+運|carry; luck|ウン|はこ.ぶ|運ぶ はこぶ to carry; 運転 うんてん driving
+転|turn; roll|テン|ころ.ぶ|自転車 じてんしゃ bicycle; 運転 うんてん driving
+住|live|ジュウ|す.む|住む すむ to live
+建|build|ケン、コン|た.てる|建てる たてる to build; 建物 たてもの building
+止|stop|シ|と.まる、と.める|止まる とまる to stop
+送|send|ソウ|おく.る|送る おくる to send
+切|cut|セツ、サイ|き.る|切る きる to cut; 切手 きって stamp; 大切 たいせつ important
+起|get up|キ|お.きる、お.こす|起きる おきる to get up; 起こす おこす to wake someone
+着|wear; arrive|チャク|き.る、つ.く|着る きる to wear; 着物 きもの kimono
+待|wait|タイ|ま.つ|待つ まつ to wait
+帰|return|キ|かえ.る|帰る かえる to go home
+買|buy|バイ|か.う|買う かう to buy; 買い物 かいもの shopping
+売|sell|バイ|う.る|売る うる to sell; 売り場 うりば sales floor
+歩|walk|ホ|ある.く|歩く あるく to walk; 散歩 さんぽ walk
+走|run|ソウ|はし.る|走る はしる to run
+急|hurry; sudden|キュウ|いそ.ぐ|急ぐ いそぐ to hurry; 急行 きゅうこう express
+借|borrow|シャク|か.りる|借りる かりる to borrow
+貸|lend|タイ|か.す|貸す かす to lend
+飲|drink|イン|の.む|飲む のむ to drink; 飲み物 のみもの drink
+歌|song; sing|カ|うた、うた.う|歌 うた song; 歌う うたう to sing
+写|copy|シャ|うつ.す|写真 しゃしん photo; 写す うつす to copy
+答|answer|トウ|こた.える|答える こたえる to answer; 答え こたえ answer
+発|depart; emit|ハツ、ホツ||出発 しゅっぱつ departure
+死|death|シ|し.ぬ|死ぬ しぬ to die
+教|teach|キョウ|おし.える|教える おしえる to teach; 教室 きょうしつ classroom
+習|learn|シュウ|なら.う|習う ならう to learn; 練習 れんしゅう practice
+
+## 4 School & work
+仕|serve|シ|つか.える|仕事 しごと work
+事|thing; matter|ジ|こと|仕事 しごと work; 事 こと thing; 火事 かじ fire
+社|company; shrine|シャ|やしろ|会社 かいしゃ company; 神社 じんじゃ shrine
+業|business|ギョウ、ゴウ|わざ|授業 じゅぎょう class; 卒業 そつぎょう graduation
+勉|exertion|ベン|つと.める|勉強 べんきょう study
+問|question|モン|と.う|問題 もんだい problem; 質問 しつもん question
+題|topic; title|ダイ||問題 もんだい problem; 宿題 しゅくだい homework
+質|quality|シツ||質問 しつもん question
+意|mind; meaning|イ||意味 いみ meaning; 意見 いけん opinion
+味|taste|ミ|あじ|味 あじ taste; 意味 いみ meaning
+文|writing|ブン、モン|ふみ|文化 ぶんか culture; 作文 さくぶん essay
+字|character|ジ||漢字 かんじ kanji; 字 じ handwriting
+漢|China|カン||漢字 かんじ kanji
+英|England; excellent|エイ||英語 えいご English
+試|try; test|シ|こころ.みる、ため.す|試験 しけん exam; 試合 しあい match
+験|test|ケン||試験 しけん exam; 経験 けいけん experience
+研|polish; study|ケン|と.ぐ|研究 けんきゅう research
+究|research|キュウ|きわ.める|研究 けんきゅう research
+図|drawing; map|ズ、ト|はか.る|地図 ちず map; 図書館 としょかん library
+画|picture; plan|ガ、カク||映画 えいが movie; 計画 けいかく plan
+映|reflect; project|エイ|うつ.る|映画 えいが movie
+計|measure|ケイ|はか.る|時計 とけい clock; 計画 けいかく plan
+理|reason; logic|リ||料理 りょうり cooking; 理由 りゆう reason
+料|fee; materials|リョウ||料理 りょうり cooking; 給料 きゅうりょう salary
+工|craft|コウ、ク||工場 こうじょう factory
+以|compared to|イ||以上 いじょう more than; 以外 いがい except
+方|direction; person|ホウ|かた|方 かた person; 方法 ほうほう method; 夕方 ゆうがた evening
+品|goods|ヒン|しな|品物 しなもの goods; 食料品 しょくりょうひん groceries
+物|thing|ブツ、モツ|もの|物 もの thing; 動物 どうぶつ animal; 荷物 にもつ luggage
+注|pour; attention|チュウ|そそ.ぐ|注意 ちゅうい caution; 注射 ちゅうしゃ injection
+楽|fun; music|ガク、ラク|たの.しい|楽しい たのしい fun; 音楽 おんがく music
+音|sound|オン|おと、ね|音 おと sound; 音楽 おんがく music
+紙|paper|シ|かみ|紙 かみ paper; 手紙 てがみ letter
+
+## 4 Food & things
+飯|meal; rice|ハン|めし|ご飯 ごはん cooked rice; 朝ご飯 あさごはん breakfast
+茶|tea|チャ、サ||お茶 おちゃ tea; 茶色 ちゃいろ brown
+肉|meat|ニク||肉 にく meat; 牛肉 ぎゅうにく beef
+牛|cow|ギュウ|うし|牛乳 ぎゅうにゅう milk; 牛肉 ぎゅうにく beef
+魚|fish|ギョ|さかな、うお|魚 さかな fish
+鳥|bird|チョウ|とり|鳥 とり bird; 小鳥 ことり small bird
+犬|dog|ケン|いぬ|犬 いぬ dog
+花|flower|カ|はな|花 はな flower; 花見 はなみ cherry-blossom viewing
+洋|ocean; Western|ヨウ||洋服 ようふく Western clothes
+服|clothes|フク||服 ふく clothes
+旅|trip|リョ|たび|旅行 りょこう trip
+銀|silver|ギン||銀行 ぎんこう bank

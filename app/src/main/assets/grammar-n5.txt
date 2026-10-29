@@ -1,0 +1,760 @@
+# Kotoba grammar, JLPT N5.
+# "= id" starts a grammar point. Fields: title, meaning, form, note (one paragraph per line),
+# ex: japanese|reading|english, q: sentence with ＿＿|english|correct answer|wrong|wrong|wrong
+## 5
+
+= wa-desu
+title: A は B です
+meaning: A is B (polite)
+form: Noun は Noun です
+note: は marks the topic, the thing the sentence is about. It is written は but pronounced "wa".
+note: です makes the sentence polite. Japanese has no words for "a" or "the", and the topic is often left out when it is clear.
+ex: 私は学生です。|わたしはがくせいです。|I am a student.
+ex: これは本です。|これはほんです。|This is a book.
+ex: 田中さんは先生です。|たなかさんはせんせいです。|Mr. Tanaka is a teacher.
+q: 私は会社員＿＿。|I am a company employee.|です|ます|か|の
+q: 今日＿＿月曜日です。|Today is Monday.|は|を|へ|で
+
+= ja-arimasen
+title: じゃありません
+meaning: A is not B
+form: Noun じゃありません / ではありません
+note: The negative of です. じゃありません is common in speech; ではありません is a bit more formal and used in writing.
+note: じゃないです is another polite-casual form you will hear a lot.
+ex: 私は先生じゃありません。|わたしはせんせいじゃありません。|I am not a teacher.
+ex: これは私のかばんではありません。|これはわたしのかばんではありません。|This is not my bag.
+ex: 明日は休みじゃありません。|あしたはやすみじゃありません。|Tomorrow is not a day off.
+q: 私は学生＿＿。|I am not a student.|じゃありません|じゃです|ありません|ません
+q: あれは駅＿＿ありません。|That is not the station.|では|でも|には|から
+
+= ka
+title: ～か (questions)
+meaning: question marker
+form: Sentence + か
+note: Put か at the end of a polite sentence to make it a question. The word order does not change.
+note: Written Japanese usually ends a question with 。, not ?. In casual speech a rising tone alone can make a question.
+ex: 学生ですか。|がくせいですか。|Are you a student?
+ex: これは何ですか。|これはなんですか。|What is this?
+ex: トイレはどこですか。|トイレはどこですか。|Where is the toilet?
+q: あなたは日本人です＿＿。|Are you Japanese?|か|を|は|に
+q: それは何です＿＿。|What is that?|か|を|に|へ
+
+= no
+title: A の B
+meaning: B of A; A's B
+form: Noun の Noun
+note: の links two nouns. The first noun describes the second: who owns it, where it is from, or what kind it is.
+note: You can chain it: 私の友達の車 is "my friend's car". If the second noun is clear, it can be dropped: これは私のです (This is mine).
+ex: これは私の本です。|これはわたしのほんです。|This is my book.
+ex: 日本語の先生です。|にほんごのせんせいです。|She is a Japanese teacher.
+ex: 東京の大学に行きます。|とうきょうのだいがくにいきます。|I go to a university in Tokyo.
+q: これは田中さん＿＿傘です。|This is Mr. Tanaka's umbrella.|の|は|が|を
+q: 日本＿＿車は高いです。|Japanese cars are expensive.|の|に|で|と
+
+= mo
+title: ～も
+meaning: also; too
+form: Noun も (in place of は, が or を)
+note: も replaces は, が or を. With other particles it goes after them: にも, でも, へも.
+note: AもBも means "both A and B", or "neither A nor B" with a negative verb.
+ex: 私も学生です。|わたしもがくせいです。|I am a student too.
+ex: 肉も魚も好きです。|にくもさかなもすきです。|I like both meat and fish.
+ex: 日曜日も働きます。|にちようびもはたらきます。|I work on Sundays too.
+q: 田中さんは先生です。山田さん＿＿先生です。|Mr. Tanaka is a teacher. Mr. Yamada is a teacher too.|も|の|と|を
+q: コーヒー＿＿紅茶も飲みます。|I drink both coffee and tea.|も|に|で|を
+
+= kore-sore-are
+title: これ・それ・あれ・どれ
+meaning: this one, that one, that one over there, which one
+form: これ / それ / あれ / どれ + particle
+note: これ is near me, それ is near you, あれ is far from both of us, and どれ asks "which one" out of three or more.
+note: They stand alone like nouns. Before a noun, use この, その, あの, どの instead.
+ex: これは何ですか。|これはなんですか。|What is this?
+ex: それは私の傘です。|それはわたしのかさです。|That is my umbrella.
+ex: あなたのかばんはどれですか。|あなたのかばんはどれですか。|Which one is your bag?
+q: ＿＿は私の車です。|That one over there is my car.|あれ|あの|あそこ|どれ
+q: すみません、＿＿は何ですか。|Excuse me, what is that (near you)?|それ|その|そこ|どれ
+
+= kono-sono-ano
+title: この・その・あの・どの + noun
+meaning: this ..., that ..., that ... over there, which ...
+form: この / その / あの / どの + Noun
+note: These always come before a noun. この本 is "this book"; これ alone is "this one".
+note: Places work the same way: ここ (here), そこ (there), あそこ (over there), どこ (where).
+ex: この本は面白いです。|このほんはおもしろいです。|This book is interesting.
+ex: あの人は誰ですか。|あのひとはだれですか。|Who is that person?
+ex: どの電車に乗りますか。|どのでんしゃにのりますか。|Which train do you take?
+q: ＿＿かばんはいくらですか。|How much is this bag?|この|これ|ここ|こっち
+q: ＿＿人が田中さんですか。|Which person is Mr. Tanaka?|どの|どれ|どこ|どう
+
+= arimasu-imasu
+title: あります・います
+meaning: there is; to have
+form: Place に Noun が あります (things) / います (people, animals)
+note: Use あります for things and plants, and います for people and animals. Both mean "there is" or "to be (somewhere)".
+note: 私は車があります means "I have a car". The negatives are ありません and いません.
+ex: 机の上に本があります。|つくえのうえにほんがあります。|There is a book on the desk.
+ex: 公園に子供がいます。|こうえんにこどもがいます。|There are children in the park.
+ex: 兄が二人います。|あにがふたりいます。|I have two older brothers.
+q: 部屋に猫が＿＿。|There is a cat in the room.|います|あります|です|します
+q: 駅の前に銀行が＿＿。|There is a bank in front of the station.|あります|います|です|なります
+
+= ni-location
+title: ～に (location)
+meaning: in; at; on (where something is)
+form: Place に あります / います / 住んでいます
+note: With verbs of being like ある, いる and 住む, に marks where something is.
+note: For the place where an action happens, use で instead: 図書館で勉強します.
+ex: 父は東京にいます。|ちちはとうきょうにいます。|My father is in Tokyo.
+ex: かばんの中に財布があります。|かばんのなかにさいふがあります。|There is a wallet in the bag.
+ex: 大阪に住んでいます。|おおさかにすんでいます。|I live in Osaka.
+q: 私は京都＿＿住んでいます。|I live in Kyoto.|に|で|を|が
+q: 冷蔵庫＿＿牛乳があります。|There is milk in the fridge.|に|で|を|と
+
+= masu
+title: ～ます
+meaning: polite verb (present and future)
+form: Verb stem + ます
+note: ます makes a verb polite. The same form means "I do" (habit) and "I will do" (future).
+note: Ichidan verbs drop る: 食べる → 食べます. Godan verbs change the last sound to the i-row: 飲む → 飲みます, 書く → 書きます. Irregular: する → します, 来る → 来ます.
+ex: 毎日コーヒーを飲みます。|まいにちコーヒーをのみます。|I drink coffee every day.
+ex: 明日東京へ行きます。|あしたとうきょうへいきます。|I will go to Tokyo tomorrow.
+ex: 七時に起きます。|しちじにおきます。|I get up at seven.
+q: 毎朝パンを食べ＿＿。|I eat bread every morning.|ます|ません|ました|ましょう
+q: 明日手紙を＿＿。(書く)|I will write a letter tomorrow.|書きます|書くます|書けます|書ます
+
+= masen
+title: ～ません
+meaning: do not; will not (polite)
+form: Verb stem + ません
+note: Replace ます with ません to make the negative. It covers both "I don't" and "I won't".
+note: あまり (not very) and 全然 (not at all) go with negative verbs.
+ex: お酒を飲みません。|おさけをのみません。|I don't drink alcohol.
+ex: 明日は学校へ行きません。|あしたはがっこうへいきません。|I'm not going to school tomorrow.
+ex: テレビはあまり見ません。|テレビはあまりみません。|I don't watch TV much.
+q: 肉は食べ＿＿。|I don't eat meat.|ません|ます|ました|ましょう
+q: 全然分かり＿＿。|I don't understand at all.|ません|ます|ました|たい
+
+= mashita
+title: ～ました・～ませんでした
+meaning: did; did not (polite past)
+form: Verb stem + ました / ませんでした
+note: ました is the polite past. ませんでした is the polite past negative.
+note: Time words like 昨日, 先週 and 去年 often come with these forms.
+ex: 昨日映画を見ました。|きのうえいがをみました。|I watched a movie yesterday.
+ex: 朝ご飯を食べませんでした。|あさごはんをたべませんでした。|I didn't eat breakfast.
+ex: 先週大阪へ行きました。|せんしゅうおおさかへいきました。|I went to Osaka last week.
+q: 昨日友達に会い＿＿。|I met a friend yesterday.|ました|ます|ません|ましょう
+q: 先週は勉強し＿＿。|I didn't study last week.|ませんでした|ました|ません|ないでした
+
+= wo
+title: ～を
+meaning: marks the direct object
+form: Noun を Verb
+note: を marks the thing an action is done to: what you eat, read, buy and so on. It is pronounced "o".
+note: It also marks places you move through: 道を渡る (cross the road), 公園を散歩する (walk through the park).
+ex: 水を飲みます。|みずをのみます。|I drink water.
+ex: 新聞を読みました。|しんぶんをよみました。|I read the newspaper.
+ex: 橋を渡ります。|はしをわたります。|I cross the bridge.
+q: 毎晩日本語＿＿勉強します。|I study Japanese every night.|を|に|へ|が
+q: 本屋で雑誌＿＿買いました。|I bought a magazine at the bookstore.|を|で|に|へ
+
+= de-place
+title: ～で (place)
+meaning: at; in (where an action happens)
+form: Place で Verb
+note: で marks the place where an action takes place: eating, studying, working, buying.
+note: Compare 図書館にいます (I am in the library) with 図書館で勉強します (I study in the library).
+ex: 図書館で勉強します。|としょかんでべんきょうします。|I study at the library.
+ex: 駅で友達を待ちます。|えきでともだちをまちます。|I wait for a friend at the station.
+ex: レストランで晩ご飯を食べました。|レストランでばんごはんをたべました。|I had dinner at a restaurant.
+q: 公園＿＿遊びました。|I played in the park.|で|に|を|へ
+q: 銀行＿＿働いています。|I work at a bank.|で|に|を|が
+
+= de-means
+title: ～で (means)
+meaning: by; with; in (how you do something)
+form: Noun で Verb
+note: で also shows the tool, method or language you use: by bus, with chopsticks, in Japanese.
+note: Going on foot is different: 歩いて行きます (I walk there).
+ex: バスで学校へ行きます。|バスでがっこうへいきます。|I go to school by bus.
+ex: 箸でご飯を食べます。|はしでごはんをたべます。|I eat rice with chopsticks.
+ex: 日本語で話しましょう。|にほんごではなしましょう。|Let's talk in Japanese.
+q: ペン＿＿名前を書きます。|I write my name with a pen.|で|を|に|と
+q: 電車＿＿会社へ行きます。|I go to work by train.|で|に|を|が
+
+= ni-time
+title: ～に (time)
+meaning: at; on; in (a point in time)
+form: Time に Verb
+note: Use に with clock times, dates, days of the week, months and years: 七時に, 月曜日に, 五月に.
+note: Words relative to now take no に: 今日, 明日, 毎日, 来週, 今.
+ex: 六時に起きます。|ろくじにおきます。|I get up at six.
+ex: 日曜日に買い物をします。|にちようびにかいものをします。|I go shopping on Sunday.
+ex: 明日友達に会います。|あしたともだちにあいます。|I'll meet a friend tomorrow.
+q: 九時＿＿授業が始まります。|Class starts at nine.|に|で|を|と
+q: 八月＿＿日本へ行きます。|I'll go to Japan in August.|に|で|を|が
+
+= e-direction
+title: ～へ・～に (direction)
+meaning: to; toward
+form: Place へ / に + 行く・来る・帰る
+note: With 行く, 来る and 帰る, both へ and に mark where you go. へ is written へ but pronounced "e".
+note: へ stresses the direction, に the arrival point. In daily speech they are mostly interchangeable.
+ex: 日本へ行きます。|にほんへいきます。|I'm going to Japan.
+ex: 何時に家に帰りますか。|なんじにいえにかえりますか。|What time are you going home?
+ex: 友達が私の家へ来ました。|ともだちがわたしのいえへきました。|A friend came to my house.
+q: 来週、京都＿＿行きます。|I'm going to Kyoto next week.|へ|を|で|が
+q: 毎日七時に家＿＿帰ります。|I go home at seven every day.|に|を|で|と
+
+= to
+title: ～と
+meaning: and (complete list); with (someone)
+form: Noun と Noun / Person と + Verb
+note: AとB lists all the items: "A and B", and nothing else.
+note: Person + と means "together with": 友達と映画を見ます. 一緒に is often added.
+ex: パンと卵を買いました。|パンとたまごをかいました。|I bought bread and eggs.
+ex: 友達と映画を見ました。|ともだちとえいがをみました。|I watched a movie with a friend.
+ex: 父と母は東京にいます。|ちちとはははとうきょうにいます。|My father and mother are in Tokyo.
+q: 兄＿＿一緒にテニスをしました。|I played tennis with my older brother.|と|や|を|の
+q: 肉＿＿野菜を買いました。|I bought meat and vegetables (only those two).|と|も|を|で
+
+= ya
+title: ～や
+meaning: and (among other things)
+form: Noun や Noun (など)
+note: AやB gives examples from a longer list: "A, B and so on". など at the end makes this extra clear.
+note: Use と when the list is complete and や when there are more things you are not naming.
+ex: 机の上に本やペンがあります。|つくえのうえにほんやペンがあります。|There are books, pens and other things on the desk.
+ex: 京都や奈良へ行きました。|きょうとやならへいきました。|I went to Kyoto, Nara and other places.
+ex: りんごやバナナなどを買いました。|りんごやバナナなどをかいました。|I bought apples, bananas and so on.
+q: かばんの中に財布＿＿かぎなどがあります。|There's a wallet, keys and so on in the bag.|や|を|へ|で
+q: 休みの日は掃除＿＿洗濯をします。|On days off I do things like cleaning and laundry.|や|を|へ|が
+
+= kara-made
+title: ～から・～まで
+meaning: from ... / until; as far as ...
+form: Time or place から ... まで
+note: から marks the starting point and まで the end point, in time or in space.
+note: Each can be used alone: 九時から (from nine), 駅まで (as far as the station).
+ex: 授業は九時から三時までです。|じゅぎょうはくじからさんじまでです。|Classes are from nine to three.
+ex: 家から駅まで歩きます。|いえからえきまであるきます。|I walk from home to the station.
+ex: 月曜日から金曜日まで働きます。|げつようびからきんようびまではたらきます。|I work from Monday to Friday.
+q: 東京＿＿大阪まで新幹線で行きます。|I go from Tokyo to Osaka by Shinkansen.|から|まで|に|を
+q: 銀行は三時＿＿です。|The bank is open until three.|まで|から|に|で
+
+= ga
+title: ～が (subject)
+meaning: marks the subject
+form: Noun が Verb / Adjective
+note: が marks the subject, especially when it is new information or the focus. Question words take が: 誰が来ましたか.
+note: Some words take が for what they are about: 好き, 嫌い, 上手, 分かる, ある, いる, ほしい.
+ex: 誰が来ましたか。|だれがきましたか。|Who came?
+ex: 私は犬が好きです。|わたしはいぬがすきです。|I like dogs.
+ex: 日本語が少し分かります。|にほんごがすこしわかります。|I understand a little Japanese.
+q: 母は料理＿＿上手です。|My mother is good at cooking.|が|を|に|で
+q: 何＿＿一番好きですか。|What do you like best?|が|を|は|で
+
+= i-adj
+title: い-adjectives
+meaning: describing words that end in い
+form: Adj-い (+ Noun) / Adj-くない
+note: い-adjectives end in い. They go straight before a noun (高い山, a high mountain) or at the end of a sentence with です.
+note: For the negative, change い to くない: 高い → 高くない(です). The irregular one is いい: its negative is よくない.
+ex: この本は面白いです。|このほんはおもしろいです。|This book is interesting.
+ex: 今日は寒くないです。|きょうはさむくないです。|It's not cold today.
+ex: 新しい車を買いました。|あたらしいくるまをかいました。|I bought a new car.
+q: この部屋は広＿＿です。|This room is not spacious.|くない|いない|じゃない|くありない
+q: 天気が＿＿ないです。(いい)|The weather is not good.|よく|いく|いい|よい
+
+= i-adj-past
+title: い-adjectives: past
+meaning: was ...; was not ...
+form: Adj-かった / Adj-くなかった
+note: For the past, change い to かった: 楽しい → 楽しかった(です). The past negative is くなかった.
+note: 楽しいでした is a common mistake. いい becomes よかった.
+ex: 旅行は楽しかったです。|りょこうはたのしかったです。|The trip was fun.
+ex: 昨日は暑くなかったです。|きのうはあつくなかったです。|It wasn't hot yesterday.
+ex: テストはよかったです。|テストはよかったです。|The test went well.
+q: 昨日の映画は面白＿＿です。|Yesterday's movie was interesting.|かった|いでした|かったでした|くない
+q: 先週は忙しく＿＿です。|I wasn't busy last week.|なかった|ない|かった|でした
+
+= na-adj
+title: な-adjectives
+meaning: describing words that take な
+form: Adj な + Noun / Adj です / Adj じゃありません
+note: な-adjectives take な before a noun: 静かな町 (a quiet town). At the end of a sentence they act like nouns: 静かです, 静かじゃありません, 静かでした.
+note: きれい and 嫌い end in い but are な-adjectives.
+ex: ここは静かな町です。|ここはしずかなまちです。|This is a quiet town.
+ex: この部屋はきれいじゃありません。|このへやはきれいじゃありません。|This room is not clean.
+ex: 昨日は暇でした。|きのうはひまでした。|I was free yesterday.
+q: 有名＿＿レストランで食べました。|We ate at a famous restaurant.|な|の|い|に
+q: 私の町は便利＿＿ありません。|My town is not convenient.|じゃ|く|な|の
+
+= mashou
+title: ～ましょう
+meaning: let's ...
+form: Verb stem + ましょう
+note: ましょう suggests doing something together when you expect the other person to agree.
+note: 一緒に (together) often comes with it.
+ex: 一緒に帰りましょう。|いっしょにかえりましょう。|Let's go home together.
+ex: ちょっと休みましょう。|ちょっとやすみましょう。|Let's take a short break.
+ex: 駅で会いましょう。|えきであいましょう。|Let's meet at the station.
+q: もう遅いです。帰り＿＿。|It's late. Let's go home.|ましょう|ました|ません|たい
+q: 一緒に昼ご飯を食べ＿＿。|Let's have lunch together.|ましょう|ましたか|ません|ませんでした
+
+= masenka
+title: ～ませんか
+meaning: won't you ...? would you like to ...?
+form: Verb stem + ませんか
+note: ませんか is a polite invitation. It sounds softer than ましょう because it leaves the choice to the other person.
+note: A typical answer is いいですね、～ましょう (Sounds good, let's ...).
+ex: 一緒に映画を見ませんか。|いっしょにえいがをみませんか。|Would you like to watch a movie together?
+ex: お茶を飲みませんか。|おちゃをのみませんか。|Won't you have some tea?
+ex: 土曜日にテニスをしませんか。|どようびにテニスをしませんか。|How about playing tennis on Saturday?
+q: 今晩、一緒に食べ＿＿。|Would you like to eat together tonight?|ませんか|ますか|ませんでした|たいです
+q: 日曜日に海へ行き＿＿。|Won't you come to the beach with me on Sunday?|ませんか|ましたか|ません|ないか
+
+= tai
+title: ～たい
+meaning: want to ...
+form: Verb stem + たい(です)
+note: たい says what the speaker wants to do. It changes like an い-adjective: 行きたくない (don't want to go), 行きたかった (wanted to go).
+note: The object can take が or を: 水が飲みたい / 水を飲みたい. Don't use たい for other people's wishes.
+ex: 日本へ行きたいです。|にほんへいきたいです。|I want to go to Japan.
+ex: 今日は何も食べたくないです。|きょうはなにもたべたくないです。|I don't want to eat anything today.
+ex: 新しい靴が買いたいです。|あたらしいくつがかいたいです。|I want to buy new shoes.
+q: 冷たい水が飲み＿＿です。|I want to drink cold water.|たい|ほしい|ます|たく
+q: 疲れました。今日は働き＿＿ないです。|I'm tired. I don't want to work today.|たく|たい|たかった|ます
+
+= hoshii
+title: ～がほしい
+meaning: I want (something)
+form: Noun が ほしい(です)
+note: ほしい is an い-adjective meaning "wanted". The thing you want takes が.
+note: For actions use たい instead: 車がほしい (I want a car), 車を買いたい (I want to buy a car).
+ex: 新しいパソコンがほしいです。|あたらしいパソコンがほしいです。|I want a new computer.
+ex: 何がほしいですか。|なにがほしいですか。|What would you like?
+ex: 今は何もほしくないです。|いまはなにもほしくないです。|I don't want anything right now.
+q: 私は大きい車＿＿ほしいです。|I want a big car.|が|を|に|で
+q: 誕生日に何が＿＿ですか。|What do you want for your birthday?|ほしい|たい|あげる|します
+
+= ni-iku
+title: ～に行く
+meaning: go (somewhere) to do ...
+form: Verb stem / する-noun + に + 行く・来る・帰る
+note: The verb stem (the ます form without ます) + に gives the purpose of going or coming.
+note: With する-nouns you can drop する: 買い物に行く, 勉強に来る.
+ex: 図書館へ本を借りに行きます。|としょかんへほんをかりにいきます。|I'm going to the library to borrow a book.
+ex: 友達が遊びに来ました。|ともだちがあそびにきました。|A friend came over to hang out.
+ex: デパートへ買い物に行きました。|デパートへかいものにいきました。|I went shopping at the department store.
+q: 公園へ写真を撮り＿＿行きます。|I'm going to the park to take photos.|に|を|で|へ
+q: 昼ご飯を＿＿に帰ります。(食べる)|I go home to eat lunch.|食べ|食べる|食べて|食べた
+
+= te-form
+title: て-form
+meaning: the joining form of verbs
+form: る → て (ichidan) / う・つ・る → って, む・ぶ・ぬ → んで, く → いて, ぐ → いで, す → して (godan)
+note: The て-form joins sentences and builds many patterns: ～てください, ～ています, ～てもいい and more.
+note: Ichidan: 食べる → 食べて. Godan verbs change by their last sound: 買う → 買って, 飲む → 飲んで, 書く → 書いて, 泳ぐ → 泳いで, 話す → 話して. Irregular: する → して, 来る → 来て, and 行く → 行って.
+ex: 窓を開けて、空気を入れます。|まどをあけて、くうきをいれます。|I open the window and let some air in.
+ex: 手紙を書いて、出しました。|てがみをかいて、だしました。|I wrote a letter and sent it.
+ex: 駅まで歩いて行きます。|えきまであるいていきます。|I walk to the station.
+q: 薬を＿＿、寝ました。(飲む)|I took the medicine and went to sleep.|飲んで|飲みて|飲って|飲いて
+q: 友達と＿＿、楽しかったです。(話す)|I talked with a friend, and it was fun.|話して|話って|話いて|話んで
+
+= te-kudasai
+title: ～てください
+meaning: please do ...
+form: Verb て-form + ください
+note: A polite request. It's fine with friends, shop staff and strangers; with a boss you would use a softer form like ～ていただけませんか.
+note: After a noun, ください means "please give me": 水をください.
+ex: ここに名前を書いてください。|ここになまえをかいてください。|Please write your name here.
+ex: ちょっと待ってください。|ちょっとまってください。|Please wait a moment.
+ex: もう一度言ってください。|もういちどいってください。|Please say it again.
+q: ゆっくり話し＿＿ください。|Please speak slowly.|て|た|ます|に
+q: ドアを＿＿ください。(閉める)|Please close the door.|閉めて|閉めって|閉めんで|閉まて
+
+= te-imasu
+title: ～ています
+meaning: be doing; be in a state
+form: Verb て-form + います
+note: With action verbs it means something is going on now: 雨が降っています (It's raining).
+note: It also describes habits and lasting states: 東京に住んでいます (I live in Tokyo), 結婚しています (I'm married), 知っています (I know).
+ex: 今、ご飯を食べています。|いま、ごはんをたべています。|I'm eating right now.
+ex: 姉は銀行で働いています。|あねはぎんこうではたらいています。|My older sister works at a bank.
+ex: 田中さんを知っていますか。|たなかさんをしっていますか。|Do you know Mr. Tanaka?
+q: 外は雨が降って＿＿。|It's raining outside.|います|あります|ます|です
+q: 兄は結婚＿＿います。|My older brother is married.|して|した|する|しに
+
+= te-mo-ii
+title: ～てもいいです
+meaning: may; it's all right to ...
+form: Verb て-form + も いいです
+note: This gives or asks for permission. ～てもいいですか means "May I ...?".
+note: A polite yes is はい、どうぞ. A soft no is すみません、ちょっと…
+ex: ここに座ってもいいですか。|ここにすわってもいいですか。|May I sit here?
+ex: 写真を撮ってもいいです。|しゃしんをとってもいいです。|You may take photos.
+ex: もう帰ってもいいですよ。|もうかえってもいいですよ。|You can go home now.
+q: 窓を開けて＿＿いいですか。|May I open the window?|も|は|が|に
+q: この傘を＿＿もいいですか。(借りる)|May I borrow this umbrella?|借りて|借りって|借りた|借りり
+
+= te-wa-ikemasen
+title: ～てはいけません
+meaning: must not ...
+form: Verb て-form + は いけません
+note: A strong "you must not", used for rules. In speech it often becomes ～ちゃいけない.
+note: It is the opposite of ～てもいいです.
+ex: ここで写真を撮ってはいけません。|ここでしゃしんをとってはいけません。|You must not take photos here.
+ex: 授業中に話してはいけません。|じゅぎょうちゅうにはなしてはいけません。|You must not talk during class.
+ex: お酒を飲んで運転してはいけません。|おさけをのんでうんてんしてはいけません。|You must not drink and drive.
+q: ここでたばこを吸っては＿＿。|You must not smoke here.|いけません|いいです|ください|います
+q: 教室で食べ＿＿はいけません。|You must not eat in the classroom.|て|た|に|ないで
+
+= te-and
+title: ～て、～ (and then)
+meaning: and; and then
+form: Verb て-form, ... / Adj-くて / Noun・な-adj で
+note: The て-form lists actions in order. Only the last verb shows the tense and politeness.
+note: Adjectives join the same way: い-adjectives use くて (安くておいしい, cheap and tasty), な-adjectives and nouns use で (静かできれい).
+ex: 朝起きて、シャワーを浴びます。|あさおきて、シャワーをあびます。|In the morning I get up and take a shower.
+ex: この店は安くておいしいです。|このみせはやすくておいしいです。|This place is cheap and good.
+ex: 部屋は静かできれいです。|へやはしずかできれいです。|The room is quiet and clean.
+q: この部屋は広＿＿明るいです。|This room is spacious and bright.|くて|いで|くで|いて
+q: 彼女はきれい＿＿親切です。|She is pretty and kind.|で|くて|な|に
+
+= te-kara
+title: ～てから
+meaning: after doing ...
+form: Verb て-form + から
+note: ～てから makes the order clear: first A, then B.
+note: Don't mix it up with から meaning "because", which comes after the plain or polite form.
+ex: 宿題をしてから、テレビを見ます。|しゅくだいをしてから、テレビをみます。|I'll watch TV after I do my homework.
+ex: 手を洗ってから、食べてください。|てをあらってから、たべてください。|Please wash your hands before you eat.
+ex: 日本へ来てから、日本語を勉強しています。|にほんへきてから、にほんごをべんきょうしています。|I've been studying Japanese since I came to Japan.
+q: 晩ご飯を食べて＿＿、お風呂に入ります。|I take a bath after eating dinner.|から|まで|ので|に
+q: 電話を＿＿から、行きます。(かける)|I'll go after making a phone call.|かけて|かける|かけた|かけ
+
+= nai-form
+title: ない-form
+meaning: plain negative of verbs
+form: る → ない (ichidan) / u-sound → a-sound + ない (godan) / する → しない, 来る → 来ない
+note: The ない-form is the casual negative: 食べない (don't eat). It is also the base of many patterns.
+note: Godan verbs: 書く → 書かない, 飲む → 飲まない, 話す → 話さない. Verbs ending in う use わ: 買う → 買わない. The odd one is ある → ない.
+ex: 私は肉を食べない。|わたしはにくをたべない。|I don't eat meat.
+ex: 今日は学校へ行かない。|きょうはがっこうへいかない。|I'm not going to school today.
+ex: お金がない。|おかねがない。|I have no money.
+q: 朝はコーヒーを＿＿ない。(飲む)|I don't drink coffee in the morning.|飲ま|飲み|飲む|飲め
+q: 明日は友達に＿＿ない。(会う)|I'm not meeting my friend tomorrow.|会わ|会あ|会い|会え
+
+= naide-kudasai
+title: ～ないでください
+meaning: please don't ...
+form: Verb ない-form + で ください
+note: A polite request not to do something.
+note: Among friends ください is often dropped: 忘れないで (Don't forget).
+ex: ここに車を止めないでください。|ここにくるまをとめないでください。|Please don't park your car here.
+ex: 心配しないでください。|しんぱいしないでください。|Please don't worry.
+ex: 宿題を忘れないでください。|しゅくだいをわすれないでください。|Please don't forget your homework.
+q: 写真を撮ら＿＿ください。|Please don't take photos.|ないで|なくて|ないて|なくで
+q: 部屋で＿＿でください。(騒ぐ)|Please don't make noise in the room.|騒がない|騒ぐない|騒がなく|騒ぎない
+
+= nakereba
+title: ～なければなりません
+meaning: must; have to
+form: Verb ない-form without い + ければ なりません
+note: You have to do something. In speech it shortens to ～なきゃ or ～なくちゃ.
+note: ～なければいけません means the same.
+ex: 明日は早く起きなければなりません。|あしたははやくおきなければなりません。|I have to get up early tomorrow.
+ex: 薬を飲まなければなりません。|くすりをのまなければなりません。|I have to take my medicine.
+ex: もう帰らなければいけません。|もうかえらなければいけません。|I have to go home now.
+q: 宿題をし＿＿なりません。|I have to do my homework.|なければ|なくても|ないで|なくて
+q: 毎日漢字を＿＿なければなりません。(覚える)|I have to memorize kanji every day.|覚え|覚える|覚えて|覚えら
+
+= nakute-mo-ii
+title: ～なくてもいいです
+meaning: don't have to ...
+form: Verb ない-form without い + くても いいです
+note: Something is not necessary. It is the opposite of ～なければなりません.
+note: ～なくても大丈夫です means the same and sounds friendly.
+ex: 明日は来なくてもいいです。|あしたはこなくてもいいです。|You don't have to come tomorrow.
+ex: 靴を脱がなくてもいいですよ。|くつをぬがなくてもいいですよ。|You don't have to take your shoes off.
+ex: 急がなくてもいいです。|いそがなくてもいいです。|There's no need to hurry.
+q: 明日は早く起きな＿＿もいいです。|You don't have to get up early tomorrow.|くて|いで|ければ|くで
+q: 全部食べ＿＿もいいですよ。|You don't have to eat it all.|なくて|ないで|なければ|ない
+
+= koto-ga-dekiru
+title: ～ことができる
+meaning: can; be able to
+form: Verb dictionary form + ことが できます
+note: This shows ability or possibility. Nouns can take ができる directly: 日本語ができます (I can speak Japanese).
+note: There is also a shorter potential form, covered in N4: 泳げる.
+ex: 私は泳ぐことができます。|わたしはおよぐことができます。|I can swim.
+ex: ここで切符を買うことができます。|ここできっぷをかうことができます。|You can buy tickets here.
+ex: 漢字を読むことができません。|かんじをよむことができません。|I can't read kanji.
+q: 姉はピアノを弾く＿＿ができます。|My older sister can play the piano.|こと|もの|の|ところ
+q: 日本語を話す＿＿。|I can speak Japanese.|ことができます|ことがあります|ことにします|ことです
+
+= plain-form
+title: Plain style
+meaning: casual speech with friends and family
+form: Verb dictionary form / Adj-い / Noun・な-adj + だ
+note: The dictionary form (食べる, 行く) is the plain present. Friends and family talk in plain style; です and ます are for polite speech.
+note: In plain style です becomes だ (学生だ), and in questions it simply disappears: 学生？
+ex: 明日、何をする？|あした、なにをする？|What are you doing tomorrow?
+ex: 今日はとても暑い。|きょうはとてもあつい。|It's really hot today.
+ex: 私の兄は医者だ。|わたしのあにはいしゃだ。|My older brother is a doctor.
+q: 毎日散歩を＿＿。(casual)|I take a walk every day.|する|します|した|して
+q: 今日は日曜日＿＿。(casual)|Today is Sunday.|だ|い|な|です
+
+= ta-form
+title: た-form
+meaning: plain past of verbs
+form: Same changes as the て-form, with た / だ instead of て / で
+note: If you know the て-form, you know the た-form: 食べて → 食べた, 飲んで → 飲んだ, 行って → 行った.
+note: The plain past negative is ～なかった: 食べなかった (didn't eat).
+ex: 昨日、映画を見た。|きのう、えいがをみた。|I saw a movie yesterday.
+ex: 本を読んだ。|ほんをよんだ。|I read a book.
+ex: 朝ご飯を食べなかった。|あさごはんをたべなかった。|I didn't eat breakfast.
+q: 昨日、友達と＿＿。(遊ぶ)|I hung out with friends yesterday.|遊んだ|遊った|遊いだ|遊びた
+q: 先週、東京へ＿＿。(行く)|I went to Tokyo last week.|行った|行いた|行んだ|行きた
+
+= ta-koto-ga-aru
+title: ～たことがある
+meaning: have (ever) done ...
+form: Verb た-form + ことが あります
+note: This talks about experience. ～たことがありません means "I have never done it".
+note: Don't use it for things you do regularly or did just now; use ～ました for those.
+ex: 日本へ行ったことがあります。|にほんへいったことがあります。|I have been to Japan.
+ex: 富士山を見たことがありますか。|ふじさんをみたことがありますか。|Have you ever seen Mount Fuji?
+ex: 納豆を食べたことがありません。|なっとうをたべたことがありません。|I have never eaten natto.
+q: 着物を着た＿＿があります。|I have worn a kimono before.|こと|もの|ところ|とき
+q: 日本の映画を見た＿＿。|I have seen a Japanese movie.|ことがあります|ことができます|ことにします|ことです
+
+= tari
+title: ～たり～たりする
+meaning: do things like A and B
+form: Verb た-form + り, Verb た-form + り + する
+note: This lists a few example actions, not all of them and not in order. The tense goes on the final する.
+note: Used once, ～たりする softens a statement: "do things like ...".
+ex: 休みの日は掃除をしたり、洗濯をしたりします。|やすみのひはそうじをしたり、せんたくをしたりします。|On my days off I do things like cleaning and laundry.
+ex: 夜は本を読んだり、音楽を聞いたりします。|よるはほんをよんだり、おんがくをきいたりします。|In the evening I read books and listen to music.
+ex: 昨日は買い物をしたり、映画を見たりしました。|きのうはかいものをしたり、えいがをみたりしました。|Yesterday I went shopping, saw a movie and so on.
+q: パーティーで歌っ＿＿、踊ったりしました。|At the party we sang, danced and so on.|たり|て|たら|ても
+q: 日曜日は散歩をしたり、料理を＿＿します。|On Sundays I go for walks, cook and so on.|したり|して|した|する
+
+= mae-ni
+title: ～前に
+meaning: before ...
+form: Verb dictionary form + 前に / Noun の + 前に
+note: Use the dictionary form before 前に, even about the past: 寝る前に (before going to bed).
+note: Nouns take の: 食事の前に (before the meal). Lengths of time take nothing: 三年前に (three years ago).
+ex: 寝る前に歯を磨きます。|ねるまえにはをみがきます。|I brush my teeth before going to bed.
+ex: 食事の前に手を洗います。|しょくじのまえにてをあらいます。|I wash my hands before meals.
+ex: 三年前に日本へ来ました。|さんねんまえににほんへきました。|I came to Japan three years ago.
+q: 出かける＿＿、電話してください。|Please call me before you go out.|前に|後で|ながら|から
+q: 日本へ＿＿前に、日本語を勉強しました。(来る)|I studied Japanese before coming to Japan.|来る|来た|来て|来ない
+
+= ato-de
+title: ～後で
+meaning: after ...
+form: Verb た-form + 後で / Noun の + 後で
+note: Use the た-form before 後で: 食べた後で (after eating).
+note: It is close to ～てから, but 後で stresses the time afterwards, while てから stresses the order.
+ex: 仕事の後で、飲みに行きませんか。|しごとのあとで、のみにいきませんか。|Shall we go for a drink after work?
+ex: 晩ご飯を食べた後で、散歩します。|ばんごはんをたべたあとで、さんぽします。|I take a walk after dinner.
+ex: 授業の後で、先生に質問しました。|じゅぎょうのあとで、せんせいにしつもんしました。|After class I asked the teacher a question.
+q: 映画を見た＿＿、食事をしました。|After watching the movie, we had a meal.|後で|前に|ながら|まで
+q: 宿題を＿＿後で、遊びます。(する)|I'll play after I've done my homework.|した|する|して|しない
+
+= nagara
+title: ～ながら
+meaning: while ...ing
+form: Verb stem + ながら
+note: Two actions by the same person at the same time. The main action comes last.
+note: ながら uses the ます stem: 聞きます → 聞きながら.
+ex: 音楽を聞きながら勉強します。|おんがくをききながらべんきょうします。|I study while listening to music.
+ex: 歩きながら話しましょう。|あるきながらはなしましょう。|Let's talk while we walk.
+ex: テレビを見ながらご飯を食べないでください。|テレビをみながらごはんをたべないでください。|Please don't eat while watching TV.
+q: コーヒーを飲み＿＿新聞を読みます。|I read the newspaper while drinking coffee.|ながら|たり|てから|まえに
+q: 歌を＿＿ながら料理をします。(歌う)|I cook while singing.|歌い|歌う|歌って|歌わ
+
+= kara-because
+title: ～から (because)
+meaning: because; so
+form: Sentence (plain or polite) + から, result
+note: から after a sentence gives a reason. The reason comes first, the result after it.
+note: It can also end an answer to どうして: 忙しいからです (Because I'm busy).
+ex: 雨が降っていますから、タクシーで行きます。|あめがふっていますから、タクシーでいきます。|It's raining, so I'll go by taxi.
+ex: 時間がないから、急ぎましょう。|じかんがないから、いそぎましょう。|We don't have time, so let's hurry.
+ex: どうして来ませんでしたか。…病気でしたから。|どうしてきませんでしたか。…びょうきでしたから。|Why didn't you come? Because I was sick.
+q: 暑い＿＿、窓を開けてください。|It's hot, so please open the window.|から|まで|でも|を
+q: 明日はテストです＿＿、今晩勉強します。|There's a test tomorrow, so I'll study tonight.|から|まで|が|を
+
+= ga-but
+title: ～が (but)
+meaning: but
+form: Sentence + が, sentence
+note: が between two sentences means "but". It is a little more formal than でも or けど.
+note: It also softens an opening: すみませんが… (Excuse me, but ...).
+ex: この店は安いですが、おいしくないです。|このみせはやすいですが、おいしくないです。|This place is cheap, but the food isn't good.
+ex: 日本語は難しいですが、面白いです。|にほんごはむずかしいですが、おもしろいです。|Japanese is difficult, but interesting.
+ex: すみませんが、駅はどこですか。|すみませんが、えきはどこですか。|Excuse me, where is the station?
+q: 肉は好きです＿＿、魚は好きじゃありません。|I like meat, but I don't like fish.|が|から|と|も
+q: 行きたいです＿＿、時間がありません。|I'd like to go, but I don't have time.|が|から|ので|と
+
+= deshou
+title: ～でしょう
+meaning: probably; I suppose; ..., right?
+form: Plain form (Noun・な-adj without だ) + でしょう
+note: でしょう is a guess about the future or something you are not sure of. Its plain form is だろう.
+note: With a rising tone it asks for agreement: 疲れたでしょう？ (You must be tired, right?)
+ex: 明日は雪が降るでしょう。|あしたはゆきがふるでしょう。|It will probably snow tomorrow.
+ex: 田中さんはもうすぐ来るでしょう。|たなかさんはもうすぐくるでしょう。|Mr. Tanaka will probably be here soon.
+ex: その本は高いでしょう。|そのほんはたかいでしょう。|That book is probably expensive.
+q: 明日はいい天気＿＿。|The weather will probably be good tomorrow.|でしょう|ましょう|でした|ません
+q: 彼はたぶん来ない＿＿。|He probably won't come.|でしょう|ましょう|ください|ません
+
+= toki
+title: ～とき
+meaning: when ...
+form: Verb (plain) / Adj-い / な-adj + な / Noun + の + とき
+note: とき joins a time clause to the main sentence: 子供のとき (when I was a child), 暇なとき (when I'm free).
+note: The verb form matters: 日本へ行くとき means before or on the way; 日本へ行ったとき means once you were there.
+ex: 子供のとき、よく海で泳ぎました。|こどものとき、よくうみでおよぎました。|When I was a child, I often swam in the sea.
+ex: 暇なとき、何をしますか。|ひまなとき、なにをしますか。|What do you do when you're free?
+ex: 寝るとき、電気を消します。|ねるとき、でんきをけします。|I turn off the light when I go to bed.
+q: 学生＿＿とき、東京に住んでいました。|When I was a student, I lived in Tokyo.|の|な|だ|に
+q: 静か＿＿とき、本を読みます。|I read when it's quiet.|な|の|だ|い
+
+= yori
+title: A は B より ～
+meaning: A is more ... than B
+form: A は B より Adjective
+note: より means "than". Japanese adjectives don't change for comparisons; より does the work.
+note: To ask which one is more, use AとBとどちらが～ですか.
+ex: 東京は大阪より大きいです。|とうきょうはおおさかよりおおきいです。|Tokyo is bigger than Osaka.
+ex: 今日は昨日より寒いです。|きょうはきのうよりさむいです。|Today is colder than yesterday.
+ex: 電車はバスより速いです。|でんしゃはバスよりはやいです。|Trains are faster than buses.
+q: 犬は猫＿＿大きいです。|Dogs are bigger than cats.|より|ほう|まで|から
+q: 夏は冬＿＿暑いです。|Summer is hotter than winter.|より|から|ので|ほど
+
+= hou-ga
+title: ～のほうが
+meaning: A is more ...; which one is more ...?
+form: A と B と どちらが ～ですか / A の ほうが ～です
+note: どちら asks "which of the two". The answer uses のほうが for the winner: コーヒーのほうが好きです.
+note: You can add より: 紅茶よりコーヒーのほうが好きです.
+ex: 肉と魚とどちらが好きですか。|にくとさかなとどちらがすきですか。|Which do you like better, meat or fish?
+ex: 魚のほうが好きです。|さかなのほうがすきです。|I like fish better.
+ex: バスより電車のほうが速いです。|バスよりでんしゃのほうがはやいです。|The train is faster than the bus.
+q: 夏と冬と＿＿が好きですか。|Which do you like better, summer or winter?|どちら|どれ|どこ|だれ
+q: 冬の＿＿が好きです。|I prefer winter.|ほう|より|もの|こと
+
+= ichiban
+title: ～の中で～が一番
+meaning: the most ... of all
+form: Group の中で Noun が 一番 Adjective
+note: 一番 (number one) makes a superlative: 一番高い (the tallest, the most expensive).
+note: Ask with a question word: 何が, 誰が, どこが, いつが 一番 ... ですか.
+ex: 果物の中でりんごが一番好きです。|くだもののなかでりんごがいちばんすきです。|Of all fruits I like apples best.
+ex: 家族の中で父が一番背が高いです。|かぞくのなかでちちがいちばんせがたかいです。|My father is the tallest in my family.
+ex: 日本で一番高い山は富士山です。|にほんでいちばんたかいやまはふじさんです。|The highest mountain in Japan is Mount Fuji.
+q: スポーツの中でテニスが＿＿好きです。|Of all sports I like tennis best.|一番|より|ほう|まで
+q: クラスの＿＿で誰が一番若いですか。|Who is the youngest in the class?|中|上|前|間
+
+= mashouka
+title: ～ましょうか
+meaning: shall I ...? shall we ...?
+form: Verb stem + ましょうか
+note: An offer to do something for someone: 手伝いましょうか (Shall I help you?).
+note: It also suggests doing something together while asking for the other person's opinion: 何時に会いましょうか (What time shall we meet?).
+ex: 窓を開けましょうか。|まどをあけましょうか。|Shall I open the window?
+ex: 荷物を持ちましょうか。|にもつをもちましょうか。|Shall I carry your bags?
+ex: どこで会いましょうか。|どこであいましょうか。|Where shall we meet?
+q: 重そうですね。手伝い＿＿。|That looks heavy. Shall I help you?|ましょうか|ませんか|ました|たいです
+q: 何時に駅で会い＿＿。|What time shall we meet at the station?|ましょうか|ましたか|ませんでした|ます
+
+= mou-mada
+title: もう・まだ
+meaning: already / not yet; still
+form: もう + Verb-ました / まだ + Verb-ていません
+note: もう～ました means "already did". "Not yet" is まだです or まだ～ていません (not まだ～ませんでした).
+note: まだ with a positive verb means "still": まだ雨が降っています. もう with a negative means "not anymore".
+ex: もう昼ご飯を食べましたか。|もうひるごはんをたべましたか。|Have you had lunch yet?
+ex: いいえ、まだ食べていません。|いいえ、まだたべていません。|No, I haven't eaten yet.
+ex: もうお金がありません。|もうおかねがありません。|I don't have any money left.
+q: ＿＿宿題をしましたか。|Have you done your homework yet?|もう|まだ|また|もっと
+q: いいえ、まだ読んで＿＿。|No, I haven't read it yet.|いません|いました|ませんでした|います
+
+= counters
+title: Counters
+meaning: counting words for different kinds of things
+form: Noun が / を + number + counter
+note: Japanese counts with counters: 枚 for flat things, 本 for long things, 冊 for books, 台 for machines, 匹 for small animals, 人 for people, and つ or 個 for things in general.
+note: The number usually comes after the particle: りんごを三つ買いました. Some sounds change: 一本 (いっぽん), 三本 (さんぼん), 六本 (ろっぽん).
+ex: 切手を五枚ください。|きってをごまいください。|Five stamps, please.
+ex: 鉛筆が三本あります。|えんぴつがさんぼんあります。|There are three pencils.
+ex: 本を二冊借りました。|ほんをにさつかりました。|I borrowed two books.
+q: 紙を一＿＿ください。|One sheet of paper, please.|枚|本|台|冊
+q: 家に猫が二＿＿います。|There are two cats at home.|匹|枚|冊|台
+
+= nanika
+title: 何か・何も
+meaning: something / nothing
+form: Question word + か / Question word + も + negative
+note: か after a question word means "some": 何か (something), 誰か (someone), どこか (somewhere), いつか (someday).
+note: も with a negative verb means "no": 何も (nothing), 誰も (no one), どこにも or どこへも (nowhere).
+ex: 何か飲みませんか。|なにかのみませんか。|Would you like something to drink?
+ex: 朝から何も食べていません。|あさからなにもたべていません。|I haven't eaten anything since morning.
+ex: 部屋に誰もいません。|へやにだれもいません。|There's no one in the room.
+q: 誰＿＿来ましたか。|Did someone come?|か|も|に|を
+q: 昨日はどこ＿＿行きませんでした。|I didn't go anywhere yesterday.|へも|へか|にか|で
+
+= gurai
+title: ～ぐらい・～ごろ
+meaning: about (an amount) / around (a time)
+form: Amount + ぐらい / くらい; Point in time + ごろ
+note: ぐらい (or くらい) gives an approximate amount or length: 一時間ぐらい (about an hour).
+note: For a point in time, ごろ is the usual choice: 三時ごろ (around three o'clock).
+ex: 駅まで十分ぐらいかかります。|えきまでじゅっぷんぐらいかかります。|It takes about ten minutes to the station.
+ex: 毎日二時間ぐらい勉強します。|まいにちにじかんぐらいべんきょうします。|I study about two hours a day.
+ex: 三時ごろ帰ります。|さんじごろかえります。|I'll be home around three.
+q: 家から学校まで三十分＿＿かかります。|It takes about thirty minutes from home to school.|ぐらい|ごろ|まで|から
+q: 駅で一時間＿＿待ちました。|I waited about an hour at the station.|ぐらい|ごろ|に|へ
+
+= dake
+title: ～だけ
+meaning: only; just
+form: Noun / amount + だけ
+note: だけ limits something: これだけ (only this), 一つだけ (just one).
+note: It replaces が and を, and goes after other particles: 日曜日にだけ (only on Sundays).
+ex: 一つだけ質問があります。|ひとつだけしつもんがあります。|I have just one question.
+ex: 朝はコーヒーだけ飲みます。|あさはコーヒーだけのみます。|In the morning I only drink coffee.
+ex: 日本語は少しだけ話せます。|にほんごはすこしだけはなせます。|I can speak only a little Japanese.
+q: 財布に百円＿＿あります。|I only have 100 yen in my wallet.|だけ|しか|まで|ごろ
+q: 名前＿＿書いてください。|Please write just your name.|だけ|から|ぐらい|ごろ
+
+= naru
+title: ～になる・～くなる
+meaning: become ...
+form: Noun・な-adj に なる / Adj-い → く なる
+note: なる means "to become". Nouns and な-adjectives take に (医者になる, きれいになる); い-adjectives change い to く (寒くなる).
+note: It is used a lot for changes in weather, age and skills: 上手になりました.
+ex: 寒くなりましたね。|さむくなりましたね。|It's gotten cold, hasn't it?
+ex: 弟は医者になりました。|おとうとはいしゃになりました。|My younger brother became a doctor.
+ex: 日本語が上手になりました。|にほんごがじょうずになりました。|Your Japanese has gotten good.
+q: 部屋がきれい＿＿なりました。|The room became clean.|に|く|な|で
+q: 夜になって、暗＿＿なりました。|Night came and it got dark.|く|に|い|な
+
+= ne-yo
+title: ～ね・～よ
+meaning: ..., isn't it? / ..., you know!
+form: Sentence + ね / よ
+note: ね looks for agreement or shares a feeling: いい天気ですね (Nice weather, isn't it?).
+note: よ tells the listener something they may not know: その店は高いですよ (That place is expensive, you know). よね checks something you both know.
+ex: 今日は暑いですね。|きょうはあついですね。|It's hot today, isn't it?
+ex: この映画は面白いですよ。|このえいがはおもしろいですよ。|This movie is good, you know.
+ex: 明日は休みですよね。|あしたはやすみですよね。|Tomorrow's a day off, right?
+q: きれいな花です＿＿。|What pretty flowers, aren't they?|ね|よ|か|を
+q: 危ないです＿＿。気をつけてください。|It's dangerous, you know! Please be careful.|よ|ね|か|の
