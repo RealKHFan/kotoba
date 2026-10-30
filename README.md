@@ -6,14 +6,20 @@ Short lessons introduce new things; spaced-repetition reviews bring them back ri
 <p>
   <img src="docs/screenshots/home.png" width="200" alt="Home screen">
   <img src="docs/screenshots/words.png" width="200" alt="Word list">
-  <img src="docs/screenshots/word.png" width="200" alt="A word with kanji and examples">
-  <img src="docs/screenshots/word-quiz.png" width="200" alt="Word quiz">
+  <img src="docs/screenshots/word.png" width="200" alt="A word with its kanji, examples and audio">
+  <img src="docs/screenshots/typed-quiz.png" width="200" alt="Typing an answer in romaji">
 </p>
 <p>
   <img src="docs/screenshots/grammar.png" width="200" alt="Grammar point">
   <img src="docs/screenshots/grammar-quiz.png" width="200" alt="Grammar gap quiz, answered">
+  <img src="docs/screenshots/kanji.png" width="200" alt="Kanji with stroke order">
+  <img src="docs/screenshots/write.png" width="200" alt="Writing practice">
+</p>
+<p>
   <img src="docs/screenshots/hiragana.png" width="200" alt="Hiragana chart">
   <img src="docs/screenshots/sentence-order.png" width="200" alt="Putting a sentence in order">
+  <img src="docs/screenshots/word-quiz.png" width="200" alt="Word quiz">
+  <img src="docs/screenshots/settings.png" width="200" alt="Settings">
 </p>
 
 ## What's inside
@@ -29,9 +35,13 @@ Short lessons introduce new things; spaced-repetition reviews bring them back ri
 
 ## How it works
 
-- **Learn**: each section has lessons of a few new items from one topic (10 words, 5 kanji, one grammar point, one kana row). You read the cards, then do a short quiz.
+- **Learn**: each section has lessons of a few new items from one topic (by default 10 words, 5 kanji, one grammar point or one kana row). You read the cards, then do a short quiz.
 - **Review**: everything you've learned comes back for review after 4 hours, then 8 hours, 1 day, 2 days, 4 days, a week, 2 weeks, a month and 4 months. A wrong answer moves an item back two steps and asks it again at the end of the session.
 - **Questions** change each time: meaning ↔ Japanese, reading a kanji word, filling the gap in a grammar sentence, or putting a sentence back in the right order.
+- **Typing**: answers can be typed instead of chosen. Type romaji (`taberu`) and it turns into kana (たべる) as you go, so no Japanese keyboard is needed; a Japanese keyboard works too.
+- **Stroke order**: every kana and kanji page shows the character being written stroke by stroke. **Practice** lets you write it with your finger, tracing or from memory; each stroke is checked for shape, position and direction.
+- **Audio**: every kana, word, kanji example, sentence and grammar example can be played, with natural pitch accent (箸 and 橋 sound different). The clips are in the app, so this works offline.
+- **Settings**: theme, lesson sizes, choose/type/mix answers, romaji on or off, readings above kanji in quizzes, reviews per session, sound on or off, and resetting progress.
 - Kanji are always drawn with Japanese glyphs, even on a phone set to English or German.
 
 ## Privacy
@@ -63,12 +73,21 @@ Kotlin + Jetpack Compose, no other libraries.
 ```
 
 The learning content is plain text in `app/src/main/assets` (one line per word, kanji or sentence; one block per grammar point), so fixes and additions are easy to make.
+After changing it, rebuild the generated files:
+
+```
+python3 tools/strokes.py /path/to/kanjivg     # stroke order, from a KanjiVG checkout
+python3 tools/audio.py --only-missing         # sound clips for new or changed text (needs style-bert-vits2 and ffmpeg)
+```
 
 ## Credits
 
 The words, sentences, grammar notes and quizzes were written for Kotoba. Readings were checked against
 [JMdict and KANJIDIC2](https://www.edrdg.org/) and the [MeCab](https://taku910.github.io/mecab/) tokenizer with UniDic; none of that data ships in the app.
-The icon is the character 言 from Noto Serif CJK JP (SIL Open Font License).
+
+- Stroke order: [KanjiVG](https://kanjivg.tagaini.net) by Ulrich Apel and contributors, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Converted to point lists for Kotoba (`app/src/main/assets/strokes.txt`, same license).
+- Voice: words and sentences made with [Style-Bert-VITS2](https://github.com/litagin02/Style-Bert-VITS2) and the [JVNV M2 voice model](https://huggingface.co/litagin/style_bert_vits2_jvnv) (trained on the JVNV corpus), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); single kana made with [Open JTalk](https://open-jtalk.sourceforge.net/) and its HTS voice (Modified BSD). The clips in `app/src/main/assets/audio` are under CC BY-SA 4.0.
+- Icon: the character 言 from Noto Serif CJK JP (SIL Open Font License).
 
 ## License
 

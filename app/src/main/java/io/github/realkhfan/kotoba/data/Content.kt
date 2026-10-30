@@ -182,7 +182,13 @@ object Parser {
     }
 }
 
-class Library(val words: List<Word>, val kanji: List<Kanji>, val sentences: List<Sentence>, val grammar: List<Grammar>) {
+class Library(
+    val words: List<Word>,
+    val kanji: List<Kanji>,
+    val sentences: List<Sentence>,
+    val grammar: List<Grammar>,
+    private val strokes: Map<String, List<Stroke>> = emptyMap(),
+) {
     val hiragana = KanaChart.items(Section.HIRAGANA)
     val katakana = KanaChart.items(Section.KATAKANA)
 
@@ -200,13 +206,16 @@ class Library(val words: List<Word>, val kanji: List<Kanji>, val sentences: List
     private val kanjiByChar by lazy { kanji.associateBy { it.char } }
 
     /** The next unlearned items, kept within one group so a lesson stays on one topic. */
-    fun nextLesson(section: Section, learned: (String) -> Boolean): List<Item> {
+    fun nextLesson(section: Section, size: Int = section.lessonSize, learned: (String) -> Boolean): List<Item> {
         val items = items(section)
         val first = items.indexOfFirst { !learned(it.key) }
         if (first < 0) return emptyList()
         val group = items[first].group
-        return items.drop(first).takeWhile { it.group == group }.filter { !learned(it.key) }.take(section.lessonSize)
+        return items.drop(first).takeWhile { it.group == group }.filter { !learned(it.key) }.take(size)
     }
+
+    /** Stroke order for one kana or kanji, or null if there is none. */
+    fun strokesOf(char: String): List<Stroke>? = strokes[char]
 
     fun kanjiIn(word: Word): List<Kanji> = word.written.mapNotNull { kanjiByChar[it.toString()] }.distinct()
 
@@ -252,6 +261,7 @@ class Library(val words: List<Word>, val kanji: List<Kanji>, val sentences: List
             Parser.kanji(open("kanji.txt")),
             Parser.sentences(open("sentences.txt")),
             Parser.grammar(open("grammar-n5.txt")) + Parser.grammar(open("grammar-n4.txt")),
+            Strokes.parse(open("strokes.txt")),
         )
     }
 }

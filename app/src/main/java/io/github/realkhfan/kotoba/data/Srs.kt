@@ -70,6 +70,12 @@ class Progress(private val file: File?, private val io: Executor = Executors.new
         save()
     }
 
+    /** Forgets everything learned. */
+    fun reset() {
+        states.clear()
+        save()
+    }
+
     fun due(items: List<Item>, now: Long): List<Item> = items.filter { item -> states[item.key]?.let { it.due <= now } == true }
 
     fun stats(items: List<Item>, now: Long): Stats {

@@ -1,6 +1,8 @@
 package io.github.realkhfan.kotoba.ui
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -25,14 +27,37 @@ import io.github.realkhfan.kotoba.data.Item
 import io.github.realkhfan.kotoba.data.Library
 import io.github.realkhfan.kotoba.data.Progress
 import io.github.realkhfan.kotoba.data.Section
+import io.github.realkhfan.kotoba.data.SettingsStore
+import io.github.realkhfan.kotoba.data.ThemeMode
 import io.github.realkhfan.kotoba.data.Srs
 
 /**
  * Screens are routes on a small back stack: "home", "section:WORDS", "item:<key>", "lesson:WORDS",
- * "review:WORDS" or "review:all". The stack and each screen's saved state survive process death.
+ * "review:WORDS" or "review:all", "write:<characters>" and "settings". The stack and each screen's saved state survive process death.
  */
 @Composable
-fun KotobaApp(library: Library, progress: Progress, resumeTick: Int = 0) {
+fun KotobaApp(
+    library: Library,
+    progress: Progress,
+    settings: SettingsStore,
+    speaker: Speaker = Speaker.Silent,
+    version: String = "",
+    resumeTick: Int = 0,
+) {
+    val dark = when (settings.value.theme) {
+        ThemeMode.SYSTEM -> isSystemInDarkTheme()
+        ThemeMode.LIGHT -> false
+        ThemeMode.DARK -> true
+    }
+    KotobaTheme(dark) {
+        CompositionLocalProvider(LocalSettings provides settings.value, LocalSpeaker provides speaker) {
+            Screens(library, progress, settings, version, resumeTick)
+        }
+    }
+}
+
+@Composable
+private fun Screens(library: Library, progress: Progress, settings: SettingsStore, version: String, resumeTick: Int) {
     val stack = rememberSaveable(saver = listSaver<SnapshotStateList<String>, String>({ it.toList() }, { it.toMutableStateList() })) {
         mutableStateListOf("home")
     }
@@ -55,7 +80,9 @@ fun KotobaApp(library: Library, progress: Progress, resumeTick: Int = 0) {
         when (name) {
             "section" -> SectionScreen(Section.valueOf(arg), library, progress, now, open, back)
             "item" -> library.byKey[arg]?.let { DetailScreen(it, library, progress, open, back) } ?: LaunchedEffect(route) { back() }
-            "lesson" -> LessonScreen(Section.valueOf(arg), library, progress, back)
+            "lesson" -> LessonScreen(Section.valueOf(arg), library, progress, open, back)
+            "write" -> WriteScreen(arg, library, back)
+            "settings" -> SettingsScreen(settings, progress, version, back)
             "review" -> ReviewScreen(Section.entries.firstOrNull { it.name == arg }, library, progress, now, back)
             else -> HomeScreen(library, progress, now, open)
         }
@@ -67,7 +94,7 @@ fun KotobaApp(library: Library, progress: Progress, resumeTick: Int = 0) {
 fun DetailScreen(item: Item, library: Library, progress: Progress, open: (String) -> Unit, back: () -> Unit) {
     Scaffold(topBar = { TopAppBar(title = { Text(item.section.title) }, navigationIcon = { BackButton(back) }) }) { padding ->
         Column(Modifier.padding(padding).fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp)) {
-            ItemDetail(item, library, Srs.stage(progress[item.key])) { open("item:${it.key}") }
+            ItemDetail(item, library, Srs.stage(progress[item.key]), open = { open("item:${it.key}") }, write = { open("write:$it") })
         }
     }
 }

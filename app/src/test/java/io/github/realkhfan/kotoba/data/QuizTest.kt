@@ -21,6 +21,7 @@ class QuizTest {
                             q.options.filterIndexed { i, _ -> i != q.answer }.forEach { assertFalse("$item / $it", sameMeaning(it, item.meaning)) }
                         }
                     }
+                    is Typed -> assertTrue(q.isRight(q.answer))
                     is Order -> {
                         assertEquals(item, q.item)
                         assertTrue(q.isRight(q.tiles.indices.sortedBy { q.item.chunks.indexOf(q.tiles[it]) }) || q.item.chunks.toSet().size < q.item.chunks.size)

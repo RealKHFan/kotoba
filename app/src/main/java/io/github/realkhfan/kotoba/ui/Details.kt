@@ -21,6 +21,9 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material3.FilledTonalButton
+import io.github.realkhfan.kotoba.data.Audio
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -97,10 +100,41 @@ fun SectionLabel(text: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun ExampleView(e: Example) {
-    Column(Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
-        Text(e.japanese, style = MaterialTheme.typography.titleMedium)
-        Text(e.reading, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        Text(e.english, style = MaterialTheme.typography.bodyMedium)
+    Row(Modifier.fillMaxWidth().padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+        Column(Modifier.weight(1f)) {
+            Text(e.japanese, style = MaterialTheme.typography.titleMedium)
+            Text(e.reading, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text(e.english, style = MaterialTheme.typography.bodyMedium)
+        }
+        SpeakButton(Audio.sentence(e.japanese), "Play the sentence")
+    }
+}
+
+/** A Japanese heading with its play button on the right. */
+@Composable
+private fun SpokenRow(key: String?, content: @Composable () -> Unit) {
+    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+        Column(Modifier.weight(1f)) { content() }
+        SpeakButton(key)
+    }
+}
+
+/** Stroke order for each kana or kanji in [text], with a button to practice writing it. */
+@Composable
+private fun StrokeSection(text: String, library: Library, write: ((String) -> Unit)?) {
+    val chars = text.map { it.toString() }.filter { library.strokesOf(it) != null }
+    if (chars.isEmpty()) return
+    val count = chars.sumOf { library.strokesOf(it)!!.size }
+    SectionLabel("Stroke order · $count ${if (count == 1) "stroke" else "strokes"}")
+    Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+        chars.forEach { StrokeOrder(it, library.strokesOf(it)!!, Modifier.size(if (chars.size > 1) 110.dp else 150.dp)) }
+        if (write != null) {
+            FilledTonalButton(onClick = { write(text) }) {
+                Icon(Icons.Filled.Edit, contentDescription = null, modifier = Modifier.size(18.dp))
+                Spacer(Modifier.width(8.dp))
+                Text("Practice")
+            }
+        }
     }
 }
 
@@ -126,14 +160,17 @@ fun summary(item: Item): Pair<String, String> = when (item) {
     is Grammar -> item.title to item.meaning
 }
 
-/** The full card for an item, used on its own page and in lessons. [open] is null where links shouldn't navigate. */
+/**
+ * The full card for an item, used on its own page and in lessons. [open] is null where links shouldn't
+ * navigate; [write] opens writing practice for the given characters.
+ */
 @Composable
-fun ItemDetail(item: Item, library: Library, stage: Stage, open: ((Item) -> Unit)?) {
+fun ItemDetail(item: Item, library: Library, stage: Stage, open: ((Item) -> Unit)?, write: ((String) -> Unit)? = null) {
     Column(Modifier.fillMaxWidth()) {
         when (item) {
-            is Kana -> KanaDetail(item, library, open)
+            is Kana -> KanaDetail(item, library, open, write)
             is Word -> WordDetail(item, library, open)
-            is Kanji -> KanjiDetail(item, library, open)
+            is Kanji -> KanjiDetail(item, library, open, write)
             is Sentence -> SentenceDetail(item, library, open)
             is Grammar -> GrammarDetail(item)
         }
@@ -162,11 +199,14 @@ private fun WordLinks(words: List<Word>, open: ((Item) -> Unit)?) {
 }
 
 @Composable
-private fun KanaDetail(k: Kana, library: Library, open: ((Item) -> Unit)?) {
-    Text(k.char, style = MaterialTheme.typography.displayLarge.copy(fontSize = MaterialTheme.typography.displayLarge.fontSize * 1.6f))
-    Text(k.romaji, style = MaterialTheme.typography.headlineMedium, color = MaterialTheme.colorScheme.primary)
+private fun KanaDetail(k: Kana, library: Library, open: ((Item) -> Unit)?, write: ((String) -> Unit)?) {
+    SpokenRow(Audio.of(k)) {
+        Text(k.char, style = MaterialTheme.typography.displayLarge.copy(fontSize = MaterialTheme.typography.displayLarge.fontSize * 1.6f))
+        Text(k.romaji, style = MaterialTheme.typography.headlineMedium, color = MaterialTheme.colorScheme.primary)
+    }
     val other = if (k.section == Section.HIRAGANA) "Katakana: ${toKatakana(k.char)}" else "Hiragana: ${toHiragana(k.char)}"
     Text(other, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp))
+    StrokeSection(k.char, library, write)
     val words = library.wordsStartingWith(k).take(5)
     if (words.isNotEmpty()) {
         SectionLabel("Words starting with ${k.char}")
@@ -176,9 +216,11 @@ private fun KanaDetail(k: Kana, library: Library, open: ((Item) -> Unit)?) {
 
 @Composable
 private fun WordDetail(w: Word, library: Library, open: ((Item) -> Unit)?) {
-    if (w.hasKanji) Text(w.reading, style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-    Text(w.written, style = japaneseStyle(w.written))
-    Text(toRomaji(w.reading), style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.outline)
+    SpokenRow(Audio.of(w)) {
+        if (w.hasKanji) Text(w.reading, style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text(w.written, style = japaneseStyle(w.written))
+        if (LocalSettings.current.romaji) Text(toRomaji(w.reading), style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.outline)
+    }
     Text(w.meaning, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(top = 12.dp))
     Text(w.group, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 4.dp))
     val kanji = library.kanjiIn(w)
@@ -202,7 +244,7 @@ private fun WordDetail(w: Word, library: Library, open: ((Item) -> Unit)?) {
 }
 
 @Composable
-private fun KanjiDetail(k: Kanji, library: Library, open: ((Item) -> Unit)?) {
+private fun KanjiDetail(k: Kanji, library: Library, open: ((Item) -> Unit)?, write: ((String) -> Unit)?) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         Surface(shape = RoundedCornerShape(20.dp), color = MaterialTheme.colorScheme.surfaceContainerHigh) {
             Text(k.char, style = MaterialTheme.typography.displayLarge.copy(fontSize = MaterialTheme.typography.displayLarge.fontSize * 1.5f), modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp))
@@ -214,14 +256,16 @@ private fun KanjiDetail(k: Kanji, library: Library, open: ((Item) -> Unit)?) {
             if (k.kun.isNotEmpty()) Text("Kun: ${k.kun.joinToString("、", transform = ::kunText)}", style = MaterialTheme.typography.titleMedium)
         }
     }
+    StrokeSection(k.char, library, write)
     SectionLabel("Examples")
     k.examples.forEach { e ->
-        Row(Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
+        Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
             Text(e.japanese, style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f))
             Column(Modifier.weight(1.5f)) {
                 Text(e.reading, style = MaterialTheme.typography.bodyLarge)
                 Text(e.english, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
+            SpeakButton(Audio.word(e.japanese, e.reading), "Play ${e.japanese}")
         }
     }
     val words = library.wordsWith(k).filter { w -> k.examples.none { it.japanese == w.written } }.take(8)
@@ -233,7 +277,7 @@ private fun KanjiDetail(k: Kanji, library: Library, open: ((Item) -> Unit)?) {
 
 @Composable
 private fun SentenceDetail(s: Sentence, library: Library, open: ((Item) -> Unit)?) {
-    FuriganaSentence(s)
+    SpokenRow(Audio.of(s)) { FuriganaSentence(s) }
     Text(s.english, style = MaterialTheme.typography.titleLarge, modifier = Modifier.padding(top = 16.dp))
     Text(s.group, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 4.dp))
     val words = library.wordsIn(s)

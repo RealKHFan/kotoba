@@ -10,7 +10,12 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.ui.Alignment
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
@@ -46,9 +51,12 @@ fun HomeScreen(library: Library, progress: Progress, now: Long, open: (String) -
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             item {
-                Column(Modifier.padding(start = 4.dp, bottom = 8.dp)) {
-                    Text("Kotoba", style = MaterialTheme.typography.headlineLarge)
-                    Text("言葉 · a little Japanese every day", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Row(Modifier.padding(start = 4.dp, bottom = 8.dp), verticalAlignment = Alignment.Top) {
+                    Column(Modifier.weight(1f)) {
+                        Text("Kotoba", style = MaterialTheme.typography.headlineLarge)
+                        Text("言葉 · a little Japanese every day", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    IconButton(onClick = { open("settings") }) { Icon(Icons.Filled.Settings, contentDescription = "Settings") }
                 }
             }
             item { ReviewCard(all, progress.nextDue(library.all, now)?.let { it - now }) { open("review:all") } }

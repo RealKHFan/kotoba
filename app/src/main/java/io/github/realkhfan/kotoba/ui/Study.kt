@@ -50,6 +50,24 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.foundation.layout.consumeWindowInsets
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.OffsetMapping
+import androidx.compose.ui.text.input.TransformedText
+import androidx.compose.ui.text.input.VisualTransformation
+import io.github.realkhfan.kotoba.data.Audio
+import io.github.realkhfan.kotoba.data.Romaji
+import io.github.realkhfan.kotoba.data.Typed
 import io.github.realkhfan.kotoba.data.Choice
 import io.github.realkhfan.kotoba.data.Grammar
 import io.github.realkhfan.kotoba.data.Item
@@ -76,8 +94,10 @@ private fun CloseButton(onClick: () -> Unit) {
 }
 
 @Composable
-fun LessonScreen(section: Section, library: Library, progress: Progress, close: () -> Unit) {
-    val items = remember { library.nextLesson(section, progress::isLearned) }
+fun LessonScreen(section: Section, library: Library, progress: Progress, open: (String) -> Unit, close: () -> Unit) {
+    val settings = LocalSettings.current
+    val speaker = LocalSpeaker.current
+    val items = remember { library.nextLesson(section, settings.lessonSize(section), progress::isLearned) }
     if (items.isEmpty()) {
         LaunchedEffect(Unit) { close() }
         return
@@ -93,6 +113,7 @@ fun LessonScreen(section: Section, library: Library, progress: Progress, close: 
         return
     }
     val last = page == items.lastIndex
+    LaunchedEffect(page) { if (settings.autoplay) speaker.play(Audio.of(items[page])) }
     Scaffold(
         topBar = { TopAppBar(title = { Text("New ${noun(section)}") }, navigationIcon = { CloseButton(close) }) },
         bottomBar = {
@@ -106,7 +127,7 @@ fun LessonScreen(section: Section, library: Library, progress: Progress, close: 
             Column(Modifier.padding(padding).fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp)) {
                 Text("${page + 1} of ${items.size}", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
                 Spacer(Modifier.height(12.dp))
-                ItemDetail(items[page], library, Stage.NEW, open = null)
+                ItemDetail(items[page], library, Stage.NEW, open = null, write = { open("write:$it") })
             }
         }
     }
@@ -115,7 +136,12 @@ fun LessonScreen(section: Section, library: Library, progress: Progress, close: 
 /** [section] null reviews everything that is due. */
 @Composable
 fun ReviewScreen(section: Section?, library: Library, progress: Progress, now: Long, close: () -> Unit) {
-    val items = remember { progress.due(section?.let(library::items) ?: library.all, now) }
+    val limit = LocalSettings.current.reviewsPerSession
+    // Oldest reviews first when the session is limited.
+    val items = remember {
+        progress.due(section?.let(library::items) ?: library.all, now).sortedBy { progress[it.key]?.due }
+            .let { if (limit > 0) it.take(limit) else it }
+    }
     if (items.isEmpty()) {
         LaunchedEffect(Unit) { close() }
         return
@@ -138,11 +164,22 @@ fun QuizScreen(
     doneText: String,
     random: Random = Random.Default,
 ) {
-    val session = remember { Session(items, Quiz(library, random), random, grade) }
+    val settings = LocalSettings.current
+    val speaker = LocalSpeaker.current
+    val session = remember { Session(items, Quiz(library, random, settings), random, grade) }
     var question by remember { mutableStateOf(session.current) }
     var result by remember { mutableStateOf<Boolean?>(null) }
+    var typed by remember { mutableStateOf("") }
+    // Counts questions, so a missed item asked again right away starts with a fresh view (an equal question would keep its old state).
+    var asked by remember { mutableIntStateOf(0) }
+    fun answered(q: Question, right: Boolean) {
+        session.answer(right)
+        result = right
+        if (settings.autoplay) speaker.play(audioFor(q))
+    }
     Scaffold(topBar = { TopAppBar(title = { Text(title) }, navigationIcon = { CloseButton(close) }) }) { padding ->
-        Column(Modifier.padding(padding).fillMaxSize()) {
+        // The keyboard pushes the content up instead of covering the answer field.
+        Column(Modifier.padding(padding).consumeWindowInsets(padding).imePadding().fillMaxSize()) {
             LinearProgressIndicator(progress = { session.finished.toFloat() / session.total }, modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp))
             val q = question
             if (q == null) {
@@ -150,23 +187,25 @@ fun QuizScreen(
                 return@Column
             }
             Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(20.dp)) {
-                key(q) {
+                key(asked) {
                     when (q) {
-                        is Choice -> ChoiceView(q, result) { right -> session.answer(right); result = right }
-                        is Order -> OrderView(q, result) { right -> session.answer(right); result = right }
+                        is Choice -> ChoiceView(q, result) { right -> answered(q, right) }
+                        is Order -> OrderView(q, result) { right -> answered(q, right) }
+                        is Typed -> TypedView(q, result) { right, text -> typed = text; answered(q, right) }
                     }
                 }
-                result?.let { Feedback(q, it) }
+                result?.let { Feedback(q, it, typed) }
             }
             if (result != null) {
                 Button(
                     onClick = {
                         session.next()
+                        asked++
                         question = session.current
                         result = null
                         if (question == null) onFinished()
                     },
-                    modifier = Modifier.fillMaxWidth().navigationBarsPadding().padding(16.dp),
+                    modifier = Modifier.fillMaxWidth().padding(16.dp),
                 ) { Text("Continue") }
             }
         }
@@ -185,6 +224,12 @@ private fun Done(session: Session, text: String, close: () -> Unit) {
         Text(text, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center, modifier = Modifier.padding(top = 8.dp))
         Button(onClick = close, modifier = Modifier.padding(top = 32.dp)) { Text("Done") }
     }
+}
+
+private fun Question.prompt() = when (this) {
+    is Choice -> prompt
+    is Typed -> prompt
+    is Order -> item.english
 }
 
 @Composable
@@ -213,6 +258,53 @@ private fun ChoiceView(q: Choice, result: Boolean?, onAnswer: (Boolean) -> Unit)
             onAnswer(i == q.answer)
         }
         Spacer(Modifier.height(10.dp))
+    }
+}
+
+/** Shows typed romaji as kana while the field keeps the letters, so the keyboard isn't disturbed. */
+private object KanaTransformation : VisualTransformation {
+    override fun filter(text: AnnotatedString): TransformedText {
+        val raw = text.text
+        val out = Romaji.toKana(raw)
+        return TransformedText(AnnotatedString(out), object : OffsetMapping {
+            override fun originalToTransformed(offset: Int) = Romaji.toKana(raw.take(offset)).length.coerceIn(0, out.length)
+            override fun transformedToOriginal(offset: Int) =
+                if (offset >= out.length) raw.length else (0..raw.length).first { Romaji.toKana(raw.take(it)).length >= offset }
+        })
+    }
+}
+
+@Composable
+private fun TypedView(q: Typed, result: Boolean?, onAnswer: (Boolean, String) -> Unit) {
+    var text by rememberSaveable { mutableStateOf("") }
+    val focus = remember { FocusRequester() }
+    val keyboard = LocalSoftwareKeyboardController.current
+    LaunchedEffect(Unit) { focus.requestFocus() }
+    fun submit() {
+        if (text.isBlank() || result != null) return
+        keyboard?.hide()
+        onAnswer(q.isRight(text), text)
+    }
+    AskLabel(q.ask)
+    Spacer(Modifier.height(16.dp))
+    q.reading?.let { Text(it, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+    Text(q.prompt, style = if (q.promptJapanese) japaneseStyle(q.prompt) else MaterialTheme.typography.headlineMedium)
+    q.hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp)) }
+    Spacer(Modifier.height(24.dp))
+    OutlinedTextField(
+        value = text, onValueChange = { text = it }, enabled = result == null, singleLine = true, isError = result == false,
+        textStyle = MaterialTheme.typography.headlineSmall,
+        placeholder = { Text(if (q.kana) "Type in romaji or kana" else "Type the romaji") },
+        visualTransformation = if (q.kana) KanaTransformation else VisualTransformation.None,
+        keyboardOptions = KeyboardOptions(
+            capitalization = KeyboardCapitalization.None, autoCorrectEnabled = false,
+            keyboardType = if (q.kana) KeyboardType.Text else KeyboardType.Ascii, imeAction = ImeAction.Done,
+        ),
+        keyboardActions = KeyboardActions(onDone = { submit() }),
+        modifier = Modifier.fillMaxWidth().focusRequester(focus),
+    )
+    if (result == null) {
+        Button(onClick = { submit() }, enabled = text.isNotBlank(), modifier = Modifier.padding(top = 16.dp).fillMaxWidth()) { Text("Check") }
     }
 }
 
@@ -289,8 +381,23 @@ private fun Tile(text: String, enabled: Boolean, faded: Boolean = false, onClick
     }
 }
 
+/** The clip that goes with a question's answer. */
+fun audioFor(q: Question): String? = when (val item = q.item) {
+    is Grammar -> when (q) {
+        is Choice -> Audio.gap(q.prompt, q.options[q.answer])
+        is Typed -> Audio.gap(q.prompt, q.answer)
+        is Order -> null
+    }
+    is Kanji -> when {
+        q is Choice && q.prompt != item.char -> Audio.word(q.prompt, q.options[q.answer])
+        q is Typed -> Audio.word(q.prompt, q.answer)
+        else -> null
+    }
+    else -> Audio.of(item)
+}
+
 @Composable
-private fun Feedback(q: Question, right: Boolean) {
+private fun Feedback(q: Question, right: Boolean, typed: String) {
     val colors = MaterialTheme.colorScheme
     Surface(
         color = if (right) colors.primaryContainer else colors.errorContainer,
@@ -298,7 +405,13 @@ private fun Feedback(q: Question, right: Boolean) {
         shape = RoundedCornerShape(14.dp), modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
     ) {
         Column(Modifier.padding(16.dp)) {
-            Text(if (right) "Right!" else "Not quite", style = MaterialTheme.typography.titleMedium)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(if (right) "Right!" else "Not quite", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                SpeakButton(audioFor(q))
+            }
+            if (q is Typed && !right && typed.isNotBlank()) {
+                Text("You typed ${if (q.kana) Romaji.toKana(typed, final = true) else typed}", style = MaterialTheme.typography.bodyMedium)
+            }
             Spacer(Modifier.height(8.dp))
             val item = q.item
             when {
@@ -306,14 +419,17 @@ private fun Feedback(q: Question, right: Boolean) {
                     FuriganaSentence(q.item, MaterialTheme.typography.titleLarge)
                     Text(q.item.english, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.padding(top = 8.dp))
                 }
-                q is Choice && item is Grammar -> {
-                    Text(q.prompt.replace("＿＿", q.options[q.answer]), style = MaterialTheme.typography.titleLarge)
-                    q.hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge) }
+                item is Grammar && q !is Order -> {
+                    val answer = if (q is Choice) q.options[q.answer] else (q as Typed).answer
+                    val hint = if (q is Choice) q.hint else (q as Typed).hint
+                    Text(Audio.filled(q.prompt(), answer), style = MaterialTheme.typography.titleLarge)
+                    hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge) }
                     Text("${item.title} · ${item.meaning}", style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(top = 8.dp))
                 }
-                q is Choice && item is Kanji && q.prompt != item.char -> {
-                    Text("${q.prompt}（${q.options[q.answer]}）", style = MaterialTheme.typography.titleLarge)
-                    q.hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge) }
+                item is Kanji && q.prompt() != item.char -> {
+                    val answer = if (q is Choice) q.options[q.answer] else (q as Typed).answer
+                    Text("${q.prompt()}（$answer）", style = MaterialTheme.typography.titleLarge)
+                    (if (q is Choice) q.hint else (q as Typed).hint)?.let { Text(it, style = MaterialTheme.typography.bodyLarge) }
                     Text("${item.char} · ${item.meaning}", style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(top = 8.dp))
                 }
                 else -> {

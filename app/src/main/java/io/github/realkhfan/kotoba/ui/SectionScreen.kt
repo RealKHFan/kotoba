@@ -57,7 +57,7 @@ import io.github.realkhfan.kotoba.data.Word
 fun SectionScreen(section: Section, library: Library, progress: Progress, now: Long, open: (String) -> Unit, back: () -> Unit) {
     val items = library.items(section)
     val stats = progress.stats(items, now)
-    val lesson = library.nextLesson(section, progress::isLearned)
+    val lesson = library.nextLesson(section, LocalSettings.current.lessonSize(section), progress::isLearned)
     var query by rememberSaveable { mutableStateOf("") }
     val isKana = section == Section.HIRAGANA || section == Section.KATAKANA
     Scaffold(topBar = { TopAppBar(title = { Text("${section.title}  ${section.japanese}") }, navigationIcon = { BackButton(back) }) }) { padding ->
@@ -186,7 +186,7 @@ private fun KanaCell(k: Kana, stage: Stage, modifier: Modifier, onClick: () -> U
     ) {
         Column(Modifier.padding(vertical = 8.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
             Text(k.char, style = MaterialTheme.typography.headlineMedium)
-            Text(k.romaji, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (LocalSettings.current.romaji) Text(k.romaji, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
     }
 }

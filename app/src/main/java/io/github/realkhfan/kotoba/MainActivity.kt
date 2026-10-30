@@ -14,23 +14,30 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import io.github.realkhfan.kotoba.data.Library
 import io.github.realkhfan.kotoba.data.Progress
+import io.github.realkhfan.kotoba.data.SettingsStore
+import io.github.realkhfan.kotoba.ui.AssetSpeaker
 import io.github.realkhfan.kotoba.ui.KotobaApp
 import io.github.realkhfan.kotoba.ui.KotobaTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
 
+private class AppData(val library: Library, val progress: Progress, val settings: SettingsStore, val speaker: AssetSpeaker)
+
 /** One copy per process, so a new activity never reads the progress file while the old one is still writing it. */
 private object Store {
-    @Volatile private var data: Pair<Library, Progress>? = null
+    @Volatile private var data: AppData? = null
 
-    fun get(context: Context): Pair<Library, Progress> = data ?: synchronized(this) {
-        data ?: run {
-            val library = Library.load { name -> context.assets.open(name).bufferedReader().use { it.readText() } }
-            val progress = Progress(File(context.filesDir, "progress.tsv")).apply { load() }
-            (library to progress).also { data = it }
-        }
+    fun get(context: Context): AppData = data ?: synchronized(this) {
+        data ?: AppData(
+            Library.load { name -> context.assets.open(name).bufferedReader().use { it.readText() } },
+            Progress(File(context.filesDir, "progress.tsv")).apply { load() },
+            SettingsStore(context.getSharedPreferences("settings", Context.MODE_PRIVATE)),
+            AssetSpeaker(context),
+        ).also { data = it }
     }
+
+    fun stopSound() = data?.speaker?.stop()
 }
 
 class MainActivity : ComponentActivity() {
@@ -40,14 +47,16 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContent {
-            KotobaTheme {
-                val data by produceState<Pair<Library, Progress>?>(null) {
-                    value = withContext(Dispatchers.IO) { Store.get(applicationContext) }
-                }
-                val loaded = data
-                if (loaded == null) Surface(Modifier.fillMaxSize()) {} else KotobaApp(loaded.first, loaded.second, resumeTick)
-            }
+            val data by produceState<AppData?>(null) { value = withContext(Dispatchers.IO) { Store.get(applicationContext) } }
+            val loaded = data
+            if (loaded == null) KotobaTheme { Surface(Modifier.fillMaxSize()) {} }
+            else KotobaApp(loaded.library, loaded.progress, loaded.settings, loaded.speaker, BuildConfig.VERSION_NAME, resumeTick)
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        if (!isChangingConfigurations) Store.stopSound()
     }
 
     override fun onResume() {
