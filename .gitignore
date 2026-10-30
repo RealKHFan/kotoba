@@ -9,3 +9,4 @@ signing/
 *.keystore
 *.p12
 keystore-info.txt
+__pycache__/
