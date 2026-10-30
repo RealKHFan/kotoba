@@ -1,13 +1,18 @@
 """Makes the sound clips in app/src/main/assets/audio for kana, words, kanji examples, sentences and grammar.
 
-Usage: python tools/audio.py [--voice jvnv-F1-jp] [--only-missing]
+Usage: python tools/audio.py [--voice jvnv-F1-jp] [--only-missing] [--recheck]
 Needs: pip install style-bert-vits2 pyopenjtalk-plus   (and ffmpeg with libopus on the PATH)
+       pip install faster-whisper scipy                  (for --recheck)
 
 Words and sentences come from Style-Bert-VITS2 with a JVNV voice (CC BY-SA 4.0), which takes pitch
 accent from OpenJTalk. Single kana come from OpenJTalk's own HTS voice: the neural voice turns a lone
 syllable into a sigh, and speech recognition could make out the plain voice far better. Each clip is named like the app does it (data/Audio.kt): the first 16 hex digits of the
 SHA-1 of what is said ("written|reading" for words). When OpenJTalk would read a word or sentence
 differently from our reading (一日 as いちにち instead of ついたち), the clip is made from the kana instead.
+
+The neural voice sometimes slurs a short word. --recheck lets a speech recognizer (Whisper small) listen
+to every clip; when it can't make one out, the clip is made again with other random seeds and, for words,
+finally with the plain voice, and the first take the recognizer gets right is kept.
 """
 import argparse
 import hashlib
@@ -17,6 +22,7 @@ import subprocess
 
 import numpy as np
 import pyopenjtalk
+import torch
 from huggingface_hub import hf_hub_download
 from style_bert_vits2.constants import Languages
 from style_bert_vits2.nlp import bert_models
@@ -47,6 +53,17 @@ def lines(name):
 
 def pron(s):
     return re.sub(r"[、。？！?!…「」\s]", "", pyopenjtalk.g2p(s, kana=True))
+
+
+def sounds(s):
+    """Kana as heard, for comparing with a recognizer: hiragana, long vowels and を folded together."""
+    k = pron(s).replace("ヲ", "オ")
+    out = []
+    for c in (chr(ord(c) - 0x60) if "ァ" <= c <= "ヶ" else c for c in k):
+        if c == "ー" or (out and c in "いう" and out[-1] in "えけげせぜてでねへべぺめれおこごそぞとどのほぼぽもよろょ"):
+            continue
+        out.append(c)
+    return "".join(out)
 
 
 def spoken(text, reading):
@@ -122,10 +139,68 @@ def encode(audio, sr, path):
     )
 
 
+def make(model, say, single, seed=0):
+    if single:
+        audio, sr = pyopenjtalk.tts(say, speed=0.8)
+    else:
+        torch.manual_seed(seed)
+        # The voice's text front end trips over ！, … and quote marks in the middle of a sentence.
+        text = say.replace("！", "。").replace("…", "、").replace("「", "").replace("」", "")
+        sr, audio = model.infer(text=text, length=1.1 if len(say) <= 6 else 1.0)
+    return tidy(audio, sr), sr
+
+
+def distance(a, b):
+    d = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        prev, d[0] = d[0], i
+        for j, cb in enumerate(b, 1):
+            prev, d[j] = d[j], min(d[j] + 1, d[j - 1] + 1, prev + (ca != cb))
+    return d[-1]
+
+
+def understood(asr, audio, sr, k, say):
+    """Words must be heard exactly; a sentence may have a slip or two (recognizers guess at particles)."""
+    import scipy.signal
+    a16 = scipy.signal.resample_poly(audio, 16000, sr).astype(np.float32)
+    heard = sounds("".join(s.text for s in asr.transcribe(a16, language="ja", beam_size=5)[0]))
+    targets = {sounds(t) for t in (say, *k.split("|"))}
+    if "|" in k:
+        return heard in targets
+    return min(distance(heard, t) / max(len(t), 1) for t in targets) <= 0.15
+
+
+def recheck(model, todo):
+    from faster_whisper import WhisperModel
+    asr = WhisperModel("small", device="cpu", compute_type="int8")
+    fixed, left = [], []
+    for k, (say, single) in sorted(todo.items()):
+        if single:
+            continue  # one syllable is too little for a recognizer
+        path = os.path.join(OUT, key(k) + ".ogg")
+        raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", path, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
+                             capture_output=True, check=True).stdout
+        if understood(asr, np.frombuffer(raw, dtype="<i2").astype(np.float32) / 32768.0, 16000, k, say):
+            continue
+        takes = [(say, False, seed) for seed in (1, 2, 3)] + ([(say, True, 0)] if "|" in k else [])
+        for args in takes:
+            audio, sr = make(model, *args)
+            if understood(asr, audio, sr, k, say):
+                encode(audio, sr, path)
+                fixed.append(k)
+                print(f"remade {k} ({'plain voice' if args[1] else f'seed {args[2]}'})", flush=True)
+                break
+        else:
+            left.append(k)
+            print("kept", k, flush=True)
+    print(f"recheck: {len(fixed)} clips made again, {len(left)} kept as they were")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--voice", default="jvnv-M2-jp", choices=VOICES)
     ap.add_argument("--only-missing", action="store_true")
+    ap.add_argument("--recheck", action="store_true", help="remake clips a speech recognizer can't make out")
     args = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
     todo = clips()
@@ -150,17 +225,13 @@ def main():
             if args.only_missing and os.path.exists(path):
                 continue
             if say not in made:
-                if single:
-                    audio, sr = pyopenjtalk.tts(say, speed=0.8)
-                else:
-                    # The voice's text front end trips over ！, … and quote marks in the middle of a sentence.
-                    text = say.replace("！", "。").replace("…", "、").replace("「", "").replace("」", "")
-                    sr, audio = model.infer(text=text, length=1.1 if len(say) <= 6 else 1.0)
-                made[say] = (tidy(audio, sr), sr)
+                made[say] = make(model, say, single)
             encode(*made[say], path)
             if i % 100 == 0:
                 print(i, "/", len(todo), k, "→", say, flush=True)
     print("done:", len(todo), "clips")
+    if args.recheck:
+        recheck(model, todo)
 
 
 if __name__ == "__main__":

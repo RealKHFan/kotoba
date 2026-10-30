@@ -78,6 +78,7 @@ After changing it, rebuild the generated files:
 ```
 python3 tools/strokes.py /path/to/kanjivg     # stroke order, from a KanjiVG checkout
 python3 tools/audio.py --only-missing         # sound clips for new or changed text (needs style-bert-vits2 and ffmpeg)
+python3 tools/audio.py --only-missing --recheck  # also remake clips a speech recognizer can't make out (needs faster-whisper)
 ```
 
 ## Credits
