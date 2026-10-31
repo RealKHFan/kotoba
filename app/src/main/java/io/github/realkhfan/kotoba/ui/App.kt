@@ -23,6 +23,7 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import io.github.realkhfan.kotoba.data.Backup
 import io.github.realkhfan.kotoba.data.Item
 import io.github.realkhfan.kotoba.data.Library
 import io.github.realkhfan.kotoba.data.Progress
@@ -41,6 +42,7 @@ fun KotobaApp(
     progress: Progress,
     settings: SettingsStore,
     speaker: Speaker = Speaker.Silent,
+    backup: Backup? = null,
     version: String = "",
     resumeTick: Int = 0,
 ) {
@@ -51,13 +53,13 @@ fun KotobaApp(
     }
     KotobaTheme(dark) {
         CompositionLocalProvider(LocalSettings provides settings.value, LocalSpeaker provides speaker) {
-            Screens(library, progress, settings, version, resumeTick)
+            Screens(library, progress, settings, backup, version, resumeTick)
         }
     }
 }
 
 @Composable
-private fun Screens(library: Library, progress: Progress, settings: SettingsStore, version: String, resumeTick: Int) {
+private fun Screens(library: Library, progress: Progress, settings: SettingsStore, backup: Backup?, version: String, resumeTick: Int) {
     val stack = rememberSaveable(saver = listSaver<SnapshotStateList<String>, String>({ it.toList() }, { it.toMutableStateList() })) {
         mutableStateListOf("home")
     }
@@ -82,9 +84,12 @@ private fun Screens(library: Library, progress: Progress, settings: SettingsStor
             "item" -> library.byKey[arg]?.let { DetailScreen(it, library, progress, open, back) } ?: LaunchedEffect(route) { back() }
             "lesson" -> LessonScreen(Section.valueOf(arg), library, progress, open, back)
             "write" -> WriteScreen(arg, library, back)
-            "settings" -> SettingsScreen(settings, progress, version, back)
+            "settings" -> SettingsScreen(settings, progress, version, backup, back)
             "review" -> ReviewScreen(Section.entries.firstOrNull { it.name == arg }, library, progress, now, back)
-            else -> HomeScreen(library, progress, now, open)
+            else -> {
+                HomeScreen(library, progress, now, backup?.failing == true, open)
+                if (backup != null && backup.folder == null && !backup.asked) BackupQuestion(backup, progress)
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import io.github.realkhfan.kotoba.data.Backup
 import io.github.realkhfan.kotoba.data.Library
 import io.github.realkhfan.kotoba.data.Progress
 import io.github.realkhfan.kotoba.data.SettingsStore
@@ -22,19 +23,23 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
 
-private class AppData(val library: Library, val progress: Progress, val settings: SettingsStore, val speaker: AssetSpeaker)
+private class AppData(val library: Library, val progress: Progress, val settings: SettingsStore, val speaker: AssetSpeaker, val backup: Backup)
 
 /** One copy per process, so a new activity never reads the progress file while the old one is still writing it. */
 private object Store {
     @Volatile private var data: AppData? = null
 
     fun get(context: Context): AppData = data ?: synchronized(this) {
-        data ?: AppData(
-            Library.load { name -> context.assets.open(name).bufferedReader().use { it.readText() } },
-            Progress(File(context.filesDir, "progress.tsv")).apply { load() },
-            SettingsStore(context.getSharedPreferences("settings", Context.MODE_PRIVATE)),
-            AssetSpeaker(context),
-        ).also { data = it }
+        data ?: run {
+            val backup = Backup(context, context.getSharedPreferences("backup", Context.MODE_PRIVATE))
+            AppData(
+                Library.load { name -> context.assets.open(name).bufferedReader().use { it.readText() } },
+                Progress(File(context.filesDir, "progress.tsv")).apply { load(); copyTo = backup::write },
+                SettingsStore(context.getSharedPreferences("settings", Context.MODE_PRIVATE)),
+                AssetSpeaker(context),
+                backup,
+            )
+        }.also { data = it }
     }
 
     fun stopSound() = data?.speaker?.stop()
@@ -50,7 +55,7 @@ class MainActivity : ComponentActivity() {
             val data by produceState<AppData?>(null) { value = withContext(Dispatchers.IO) { Store.get(applicationContext) } }
             val loaded = data
             if (loaded == null) KotobaTheme { Surface(Modifier.fillMaxSize()) {} }
-            else KotobaApp(loaded.library, loaded.progress, loaded.settings, loaded.speaker, BuildConfig.VERSION_NAME, resumeTick)
+            else KotobaApp(loaded.library, loaded.progress, loaded.settings, loaded.speaker, loaded.backup, BuildConfig.VERSION_NAME, resumeTick)
         }
     }
 

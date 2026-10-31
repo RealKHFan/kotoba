@@ -46,8 +46,13 @@ data class Stats(val total: Int, val learned: Int, val due: Int, val mastered: I
 class Progress(private val file: File?, private val io: Executor = Executors.newSingleThreadExecutor()) {
     private val states = mutableStateMapOf<String, SrsState>()
 
+    /** Called on the writer thread with the file's text after each save, to keep a copy elsewhere (see [Backup]). */
+    @Volatile var copyTo: ((String) -> Unit)? = null
+
     operator fun get(key: String): SrsState? = states[key]
     fun isLearned(key: String) = key in states
+    val learnedCount get() = states.size
+    fun snapshot(): Map<String, SrsState> = states.toMap()
 
     fun load() {
         val f = file?.takeIf { it.exists() } ?: return
@@ -76,6 +81,19 @@ class Progress(private val file: File?, private val io: Executor = Executors.new
         save()
     }
 
+    /** Replaces everything with [restored] (from a backup). */
+    fun replaceAll(restored: Map<String, SrsState>) {
+        states.clear()
+        states.putAll(restored)
+        save()
+    }
+
+    /** Copies the current progress now, e.g. into a newly chosen backup folder. */
+    fun copyNow() {
+        val text = encode(states.toMap())
+        if (states.isNotEmpty()) io.execute { copyTo?.invoke(text) }
+    }
+
     fun due(items: List<Item>, now: Long): List<Item> = items.filter { item -> states[item.key]?.let { it.due <= now } == true }
 
     fun stats(items: List<Item>, now: Long): Stats {
@@ -95,11 +113,17 @@ class Progress(private val file: File?, private val io: Executor = Executors.new
     private fun save() {
         val f = file ?: return
         val text = encode(states.toMap())
-        io.execute { writeAtomic(f, text) }
+        // Nothing learned (after a reset) isn't copied, so the backup can still undo a reset until the next lesson.
+        val copy = states.isNotEmpty()
+        io.execute {
+            writeAtomic(f, text)
+            if (copy) copyTo?.invoke(text)
+        }
     }
 
     companion object {
-        private const val HEADER = "# kotoba progress 1"
+        const val HEADER_PREFIX = "# kotoba progress"
+        private const val HEADER = "$HEADER_PREFIX 1"
 
         fun encode(states: Map<String, SrsState>): String =
             (listOf(HEADER) + states.entries.sortedBy { it.key }.map { "${it.key}\t${it.value.level}\t${it.value.due}" })

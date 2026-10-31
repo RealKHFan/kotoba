@@ -40,6 +40,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import io.github.realkhfan.kotoba.data.AnswerMode
+import io.github.realkhfan.kotoba.data.Backup
 import io.github.realkhfan.kotoba.data.Progress
 import io.github.realkhfan.kotoba.data.Settings
 import io.github.realkhfan.kotoba.data.SettingsStore
@@ -74,7 +75,7 @@ private fun Toggle(title: String, note: String, checked: Boolean, onChange: (Boo
 }
 
 @Composable
-fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, back: () -> Unit) {
+fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, backup: Backup? = null, back: () -> Unit) {
     val s = store.value
     var confirmReset by rememberSaveable { mutableStateOf(false) }
     val context = LocalContext.current
@@ -100,6 +101,11 @@ fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, ba
 
             SectionLabel("Sound")
             Toggle("Play automatically", "Say new words in lessons, and the answer after each question", s.autoplay) { v -> store.update { it.copy(autoplay = v) } }
+
+            if (backup != null) {
+                SectionLabel("Backup")
+                BackupSettings(backup, progress)
+            }
 
             SectionLabel("Progress")
             Text("Kotoba keeps your progress in one small file on this phone. Android backup can include it.", style = MaterialTheme.typography.bodyMedium)
@@ -130,7 +136,12 @@ fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, ba
         AlertDialog(
             onDismissRequest = { confirmReset = false },
             title = { Text("Reset progress?") },
-            text = { Text("Everything you have learned and all review times are deleted. This can't be undone.") },
+            text = {
+                Text(
+                    "Everything you have learned and all review times are deleted." +
+                        if (backup?.folder != null) " The copy in your backup folder stays as it is until your next lesson, so you can still restore it." else " This can't be undone.",
+                )
+            },
             confirmButton = { TextButton(onClick = { progress.reset(); confirmReset = false }) { Text("Reset") } },
             dismissButton = { TextButton(onClick = { confirmReset = false }) { Text("Cancel") } },
         )

@@ -41,13 +41,14 @@ Short lessons introduce new things; spaced-repetition reviews bring them back ri
 - **Typing**: answers can be typed instead of chosen. Type romaji (`taberu`) and it turns into kana (たべる) as you go, so no Japanese keyboard is needed; a Japanese keyboard works too.
 - **Stroke order**: every kana and kanji page shows the character being written stroke by stroke. **Practice** lets you write it with your finger, tracing or from memory; each stroke is checked for shape, position and direction.
 - **Audio**: every kana, word, kanji example, sentence and grammar example can be played, with natural pitch accent (箸 and 橋 sound different). The clips are in the app, so this works offline.
-- **Settings**: theme, lesson sizes, choose/type/mix answers, romaji on or off, readings above kanji in quizzes, reviews per session, sound on or off, and resetting progress.
+- **Backup**: on first start Kotoba asks for a folder and then saves your progress there as `kotoba-progress.txt` after every lesson and review, so you can back it up however you like (Syncthing, a computer, a USB stick). Pick the same folder after a reinstall or on a new phone and Kotoba offers to restore it. No storage permission is needed: you choose the folder in Android's own file picker.
+- **Settings**: theme, lesson sizes, choose/type/mix answers, romaji on or off, readings above kanji in quizzes, reviews per session, sound on or off, the backup folder, and resetting progress.
 - Kanji are always drawn with Japanese glyphs, even on a phone set to English or German.
 
 ## Privacy
 
 - No internet permission, no permissions at all, no Google code, no ads, no tracking.
-- Your progress is one small file on your phone. Android backup (Seedvault on GrapheneOS) can include it.
+- Your progress is one small file on your phone, copied to the backup folder you chose (if you chose one). Android backup (Seedvault on GrapheneOS) can include it too.
 
 ## Install
 

@@ -5,8 +5,10 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import com.github.takahirom.roborazzi.captureRoboImage
+import io.github.realkhfan.kotoba.data.Backup
 import io.github.realkhfan.kotoba.data.Choice
 import io.github.realkhfan.kotoba.data.Item
 import io.github.realkhfan.kotoba.data.Order
@@ -20,6 +22,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 import kotlin.random.Random
@@ -120,6 +123,18 @@ class ScreensTest {
 
     @Test fun settings() = shot("15-settings") {
         SettingsScreen(io.github.realkhfan.kotoba.data.SettingsStore(null), sample(), "0.2.0") {}
+    }
+
+    private fun backup() = RuntimeEnvironment.getApplication().let { Backup(it, it.getSharedPreferences("backup-test", 0)) }
+
+    @Test fun backupQuestion() = shot("19-backup-question") {
+        KotobaApp(lib, sample(), io.github.realkhfan.kotoba.data.SettingsStore(null), backup = backup())
+    }
+
+    @Test fun settingsBackup() {
+        shot("20-settings-backup") { SettingsScreen(io.github.realkhfan.kotoba.data.SettingsStore(null), sample(), "0.3.0", backup()) {} }
+        compose.onNodeWithText("Choose folder").performScrollTo()
+        compose.onRoot().captureRoboImage("src/test/screenshots/20-settings-backup.png")
     }
 
     @Test fun writing() = shot("16-write") { WriteScreen("書", lib) {} }

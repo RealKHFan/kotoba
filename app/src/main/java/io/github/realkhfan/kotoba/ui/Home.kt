@@ -40,7 +40,7 @@ fun waitText(ms: Long): String {
 }
 
 @Composable
-fun HomeScreen(library: Library, progress: Progress, now: Long, open: (String) -> Unit) {
+fun HomeScreen(library: Library, progress: Progress, now: Long, backupFailing: Boolean = false, open: (String) -> Unit) {
     val all = progress.stats(library.all, now)
     Scaffold { padding ->
         LazyColumn(
@@ -57,6 +57,17 @@ fun HomeScreen(library: Library, progress: Progress, now: Long, open: (String) -
                         Text("言葉 · a little Japanese every day", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
                     IconButton(onClick = { open("settings") }) { Icon(Icons.Filled.Settings, contentDescription = "Settings") }
+                }
+            }
+            if (backupFailing) item {
+                Card(
+                    onClick = { open("settings") }, modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer),
+                ) {
+                    Text(
+                        "Backup failed: Kotoba can't reach its backup folder. Tap to choose it again.",
+                        style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(16.dp),
+                    )
                 }
             }
             item { ReviewCard(all, progress.nextDue(library.all, now)?.let { it - now }) { open("review:all") } }
