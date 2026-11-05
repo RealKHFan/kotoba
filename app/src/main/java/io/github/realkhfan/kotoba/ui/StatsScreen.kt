@@ -28,6 +28,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
@@ -35,7 +36,6 @@ import io.github.realkhfan.kotoba.data.Library
 import io.github.realkhfan.kotoba.data.Progress
 import io.github.realkhfan.kotoba.data.Section
 import java.time.format.TextStyle
-import java.util.Locale
 
 /** A small bar chart. Each bar reads out as one line for TalkBack. */
 @Composable
@@ -93,7 +93,8 @@ fun StatsScreen(library: Library, progress: Progress, now: Long, open: (String) 
 
             SectionLabel("Reviews coming up")
             val forecast = progress.forecast(now)
-            val dayNames = forecast.indices.map { if (it == 0) "Today" else today.plusDays(it.toLong()).dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.getDefault()) }
+            val locale = LocalConfiguration.current.locales[0]
+            val dayNames = forecast.indices.map { if (it == 0) "Today" else today.plusDays(it.toLong()).dayOfWeek.getDisplayName(TextStyle.SHORT, locale) }
             Bars(forecast, dayNames, colors.primary) { v, label -> "$label: $v reviews" }
 
             SectionLabel("Last 14 days")
