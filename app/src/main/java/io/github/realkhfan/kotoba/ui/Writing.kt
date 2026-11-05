@@ -65,6 +65,7 @@ import io.github.realkhfan.kotoba.data.Library
 import io.github.realkhfan.kotoba.data.Pt
 import io.github.realkhfan.kotoba.data.Stroke
 import io.github.realkhfan.kotoba.data.Strokes
+import io.github.realkhfan.kotoba.data.Writing
 import kotlin.math.hypot
 
 private fun DrawScope.guide(color: Color) {
@@ -131,36 +132,39 @@ fun StrokeOrder(char: String, strokes: List<Stroke>, modifier: Modifier = Modifi
     }
 }
 
+/** Without help, a stroke can be tried this many times in a row before the character counts as wrong. */
 /**
- * Draw the character with a finger. Each stroke is checked against the expected one; a miss
- * shows where it starts, and after three misses the stroke is filled in so you can go on.
+ * Draw the character with a finger. Each stroke is checked against the expected one. With [help], a miss
+ * shows where it starts, two show the stroke, and after three it is filled in so you can go on. Without
+ * help nothing is shown, and missing one stroke four times in a row ends it with [onFailed] (see [Writing]).
  */
 @Composable
-fun WritingPad(strokes: List<Stroke>, trace: Boolean, onFinished: (mistakes: Int) -> Unit, modifier: Modifier = Modifier) {
-    var done by remember(strokes) { mutableIntStateOf(0) }
-    var misses by remember(strokes) { mutableIntStateOf(0) }
-    var mistakes by remember(strokes) { mutableIntStateOf(0) }
+fun WritingPad(
+    strokes: List<Stroke>,
+    trace: Boolean,
+    onFinished: (mistakes: Int) -> Unit,
+    modifier: Modifier = Modifier,
+    help: Boolean = true,
+    onFailed: () -> Unit = {},
+) {
+    val w = remember(strokes, help) { Writing(strokes.size, help) }
     val drawing = remember(strokes) { mutableStateListOf<Pt>() }
     val colors = MaterialTheme.colorScheme
     fun finishStroke(points: List<Pt>) {
         drawing.clear()
-        if (done >= strokes.size) return
-        if (Strokes.matches(points, strokes[done])) {
-            done++; misses = 0
-        } else {
-            mistakes++; misses++
-            if (misses >= 3) { done++; misses = 0 }
+        if (w.finished || w.failed) return
+        if (w.drew(Strokes.matches(points, strokes[w.done]))) {
+            if (w.failed) onFailed() else onFinished(w.mistakes)
         }
-        if (done == strokes.size) onFinished(mistakes)
     }
     Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
         Surface(
             shape = RoundedCornerShape(16.dp), color = colors.surfaceContainerLow,
             modifier = Modifier.fillMaxWidth().aspectRatio(1f)
-                .semantics { contentDescription = "Writing area. Stroke ${minOf(done + 1, strokes.size)} of ${strokes.size}." },
+                .semantics { contentDescription = "Writing area. Stroke ${minOf(w.done + 1, strokes.size)} of ${strokes.size}." },
         ) {
             Canvas(
-                Modifier.fillMaxSize().pointerInput(strokes) {
+                Modifier.fillMaxSize().pointerInput(strokes, help) {
                     awaitEachGesture {
                         val scale = size.width.coerceAtMost(size.height) / Strokes.GRID
                         fun grid(o: Offset) = Pt(o.x / scale, o.y / scale)
@@ -180,11 +184,11 @@ fun WritingPad(strokes: List<Stroke>, trace: Boolean, onFinished: (mistakes: Int
             ) {
                 guide(colors.outlineVariant)
                 if (trace) strokes.forEach { stroke(it, colors.surfaceContainerHighest) }
-                strokes.take(done).forEach { stroke(it, colors.onSurface) }
-                if (done < strokes.size && misses > 0) {
+                strokes.take(w.done).forEach { stroke(it, colors.onSurface) }
+                if (help && !w.finished && w.misses > 0) {
                     // Show where the next stroke goes: its start, and after two misses the whole stroke.
-                    if (misses >= 2) stroke(strokes[done], colors.primary.copy(alpha = 0.35f))
-                    val s = strokes[done][0]
+                    if (w.misses >= 2) stroke(strokes[w.done], colors.primary.copy(alpha = 0.35f))
+                    val s = strokes[w.done][0]
                     val scale = size.minDimension / Strokes.GRID
                     drawCircle(colors.primary, 3.5f * scale, Offset(s.x * scale, s.y * scale))
                 }
@@ -193,9 +197,11 @@ fun WritingPad(strokes: List<Stroke>, trace: Boolean, onFinished: (mistakes: Int
         }
         Spacer(Modifier.height(12.dp))
         val status = when {
-            done == strokes.size -> if (mistakes == 0) "Perfect!" else "Done, with $mistakes ${if (mistakes == 1) "miss" else "misses"}."
-            misses > 0 -> "Not quite. Stroke ${done + 1} starts at the dot."
-            else -> "Draw stroke ${done + 1} of ${strokes.size}."
+            w.failed -> "Stroke ${w.done + 1} missed ${Writing.STRICT_TRIES} times."
+            w.finished -> if (w.mistakes == 0) "Perfect!" else "Done, with ${w.mistakes} ${if (w.mistakes == 1) "miss" else "misses"}."
+            w.misses > 0 && help -> "Not quite. Stroke ${w.done + 1} starts at the dot."
+            w.misses > 0 -> "Not quite. Stroke ${w.done + 1}, try ${w.misses + 1} of ${Writing.STRICT_TRIES}."
+            else -> "Draw stroke ${w.done + 1} of ${strokes.size}."
         }
         Text(status, style = MaterialTheme.typography.titleMedium)
     }
@@ -209,6 +215,7 @@ fun WriteScreen(text: String, library: Library, close: () -> Unit) {
     var trace by rememberSaveable { mutableStateOf(true) }
     var run by rememberSaveable { mutableIntStateOf(0) }
     var finishedAt by remember { mutableStateOf<Pair<Int, Int>?>(null) }
+    val help = LocalSettings.current.writingHelp
     if (chars.isEmpty()) {
         LaunchedEffect(Unit) { close() }
         return
@@ -235,7 +242,7 @@ fun WriteScreen(text: String, library: Library, close: () -> Unit) {
             }
             Spacer(Modifier.height(16.dp))
             key(char, run) {
-                WritingPad(strokes, trace, onFinished = { finishedAt = index to run }, modifier = Modifier.widthIn(max = 480.dp))
+                WritingPad(strokes, trace, onFinished = { finishedAt = index to run }, modifier = Modifier.widthIn(max = 480.dp), help = trace || help)
             }
             Spacer(Modifier.height(16.dp))
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {

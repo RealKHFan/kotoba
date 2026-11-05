@@ -97,6 +97,10 @@ fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, ba
             Toggle("Readings above kanji", "Show how a word is read when you're asked for its meaning", s.quizReadings) { v -> store.update { it.copy(quizReadings = v) } }
             Toggle("Listening questions", "Sometimes play a word, kana or sentence and ask what it was", s.listening) { v -> store.update { it.copy(listening = v) } }
             Toggle("Writing questions", "Sometimes ask you to write a kanji or kana from memory", s.writing) { v -> store.update { it.copy(writing = v) } }
+            Toggle(
+                "Writing help", "After a miss, show where the stroke starts and draw it after three. Off: no help, and missing one stroke four times in a row counts as wrong",
+                s.writingHelp,
+            ) { v -> store.update { it.copy(writingHelp = v) } }
             Choices("Reviews per session", null, Settings.reviewChoices, s.reviewsPerSession, { if (it == 0) "All" else it.toString() }) { v ->
                 store.update { it.copy(reviewsPerSession = v) }
             }

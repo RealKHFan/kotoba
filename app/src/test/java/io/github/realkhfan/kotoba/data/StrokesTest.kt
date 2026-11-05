@@ -54,4 +54,34 @@ class StrokesTest {
         assertTrue(Strokes.matches(listOf(dot[0]), dot))
         assertFalse(Strokes.matches(listOf(Pt(dot[0].x + 40f, dot[0].y + 40f)), dot))
     }
+
+    @Test fun withoutHelpFourMissesInARowOnOneStrokeFail() {
+        // な has four strokes: three misses on the first, then right; the second right; four misses on the third.
+        val w = Writing(4, help = false)
+        repeat(3) { assertFalse(w.drew(false)) }
+        assertFalse(w.drew(true))
+        assertEquals(0, w.misses)
+        assertFalse(w.drew(true))
+        repeat(3) { assertFalse(w.drew(false)) }
+        assertTrue(w.drew(false))
+        assertTrue(w.failed)
+        assertEquals(2, w.done)
+        assertFalse(w.drew(true)) // nothing more counts
+    }
+
+    @Test fun withoutHelpMissesSpreadOverStrokesStillFinish() {
+        val w = Writing(3, help = false)
+        repeat(3) { repeat(3) { w.drew(false) }; w.drew(true) }
+        assertTrue(w.finished)
+        assertFalse(w.failed)
+        assertEquals(9, w.mistakes)
+    }
+
+    @Test fun withHelpTheThirdMissFillsTheStrokeIn() {
+        val w = Writing(2, help = true)
+        repeat(3) { w.drew(false) }
+        assertEquals(1, w.done)
+        assertTrue(w.drew(true))
+        assertFalse(w.failed)
+    }
 }

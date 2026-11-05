@@ -354,14 +354,19 @@ private fun TypedView(q: Typed, result: Boolean?, onAnswer: (Boolean, String) ->
     }
 }
 
-/** Write a character from memory; up to two missed strokes still count as right. Afterwards the stroke order plays. */
+/** Write a character from memory (see [WritingPad] for help and misses). Afterwards the stroke order plays. */
 @Composable
 private fun WriteView(q: Write, library: Library, result: Boolean?, onAnswer: (Boolean) -> Unit) {
     val strokes = remember(q.char) { library.strokesOf(q.char).orEmpty() }
+    val help = LocalSettings.current.writingHelp
     PromptBlock(q.ask, q.prompt, false, null, q.hint, null, answered = result != null)
     Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
         if (result == null) {
-            WritingPad(strokes, trace = false, onFinished = { misses -> onAnswer(misses <= 2) }, modifier = Modifier.widthIn(max = 420.dp))
+            // With help, up to two misses still count as right; without, finishing at all does (a stroke missed four times ends it).
+            WritingPad(
+                strokes, trace = false, onFinished = { misses -> onAnswer(!help || misses <= 2) }, modifier = Modifier.widthIn(max = 420.dp),
+                help = help, onFailed = { onAnswer(false) },
+            )
             TextButton(onClick = { onAnswer(false) }, modifier = Modifier.padding(top = 8.dp)) { Text("I don't remember") }
         } else {
             StrokeOrder(q.char, strokes, Modifier.size(160.dp))

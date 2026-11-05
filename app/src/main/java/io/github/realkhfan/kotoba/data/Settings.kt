@@ -22,6 +22,7 @@ data class Settings(
     val reviewsPerSession: Int = 0,
     val listening: Boolean = true,
     val writing: Boolean = true,
+    val writingHelp: Boolean = true,
 ) {
     /** Words and kanji/sentences follow the settings; a grammar point or a kana row stays one lesson. */
     fun lessonSize(section: Section) = when (section) {
@@ -34,7 +35,7 @@ data class Settings(
     fun toMap(): Map<String, String> = mapOf(
         "theme" to theme.name, "wordsPerLesson" to "$wordsPerLesson", "itemsPerLesson" to "$itemsPerLesson",
         "answers" to answers.name, "romaji" to "$romaji", "quizReadings" to "$quizReadings", "autoplay" to "$autoplay",
-        "reviewsPerSession" to "$reviewsPerSession", "listening" to "$listening", "writing" to "$writing",
+        "reviewsPerSession" to "$reviewsPerSession", "listening" to "$listening", "writing" to "$writing", "writingHelp" to "$writingHelp",
     )
 
     companion object {
@@ -57,6 +58,7 @@ data class Settings(
                 reviewsPerSession = int("reviewsPerSession", base.reviewsPerSession, reviewChoices),
                 listening = bool("listening", base.listening),
                 writing = bool("writing", base.writing),
+                writingHelp = bool("writingHelp", base.writingHelp),
             )
         }
     }
@@ -78,7 +80,7 @@ class SettingsStore(private val prefs: SharedPreferences?) {
             putString("theme", s.theme.name); putInt("wordsPerLesson", s.wordsPerLesson); putInt("itemsPerLesson", s.itemsPerLesson)
             putString("answers", s.answers.name); putBoolean("romaji", s.romaji); putBoolean("quizReadings", s.quizReadings)
             putBoolean("autoplay", s.autoplay); putInt("reviewsPerSession", s.reviewsPerSession)
-            putBoolean("listening", s.listening); putBoolean("writing", s.writing)
+            putBoolean("listening", s.listening); putBoolean("writing", s.writing); putBoolean("writingHelp", s.writingHelp)
         }
         onChange?.invoke()
     }

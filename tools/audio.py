@@ -141,7 +141,8 @@ def encode(audio, sr, path):
 
 def make(model, say, single, seed=0):
     if single:
-        audio, sr = pyopenjtalk.tts(say, speed=0.8)
+        # On its own, OpenJTalk reads は and へ as the particles "wa" and "e"; as katakana they are "ha" and "he".
+        audio, sr = pyopenjtalk.tts({"は": "ハ", "へ": "ヘ"}.get(say, say), speed=0.8)
     else:
         torch.manual_seed(seed)
         # The voice's text front end trips over ！, … and quote marks in the middle of a sentence.

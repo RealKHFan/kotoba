@@ -1,5 +1,9 @@
 package io.github.realkhfan.kotoba.data
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import kotlin.math.hypot
 
 /** A point on KanjiVG's 109 x 109 grid. */
@@ -70,5 +74,41 @@ object Strokes {
         val start = hypot(a.first().x - b.first().x, a.first().y - b.first().y)
         val end = hypot(a.last().x - b.last().x, a.last().y - b.last().y)
         return forward < 14f && forward < backward && start < 22f && end < 22f
+    }
+}
+
+/**
+ * The count while one character of [strokes] strokes is written. With [help], the third miss on a stroke
+ * fills it in; without, the fourth miss in a row on one stroke fails the character. A stroke drawn right
+ * moves on and starts the count again.
+ */
+class Writing(private val strokes: Int, private val help: Boolean) {
+    var done by mutableIntStateOf(0)
+        private set
+    /** Misses in a row on the current stroke. */
+    var misses by mutableIntStateOf(0)
+        private set
+    var mistakes by mutableIntStateOf(0)
+        private set
+    var failed by mutableStateOf(false)
+        private set
+    val finished get() = done == strokes
+
+    /** Counts one drawn stroke; true when it ended the character (all done, or failed). */
+    fun drew(right: Boolean): Boolean {
+        if (finished || failed) return false
+        if (right) {
+            done++; misses = 0
+        } else {
+            mistakes++; misses++
+            if (help && misses >= HELP_TRIES) { done++; misses = 0 }
+            if (!help && misses >= STRICT_TRIES) { failed = true; return true }
+        }
+        return finished
+    }
+
+    companion object {
+        const val HELP_TRIES = 3
+        const val STRICT_TRIES = 4
     }
 }

@@ -54,6 +54,21 @@ class QuizTest {
         assertEquals(1, session.rightFirstTime)
     }
 
+    @Test fun aMissedItemComesBackAsTheSameQuestion() {
+        repeat(20) { seed ->
+            val session = Session(lib.words.take(1), Quiz(lib, Random(seed)), Random(seed), null)
+            val first = session.current!!
+            session.answer(false); session.next()
+            val again = session.current!!
+            assertEquals(first::class, again::class)
+            when (first) {
+                is Choice -> { again as Choice; assertEquals(first.ask, again.ask); assertEquals(first.prompt, again.prompt); assertEquals(first.listen, again.listen)
+                    assertEquals(first.options[first.answer], again.options[again.answer]); assertEquals(first.options.toSet(), again.options.toSet()) }
+                else -> assertEquals(first, again)
+            }
+        }
+    }
+
     @Test fun aWrongTypedAnswerCanBeOverruled() {
         val graded = mutableListOf<Boolean>()
         val session = Session(lib.words.take(1), Quiz(lib, Random(4)), Random(4)) { _, right -> graded += right }
@@ -74,6 +89,10 @@ class QuizTest {
         assertTrue(Meaning.matches("juvenile", "boy; juvenile"))
         assertTrue(Meaning.matches("beatiful", "beautiful"))
         assertTrue(Meaning.matches("im sorry", "I'm sorry"))
+        assertTrue(Meaning.matches("Sorry", "excuse me; I'm sorry"))
+        assertTrue(Meaning.matches("I am sorry", "excuse me; I'm sorry"))
+        assertTrue(Meaning.matches("surprised", "to be surprised"))
+        assertFalse(Meaning.matches("excuse", "excuse me; I'm sorry"))
         assertFalse(Meaning.matches("car", "cat"))
         assertFalse(Meaning.matches("drink", "to eat"))
         assertFalse(Meaning.matches("", "to eat"))

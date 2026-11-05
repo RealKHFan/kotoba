@@ -78,11 +78,17 @@ object Meaning {
         listOf(normalize(sense.replace(Regex("\\(.*?\\)"), " ")), normalize(sense))
     } + normalize(meaning)).filter(String::isNotEmpty).toSet()
 
-    /** Right when it equals one sense; one typo is forgiven from five letters on, two from nine. */
+    // Small words that don't change a meaning: "I'm sorry" is "sorry", "to be surprised" is "surprised", "(my) husband" is "husband".
+    private val small = setOf("to", "a", "an", "the", "be", "is", "am", "are", "i", "im", "it", "its", "my", "your", "one", "ones", "someone", "someones", "something")
+
+    private fun core(s: String) = s.split(' ').filter { it !in small }.joinToString(" ")
+
+    /** Right when it equals one sense, with or without small words; one typo is forgiven from five letters on, two from nine. */
     fun matches(input: String, meaning: String): Boolean {
         val typed = normalize(input)
         if (typed.isEmpty()) return false
-        return answers(meaning).any { it == typed || (it.length >= 5 && distance(it, typed) <= if (it.length >= 9) 2 else 1) }
+        fun close(a: String, b: String) = a.isNotEmpty() && (a == b || (a.length >= 5 && distance(a, b) <= if (a.length >= 9) 2 else 1))
+        return answers(meaning).any { close(it, typed) || close(core(it), core(typed)) }
     }
 
     private fun distance(a: String, b: String): Int {
@@ -259,13 +265,15 @@ class Quiz(private val library: Library, private val random: Random, private val
 
 /**
  * One run through [items]. A wrong answer sends the item to the back of the queue until it is
- * answered right; only the first answer per item is passed to [grade] (null in lessons).
+ * answered right, asked the same way again (choices in a new order); the kind of question only
+ * changes from one session to the next. Only the first answer per item is passed to [grade] (null in lessons).
  * An answer counts when the next question comes (or [commit]), so a typed answer the app got
  * wrong can still be [overrule]d.
  */
-class Session(items: List<Item>, private val quiz: Quiz, random: Random, private val grade: ((Item, Boolean) -> Unit)?) {
+class Session(items: List<Item>, private val quiz: Quiz, private val random: Random, private val grade: ((Item, Boolean) -> Unit)?) {
     private val queue = ArrayDeque(items.shuffled(random))
     private val missed = HashSet<String>()
+    private val retry = HashMap<String, Question>()
     private var pending: Boolean? = null
     val total = items.size
     var finished = 0
@@ -293,11 +301,26 @@ class Session(items: List<Item>, private val quiz: Quiz, random: Random, private
             grade?.invoke(item, correct)
             if (correct) rightFirstTime++
         }
-        if (correct) finished++ else { missed += item.key; queue.addLast(item) }
+        if (correct) {
+            finished++
+        } else {
+            missed += item.key
+            current?.let { retry[item.key] = again(it) }
+            queue.addLast(item)
+        }
     }
 
     fun next() {
         commit()
-        current = queue.removeFirstOrNull()?.let(quiz::question)
+        current = queue.removeFirstOrNull()?.let { retry.remove(it.key) ?: quiz.question(it) }
+    }
+
+    private fun again(q: Question): Question = when (q) {
+        is Choice -> {
+            val options = q.options.shuffled(random)
+            q.copy(options = options, answer = options.indexOf(q.options[q.answer]))
+        }
+        is Order -> q.copy(tiles = q.tiles.shuffled(random))
+        else -> q
     }
 }
