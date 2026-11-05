@@ -283,3 +283,443 @@
 服|clothes|フク||服 ふく clothes
 旅|trip|リョ|たび|旅行 りょこう trip
 銀|silver|ギン||銀行 ぎんこう bank
+
+## 3 People
+夫|husband; man|フ、フウ|おっと|夫 おっと (my) husband; 夫婦 ふうふ married couple
+妻|wife|サイ|つま|妻 つま (my) wife; 夫妻 ふさい husband and wife
+婦|woman; wife|フ||夫婦 ふうふ married couple; 主婦 しゅふ housewife
+彼|he; that|ヒ|かれ、かの|彼 かれ he; 彼女 かのじょ she, girlfriend
+君|you; Mr. (junior)|クン|きみ|君 きみ you (casual)
+皆|all; everyone|カイ|みな|皆さん みなさん everyone
+様|Mr. or Ms.; manner|ヨウ|さま|様子 ようす appearance; 様々 さまざま various
+氏|family name; Mr.|シ|うじ|氏名 しめい full name
+娘|daughter|ジョウ|むすめ|娘 むすめ daughter
+孫|grandchild|ソン|まご|孫 まご grandchild
+祖|ancestor|ソ||祖父 そふ grandfather; 祖母 そぼ grandmother
+民|people; nation|ミン|たみ|国民 こくみん citizens; 市民 しみん citizen
+王|king|オウ||王様 おうさま king
+老|old age|ロウ|お.いる、ふ.ける|老人 ろうじん old person
+若|young|ジャク、ニャク|わか.い|若い わかい young; 若者 わかもの young person
+齢|age|レイ||年齢 ねんれい age; 高齢化 こうれいか aging (of society)
+性|nature; sex|セイ、ショウ||女性 じょせい woman; 性格 せいかく personality
+婚|marriage|コン||結婚 けっこん marriage; 離婚 りこん divorce
+恋|love; romance|レン|こい、こ.う|恋人 こいびと boyfriend or girlfriend; 恋 こい love
+愛|love|アイ||愛 あい love; 愛する あいする to love
+
+## 3 Body & health
+頭|head|トウ、ズ、ト|あたま|頭 あたま head; 頭痛 ずつう headache
+顔|face|ガン|かお|顔 かお face; 笑顔 えがお smiling face
+首|neck|シュ|くび|首 くび neck; 首相 しゅしょう prime minister
+耳|ear|ジ|みみ|耳 みみ ear
+歯|tooth|シ|は|歯 は tooth; 虫歯 むしば cavity
+髪|hair|ハツ|かみ|髪 かみ hair; 髪型 かみがた hairstyle
+背|back; height|ハイ|せ、せい|背 せ height; 背中 せなか back
+腹|belly|フク|はら|お腹 おなか stomach; 腹痛 ふくつう stomachache
+指|finger; point|シ|ゆび、さ.す|指 ゆび finger; 指す さす to point at
+腕|arm|ワン|うで|腕 うで arm; 腕時計 うでどけい wristwatch
+胸|chest|キョウ|むね|胸 むね chest
+肩|shoulder|ケン|かた|肩 かた shoulder
+鼻|nose|ビ|はな|鼻 はな nose; 鼻水 はなみず runny nose
+血|blood|ケツ|ち|血 ち blood
+骨|bone|コツ|ほね|骨 ほね bone; 骨折 こっせつ broken bone
+皮|skin; leather|ヒ|かわ|皮 かわ skin, peel; 皮膚 ひふ skin
+汗|sweat|カン|あせ|汗 あせ sweat
+涙|tear|ルイ|なみだ|涙 なみだ tear
+息|breath|ソク|いき|息 いき breath; 息子 むすこ son
+薬|medicine|ヤク|くすり|薬 くすり medicine; 薬局 やっきょく pharmacy
+痛|pain|ツウ|いた.い、いた.む|痛い いたい painful; 頭痛 ずつう headache
+疲|tired|ヒ|つか.れる|疲れる つかれる to get tired
+眠|sleep|ミン|ねむ.る、ねむ.い|眠い ねむい sleepy; 睡眠 すいみん sleep
+健|healthy|ケン|すこ.やか|健康 けんこう health
+康|peace; health|コウ||健康 けんこう health
+治|cure; govern|ジ、チ|おさ.める、なお.る、なお.す|治る なおる to get better; 政治 せいじ politics
+療|treatment|リョウ||治療 ちりょう medical treatment
+症|symptom|ショウ||症状 しょうじょう symptom
+傷|wound|ショウ|きず|傷 きず wound
+
+## 3 Feelings & mind
+喜|joy|キ|よろこ.ぶ|喜ぶ よろこぶ to be glad; 喜び よろこび joy
+悲|sad|ヒ|かな.しい、かな.しむ|悲しい かなしい sad
+怒|anger|ド|いか.る、おこ.る|怒る おこる to get angry; 怒り いかり anger
+笑|laugh|ショウ|わら.う、え.む|笑う わらう to laugh; 笑顔 えがお smiling face
+泣|cry|キュウ|な.く|泣く なく to cry
+怖|fear|フ|こわ.い|怖い こわい scary
+恐|fear; awe|キョウ|おそ.れる、おそ.ろしい|恐ろしい おそろしい terrible; 恐れる おそれる to fear
+驚|surprise|キョウ|おどろ.く、おどろ.かす|驚く おどろく to be surprised
+感|feeling|カン||感じる かんじる to feel; 感動 かんどう being moved
+情|feeling; emotion|ジョウ、セイ|なさ.け|感情 かんじょう emotion; 情報 じょうほう information
+念|thought; wish|ネン||残念 ざんねん unfortunate; 記念 きねん commemoration
+想|idea; thought|ソウ、ソ||想像 そうぞう imagination; 感想 かんそう thoughts
+望|hope; wish|ボウ、モウ|のぞ.む|望む のぞむ to wish for; 希望 きぼう hope
+願|request; wish|ガン|ねが.う|願う ねがう to wish; お願い おねがい request
+夢|dream|ム|ゆめ|夢 ゆめ dream
+幸|happiness|コウ|さいわ.い、しあわ.せ|幸せ しあわせ happiness; 不幸 ふこう misfortune
+福|good fortune|フク||幸福 こうふく happiness; 福祉 ふくし welfare
+苦|suffering; bitter|ク|くる.しい、くる.しむ、にが.い|苦しい くるしい painful; 苦い にがい bitter
+困|trouble|コン|こま.る|困る こまる to be in trouble
+迷|lost; doubt|メイ|まよ.う|迷う まよう to be undecided; 迷惑 めいわく nuisance
+悩|worry|ノウ|なや.む、なや.ます|悩む なやむ to worry
+疑|doubt|ギ|うたが.う|疑う うたがう to doubt
+信|trust; believe|シン||信じる しんじる to believe; 信号 しんごう traffic light
+頼|rely; request|ライ|たの.む、たよ.る|頼む たのむ to ask (a favor); 信頼 しんらい trust
+覚|remember; wake|カク|おぼ.える、さ.める、さ.ます|覚える おぼえる to remember; 目覚まし時計 めざましどけい alarm clock
+忘|forget|ボウ|わす.れる|忘れる わすれる to forget; 忘れ物 わすれもの thing left behind
+慣|get used to|カン|な.れる|慣れる なれる to get used to; 習慣 しゅうかん habit
+恥|shame|チ|は.じる、はじ、は.ずかしい|恥ずかしい はずかしい embarrassing
+
+## 3 Time
+昔|long ago|セキ、シャク|むかし|昔 むかし long ago
+将|leader; future|ショウ||将来 しょうらい future
+未|not yet|ミ、ビ|いま.だ、ま.だ|未来 みらい the future
+過|pass; excess|カ|す.ぎる、す.ごす|過ぎる すぎる to pass; 過去 かこ the past
+現|appear; present|ゲン|あらわ.れる、あらわ.す|現れる あらわれる to appear; 現在 げんざい the present
+末|end|マツ、バツ|すえ|月末 げつまつ end of the month; 週末 しゅうまつ weekend
+初|first|ショ|はじ.め、はじ.めて、はつ|初めて はじめて for the first time; 最初 さいしょ first
+最|most|サイ|もっと.も|最近 さいきん recently; 最後 さいご last
+次|next|ジ、シ|つ.ぐ、つぎ|次 つぎ next; 次々 つぎつぎ one after another
+期|period|キ、ゴ||期間 きかん period; 学期 がっき school term
+刻|carve; time|コク|きざ.む|時刻 じこく time; 遅刻 ちこく being late
+秒|second (time)|ビョウ||一秒 いちびょう one second
+遅|late; slow|チ|おく.れる、おそ.い|遅い おそい slow, late; 遅れる おくれる to be late
+晩|evening|バン||今晩 こんばん tonight; 晩ご飯 ばんごはん dinner
+頃|time; about|ケイ|ころ|頃 ころ time; 日頃 ひごろ usually
+暦|calendar|レキ|こよみ|西暦 せいれき Western calendar
+
+## 3 Weather & nature
+暑|hot (weather)|ショ|あつ.い|暑い あつい hot
+寒|cold (weather)|カン|さむ.い|寒い さむい cold
+暖|warm|ダン|あたた.か、あたた.かい、あたた.める|暖かい あたたかい warm; 暖房 だんぼう heating
+冷|cool; cold|レイ|つめ.たい、ひ.える、ひ.やす、さ.める|冷たい つめたい cold; 冷蔵庫 れいぞうこ refrigerator
+温|warm|オン|あたた.か、あたた.かい、あたた.める|温度 おんど temperature; 温める あたためる to warm up
+晴|clear up|セイ|は.れる、は.らす|晴れる はれる to be sunny; 晴れ はれ clear weather
+曇|cloudy|ドン|くも.る|曇る くもる to get cloudy; 曇り くもり cloudy weather
+雪|snow|セツ|ゆき|雪 ゆき snow
+雲|cloud|ウン|くも|雲 くも cloud
+雷|thunder|ライ|かみなり|雷 かみなり thunder
+光|light|コウ|ひか.る、ひかり|光る ひかる to shine; 光 ひかり light; 観光 かんこう sightseeing
+星|star|セイ、ショウ|ほし|星 ほし star
+陽|sun; positive|ヨウ|ひ|太陽 たいよう the sun
+波|wave|ハ|なみ|波 なみ wave
+島|island|トウ|しま|島 しま island; 半島 はんとう peninsula
+林|grove; woods|リン|はやし|林 はやし woods
+森|forest|シン|もり|森 もり forest
+岩|rock|ガン|いわ|岩 いわ rock
+石|stone|セキ、シャク、コク|いし|石 いし stone
+砂|sand|サ、シャ|すな|砂 すな sand
+池|pond|チ|いけ|池 いけ pond
+湖|lake|コ|みずうみ|湖 みずうみ lake
+港|harbor|コウ|みなと|港 みなと harbor; 空港 くうこう airport
+谷|valley|コク|たに|谷 たに valley
+坂|slope|ハン|さか|坂 さか slope
+草|grass|ソウ|くさ|草 くさ grass
+葉|leaf|ヨウ|は|葉 は leaf; 言葉 ことば word
+根|root|コン|ね|根 ね root
+種|seed; kind|シュ|たね|種 たね seed; 種類 しゅるい kind
+植|plant|ショク|う.える、う.わる|植える うえる to plant; 植物 しょくぶつ plant
+枝|branch|シ|えだ|枝 えだ branch
+桜|cherry tree|オウ|さくら|桜 さくら cherry blossom
+竹|bamboo|チク|たけ|竹 たけ bamboo
+松|pine|ショウ|まつ|松 まつ pine tree
+虫|insect|チュウ、キ|むし|虫 むし insect; 虫歯 むしば cavity
+馬|horse|バ|うま|馬 うま horse
+羊|sheep|ヨウ|ひつじ|羊 ひつじ sheep
+猫|cat|ビョウ|ねこ|猫 ねこ cat
+鳴|cry (animal); ring|メイ|な.く、な.る、な.らす|鳴く なく to cry (animal); 鳴る なる to ring
+飛|fly|ヒ|と.ぶ、と.ばす|飛ぶ とぶ to fly; 飛行機 ひこうき airplane
+然|so; nature|ゼン、ネン||自然 しぜん nature; 突然 とつぜん suddenly
+環|ring; surround|カン||環境 かんきょう environment
+境|border|キョウ、ケイ|さかい|環境 かんきょう environment; 国境 こっきょう national border
+宇|eaves; universe|ウ||宇宙 うちゅう space
+宙|midair; space|チュウ||宇宙 うちゅう space
+球|ball; sphere|キュウ|たま|地球 ちきゅう the earth; 野球 やきゅう baseball
+陸|land|リク||大陸 たいりく continent; 陸 りく land
+氷|ice|ヒョウ|こおり|氷 こおり ice
+凍|freeze|トウ|こお.る、こご.える|凍る こおる to freeze
+溶|melt|ヨウ|と.ける、と.かす|溶ける とける to melt
+乾|dry|カン|かわ.く、かわ.かす|乾く かわく to dry
+湿|damp|シツ|しめ.る|湿度 しつど humidity
+濡|get wet|ジュ|ぬ.れる|濡れる ぬれる to get wet
+
+## 3 Describing
+弱|weak|ジャク|よわ.い、よわ.る|弱い よわい weak
+軽|light (weight)|ケイ|かる.い|軽い かるい light
+低|low|テイ|ひく.い|低い ひくい low; 最低 さいてい worst
+短|short|タン|みじか.い|短い みじかい short; 短所 たんしょ weak point
+太|fat; thick|タイ、タ|ふと.い、ふと.る|太い ふとい thick; 太陽 たいよう the sun
+細|thin; fine|サイ|ほそ.い、こま.かい|細い ほそい thin; 細かい こまかい fine
+遠|far|エン|とお.い|遠い とおい far; 遠慮 えんりょ holding back
+暗|dark|アン|くら.い|暗い くらい dark; 暗記 あんき memorizing
+美|beautiful|ビ|うつく.しい|美しい うつくしい beautiful; 美術 びじゅつ fine arts
+良|good|リョウ|よ.い|良い よい good; 仲良し なかよし good friends
+深|deep|シン|ふか.い|深い ふかい deep; 深夜 しんや late at night
+浅|shallow|セン|あさ.い|浅い あさい shallow
+厚|thick|コウ|あつ.い|厚い あつい thick
+薄|thin; pale|ハク|うす.い|薄い うすい thin
+濃|thick; dark (color)|ノウ|こ.い|濃い こい thick
+固|hard; firm|コ|かた.い、かた.める、かた.まる|固い かたい firm
+静|quiet|セイ、ジョウ|しず.か|静か しずか quiet
+便|convenience; mail|ベン、ビン|たよ.り|便利 べんり convenient; 郵便局 ゆうびんきょく post office
+利|profit; use|リ|き.く|便利 べんり convenient; 利用 りよう use
+必|certain|ヒツ|かなら.ず|必ず かならず certainly; 必要 ひつよう necessary
+要|need; main point|ヨウ|い.る|要る いる to need; 重要 じゅうよう important
+難|difficult|ナン|むずか.しい、かた.い|難しい むずかしい difficult
+易|easy; trade|エキ、イ|やさ.しい|易しい やさしい easy; 貿易 ぼうえき trade
+単|single; simple|タン||簡単 かんたん easy; 単語 たんご word
+複|double; complex|フク||複雑 ふくざつ complicated
+雑|mixed; rough|ザツ、ゾウ||雑誌 ざっし magazine; 複雑 ふくざつ complicated
+完|complete|カン||完全 かんぜん complete; 完成 かんせい completion
+全|all; whole|ゼン|まった.く、すべ.て|全部 ぜんぶ all; 全く まったく completely
+適|suitable|テキ||適当 てきとう suitable; 適切 てきせつ appropriate
+危|dangerous|キ|あぶ.ない、あや.うい|危ない あぶない dangerous; 危険 きけん danger
+険|steep; risky|ケン|けわ.しい|危険 きけん danger
+珍|rare|チン|めずら.しい|珍しい めずらしい rare
+速|fast|ソク|はや.い|速い はやい fast; 速度 そくど speed
+熱|heat; fever|ネツ|あつ.い|熱 ねつ fever; 熱い あつい hot
+甘|sweet|カン|あま.い|甘い あまい sweet
+辛|spicy; painful|シン|から.い、つら.い|辛い からい spicy
+丸|round|ガン|まる、まる.い|丸い まるい round
+平|flat; peace|ヘイ、ビョウ|たい.ら、ひら|平和 へいわ peace; 平日 へいじつ weekday
+等|equal; class|トウ|ひと.しい|平等 びょうどう equality; 等しい ひとしい equal
+似|resemble|ジ|に.る|似る にる to resemble; 似合う にあう to suit
+違|differ|イ|ちが.う、ちが.える|違う ちがう to differ; 間違い まちがい mistake
+
+## 3 Home & daily life
+宅|home|タク||自宅 じたく one's home; 住宅 じゅうたく housing
+庭|garden|テイ|にわ|庭 にわ garden; 家庭 かてい household
+窓|window|ソウ|まど|窓 まど window
+階|floor; stairs|カイ||階段 かいだん stairs; 二階 にかい second floor
+戸|door|コ|と|戸 と door; 一戸建て いっこだて detached house
+鏡|mirror|キョウ|かがみ|鏡 かがみ mirror
+箱|box|ソウ|はこ|箱 はこ box
+机|desk|キ|つくえ|机 つくえ desk
+床|floor; bed|ショウ|とこ、ゆか|床 ゆか floor; 床屋 とこや barber
+洗|wash|セン|あら.う|洗う あらう to wash; 洗濯 せんたく laundry
+掃|sweep|ソウ|は.く|掃除 そうじ cleaning
+除|remove|ジョ、ジ|のぞ.く|掃除 そうじ cleaning; 削除 さくじょ deletion
+片|one-sided; piece|ヘン|かた|片付ける かたづける to tidy up; 片道 かたみち one way
+付|attach|フ|つ.ける、つ.く|付ける つける to attach; 受付 うけつけ reception
+脱|take off|ダツ|ぬ.ぐ|脱ぐ ぬぐ to take off (clothes)
+靴|shoes|カ|くつ|靴 くつ shoes; 靴下 くつした socks
+寝|sleep; lie down|シン|ね.る、ね.かす|寝る ねる to sleep; 寝坊 ねぼう oversleeping
+皿|plate|ベイ|さら|皿 さら plate
+杯|cup; counter for cups|ハイ|さかずき|一杯 いっぱい a cupful
+袋|bag|タイ|ふくろ|袋 ふくろ bag
+糸|thread|シ|いと|糸 いと thread
+鉄|iron|テツ||地下鉄 ちかてつ subway; 鉄道 てつどう railway
+燃|burn|ネン|も.える、も.やす|燃える もえる to burn
+捨|throw away|シャ|す.てる|捨てる すてる to throw away
+拾|pick up|シュウ、ジュウ|ひろ.う|拾う ひろう to pick up
+汚|dirty|オ|きたな.い、よご.れる、よご.す|汚い きたない dirty; 汚れる よごれる to get dirty
+掛|hang|カイ|か.ける、か.かる|掛ける かける to hang
+
+## 3 Society
+政|politics|セイ、ショウ|まつりごと|政治 せいじ politics; 政府 せいふ government
+党|party (political)|トウ||政党 せいとう political party
+選|choose|セン|えら.ぶ|選ぶ えらぶ to choose; 選挙 せんきょ election
+挙|raise; carry out|キョ|あ.げる、あ.がる|選挙 せんきょ election
+議|discussion|ギ||会議 かいぎ meeting; 議員 ぎいん member of parliament
+権|right; authority|ケン、ゴン||権利 けんり right
+法|law; method|ホウ、ハッ、ホッ|のり|法律 ほうりつ law; 方法 ほうほう method
+律|rule; law|リツ、リチ||法律 ほうりつ law
+制|system; control|セイ||制度 せいど system; 制服 せいふく uniform
+府|government office|フ||政府 せいふ government
+県|prefecture|ケン||県 けん prefecture
+市|city; market|シ|いち|市 し city; 市場 いちば market
+区|ward|ク||区役所 くやくしょ ward office; 地区 ちく district
+村|village|ソン|むら|村 むら village
+州|state; province|シュウ|す|九州 きゅうしゅう Kyushu
+相|mutual; minister|ソウ、ショウ|あい|相手 あいて the other person; 首相 しゅしょう prime minister
+官|official|カン||警官 けいかん police officer
+警|warn; police|ケイ||警察 けいさつ police; 警官 けいかん police officer
+察|guess; police|サツ||警察 けいさつ police; 観察 かんさつ observation
+軍|army|グン||軍隊 ぐんたい army
+戦|war; fight|セン|たたか.う、いくさ|戦う たたかう to fight; 戦争 せんそう war
+争|conflict|ソウ|あらそ.う|争う あらそう to compete; 戦争 せんそう war
+和|peace; Japanese|ワ、オ|やわ.らぐ、なご.やか|平和 へいわ peace; 和室 わしつ Japanese-style room
+際|occasion; side|サイ|きわ|国際 こくさい international; 実際 じっさい actually
+統|unite; govern|トウ|す.べる|大統領 だいとうりょう president
+領|territory; govern|リョウ||大統領 だいとうりょう president
+犯|crime|ハン|おか.す|犯人 はんにん criminal; 犯罪 はんざい crime
+罪|crime; sin|ザイ|つみ|犯罪 はんざい crime
+盗|steal|トウ|ぬす.む|盗む ぬすむ to steal; 盗難 とうなん theft
+捕|catch|ホ|と.らえる、と.らわれる、と.る、つか.まえる、つか.まる|捕まえる つかまえる to catch; 逮捕 たいほ arrest
+許|permit|キョ|ゆる.す|許す ゆるす to forgive; 許可 きょか permission
+禁|prohibit|キン||禁止 きんし prohibition
+
+## 3 Economy & work
+経|pass through; manage|ケイ、キョウ|へ.る|経済 けいざい economy; 経験 けいけん experience
+済|finish; settle|サイ|す.む、す.ます|済む すむ to be finished; 経済 けいざい economy
+産|produce; birth|サン|う.む、う.まれる|産業 さんぎょう industry; 生産 せいさん production
+商|trade|ショウ|あきな.う|商品 しょうひん goods; 商店街 しょうてんがい shopping street
+営|manage; run|エイ|いとな.む|営業 えいぎょう business; 経営 けいえい management
+費|expense|ヒ|つい.やす|費用 ひよう cost; 消費 しょうひ consumption
+税|tax|ゼイ||税金 ぜいきん tax
+価|value; price|カ|あたい|価格 かかく price; 物価 ぶっか prices
+値|price; value|チ|ね、あたい|値段 ねだん price; 価値 かち value
+給|salary; supply|キュウ||給料 きゅうりょう salary; 供給 きょうきゅう supply
+払|pay|フツ|はら.う|払う はらう to pay; 支払い しはらい payment
+収|income; obtain|シュウ|おさ.める、おさ.まる|収入 しゅうにゅう income
+貯|save|チョ||貯金 ちょきん savings
+預|deposit|ヨ|あず.ける、あず.かる|預ける あずける to leave in someone's care
+貿|trade|ボウ||貿易 ぼうえき trade
+輸|transport|ユ||輸出 ゆしゅつ export; 輸入 ゆにゅう import
+職|job|ショク||職業 しょくぎょう occupation; 就職 しゅうしょく getting a job
+務|duty; work|ム|つと.める|事務所 じむしょ office; 勤務 きんむ work
+勤|work; serve|キン、ゴン|つと.める|勤める つとめる to work for; 通勤 つうきん commuting
+働|work|ドウ|はたら.く|働く はたらく to work
+退|retreat; leave|タイ|しりぞ.く|退院 たいいん leaving hospital; 退職 たいしょく leaving a job
+資|resources; capital|シ||資料 しりょう materials; 資源 しげん resources
+製|manufacture|セイ||製品 せいひん product
+造|make; build|ゾウ|つく.る|製造 せいぞう manufacturing
+農|farming|ノウ||農業 のうぎょう agriculture
+共|together|キョウ|とも|共に ともに together
+供|offer; companion|キョウ、ク|そな.える、とも|子供 こども child; 供給 きょうきゅう supply
+任|duty; entrust|ニン|まか.せる|任せる まかせる to leave to (someone); 責任 せきにん responsibility
+責|blame; duty|セキ|せ.める|責任 せきにん responsibility
+担|carry; take charge|タン|かつ.ぐ、にな.う|担当 たんとう being in charge
+努|effort|ド|つと.める|努力 どりょく effort
+
+## 3 Words & information
+説|explain; theory|セツ、ゼイ|と.く|説明 せつめい explanation; 小説 しょうせつ novel
+伝|convey|デン|つた.わる、つた.える|伝える つたえる to tell; 手伝う てつだう to help
+報|report; reward|ホウ|むく.いる|情報 じょうほう information; 報告 ほうこく report
+告|tell; announce|コク|つ.げる|報告 ほうこく report; 広告 こうこく advertisement
+識|know|シキ||知識 ちしき knowledge; 常識 じょうしき common sense
+調|investigate; tone|チョウ|しら.べる、ととの.う|調べる しらべる to look up; 調子 ちょうし condition
+査|investigate|サ||調査 ちょうさ survey; 検査 けんさ inspection
+記|write down|キ|しる.す|記事 きじ article; 日記 にっき diary
+録|record|ロク||記録 きろく record; 録音 ろくおん audio recording
+示|show|ジ、シ|しめ.す|示す しめす to show; 指示 しじ instructions
+表|surface; express|ヒョウ|おもて、あらわ.す、あらわ.れる|表す あらわす to express; 発表 はっぴょう presentation
+論|argument; theory|ロン||論文 ろんぶん thesis; 議論 ぎろん discussion
+談|talk|ダン||相談 そうだん consultation; 冗談 じょうだん joke
+決|decide|ケツ|き.める、き.まる|決める きめる to decide; 決心 けっしん determination
+定|fix; decide|テイ、ジョウ|さだ.める|予定 よてい plan; 決定 けってい decision
+届|deliver; reach|カイ|とど.ける、とど.く|届ける とどける to deliver; 届く とどく to reach
+連|link; take along|レン|つ.れる、つら.なる|連絡 れんらく contact; 連れる つれる to take (someone) along
+絡|entwine; contact|ラク|から.む|連絡 れんらく contact
+号|number; sign|ゴウ||番号 ばんごう number; 信号 しんごう traffic light
+番|number; turn|バン||番号 ばんごう number; 順番 じゅんばん order
+返|return|ヘン|かえ.す、かえ.る|返す かえす to return; 返事 へんじ reply
+受|receive|ジュ|う.ける、う.かる|受ける うける to receive; 受付 うけつけ reception
+呼|call|コ|よ.ぶ|呼ぶ よぶ to call; 呼吸 こきゅう breathing
+求|request; seek|キュウ|もと.める|求める もとめる to seek; 要求 ようきゅう demand
+案|plan; idea|アン||案内 あんない guidance; 提案 ていあん proposal
+解|untie; solve|カイ、ゲ|と.く、と.ける|解決 かいけつ solution; 理解 りかい understanding
+例|example|レイ|たと.える|例えば たとえば for example; 例 れい example
+練|practice; train|レン|ね.る|練習 れんしゅう practice
+復|return; repeat|フク||復習 ふくしゅう review
+達|reach; plural|タツ||友達 ともだち friend; 上達 じょうたつ improvement
+科|subject; department|カ||科学 かがく science; 科目 かもく subject
+数|number; count|スウ、ス|かず、かぞ.える|数 かず number; 数える かぞえる to count
+算|calculate|サン||計算 けいさん calculation; 予算 よさん budget
+点|point|テン||点数 てんすう score; 欠点 けってん fault
+級|class; grade|キュウ||同級生 どうきゅうせい classmate; 高級 こうきゅう high-class
+課|section; lesson|カ||課長 かちょう section chief; 課題 かだい assignment
+卒|graduate|ソツ||卒業 そつぎょう graduation
+歴|history|レキ||歴史 れきし history; 履歴書 りれきしょ résumé
+史|history|シ||歴史 れきし history
+
+## 3 Actions
+打|hit|ダ|う.つ|打つ うつ to hit; 打ち合わせ うちあわせ meeting
+投|throw|トウ|な.げる|投げる なげる to throw; 投票 とうひょう vote
+押|push|オウ|お.す、お.さえる|押す おす to push; 押し入れ おしいれ closet
+取|take|シュ|と.る|取る とる to take; 取り消す とりけす to cancel
+追|chase|ツイ|お.う|追う おう to chase; 追いかける おいかける to run after
+逃|escape|トウ|に.げる、に.がす、のが.す|逃げる にげる to run away; 見逃す みのがす to miss
+探|search|タン|さが.す、さぐ.る|探す さがす to look for
+落|fall|ラク|お.ちる、お.とす|落ちる おちる to fall; 落とし物 おとしもの lost item
+戻|return; go back|レイ|もど.る、もど.す|戻る もどる to go back
+渡|cross; hand over|ト|わた.る、わた.す|渡る わたる to cross; 渡す わたす to hand over
+越|cross over|エツ|こ.す、こ.える|引っ越す ひっこす to move (house); 越える こえる to go over
+進|advance|シン|すす.む、すす.める|進む すすむ to advance; 進歩 しんぽ progress
+移|move; shift|イ|うつ.る、うつ.す|移る うつる to move; 移動 いどう movement
+回|turn; times|カイ、エ|まわ.る、まわ.す|回る まわる to turn; 回数 かいすう number of times
+曲|bend; tune|キョク|ま.がる、ま.げる|曲がる まがる to turn; 曲 きょく tune
+折|fold; break|セツ|お.る、お.れる|折る おる to fold; 骨折 こっせつ broken bone
+結|tie; bind|ケツ|むす.ぶ|結ぶ むすぶ to tie; 結果 けっか result
+組|group; assemble|ソ|く.む、くみ|番組 ばんぐみ program; 組み立てる くみたてる to assemble
+並|line up|ヘイ|なら.ぶ、なら.べる、なみ|並ぶ ならぶ to line up; 並べる ならべる to line up (things)
+交|mix; cross|コウ|ま.じる、ま.ぜる、か.わす|交通 こうつう traffic; 交差点 こうさてん intersection
+加|add|カ|くわ.える、くわ.わる|加える くわえる to add; 参加 さんか participation
+増|increase|ゾウ|ま.す、ふ.える、ふ.やす|増える ふえる to increase; 増加 ぞうか increase
+減|decrease|ゲン|へ.る、へ.らす|減る へる to decrease; 減少 げんしょう decrease
+残|remain|ザン|のこ.る、のこ.す|残る のこる to remain; 残念 ざんねん unfortunate
+失|lose|シツ|うしな.う|失う うしなう to lose; 失敗 しっぱい failure
+消|erase; put out|ショウ|き.える、け.す|消す けす to turn off; 消える きえる to disappear
+守|protect|シュ、ス|まも.る|守る まもる to protect; 留守 るす being away from home
+破|tear; break|ハ|やぶ.る、やぶ.れる|破る やぶる to tear; 破れる やぶれる to be torn
+壊|break|カイ|こわ.す、こわ.れる|壊す こわす to break; 壊れる こわれる to be broken
+包|wrap|ホウ|つつ.む|包む つつむ to wrap
+配|distribute|ハイ|くば.る|配る くばる to hand out; 心配 しんぱい worry
+抜|pull out|バツ|ぬ.く、ぬ.ける|抜く ぬく to pull out
+降|descend; fall|コウ|お.りる、お.ろす、ふ.る|降りる おりる to get off; 降る ふる to fall (rain)
+乗|ride|ジョウ|の.る、の.せる|乗る のる to ride; 乗り換え のりかえ transfer
+認|recognize|ニン|みと.める|認める みとめる to admit
+断|refuse; cut off|ダン|ことわ.る、た.つ|断る ことわる to refuse; 判断 はんだん judgment
+判|judge|ハン、バン|わか.る|判断 はんだん judgment
+比|compare|ヒ|くら.べる|比べる くらべる to compare; 比較 ひかく comparison
+確|certain|カク|たし.か、たし.かめる|確か たしか certain; 確かめる たしかめる to make sure
+吸|suck; breathe in|キュウ|す.う|吸う すう to breathe in; 呼吸 こきゅう breathing
+吹|blow|スイ|ふ.く|吹く ふく to blow
+泳|swim|エイ|およ.ぐ|泳ぐ およぐ to swim; 水泳 すいえい swimming
+踊|dance|ヨウ|おど.る|踊る おどる to dance
+遊|play|ユウ、ユ|あそ.ぶ|遊ぶ あそぶ to play
+登|climb|トウ、ト|のぼ.る|登る のぼる to climb; 登山 とざん mountain climbing
+留|stay; fasten|リュウ、ル|と.める、と.まる|留学 りゅうがく studying abroad; 留守 るす being away
+
+## 3 Travel & places
+船|ship|セン|ふね|船 ふね ship
+航|navigate|コウ||航空 こうくう aviation
+荷|load; luggage|カ|に|荷物 にもつ luggage
+席|seat|セキ||席 せき seat; 出席 しゅっせき attendance
+予|beforehand|ヨ||予約 よやく reservation; 予定 よてい plan
+約|promise; about|ヤク||約束 やくそく promise; 約 やく about
+内|inside|ナイ|うち|案内 あんない guidance; 国内 こくない domestic
+観|view|カン||観光 かんこう sightseeing; 観客 かんきゃく audience
+泊|stay overnight|ハク|と.まる、と.める|泊まる とまる to stay (overnight); 宿泊 しゅくはく staying
+宿|lodging|シュク|やど|宿 やど inn; 宿題 しゅくだい homework
+路|road|ロ|じ|道路 どうろ road; 路地 ろじ alley
+橋|bridge|キョウ|はし|橋 はし bridge; 歩道橋 ほどうきょう pedestrian bridge
+駐|stop; stay|チュウ||駐車場 ちゅうしゃじょう parking lot
+符|token; ticket|フ||切符 きっぷ ticket
+都|capital; city|ト、ツ|みやこ|都会 とかい city; 首都 しゅと capital city
+寺|temple|ジ|てら|寺 てら temple
+神|god|シン、ジン|かみ|神社 じんじゃ shrine; 神 かみ god
+祭|festival|サイ|まつ.り、まつ.る|祭り まつり festival
+
+## 3 More kanji
+第|ordinal prefix|ダイ||第一 だいいち first, number one
+各|each|カク|おのおの|各自 かくじ each person
+両|both|リョウ||両親 りょうしん parents; 両方 りょうほう both
+互|mutual|ゴ|たが.い|互いに たがいに each other
+他|other|タ|ほか|他 ほか other; 他人 たにん stranger
+由|reason|ユ、ユウ|よし|理由 りゆう reason; 自由 じゆう freedom
+実|truth; fruit|ジツ|み、みの.る|実 み fruit; 事実 じじつ fact
+無|nothing; without|ム、ブ|な.い|無理 むり impossible; 無料 むりょう free
+非|not; wrong|ヒ||非常口 ひじょうぐち emergency exit; 非常に ひじょうに extremely
+的|target; -like|テキ|まと|目的 もくてき purpose; 具体的 ぐたいてき concrete
+化|change|カ、ケ|ば.ける|文化 ぶんか culture; 変化 へんか change
+式|ceremony; style|シキ||結婚式 けっこんしき wedding; 式 しき ceremony
+関|connection; barrier|カン|せき|関係 かんけい relationship; 関心 かんしん interest
+係|person in charge|ケイ|かか.る、かかり|係 かかり person in charge; 関係 かんけい relationship
+果|result; fruit|カ|は.たす、は.てる|果物 くだもの fruit; 結果 けっか result
+因|cause|イン|よ.る|原因 げんいん cause
+原|origin; field|ゲン|はら|原因 げんいん cause; 原料 げんりょう raw materials
+件|matter; case|ケン||事件 じけん incident; 条件 じょうけん condition
+条|clause|ジョウ||条件 じょうけん condition
+状|form; condition|ジョウ||状態 じょうたい state; 年賀状 ねんがじょう New Year's card
+態|condition|タイ||状態 じょうたい state; 態度 たいど attitude
+容|contain; look|ヨウ||内容 ないよう content; 美容院 びよういん hair salon
+程|extent|テイ|ほど|程度 ていど degree
+限|limit|ゲン|かぎ.る|限る かぎる to limit; 期限 きげん deadline
+存|exist|ソン、ゾン||存在 そんざい existence; 保存 ほぞん saving
+在|exist; be in|ザイ|あ.る|現在 げんざい the present; 存在 そんざい existence
+寄|approach; drop in|キ|よ.る、よ.せる|寄る よる to drop by
+込|crowded||こ.む、こ.める|込む こむ to be crowded; 申し込む もうしこむ to apply for
+申|say (humble)|シン|もう.す|申す もうす to say (humble); 申し込み もうしこみ application
+訪|visit|ホウ|おとず.れる、たず.ねる|訪ねる たずねる to visit; 訪問 ほうもん visit
+迎|welcome|ゲイ|むか.える|迎える むかえる to welcome; 歓迎 かんげい welcome
+招|invite|ショウ|まね.く|招待 しょうたい invitation
+祝|celebrate|シュク、シュウ|いわ.う|お祝い おいわい celebration; 祝日 しゅくじつ national holiday
+礼|thanks; bow|レイ、ライ||失礼 しつれい rude; お礼 おれい thanks

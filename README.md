@@ -21,28 +21,36 @@ Short lessons introduce new things; spaced-repetition reviews bring them back ri
   <img src="docs/screenshots/word-quiz.png" width="200" alt="Word quiz">
   <img src="docs/screenshots/settings.png" width="200" alt="Settings">
 </p>
+<p>
+  <img src="docs/screenshots/stats.png" width="200" alt="Stats">
+  <img src="docs/screenshots/listen-quiz.png" width="200" alt="Listening question">
+  <img src="docs/screenshots/write-quiz.png" width="200" alt="Writing a kanji from memory">
+  <img src="docs/screenshots/meaning-quiz.png" width="200" alt="A typed meaning, with I was right">
+</p>
 
 ## What's inside
 
 | Section | Content |
 | --- | --- |
-| **Words** | 1,044 everyday words for JLPT N5 and N4, in topics (greetings, food, verbs, ...), with readings, romaji, their kanji and example sentences |
-| **Grammar** | 119 grammar points (63 N5, 56 N4), each with a plain-English explanation, the pattern, three examples and gap-fill questions |
+| **Words** | 2,829 words for JLPT N5 to N3 (668 N5, 376 N4, 1,785 N3), in topics (greetings, food, work, feelings, ...), with readings, romaji, their kanji and example sentences |
+| **Grammar** | 237 grammar points (63 N5, 56 N4, 118 N3), each with a plain-English explanation, the pattern, three examples and gap-fill questions |
 | **Hiragana** | The full chart: 46 basic sounds, ゛/゜ sounds and combinations like きゃ |
 | **Katakana** | The same, plus sounds for foreign words like ファ and ティ |
-| **Kanji** | 246 kanji (N5 and N4) with meanings, on and kun readings, example words and every word in the app that uses them |
-| **Sentences** | 169 everyday sentences with readings, in situations like shopping, travel and asking for help |
+| **Kanji** | 660 kanji (80 N5, 166 N4, 414 N3) with meanings, on and kun readings, example words and every word in the app that uses them |
+| **Sentences** | 241 everyday sentences with readings, in situations like shopping, work, health and the news |
 
 ## How it works
 
 - **Learn**: each section has lessons of a few new items from one topic (by default 10 words, 5 kanji, one grammar point or one kana row). You read the cards, then do a short quiz.
 - **Review**: everything you've learned comes back for review after 4 hours, then 8 hours, 1 day, 2 days, 4 days, a week, 2 weeks, a month and 4 months. A wrong answer moves an item back two steps and asks it again at the end of the session.
-- **Questions** change each time: meaning ↔ Japanese, reading a kanji word, filling the gap in a grammar sentence, or putting a sentence back in the right order.
-- **Typing**: answers can be typed instead of chosen. Type romaji (`taberu`) and it turns into kana (たべる) as you go, so no Japanese keyboard is needed; a Japanese keyboard works too.
+- **Questions** change each time: meaning ↔ Japanese, reading a kanji word, filling the gap in a grammar sentence, putting a sentence back in the right order, listening (hear a word, kana or sentence and say what it was) and writing a kanji or kana from memory.
+- **Typing**: answers can be typed instead of chosen; with **Type** in the settings, every answer is typed. Type romaji (`taberu`) and it turns into kana (たべる) as you go, so no Japanese keyboard is needed; a Japanese keyboard works too. Meanings are typed in English with small typos forgiven, and if Kotoba marks an answer wrong that you know is right, tap **I was right**.
+- **Hard items**: words and kanji you've missed three times or more are collected on the home screen for extra practice, until reviews move them up to Known.
+- **Stats**: your streak, the reviews coming up this week, the last two weeks of activity, how far you are in each section and the hard items.
 - **Stroke order**: every kana and kanji page shows the character being written stroke by stroke. **Practice** lets you write it with your finger, tracing or from memory; each stroke is checked for shape, position and direction.
 - **Audio**: every kana, word, kanji example, sentence and grammar example can be played, with natural pitch accent (箸 and 橋 sound different). The clips are in the app, so this works offline.
-- **Backup**: on first start Kotoba asks for a folder and then saves your progress there as `kotoba-progress.txt` after every lesson and review, so you can back it up however you like (Syncthing, a computer, a USB stick). Pick the same folder after a reinstall or on a new phone and Kotoba offers to restore it. No storage permission is needed: you choose the folder in Android's own file picker.
-- **Settings**: theme, lesson sizes, choose/type/mix answers, romaji on or off, readings above kanji in quizzes, reviews per session, sound on or off, the backup folder, and resetting progress.
+- **Backup**: on first start Kotoba asks for a folder and then saves your progress and settings there as `kotoba-progress.txt` after every lesson, review and settings change, so you can back it up however you like (Syncthing, a computer, a USB stick). Pick the same folder after a reinstall or on a new phone and Kotoba offers to restore it. No storage permission is needed: you choose the folder in Android's own file picker.
+- **Settings**: theme, lesson sizes, choose/type/mix answers, listening and writing questions, romaji on or off, readings above kanji in quizzes, reviews per session, sound on or off, the backup folder, and resetting progress.
 - Kanji are always drawn with Japanese glyphs, even on a phone set to English or German.
 
 ## Privacy

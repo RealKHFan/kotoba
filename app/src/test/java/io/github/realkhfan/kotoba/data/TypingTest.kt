@@ -56,20 +56,21 @@ class TypingTest {
         assertTrue(words.none { choose.question(it) is Typed })
         val type = Quiz(testLibrary, Random(3), Settings(answers = AnswerMode.TYPE))
         val kinds = words.map { type.question(it) }
-        assertTrue(kinds.any { it is Typed })
-        // Meaning questions have no typed form, so they stay multiple choice.
-        assertTrue(kinds.filterIsInstance<Choice>().all { it.ask == "What does it mean?" })
-        // Only kana-only grammar answers can be typed.
+        // Type means type: no multiple choice at all, meanings are typed in English.
+        assertTrue(kinds.all { it is Typed })
+        assertTrue(kinds.any { it is Typed && it.english })
+        // Every grammar answer can be typed in kana: kana answers as they are, kanji ones through their reading.
         testLibrary.grammar.forEach { g ->
-            val q = type.question(g)
-            if (q is Typed) assertTrue(q.answer.all { it in 'ぁ'..'ゖ' || it in 'ァ'..'ヺ' || it == 'ー' })
+            val q = type.question(g) as Typed
+            assertTrue(g.id, q.accepted.any { a -> a.all { it in 'ぁ'..'ゖ' || it in 'ァ'..'ヺ' || it == 'ー' || it == '・' } })
         }
     }
 
     @Test fun readingsCanBeHidden() {
         val words = testLibrary.words.filter { it.hasKanji }
         val quiz = Quiz(testLibrary, Random(5), Settings(answers = AnswerMode.CHOICE, quizReadings = false))
-        words.map { quiz.question(it) }.filterIsInstance<Choice>().forEach { assertEquals(null, it.reading) }
+        // A listening question shows the reading only after it is answered, along with the word.
+        words.map { quiz.question(it) }.filterIsInstance<Choice>().filter { it.listen == null }.forEach { assertEquals(null, it.reading) }
     }
 
     @Test fun lessonSizeFollowsSettings() {

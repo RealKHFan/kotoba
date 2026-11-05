@@ -91,10 +91,12 @@ fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, ba
 
             SectionLabel("Quizzes")
             Choices(
-                "Answers", "Type answers in romaji or with a Japanese keyboard; meanings are always chosen.",
+                "Answers", "Type: every answer is typed. Japanese in romaji or with a Japanese keyboard, meanings in English, sentences as you hear or read them.",
                 AnswerMode.entries, s.answers, AnswerMode::label,
             ) { v -> store.update { it.copy(answers = v) } }
             Toggle("Readings above kanji", "Show how a word is read when you're asked for its meaning", s.quizReadings) { v -> store.update { it.copy(quizReadings = v) } }
+            Toggle("Listening questions", "Sometimes play a word, kana or sentence and ask what it was", s.listening) { v -> store.update { it.copy(listening = v) } }
+            Toggle("Writing questions", "Sometimes ask you to write a kanji or kana from memory", s.writing) { v -> store.update { it.copy(writing = v) } }
             Choices("Reviews per session", null, Settings.reviewChoices, s.reviewsPerSession, { if (it == 0) "All" else it.toString() }) { v ->
                 store.update { it.copy(reviewsPerSession = v) }
             }
@@ -104,7 +106,7 @@ fun SettingsScreen(store: SettingsStore, progress: Progress, version: String, ba
 
             if (backup != null) {
                 SectionLabel("Backup")
-                BackupSettings(backup, progress)
+                BackupSettings(backup, progress, store)
             }
 
             SectionLabel("Progress")

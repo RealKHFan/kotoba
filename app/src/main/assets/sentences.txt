@@ -211,3 +211,85 @@
 明日 そちらに 伺います。|あした そちらに うかがいます。|I will come to see you tomorrow.
 先生は いらっしゃいますか。|せんせいは いらっしゃいますか。|Is the teacher in?
 何を 召し上がりますか。|なにを めしあがりますか。|What would you like to eat?
+
+## 3 Feelings & opinions
+その 映画を 見て、 思わず 泣いて しまいました。|その えいがを みて、 おもわず ないて しまいました。|I watched that movie and couldn't help crying.
+彼の 話は いつも 大げさだと 思います。|かれの はなしは いつも おおげさだと おもいます。|I think his stories are always exaggerated.
+試験に 合格して、 本当に ほっと しました。|しけんに ごうかくして、 ほんとうに ほっと しました。|I was really relieved to pass the exam.
+こんなに 親切に して もらって、 感謝して います。|こんなに しんせつに して もらって、 かんしゃして います。|I'm grateful that you were so kind to me.
+負けた ことが 悔しくて、 眠れませんでした。|まけた ことが くやしくて、 ねむれませんでした。|I was so frustrated about losing that I couldn't sleep.
+正直に 言うと、 その 意見には 反対です。|しょうじきに いうと、 その いけんには はんたいです。|To be honest, I'm against that opinion.
+あの 人の 考え方には 賛成できません。|あの ひとの かんがえかたには さんせいできません。|I can't agree with that person's way of thinking.
+昔の 写真を 見ると、 懐かしい 気持ちに なります。|むかしの しゃしんを みると、 なつかしい きもちに なります。|Looking at old photos makes me feel nostalgic.
+彼女は 緊張して いる ようでした。|かのじょは きんちょうして いる ようでした。|She seemed to be nervous.
+そんなに 心配する 必要は ありませんよ。|そんなに しんぱいする ひつようは ありませんよ。|There's no need to worry so much.
+## 3 Work
+来週から 大阪に 出張する ことに なりました。|らいしゅうから おおさかに しゅっちょうする ことに なりました。|It's been decided that I'll go on a business trip to Osaka from next week.
+この 書類を 明日までに 提出して ください。|この しょるいを あしたまでに ていしゅつして ください。|Please submit these documents by tomorrow.
+課長は 今 会議中で 席に いません。|かちょうは いま かいぎちゅうで せきに いません。|The section chief is in a meeting and away from his desk now.
+新しい 企画に ついて 部下と 相談しました。|あたらしい きかくに ついて ぶかと そうだんしました。|I talked with my staff about the new project.
+最近 残業が 多くて、 疲れが たまって います。|さいきん ざんぎょうが おおくて、 つかれが たまって います。|I've had a lot of overtime lately, and the tiredness is piling up.
+面接では 自分の 長所を はっきり 話しましょう。|めんせつでは じぶんの ちょうしょを はっきり はなしましょう。|In the interview, talk clearly about your strong points.
+先輩に 仕事の やり方を 教えて もらいました。|せんぱいに しごとの やりかたを おしえて もらいました。|A senior colleague taught me how to do the job.
+この 仕事は 私が 担当して います。|この しごとは わたしが たんとうして います。|I'm in charge of this work.
+契約の 内容を よく 確認して ください。|けいやくの ないようを よく かくにんして ください。|Please check the contents of the contract carefully.
+今月で 会社を 辞める ことに しました。|こんげつで かいしゃを やめる ことに しました。|I've decided to quit the company at the end of this month.
+## 3 Daily trouble
+駅で 財布を 落として しまいました。|えきで さいふを おとして しまいました。|I dropped my wallet at the station.
+電車が 遅れた せいで、 会議に 遅刻しました。|でんしゃが おくれた せいで、 かいぎに ちこくしました。|Because the train was late, I was late for the meeting.
+パソコンが 急に 動かなく なりました。|パソコンが きゅうに うごかなく なりました。|My computer suddenly stopped working.
+隣の 部屋の 騒音に 困って います。|となりの へやの そうおんに こまって います。|I'm having trouble with the noise from the room next door.
+傘を 持って くれば よかったです。|かさを もって くれば よかったです。|I should have brought an umbrella.
+うっかり 鍵を かけ 忘れて しまいました。|うっかり かぎを かけ わすれて しまいました。|I carelessly forgot to lock the door.
+停電で エレベーターが 止まって います。|ていでんで エレベーターが とまって います。|The elevator has stopped because of a power outage.
+道に 迷って、 約束の 時間に 間に合いませんでした。|みちに まよって、 やくそくの じかんに まにあいませんでした。|I got lost and didn't make it in time for the appointment.
+スマホの 充電が 切れそうです。|スマホの じゅうでんが きれそうです。|My phone's battery is about to run out.
+忘れ物を 取りに 家へ 戻りました。|わすれものを とりに いえへ もどりました。|I went back home to get something I'd left behind.
+## 3 Health
+最近、 運動不足で 少し 太りました。|さいきん、 うんどうぶそくで すこし ふとりました。|Lately I've gained a little weight from lack of exercise.
+健康の ために 毎朝 歩く ように して います。|けんこうの ために まいあさ あるく ように して います。|I make a point of walking every morning for my health.
+花粉症で 鼻水が 止まりません。|かふんしょうで はなみずが とまりません。|My nose won't stop running because of hay fever.
+風邪が なかなか 治らないので、 病院へ 行きます。|かぜが なかなか なおらないので、 びょういんへ いきます。|My cold just won't get better, so I'm going to the hospital.
+階段で 転んで、 足に けがを しました。|かいだんで ころんで、 あしに けがを しました。|I fell on the stairs and hurt my leg.
+夜更かしは 体に 悪いと 分かって います。|よふかしは からだに わるいと わかって います。|I know staying up late is bad for my health.
+この 薬は 一日 三回、 食後に 飲んで ください。|この くすりは いちにち さんかい、 しょくごに のんで ください。|Take this medicine three times a day after meals.
+疲れて いる ときは、 ゆっくり 休んだ ほうが いいです。|つかれて いる ときは、 ゆっくり やすんだ ほうが いいです。|When you're tired, you should rest well.
+## 3 Plans & decisions
+来年から 一人暮らしを する つもりです。|らいねんから ひとりぐらしを する つもりです。|I intend to live on my own from next year.
+雨が 降ったら、 試合は 中止に なります。|あめが ふったら、 しあいは ちゅうしに なります。|If it rains, the game will be called off.
+旅行の 計画を 立てて いる ところです。|りょこうの けいかくを たてて いる ところです。|I'm in the middle of making plans for a trip.
+迷って いるなら、 やめた ほうが いいと 思います。|まよって いるなら、 やめた ほうが いいと おもいます。|If you're undecided, I think you'd better not.
+大学を 卒業したら、 海外で 働きたいです。|だいがくを そつぎょうしたら、 かいがいで はたらきたいです。|After I graduate from university, I want to work abroad.
+会議は 来週に 延期される そうです。|かいぎは らいしゅうに えんきされる そうです。|I hear the meeting will be postponed until next week.
+もう 少し 考えてから 決めます。|もう すこし かんがえてから きめます。|I'll decide after thinking a little more.
+せっかく 来たのだから、 有名な 店で 食べましょう。|せっかく きたのだから、 ゆうめいな みせで たべましょう。|Since we came all this way, let's eat at a famous restaurant.
+## 3 Experiences
+子供の ころ、 よく この 川で 遊んだ ものです。|こどもの ころ、 よく この かわで あそんだ ものです。|When I was a child, I often used to play in this river.
+日本に 来て から、 三年が 経ちました。|にほんに きて から、 さんねんが たちました。|Three years have passed since I came to Japan.
+初めて 富士山に 登った ときの ことは 忘れられません。|はじめて ふじさんに のぼった ときの ことは わすれられません。|I can't forget the first time I climbed Mount Fuji.
+この 町は 十年前と ほとんど 変わって いません。|この まちは じゅうねんまえと ほとんど かわって いません。|This town has hardly changed from ten years ago.
+留学した おかげで、 たくさんの 友達が できました。|りゅうがくした おかげで、 たくさんの ともだちが できました。|Thanks to studying abroad, I made a lot of friends.
+彼とは 大学時代に 知り合いました。|かれとは だいがくじだいに しりあいました。|I got to know him during my university days.
+## 3 Rules & manners
+ここで タバコを 吸っては いけない ことに なって います。|ここで タバコを すっては いけない ことに なって います。|The rule is that you mustn't smoke here.
+図書館では 静かに しなければ なりません。|としょかんでは しずかに しなければ なりません。|You have to be quiet in the library.
+電車の 中で 電話を するのは マナー違反です。|でんしゃの なかで でんわを するのは マナーいはんです。|Talking on the phone on the train is bad manners.
+ごみは 決められた 日に 出して ください。|ごみは きめられた ひに だして ください。|Please put out the trash on the set days.
+人の 悪口を 言う べきでは ありません。|ひとの わるぐちを いう べきでは ありません。|You shouldn't speak ill of others.
+目上の 人には 敬語を 使った ほうが いいです。|めうえの ひとには けいごを つかった ほうが いいです。|You should use polite language with people above you.
+## 3 Society & news
+ニュースに よると、 台風が 近づいて いる そうです。|ニュースに よると、 たいふうが ちかづいて いる そうです。|According to the news, a typhoon is approaching.
+日本では 少子化が 大きな 問題に なって います。|にほんでは しょうしかが おおきな もんだいに なって います。|In Japan, the falling birth rate has become a big problem.
+物価が 上がって、 生活が 苦しく なりました。|ぶっかが あがって、 せいかつが くるしく なりました。|Prices have gone up and life has become hard.
+選挙の 結果は 明日 発表される 予定です。|せんきょの けっかは あした はっぴょうされる よていです。|The election results are to be announced tomorrow.
+この 地域は 地震の 被害が 大きかった らしいです。|この ちいきは じしんの ひがいが おおきかった らしいです。|It seems the earthquake damage in this area was serious.
+環境を 守る ために、 リサイクルに 協力しましょう。|かんきょうを まもる ために、 リサイクルに きょうりょくしましょう。|Let's cooperate with recycling to protect the environment.
+## 3 Explaining & asking
+道が 込んで いたので、 遅く なって しまいました。|みちが こんで いたので、 おそく なって しまいました。|The roads were crowded, so I ended up being late.
+彼が 怒って いる わけが 分かりません。|かれが おこって いる わけが わかりません。|I don't understand why he's angry.
+この 漢字の 読み方を 教えて いただけませんか。|この かんじの よみかたを おしえて いただけませんか。|Could you tell me how to read this kanji?
+もう 一度 説明して もらえますか。|もう いちど せつめいして もらえますか。|Could you explain it once more?
+日本語が 上手に なる ように、 毎日 練習して います。|にほんごが じょうずに なる ように、 まいにち れんしゅうして います。|I practice every day so that my Japanese gets better.
+この ボタンを 押すと、 ドアが 開きます。|この ボタンを おすと、 ドアが ひらきます。|If you press this button, the door opens.
+田中さんは もう 帰った はずです。|たなかさんは もう かえった はずです。|Mr. Tanaka should have gone home already.
+こんなに 安いのは、 古い からに 違いありません。|こんなに やすいのは、 ふるい からに ちがいありません。|It must be this cheap because it's old.

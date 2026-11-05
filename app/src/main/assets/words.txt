@@ -1133,3 +1133,1876 @@
 以外|いがい|except
 以内|いない|within
 倍|ばい|double; times
+
+## 3 People & relationships
+相手|あいて|the other person; partner; opponent
+仲間|なかま|friend; companion; fellow member
+知り合い|しりあい|acquaintance
+恋人|こいびと|boyfriend or girlfriend; lover
+夫婦|ふうふ|married couple
+親戚|しんせき|relative (family)
+先輩|せんぱい|senior (at school or work)
+後輩|こうはい|junior (at school or work)
+他人|たにん|stranger; other people
+若者|わかもの|young person
+老人|ろうじん|old person; the elderly
+赤ん坊|あかんぼう|infant; baby (plain word)
+幼児|ようじ|small child; toddler
+少年|しょうねん|boy; juvenile
+少女|しょうじょ|girl; young lady
+青年|せいねん|young man
+男性|だんせい|man; male (polite)
+女性|じょせい|woman; female (polite)
+孫|まご|grandchild
+長男|ちょうなん|eldest son
+長女|ちょうじょ|eldest daughter
+双子|ふたご|twins
+家庭|かてい|household; home
+仲|なか|relationship (between people)
+友情|ゆうじょう|friendship
+恋|こい|love; romance
+愛|あい|love
+結婚式|けっこんしき|wedding
+離婚|りこん|divorce
+付き合う|つきあう|to go out with; to keep company with
+別れる|わかれる|to split up; to part
+出会う|であう|to meet (by chance)
+出会い|であい|encounter; meeting
+知り合う|しりあう|to get to know each other
+紹介|しょうかい|introduction (of a person)
+自身|じしん|-self (as in himself)
+本人|ほんにん|the person himself or herself
+各自|かくじ|each person
+個人|こじん|individual
+人々|ひとびと|people
+仲良し|なかよし|good friends
+味方|みかた|ally; supporter
+敵|てき|enemy
+ライバル|rival
+
+## 3 Personality
+性格|せいかく|personality; character
+素直|すなお|honest; obedient; open-minded
+正直|しょうじき|honest; honestly
+大人しい|おとなしい|quiet; well-behaved
+我慢強い|がまんづよい|patient; persevering
+短気|たんき|short-tempered
+わがまま|selfish; spoiled
+けち|stingy
+生意気|なまいき|cheeky; impertinent
+勇気|ゆうき|courage
+勇ましい|いさましい|brave
+臆病|おくびょう|cowardly; timid
+慎重|しんちょう|careful; cautious
+積極的|せっきょくてき|active; positive (attitude)
+消極的|しょうきょくてき|passive; reserved
+自信|じしん|confidence
+自慢|じまん|pride; boasting
+謙虚|けんきょ|modest; humble
+頑固|がんこ|stubborn
+賢い|かしこい|wise; clever
+偉い|えらい|great; admirable
+失礼|しつれい|rude; impolite
+上品|じょうひん|elegant; refined
+下品|げひん|vulgar; crude
+気が強い|きがつよい|strong-willed
+気が弱い|きがよわい|timid; faint-hearted
+
+## 3 Feelings
+感情|かんじょう|emotion
+感動|かんどう|being moved (deeply)
+感謝|かんしゃ|gratitude; thanks
+感激|かんげき|deep emotion; being thrilled
+喜び|よろこび|joy
+悲しむ|かなしむ|to be sad; to grieve
+怒り|いかり|anger
+笑顔|えがお|smiling face
+涙|なみだ|tear (from crying)
+泣き出す|なきだす|to burst into tears
+笑い出す|わらいだす|to burst out laughing
+不安|ふあん|anxiety; uneasy
+安心|あんしん|relief; peace of mind
+緊張|きんちょう|nervousness; tension
+興奮|こうふん|excitement
+退屈|たいくつ|boredom; boring
+満足|まんぞく|satisfaction
+不満|ふまん|dissatisfaction; complaint
+後悔|こうかい|regret
+悔しい|くやしい|frustrating; vexing
+羨ましい|うらやましい|envious
+懐かしい|なつかしい|nostalgic; dear (old memories)
+恐ろしい|おそろしい|terrible; frightening
+恐れる|おそれる|to fear
+驚き|おどろき|surprise
+がっかり|disappointed
+ほっと|relieved (feeling)
+いらいら|irritated
+わくわく|excited; thrilled
+どきどき|heart pounding; nervous
+むかむか|feeling sick; feeling angry
+嫌がる|いやがる|to dislike; to be unwilling
+憧れる|あこがれる|to long for; to admire
+愛する|あいする|to love
+恨む|うらむ|to hold a grudge
+苦しむ|くるしむ|to suffer
+楽しむ|たのしむ|to enjoy
+我慢|がまん|patience; putting up with
+同情|どうじょう|sympathy
+ショック|shock
+ストレス|stress
+
+## 3 Thinking & opinions
+考え|かんがえ|thought; idea
+意志|いし|will; intention
+意識|いしき|consciousness; awareness
+判断|はんだん|judgment; decision
+決心|けっしん|determination; resolution
+覚悟|かくご|readiness (for the worst)
+想像|そうぞう|imagination
+記憶|きおく|memory
+思いつく|おもいつく|to think of; to hit on (an idea)
+思い込む|おもいこむ|to be convinced (wrongly)
+信じる|しんじる|to believe; to trust
+疑う|うたがう|to doubt; to suspect
+迷う|まよう|to be undecided; to get lost
+悩む|なやむ|to worry; to be troubled
+悩み|なやみ|worry; trouble
+賛成|さんせい|agreement; approval
+反対|はんたい|opposition; opposite
+理解|りかい|understanding
+納得|なっとく|being convinced; consent
+誤解|ごかい|misunderstanding
+勘違い|かんちがい|misunderstanding; wrong guess
+期待|きたい|expectation; hope
+希望|きぼう|hope; wish
+目的|もくてき|purpose; goal
+目標|もくひょう|target; aim
+理想|りそう|ideal
+現実|げんじつ|reality
+事実|じじつ|fact
+真実|しんじつ|truth
+常識|じょうしき|common sense
+価値|かち|value; worth
+印象|いんしょう|impression
+感想|かんそう|thoughts; impressions
+評価|ひょうか|evaluation
+比較|ひかく|comparison
+区別|くべつ|distinction
+選択|せんたく|choice; selection
+
+## 3 Communication
+伝える|つたえる|to tell; to pass on
+伝わる|つたわる|to be passed on; to be conveyed
+話し合う|はなしあう|to discuss; to talk over
+話し合い|はなしあい|discussion
+相談|そうだん|consultation; asking advice
+連絡|れんらく|contact; getting in touch
+報告|ほうこく|report
+お詫び|おわび|apology
+断る|ことわる|to refuse; to decline
+頼み|たのみ|request; favor
+依頼|いらい|request (formal)
+命令|めいれい|order; command
+注意|ちゅうい|caution; warning
+文句|もんく|complaint
+噂|うわさ|rumor
+秘密|ひみつ|secret
+会話|かいわ|conversation
+発言|はつげん|statement; remark
+発表|はっぴょう|announcement; presentation
+提案|ていあん|proposal; suggestion
+言い訳|いいわけ|excuse
+話題|わだい|topic (of conversation)
+話しかける|はなしかける|to speak to; to start talking to
+呼びかける|よびかける|to call out to; to appeal
+黙る|だまる|to be silent
+叫ぶ|さけぶ|to shout
+ささやく|to whisper
+怒鳴る|どなる|to yell (angrily)
+励ます|はげます|to encourage
+慰める|なぐさめる|to comfort
+からかう|to tease
+
+## 3 Body & health
+体調|たいちょう|physical condition
+健康|けんこう|health
+傷|きず|wound; scratch
+咳|せき|cough
+くしゃみ|sneeze
+鼻水|はなみず|runny nose
+頭痛|ずつう|headache
+腹痛|ふくつう|stomachache
+吐く|はく|to throw up; to breathe out
+吐き気|はきけ|nausea
+めまい|dizziness
+汗|あせ|sweat
+骨|ほね|bone
+筋肉|きんにく|muscle
+肌|はだ|skin (texture)
+皮膚|ひふ|skin (organ)
+額|ひたい|forehead
+眉|まゆ|eyebrow
+まぶた|eyelid
+頬|ほお|cheek
+唇|くちびる|lip
+舌|した|tongue
+喉|のど|throat
+肩|かた|shoulder
+肘|ひじ|elbow
+爪|つめ|nail; claw
+胸|むね|chest
+腰|こし|lower back; hips
+膝|ひざ|knee
+かかと|heel
+心臓|しんぞう|heart (organ)
+胃|い|stomach (organ)
+肺|はい|lung
+息|いき|breath
+呼吸|こきゅう|breathing
+体重|たいじゅう|body weight
+身長|しんちょう|height (of a person)
+治す|なおす|to cure; to treat
+手術|しゅじゅつ|surgery; operation
+診察|しんさつ|medical examination
+治療|ちりょう|medical treatment
+看病|かんびょう|nursing (a sick person)
+入院|にゅういん|being hospitalized
+退院|たいいん|leaving hospital
+症状|しょうじょう|symptom
+痛み|いたみ|pain
+かゆい|itchy
+疲れ|つかれ|tiredness
+転ぶ|ころぶ|to fall over; to trip
+骨折|こっせつ|broken bone
+やけど|burn (injury)
+虫歯|むしば|cavity; bad tooth
+救急車|きゅうきゅうしゃ|ambulance
+
+## 3 Daily life
+暮らす|くらす|to live (one's life)
+暮らし|くらし|way of life; living
+習慣|しゅうかん|habit; custom
+日課|にっか|daily routine
+目覚まし時計|めざましどけい|alarm clock
+目が覚める|めがさめる|to wake up
+寝坊|ねぼう|oversleeping
+昼寝|ひるね|nap
+夜更かし|よふかし|staying up late
+徹夜|てつや|staying up all night
+居眠り|いねむり|dozing off
+着替える|きがえる|to change clothes
+化粧|けしょう|makeup
+歯磨き|はみがき|brushing teeth
+家事|かじ|housework
+掃除機|そうじき|vacuum cleaner
+洗濯機|せんたくき|washing machine
+干す|ほす|to hang out to dry
+畳む|たたむ|to fold
+片付く|かたづく|to be tidied up; to be settled
+散らかる|ちらかる|to be messy; to be scattered
+散らかす|ちらかす|to make a mess
+ごみ箱|ごみばこ|trash can
+燃えるごみ|もえるごみ|burnable trash
+分ける|わける|to divide; to sort
+汚れ|よごれ|dirt; stain
+汚す|よごす|to make dirty
+拭く|ふく|to wipe
+留守番|るすばん|looking after the house
+戸締まり|とじまり|locking up (the house)
+鍵をかける|かぎをかける|to lock
+節約|せつやく|saving; economizing
+無駄|むだ|waste; useless
+無駄遣い|むだづかい|wasting money
+
+## 3 Food & cooking
+食品|しょくひん|food product; groceries
+食料|しょくりょう|food; provisions
+材料|ざいりょう|ingredients; materials
+調味料|ちょうみりょう|seasoning
+味わう|あじわう|to taste; to savor
+香り|かおり|scent; aroma
+酸っぱい|すっぱい|sour
+しょっぱい|salty
+脂|あぶら|fat; grease
+油|あぶら|oil
+麦|むぎ|wheat; barley
+豆|まめ|bean
+豆腐|とうふ|tofu
+納豆|なっとう|natto (fermented soybeans)
+味噌|みそ|miso
+酢|す|vinegar
+小麦粉|こむぎこ|flour
+バター|butter
+チーズ|cheese
+ソース|sauce
+ドレッシング|salad dressing
+缶詰|かんづめ|canned food
+冷凍食品|れいとうしょくひん|frozen food
+定食|ていしょく|set meal
+主食|しゅしょく|staple food
+おかず|side dish
+汁|しる|soup; juice
+刺身|さしみ|sashimi
+寿司|すし|sushi
+炒める|いためる|to stir-fry
+煮る|にる|to simmer; to boil (food)
+揚げる|あげる|to deep-fry
+蒸す|むす|to steam
+茹でる|ゆでる|to boil (eggs, noodles)
+混ぜる|まぜる|to mix
+むく|to peel
+温める|あたためる|to warm up; to heat
+冷やす|ひやす|to cool; to chill
+冷める|さめる|to cool down; to get cold
+腐る|くさる|to go bad; to rot
+新鮮|しんせん|fresh
+生|なま|raw
+栄養|えいよう|nutrition
+カロリー|calorie
+食欲|しょくよく|appetite
+満腹|まんぷく|full (stomach)
+空腹|くうふく|hunger; empty stomach
+アルコール|alcohol
+
+## 3 Shopping & money
+商品|しょうひん|goods; merchandise
+定価|ていか|list price
+価格|かかく|price (formal)
+割引|わりびき|discount
+半額|はんがく|half price
+値上がり|ねあがり|price rise
+値下がり|ねさがり|price drop
+安売り|やすうり|selling cheaply
+売り切れ|うりきれ|sold out
+在庫|ざいこ|stock; inventory
+注文|ちゅうもん|order (for goods)
+配達|はいたつ|delivery
+送料|そうりょう|shipping fee
+代金|だいきん|price; payment
+料金|りょうきん|fee; charge
+税金|ぜいきん|tax
+消費税|しょうひぜい|consumption tax
+小銭|こぜに|small change; coins
+札|さつ|bill (paper money)
+現金|げんきん|cash
+貯金|ちょきん|savings
+預金|よきん|bank deposit
+預ける|あずける|to leave (in someone's care); to deposit
+引き出す|ひきだす|to withdraw (money); to pull out
+支払う|しはらう|to pay (a bill)
+支払い|しはらい|payment
+払い戻す|はらいもどす|to refund
+両替|りょうがえ|money exchange
+収入|しゅうにゅう|income
+支出|ししゅつ|expenses
+家計|かけい|household budget
+ローン|loan
+クレジットカード|credit card
+レシート|receipt
+ポイント|point; reward points
+高価|こうか|expensive; costly
+得|とく|profit; advantage
+損|そん|loss; disadvantage
+もったいない|wasteful; too good to waste
+
+## 3 Home & living
+住まい|すまい|home; residence
+住宅|じゅうたく|housing; house
+一戸建て|いっこだて|detached house
+マンション|apartment (condo)
+大家|おおや|landlord
+家賃|やちん|rent
+引っ越し|ひっこし|moving (house)
+部屋代|へやだい|room rent
+間取り|まどり|floor plan
+居間|いま|living room
+寝室|しんしつ|bedroom
+和室|わしつ|Japanese-style room
+洋室|ようしつ|Western-style room
+床|ゆか|floor
+天井|てんじょう|ceiling
+壁|かべ|wall
+柱|はしら|pillar
+屋根|やね|roof
+廊下|ろうか|hallway
+物置|ものおき|storeroom; shed
+家具|かぐ|furniture
+押し入れ|おしいれ|closet (Japanese)
+毛布|もうふ|blanket
+枕|まくら|pillow
+カーテン|curtain
+蛇口|じゃぐち|faucet; tap
+電球|でんきゅう|light bulb
+電池|でんち|battery
+コンセント|power outlet
+スイッチ|switch
+修理|しゅうり|repair
+
+## 3 Town & places
+都会|とかい|big city; urban area
+都市|とし|city (as a place on the map)
+地方|ちほう|region; the countryside
+郊外|こうがい|suburbs
+地域|ちいき|area; region
+地区|ちく|district
+住所|じゅうしょ|address
+番地|ばんち|block number (address)
+中心|ちゅうしん|center; middle
+商店街|しょうてんがい|shopping street
+市場|いちば|market
+役所|やくしょ|public office
+市役所|しやくしょ|city hall
+区役所|くやくしょ|ward office
+警察署|けいさつしょ|police station
+消防署|しょうぼうしょ|fire station
+美容院|びよういん|hair salon
+床屋|とこや|barber
+薬局|やっきょく|pharmacy
+劇場|げきじょう|theater
+広場|ひろば|square; plaza
+城|しろ|castle
+塔|とう|tower
+歩道|ほどう|sidewalk
+歩道橋|ほどうきょう|pedestrian bridge
+横断歩道|おうだんほどう|crosswalk
+突き当たり|つきあたり|end of a street
+大通り|おおどおり|main street
+路地|ろじ|alley
+
+## 3 Transport & travel
+乗り物|のりもの|vehicle
+乗り換え|のりかえ|transfer (trains)
+乗り遅れる|のりおくれる|to miss (a train)
+乗り越す|のりこす|to ride past (one's stop)
+終電|しゅうでん|last train
+始発|しはつ|first train
+各駅停車|かくえきていしゃ|local train
+快速|かいそく|rapid train
+新幹線|しんかんせん|bullet train
+指定席|していせき|reserved seat
+自由席|じゆうせき|unreserved seat
+片道|かたみち|one way
+往復|おうふく|round trip
+運賃|うんちん|fare
+定期券|ていきけん|commuter pass
+改札|かいさつ|ticket gate
+時刻表|じこくひょう|timetable
+運転|うんてん|driving; operation
+免許|めんきょ|license
+駐車|ちゅうしゃ|parking
+渋滞|じゅうたい|traffic jam
+事故|じこ|accident
+到着|とうちゃく|arrival
+出発|しゅっぱつ|departure
+国内|こくない|domestic
+海外|かいがい|overseas
+旅|たび|journey; trip
+観光|かんこう|sightseeing
+観光地|かんこうち|tourist spot
+名所|めいしょ|famous place
+宿|やど|inn; lodging
+宿泊|しゅくはく|staying (at a hotel)
+予約|よやく|reservation
+キャンセル|cancellation
+パスポート|passport
+ビザ|visa
+案内|あんない|guidance; showing around
+迷子|まいご|lost child
+
+## 3 Nature & environment
+自然|しぜん|nature
+環境|かんきょう|environment
+地球|ちきゅう|the earth
+宇宙|うちゅう|space; the universe
+太陽|たいよう|the sun
+陸|りく|land
+大陸|たいりく|continent
+半島|はんとう|peninsula
+海岸|かいがん|coast; seashore
+浜|はま|beach
+波|なみ|wave
+岸|きし|shore; bank
+谷|たに|valley
+丘|おか|hill
+崖|がけ|cliff
+岩|いわ|rock
+泥|どろ|mud
+土|つち|soil; earth
+畑|はたけ|field (for crops)
+田んぼ|たんぼ|rice field
+芝生|しばふ|lawn
+根|ね|root
+芽|め|bud; sprout
+種|たね|seed
+実|み|fruit; nut
+花びら|はなびら|petal
+落ち葉|おちば|fallen leaves
+紅葉|こうよう|autumn leaves
+桜|さくら|cherry blossom
+松|まつ|pine tree
+竹|たけ|bamboo
+稲|いね|rice plant
+植物|しょくぶつ|plant
+生き物|いきもの|living thing
+蚊|か|mosquito
+蝶|ちょう|butterfly
+蜂|はち|bee
+蛇|へび|snake
+猿|さる|monkey
+熊|くま|bear
+狐|きつね|fox
+兎|うさぎ|rabbit
+羊|ひつじ|sheep
+豚|ぶた|pig
+牛|うし|cow
+馬|うま|horse
+鼠|ねずみ|mouse; rat
+羽|はね|feather; wing
+尻尾|しっぽ|tail
+餌|えさ|animal feed; bait
+飼う|かう|to keep (a pet)
+資源|しげん|resources
+汚染|おせん|pollution
+公害|こうがい|pollution (public hazard)
+温暖化|おんだんか|global warming
+リサイクル|recycling
+エネルギー|energy
+
+## 3 Weather & seasons
+天候|てんこう|weather (over a period)
+天気予報|てんきよほう|weather forecast
+気温|きおん|air temperature
+温度|おんど|temperature
+湿度|しつど|humidity
+晴れ|はれ|clear weather
+曇り|くもり|cloudy weather
+雷|かみなり|thunder; lightning
+嵐|あらし|storm
+大雨|おおあめ|heavy rain
+にわか雨|にわかあめ|sudden shower
+梅雨|つゆ|rainy season
+霧|きり|fog; mist
+虹|にじ|rainbow
+氷|こおり|ice
+凍る|こおる|to freeze
+溶ける|とける|to melt
+蒸し暑い|むしあつい|humid and hot
+肌寒い|はださむい|chilly
+暖まる|あたたまる|to warm up
+冷える|ひえる|to get cold
+乾く|かわく|to dry
+湿る|しめる|to get damp
+濡れる|ぬれる|to get wet
+季節|きせつ|season
+四季|しき|the four seasons
+真夏|まなつ|midsummer
+真冬|まふゆ|midwinter
+日差し|ひざし|sunlight
+日陰|ひかげ|shade
+日の出|ひので|sunrise
+夕日|ゆうひ|setting sun
+夜明け|よあけ|dawn
+洪水|こうずい|flood
+津波|つなみ|tsunami
+災害|さいがい|disaster
+被害|ひがい|damage
+避難|ひなん|evacuation
+
+## 3 Time
+期間|きかん|period (of time)
+期限|きげん|deadline; time limit
+締め切り|しめきり|deadline
+日付|ひづけ|date
+日時|にちじ|date and time
+時期|じき|time; season (for something)
+時刻|じこく|time (on the clock)
+一日中|いちにちじゅう|all day
+一晩中|ひとばんじゅう|all night
+年中|ねんじゅう|all year round
+平日|へいじつ|weekday
+休日|きゅうじつ|day off; holiday
+祝日|しゅくじつ|national holiday
+連休|れんきゅう|consecutive holidays
+月末|げつまつ|end of the month
+年末|ねんまつ|end of the year
+年始|ねんし|start of the year
+上旬|じょうじゅん|first ten days of a month
+中旬|ちゅうじゅん|middle ten days of a month
+下旬|げじゅん|last ten days of a month
+前半|ぜんはん|first half
+後半|こうはん|second half
+今後|こんご|from now on
+以前|いぜん|before; formerly
+以後|いご|after; from then on
+当時|とうじ|at that time
+現在|げんざい|the present; now
+過去|かこ|the past
+未来|みらい|the future
+先日|せんじつ|the other day
+翌日|よくじつ|the next day
+前日|ぜんじつ|the day before
+当日|とうじつ|the day (of an event)
+昨年|さくねん|last year (formal)
+昨夜|さくや|last night (formal)
+明後日|みょうごにち|the day after tomorrow (formal)
+一昨日|いっさくじつ|the day before yesterday (formal)
+深夜|しんや|late at night
+早朝|そうちょう|early morning
+日中|にっちゅう|during the day
+瞬間|しゅんかん|moment; instant
+一瞬|いっしゅん|an instant
+しばらく|for a while
+いつまでも|forever
+いつの間にか|いつのまにか|before you know it
+
+## 3 Work & company
+職業|しょくぎょう|occupation
+職場|しょくば|workplace
+勤務|きんむ|work; duty
+出勤|しゅっきん|going to work
+退勤|たいきん|leaving work
+残業|ざんぎょう|overtime work
+休暇|きゅうか|leave; vacation
+有給|ゆうきゅう|paid leave
+出張|しゅっちょう|business trip
+転勤|てんきん|job transfer
+就職|しゅうしょく|getting a job
+退職|たいしょく|retirement; leaving a job
+転職|てんしょく|changing jobs
+面接|めんせつ|job interview
+履歴書|りれきしょ|résumé
+採用|さいよう|hiring; adoption
+応募|おうぼ|application (for a job, contest)
+求人|きゅうじん|job offer; job opening
+失業|しつぎょう|unemployment
+上司|じょうし|boss; superior
+部下|ぶか|subordinate
+同僚|どうりょう|colleague
+社員|しゃいん|employee
+課長|かちょう|section chief
+係|かかり|person in charge
+担当|たんとう|being in charge
+責任|せきにん|responsibility
+役目|やくめ|role; duty
+業務|ぎょうむ|business; duties
+作業|さぎょう|work; task
+営業|えいぎょう|sales; business (operation)
+会計|かいけい|accounting; the bill
+書類|しょるい|documents
+資料|しりょう|materials; data
+企画|きかく|plan; project
+打ち合わせ|うちあわせ|meeting (to arrange things)
+取引|とりひき|deal; business
+契約|けいやく|contract
+名刺|めいし|business card
+本社|ほんしゃ|head office
+支店|してん|branch office
+社会人|しゃかいじん|working adult
+給与|きゅうよ|pay (formal)
+ボーナス|bonus
+昇進|しょうしん|promotion
+成功|せいこう|success
+努力|どりょく|effort
+能力|のうりょく|ability
+技術|ぎじゅつ|technique; technology
+経営|けいえい|management (of a business)
+
+## 3 School & education
+教育|きょういく|education
+学期|がっき|school term
+学年|がくねん|school year; grade
+新学期|しんがっき|new term
+授業料|じゅぎょうりょう|tuition
+奨学金|しょうがくきん|scholarship
+入試|にゅうし|entrance exam
+受験|じゅけん|taking an exam
+合格|ごうかく|passing (an exam)
+不合格|ふごうかく|failing (an exam)
+成績|せいせき|grades; results
+点数|てんすう|score; points
+満点|まんてん|full marks
+採点|さいてん|grading; marking
+解答|かいとう|answer (to a problem)
+正解|せいかい|correct answer
+間違い|まちがい|mistake
+復習|ふくしゅう|review (of lessons)
+予習|よしゅう|preparation (for a lesson)
+暗記|あんき|memorizing
+課題|かだい|assignment; task
+レポート|report; paper
+論文|ろんぶん|thesis; paper
+教科書|きょうかしょ|textbook
+参考書|さんこうしょ|reference book
+黒板|こくばん|blackboard
+チャイム|chime; school bell
+校長|こうちょう|principal
+担任|たんにん|homeroom teacher
+同級生|どうきゅうせい|classmate
+クラスメート|classmate (casual)
+部活|ぶかつ|school club activities
+運動会|うんどうかい|sports day
+遠足|えんそく|school trip; excursion
+修学旅行|しゅうがくりょこう|school trip (overnight)
+大学院|だいがくいん|graduate school
+専門学校|せんもんがっこう|vocational school
+学部|がくぶ|faculty; department
+科目|かもく|subject (school)
+国語|こくご|Japanese (school subject)
+算数|さんすう|arithmetic
+物理|ぶつり|physics
+化学|かがく|chemistry
+生物|せいぶつ|biology; living things
+地理|ちり|geography
+体育|たいいく|physical education
+知識|ちしき|knowledge
+
+## 3 Society & politics
+国民|こくみん|citizens; the people (of a country)
+市民|しみん|citizen (of a city)
+住民|じゅうみん|residents
+人種|じんしゅ|race (of people)
+民族|みんぞく|ethnic group
+政府|せいふ|government
+国会|こっかい|national parliament
+首相|しゅしょう|prime minister
+大統領|だいとうりょう|president (of a country)
+大臣|だいじん|minister (government)
+議員|ぎいん|member of parliament
+選挙|せんきょ|election
+投票|とうひょう|vote
+政党|せいとう|political party
+制度|せいど|system; institution
+福祉|ふくし|welfare
+年金|ねんきん|pension
+権利|けんり|right (legal)
+義務|ぎむ|duty; obligation
+平等|びょうどう|equality
+平和|へいわ|peace
+戦う|たたかう|to fight
+争い|あらそい|dispute; conflict
+軍隊|ぐんたい|army
+兵士|へいし|soldier
+武器|ぶき|weapon
+国境|こっきょう|national border
+首都|しゅと|capital city
+都道府県|とどうふけん|prefectures of Japan
+県|けん|prefecture
+市|し|city (administrative)
+少子化|しょうしか|falling birth rate
+高齢化|こうれいか|aging (of society)
+差別|さべつ|discrimination
+貧しい|まずしい|poor
+貧乏|びんぼう|poverty; poor
+豊か|ゆたか|rich; abundant
+ボランティア|volunteer
+
+## 3 Economy & industry
+景気|けいき|economy; business conditions
+不景気|ふけいき|recession
+物価|ぶっか|prices (of goods)
+産業|さんぎょう|industry
+工業|こうぎょう|manufacturing industry
+農業|のうぎょう|agriculture
+漁業|ぎょぎょう|fishing industry
+商業|しょうぎょう|commerce
+貿易|ぼうえき|trade
+輸出|ゆしゅつ|export
+輸入|ゆにゅう|import
+生産|せいさん|production
+製品|せいひん|product (manufactured)
+製造|せいぞう|manufacturing
+消費|しょうひ|consumption
+消費者|しょうひしゃ|consumer
+需要|じゅよう|demand (economics)
+供給|きょうきゅう|supply
+企業|きぎょう|company; enterprise
+利益|りえき|profit
+売り上げ|うりあげ|sales (amount)
+費用|ひよう|cost; expense
+予算|よさん|budget
+赤字|あかじ|deficit; in the red
+黒字|くろじ|surplus; in the black
+株|かぶ|stock; share
+銀行員|ぎんこういん|bank clerk
+市場|しじょう|market (economy)
+競争|きょうそう|competition
+発展|はってん|development; growth
+開発|かいはつ|development (of products)
+
+## 3 Media & technology
+情報|じょうほう|information
+報道|ほうどう|news report; coverage
+記事|きじ|article
+記者|きしゃ|reporter; journalist
+新聞社|しんぶんしゃ|newspaper company
+出版|しゅっぱん|publication
+広告|こうこく|advertisement
+宣伝|せんでん|advertising; publicity
+放送局|ほうそうきょく|broadcasting station
+生放送|なまほうそう|live broadcast
+画面|がめん|screen
+映像|えいぞう|picture; video image
+録画|ろくが|video recording
+録音|ろくおん|audio recording
+通信|つうしん|communication (data)
+電波|でんぱ|radio waves; signal
+携帯電話|けいたいでんわ|mobile phone
+スマートフォン|smartphone
+インターネット|internet
+メール|email
+アドレス|address (email)
+パスワード|password
+ファイル|file
+データ|data
+ソフト|software
+アプリ|app
+ダウンロード|download
+検索|けんさく|search (online)
+入力|にゅうりょく|input
+保存|ほぞん|saving; preservation
+削除|さくじょ|deletion
+送信|そうしん|sending (a message)
+受信|じゅしん|receiving (a message)
+接続|せつぞく|connection
+充電|じゅうでん|charging (a battery)
+画像|がぞう|image
+動画|どうが|video
+機能|きのう|function; feature
+操作|そうさ|operation (of a machine)
+発明|はつめい|invention
+
+## 3 Law & rules
+憲法|けんぽう|constitution
+ルール|rule (of a game)
+禁止|きんし|prohibition
+許可|きょか|permission
+違反|いはん|violation
+罰金|ばっきん|fine (penalty)
+犯罪|はんざい|crime
+犯人|はんにん|criminal; culprit
+泥棒|どろぼう|thief
+強盗|ごうとう|robbery; robber
+逮捕|たいほ|arrest
+事件|じけん|incident; case
+証拠|しょうこ|evidence
+証明|しょうめい|proof
+裁判|さいばん|trial
+弁護士|べんごし|lawyer
+被害者|ひがいしゃ|victim
+警官|けいかん|police officer (formal)
+盗む|ぬすむ|to steal
+騙す|だます|to deceive
+守る|まもる|to protect; to keep (a rule)
+破る|やぶる|to break (a rule, promise); to tear
+許す|ゆるす|to forgive; to permit
+認める|みとめる|to admit; to recognize
+届け出|とどけで|notification (to an office)
+手続き|てつづき|procedure
+申し込む|もうしこむ|to apply for
+申し込み|もうしこみ|application
+登録|とうろく|registration
+
+## 3 Sports & hobbies
+運動|うんどう|exercise
+体操|たいそう|gymnastics; exercises
+競技|きょうぎ|competition (sports)
+大会|たいかい|tournament
+選手|せんしゅ|athlete; player
+監督|かんとく|manager; director
+優勝|ゆうしょう|winning the championship
+記録|きろく|record
+得点|とくてん|score (in a game)
+引き分け|ひきわけ|draw; tie
+応援|おうえん|cheering; support
+観客|かんきゃく|audience; spectators
+野球|やきゅう|baseball
+サッカー|soccer
+水泳|すいえい|swimming
+柔道|じゅうどう|judo
+相撲|すもう|sumo
+登山|とざん|mountain climbing
+釣り|つり|fishing
+キャンプ|camping
+ハイキング|hiking
+ジョギング|jogging
+マラソン|marathon
+スキー|skiing
+ゲーム|game
+囲碁|いご|go (board game)
+将棋|しょうぎ|shogi (Japanese chess)
+手品|てじな|magic trick
+旅行者|りょこうしゃ|traveler
+写真家|しゃしんか|photographer
+園芸|えんげい|gardening
+読書|どくしょ|reading (books)
+
+## 3 Culture & arts
+芸術|げいじゅつ|art
+美術|びじゅつ|fine arts
+作品|さくひん|work (of art)
+作者|さくしゃ|author; creator
+作家|さっか|writer; novelist
+画家|がか|painter
+詩|し|poem
+物語|ものがたり|story; tale
+童話|どうわ|children's story
+劇|げき|play; drama
+演劇|えんげき|theater (art form)
+舞台|ぶたい|stage
+役者|やくしゃ|actor (stage)
+俳優|はいゆう|actor; performer
+女優|じょゆう|actress
+主人公|しゅじんこう|main character
+演奏|えんそう|musical performance
+楽器|がっき|musical instrument
+歌手|かしゅ|singer
+曲|きょく|tune; piece of music
+コンサート|concert
+展覧会|てんらんかい|exhibition
+伝統|でんとう|tradition
+文化祭|ぶんかさい|school festival
+茶道|さどう|tea ceremony
+書道|しょどう|calligraphy
+生け花|いけばな|flower arranging
+行事|ぎょうじ|event; function
+儀式|ぎしき|ceremony; ritual
+宗教|しゅうきょう|religion
+神|かみ|god
+仏|ほとけ|Buddha
+
+## 3 Numbers & amounts
+数字|すうじ|number; figure
+計算|けいさん|calculation
+合計|ごうけい|total
+平均|へいきん|average
+割合|わりあい|ratio; proportion
+割合に|わりあいに|comparatively
+差|さ|difference
+量|りょう|amount; quantity
+大量|たいりょう|large quantity
+少量|しょうりょう|small quantity
+全体|ぜんたい|the whole
+部分|ぶぶん|part; portion
+一部|いちぶ|a part; some
+全員|ぜんいん|all members; everyone
+大半|たいはん|the majority
+多数|たすう|large number; majority
+少数|しょうすう|small number; minority
+人数|にんずう|number of people
+回数|かいすう|number of times
+番目|ばんめ|-th (in order)
+順番|じゅんばん|order; turn
+順序|じゅんじょ|order; sequence
+最高|さいこう|best; highest
+最低|さいてい|worst; lowest
+最大|さいだい|largest; maximum
+最小|さいしょう|smallest; minimum
+最多|さいた|most (in number)
+増加|ぞうか|increase
+減少|げんしょう|decrease
+加える|くわえる|to add
+引き算|ひきざん|subtraction
+足し算|たしざん|addition
+掛け算|かけざん|multiplication
+割り算|わりざん|division
+奇数|きすう|odd number
+偶数|ぐうすう|even number
+単位|たんい|unit; credit
+距離|きょり|distance
+面積|めんせき|area (size)
+重さ|おもさ|weight
+長さ|ながさ|length
+高さ|たかさ|height
+深さ|ふかさ|depth
+速さ|はやさ|quickness
+大きさ|おおきさ|how big something is
+幅|はば|width
+キロ|kilo (kilogram, kilometer)
+メートル|meter
+センチ|centimeter
+グラム|gram
+リットル|liter
+パーセント|percent
+
+## 3 Shapes & position
+丸|まる|circle
+四角|しかく|square
+三角|さんかく|triangle
+線|せん|line
+点|てん|point; dot
+縦|たて|vertical; length
+直線|ちょくせん|straight line
+曲線|きょくせん|curve
+平ら|たいら|flat; level
+斜め|ななめ|diagonal; slanting
+逆|ぎゃく|reverse; opposite
+裏|うら|back side; reverse
+表|おもて|front side; surface
+表面|ひょうめん|surface
+底|そこ|bottom
+端|はし|edge; end
+隅|すみ|corner (inside)
+周り|まわり|surroundings; around
+辺り|あたり|vicinity; around here
+付近|ふきん|neighborhood; vicinity
+手前|てまえ|this side; just before
+奥|おく|the back; inner part
+内側|うちがわ|inner side
+外側|そとがわ|outer side
+左右|さゆう|left and right
+上下|じょうげ|up and down
+前後|ぜんご|front and back; around (a time)
+方向|ほうこう|direction
+向き|むき|direction (facing)
+位置|いち|position
+範囲|はんい|range; scope
+
+## 3 Change & movement
+変化|へんか|change
+移動|いどう|movement; moving
+移る|うつる|to move (to another place)
+移す|うつす|to transfer; to move (to another place)
+進む|すすむ|to advance; to go forward
+進める|すすめる|to move forward; to proceed with
+戻す|もどす|to put back; to return
+回る|まわる|to turn; to go around
+回す|まわす|to turn (something)
+転がる|ころがる|to roll
+転がす|ころがす|to roll (something)
+流れる|ながれる|to flow
+流す|ながす|to let flow; to wash away
+浮かぶ|うかぶ|to float; to come to mind
+沈む|しずむ|to sink
+跳ぶ|とぶ|to jump
+跳ねる|はねる|to bounce; to splash
+滑る|すべる|to slip; to slide
+揺らす|ゆらす|to shake; to rock
+傾く|かたむく|to lean; to tilt
+曲げる|まげる|to bend
+伸びる|のびる|to stretch; to grow
+伸ばす|のばす|to lengthen; to stretch out
+縮む|ちぢむ|to shrink
+広がる|ひろがる|to spread
+広げる|ひろげる|to spread out; to widen
+狭まる|せばまる|to narrow
+重なる|かさなる|to overlap; to pile up
+重ねる|かさねる|to pile up; to repeat
+離れる|はなれる|to leave; to be apart
+離す|はなす|to separate; to let go
+近づく|ちかづく|to approach
+近づける|ちかづける|to bring closer
+遠ざかる|とおざかる|to move away
+加わる|くわわる|to join; to be added
+抜ける|ぬける|to come out; to fall out
+抜く|ぬく|to pull out; to skip
+外れる|はずれる|to come off; to miss (target)
+外す|はずす|to take off; to remove
+はまる|to fit into; to get hooked on
+
+## 3 Actions
+動かす|うごかす|to move; to operate (a machine)
+起きあがる|おきあがる|to get up (from lying)
+しゃがむ|to squat; to crouch
+寝転ぶ|ねころぶ|to lie down
+振る|ふる|to wave; to shake
+振り向く|ふりむく|to turn around (to look)
+覗く|のぞく|to peek
+見上げる|みあげる|to look up at
+見下ろす|みおろす|to look down at
+見送る|みおくる|to see off
+見回す|みまわす|to look around
+眺める|ながめる|to gaze at
+にらむ|to glare at
+指す|さす|to point at
+示す|しめす|to show; to indicate
+叩く|たたく|to hit; to knock
+殴る|なぐる|to punch; to hit
+蹴る|ける|to kick
+踏む|ふむ|to step on
+押さえる|おさえる|to hold down
+握る|にぎる|to grasp; to grip
+つかむ|to grab
+抱く|だく|to hold in one's arms
+抱える|かかえる|to hold (in arms); to have (problems)
+担ぐ|かつぐ|to carry on the shoulder
+背負う|せおう|to carry on one's back
+引っ張る|ひっぱる|to pull hard; to tug
+押し込む|おしこむ|to push into
+突く|つく|to poke; to prick
+刺す|さす|to stab; to sting
+掘る|ほる|to dig
+埋める|うめる|to bury; to fill in
+削る|けずる|to shave; to sharpen; to cut back
+結ぶ|むすぶ|to tie; to connect
+ほどく|to untie
+縛る|しばる|to tie up
+巻く|まく|to wind; to roll up
+挟む|はさむ|to put between
+吊るす|つるす|to hang (from above)
+
+## 3 Handling things
+扱う|あつかう|to handle; to treat
+与える|あたえる|to give; to cause
+受け取る|うけとる|to take delivery of; to accept
+預かる|あずかる|to look after; to keep
+貸し出す|かしだす|to lend out
+配る|くばる|to hand out
+分かれる|わかれる|to split; to be divided
+揃える|そろえる|to put in order; to match
+揃う|そろう|to be complete; to be all present
+詰める|つめる|to pack; to stuff
+詰まる|つまる|to be blocked; to be packed
+包み|つつみ|package; bundle
+袋|ふくろ|paper or plastic bag; sack
+入れ物|いれもの|container
+容器|ようき|container (formal)
+缶|かん|can
+瓶|びん|bottle; jar
+蓋|ふた|lid
+栓|せん|stopper; cork
+紐|ひも|string; cord
+糸|いと|thread
+針|はり|needle
+はさみ|scissors
+のり|glue
+テープ|tape
+部品|ぶひん|part (of a machine)
+
+## 3 Useful verbs
+現れる|あらわれる|to appear
+表す|あらわす|to express; to show
+起こる|おこる|to happen; to occur
+生じる|しょうじる|to arise; to result
+当たる|あたる|to hit; to win (a prize); to be correct
+当てる|あてる|to hit (a target); to guess
+合う|あう|to fit; to match; to agree
+合わせる|あわせる|to put together; to match
+余る|あまる|to be left over
+残る|のこる|to remain; to be left
+残す|のこす|to leave (behind); to leave uneaten
+失う|うしなう|to lose (something important)
+奪う|うばう|to snatch; to take away
+得る|える|to get; to gain
+求める|もとめる|to seek; to request
+望む|のぞむ|to wish for; to hope
+願う|ねがう|to wish; to request
+祈り|いのり|prayer
+争う|あらそう|to compete; to argue
+勝る|まさる|to be superior
+劣る|おとる|to be inferior
+越える|こえる|to go over; to cross
+超える|こえる|to exceed
+過ごす|すごす|to spend (time)
+過ぎ去る|すぎさる|to pass (away)
+経つ|たつ|to pass (time)
+迫る|せまる|to draw near; to press for
+避ける|さける|to avoid
+防ぐ|ふせぐ|to prevent; to defend
+助かる|たすかる|to be saved; to be helpful
+支える|ささえる|to support
+救う|すくう|to rescue
+務める|つとめる|to serve as; to play the role of
+努める|つとめる|to make an effort
+試す|ためす|to try out; to test
+確かめる|たしかめる|to make sure; to check
+確認|かくにん|confirmation
+繰り返す|くりかえす|to repeat
+間違う|まちがう|to be wrong
+迷惑|めいわく|trouble; nuisance
+邪魔|じゃま|hindrance; getting in the way
+任せる|まかせる|to leave (to someone)
+従う|したがう|to follow; to obey
+逆らう|さからう|to go against; to disobey
+命じる|めいじる|to order
+決まり|きまり|rule; arrangement
+向かう|むかう|to head toward; to face
+向ける|むける|to turn (toward)
+向く|むく|to face; to be suited to
+迎え|むかえ|meeting; picking someone up
+訪れる|おとずれる|to visit (a place); to come (season)
+通り過ぎる|とおりすぎる|to pass by
+立ち止まる|たちどまる|to stop (walking)
+立ち上がる|たちあがる|to stand up
+座り込む|すわりこむ|to sit down (and stay)
+飛び出す|とびだす|to rush out; to jump out
+飛び込む|とびこむ|to jump into; to dive
+追う|おう|to chase; to follow
+追いかける|おいかける|to run after
+追い越す|おいこす|to overtake
+追い付く|おいつく|to catch up
+落ち着く|おちつく|to calm down; to settle in
+慌てる|あわてる|to panic; to be flustered
+焦る|あせる|to be in a hurry; to be impatient
+諦める|あきらめる|to give up
+怠ける|なまける|to be lazy
+サボる|to skip (class, work)
+見逃す|みのがす|to miss (seeing); to overlook
+見直す|みなおす|to look at again; to reconsider
+見かける|みかける|to happen to see
+見つめる|みつめる|to stare at
+聞き取る|ききとる|to catch (what is said)
+言い出す|いいだす|to start saying; to propose
+書き直す|かきなおす|to rewrite
+使い切る|つかいきる|to use up
+食べ過ぎる|たべすぎる|to overeat
+飲み過ぎる|のみすぎる|to drink too much
+取り出す|とりだす|to take out
+取り替える|とりかえる|to exchange; to replace
+取り消す|とりけす|to cancel
+取り上げる|とりあげる|to take up; to take away
+取り組む|とりくむ|to tackle; to work on
+受け入れる|うけいれる|to accept; to take in
+組み立てる|くみたてる|to assemble
+言い返す|いいかえす|to talk back
+思い切る|おもいきる|to make up one's mind
+思い切り|おもいきり|with all one's might
+降り出す|ふりだす|to start raining
+見舞う|みまう|to visit (someone ill)
+付ける|つける|to attach; to put on
+付く|つく|to be attached; to stick
+くっつく|to stick to
+剥がす|はがす|to peel off
+破れる|やぶれる|to be torn
+折れる|おれる|to break; to be folded
+折る|おる|to break; to fold
+砕ける|くだける|to break into pieces
+崩れる|くずれる|to collapse
+崩す|くずす|to break down; to change (money)
+潰す|つぶす|to crush; to kill (time)
+潰れる|つぶれる|to be crushed; to go bankrupt
+燃える|もえる|to burn
+燃やす|もやす|to burn (something)
+焦げる|こげる|to get burnt
+冷ます|さます|to cool (something)
+覚める|さめる|to wake up; to come to one's senses
+済む|すむ|to be finished; to be settled
+済ませる|すませる|to finish; to get done
+間に合わせる|まにあわせる|to make do
+仕上げる|しあげる|to finish up
+
+## 3 する verbs
+実行|じっこう|carrying out
+実現|じつげん|realization (of a plan)
+実験|じっけん|experiment
+活動|かつどう|activity
+行動|こうどう|action; behavior
+参加|さんか|participation
+協力|きょうりょく|cooperation
+協調|きょうちょう|cooperation; harmony
+完成|かんせい|completion
+解決|かいけつ|solution; settlement
+決定|けってい|decision
+変更|へんこう|change; alteration
+中止|ちゅうし|cancellation; calling off
+延期|えんき|postponement
+継続|けいぞく|continuation
+開始|かいし|start; beginning (formal)
+終了|しゅうりょう|end; finish
+利用|りよう|use; utilization
+使用|しよう|use (formal)
+応用|おうよう|application (of knowledge)
+注目|ちゅうもく|attention; notice
+関心|かんしん|interest; concern
+観察|かんさつ|observation
+調査|ちょうさ|investigation; survey
+検査|けんさ|inspection; examination
+分析|ぶんせき|analysis
+整理|せいり|sorting out; putting in order
+支度|したく|getting ready
+成長|せいちょう|growth
+発達|はったつ|development (of body, technology)
+進歩|しんぽ|progress
+上達|じょうたつ|improvement (in skill)
+回復|かいふく|recovery
+挑戦|ちょうせん|challenge (attempt)
+競う|きそう|to compete
+反省|はんせい|reflection; regret
+感心|かんしん|admiration
+尊敬|そんけい|respect
+信用|しんよう|trust; credit
+信頼|しんらい|trust; reliance
+配慮|はいりょ|consideration (for others)
+注意深い|ちゅういぶかい|careful
+指示|しじ|instructions
+指導|しどう|guidance; coaching
+要求|ようきゅう|demand; claim
+要望|ようぼう|request; wish (formal)
+訪問|ほうもん|visit
+帰国|きこく|returning to one's country
+帰宅|きたく|returning home
+外出|がいしゅつ|going out
+往来|おうらい|coming and going; traffic
+通勤|つうきん|commuting (to work)
+通学|つうがく|commuting (to school)
+移住|いじゅう|moving (to another country)
+
+## 3 い-adjectives
+怪しい|あやしい|suspicious
+危うい|あやうい|dangerous; risky
+荒い|あらい|rough; violent
+粗い|あらい|coarse
+緩い|ゆるい|loose; gentle (slope)
+きつい|tight; hard (work)
+鋭い|するどい|sharp
+鈍い|にぶい|dull; slow (to react)
+濃い|こい|thick; strong (color, taste)
+淡い|あわい|light; pale
+眩しい|まぶしい|dazzling
+煙い|けむい|smoky
+臭い|くさい|smelly
+ずるい|unfair; sly
+もったいぶる|もったいぶる|to put on airs
+騒がしい|さわがしい|noisy
+大人っぽい|おとなっぽい|mature-looking
+子供っぽい|こどもっぽい|childish
+面倒くさい|めんどうくさい|bothersome; too much trouble
+詳しい|くわしい|detailed; knowing a lot about
+等しい|ひとしい|equal
+激しい|はげしい|intense; violent
+素早い|すばやい|quick; nimble
+貴い|とうとい|precious; noble
+険しい|けわしい|steep; stern
+物凄い|ものすごい|tremendous; terrific
+凄い|すごい|amazing; terrible
+頼もしい|たのもしい|reliable
+親しい|したしい|close; intimate
+乏しい|とぼしい|scarce; lacking
+恐い|こわい|frightening
+清い|きよい|pure; clean
+幼い|おさない|very young; childish
+くどい|wordy; heavy (taste)
+だるい|sluggish; listless
+つらい|painful; hard to bear
+しつこい|persistent; insistent
+ありがたい|grateful; welcome
+めでたい|happy; joyous (occasion)
+もろい|fragile
+
+## 3 な-adjectives
+新た|あらた|new; fresh
+確実|かくじつ|certain; reliable
+正確|せいかく|accurate
+明確|めいかく|clear; precise
+曖昧|あいまい|vague
+単純|たんじゅん|simple; uncomplicated
+複雑|ふくざつ|complicated
+重大|じゅうだい|serious; important
+重要|じゅうよう|important (formal); essential
+貴重|きちょう|valuable; precious
+主要|しゅよう|main; principal
+基本|きほん|basics; basic
+基本的|きほんてき|basic; fundamental
+具体的|ぐたいてき|concrete; specific
+一般的|いっぱんてき|general; common
+個人的|こじんてき|personal
+経済的|けいざいてき|economical; economic
+効果的|こうかてき|effective
+自動的|じどうてき|automatic
+理想的|りそうてき|ideal (adjective)
+平気|へいき|calm; unconcerned
+素敵|すてき|lovely; nice
+派手|はで|flashy; showy
+地味|じみ|plain; subdued
+豪華|ごうか|luxurious
+贅沢|ぜいたく|luxury; extravagant
+適当|てきとう|suitable; half-hearted
+適切|てきせつ|appropriate
+充分|じゅうぶん|sufficient
+不思議|ふしぎ|mysterious; strange
+意外|いがい|unexpected
+可能|かのう|possible
+不可能|ふかのう|impossible
+必死|ひっし|desperate; frantic
+真剣|しんけん|serious; in earnest
+健康的|けんこうてき|healthy
+楽|らく|easy; comfortable
+気楽|きらく|carefree
+面倒|めんどう|trouble; bothersome
+幸せ|しあわせ|happiness; happy
+幸福|こうふく|happiness (formal)
+不幸|ふこう|unhappiness; misfortune
+不自由|ふじゆう|inconvenience; disability
+不安定|ふあんてい|unstable
+安定|あんてい|stability
+完全|かんぜん|perfect; complete
+完璧|かんぺき|flawless
+無事|ぶじ|safe; without incident
+活発|かっぱつ|lively; active
+穏やか|おだやか|calm; gentle
+様々|さまざま|various; all kinds of
+別|べつ|different; separate
+特殊|とくしゅ|special; unusual
+異常|いじょう|abnormal
+正常|せいじょう|normal
+
+## 3 Adverbs
+かなり|considerably; fairly
+相当|そうとう|considerably; quite
+非常に|ひじょうに|extremely
+更に|さらに|furthermore; even more
+ますます|more and more
+一層|いっそう|even more
+ほぼ|almost; roughly
+約|やく|about; approximately
+およそ|about; roughly
+せいぜい|at most
+少なくとも|すくなくとも|at least
+せめて|at least (wish)
+わずか|only; slight
+たった|only; just
+ただ|only; free (of charge)
+単に|たんに|simply; merely
+主に|おもに|mainly
+ことに|especially (written)
+なるべく|as much as possible
+できるだけ|as much as possible (casual)
+とにかく|anyway
+いずれ|sooner or later
+いつか|someday
+いよいよ|at last; finally
+ついに|finally
+ようやく|at last (after effort)
+たちまち|instantly
+すぐに|immediately
+直ちに|ただちに|at once (formal)
+早速|さっそく|right away
+突然|とつぜん|suddenly (out of nowhere)
+いきなり|abruptly; without warning
+ふと|suddenly; by chance
+偶然|ぐうぜん|by chance; coincidence
+たまたま|by chance; happen to
+たまに|occasionally
+しばしば|often (formal)
+度々|たびたび|often; repeatedly
+常に|つねに|always (formal)
+絶えず|たえず|constantly
+相変わらず|あいかわらず|as usual
+再び|ふたたび|again (formal)
+改めて|あらためて|once again; anew
+次々|つぎつぎ|one after another
+順に|じゅんに|in order
+互いに|たがいに|mutually; each other
+共に|ともに|together; both
+別々|べつべつ|separately
+直接|ちょくせつ|directly
+自ら|みずから|oneself; personally
+わざわざ|taking the trouble to
+わざと|on purpose
+思わず|おもわず|without thinking
+つい|unintentionally; just
+うっかり|carelessly
+案外|あんがい|unexpectedly
+やはり|as expected; still
+やっぱり|as expected (casual)
+もちろん|of course
+確かに|たしかに|certainly
+必ずしも|かならずしも|not necessarily
+まさか|surely not; no way
+どうしても|no matter what
+なんとか|somehow
+何となく|なんとなく|somehow; for some reason
+どうか|please; somehow
+ぜひ|by all means
+どうせ|anyway (resigned)
+せっかく|with great trouble; specially
+さすが|as expected of
+むしろ|rather
+かえって|on the contrary
+一応|いちおう|just in case; for the time being
+とりあえず|for now; first of all
+全く|まったく|completely; not at all
+少しも|すこしも|not at all
+ちっとも|not at all (casual)
+さっぱり|completely (not); refreshing
+すっきり|refreshed; neat
+
+## 3 Sounds & manner words
+ぐっすり|soundly (sleeping)
+ぴったり|exactly; perfectly (fitting)
+ぎりぎり|just barely
+ぎっしり|tightly packed
+そっと|softly; gently
+じっと|still; fixedly
+にこにこ|smiling
+にっこり|with a big smile
+ぺらぺら|fluently
+ぺこぺこ|starving; bowing repeatedly
+からから|dry; parched
+ぶつぶつ|grumbling
+ぼんやり|absent-mindedly; vaguely
+のんびり|leisurely; relaxed
+ゆったり|spacious; relaxed
+ばらばら|scattered; in pieces
+ごろごろ|lazing around; rumbling
+ざあざあ|pouring (rain)
+しとしと|drizzling
+びしょびしょ|soaking wet
+ぬるぬる|slimy
+つるつる|smooth; slippery
+ざらざら|rough (surface)
+ふわふわ|fluffy; soft
+ぐらぐら|wobbly; shaking
+ぴかぴか|sparkling; shiny
+きらきら|glittering
+ぎらぎら|glaring
+ちらっと|at a glance
+ちゃんと|properly
+きちんと|neatly; exactly
+どんどん|rapidly; steadily
+ぐんぐん|steadily (growing fast)
+こつこつ|steadily (working)
+うとうと|dozing
+ぶらぶら|strolling; idling
+
+## 3 Connecting words
+又は|または|or
+或いは|あるいは|or (formal)
+もしくは|or else
+及び|および|and (formal)
+並びに|ならびに|and also (formal)
+しかも|moreover
+その上|そのうえ|in addition
+なお|in addition; note that
+ただし|however; provided that
+もっとも|though; of course
+それでも|even so
+それなのに|and yet
+にもかかわらず|in spite of that
+ところが|however (unexpectedly)
+けれども|however; but
+すると|then; thereupon
+そこで|so; then
+したがって|therefore
+従って|したがって|accordingly
+つまり|in other words
+すなわち|that is to say
+要するに|ようするに|in short
+なぜなら|because
+というのは|that is because
+そういえば|come to think of it
+ちなみに|by the way (incidentally)
+さて|well now
+一方|いっぽう|on the other hand
+反面|はんめん|but at the same time
+
+## 3 Katakana words
+アイデア|idea
+アドバイス|advice
+アナウンス|announcement
+アンケート|questionnaire
+イメージ|image; impression
+イベント|event
+インタビュー|interview (media)
+エアコン|air conditioner
+オープン|opening
+カード|card
+ガイド|guide
+カタログ|catalog
+カップ|cup
+クラブ|club
+グループ|group
+コース|course
+コピー|copy
+コミュニケーション|communication
+コンビニ|convenience store
+サービス|service
+サイズ|size (clothes, shoes)
+サイン|signature; sign
+シーズン|season (for sports, sales)
+システム|system
+ジム|gym
+スーツ|suit
+スケジュール|schedule
+スタート|start (casual)
+スタッフ|staff
+スピード|speed
+スピーチ|speech
+セット|set
+センター|center
+タイプ|type
+チーム|team
+チェック|check
+チャンス|chance
+デザイン|design
+テーマ|theme
+トラブル|trouble
+トレーニング|training
+ドラマ|TV drama
+バーゲン|sale (in a store)
+バランス|balance
+パート|part-time work
+ヒント|hint
+ファン|fan
+プレゼント|present
+プロ|professional
+ベテラン|veteran; expert
+ボール|ball
+マナー|manners
+ミス|error; slip (casual)
+メッセージ|message
+メニュー|menu
+メンバー|member
+ユーモア|humor
+ラッシュ|rush hour
+リーダー|leader
+レベル|level
+ロッカー|locker
+
+## 3 Ideas & things
+原因|げんいん|cause
+結果|けっか|result
+影響|えいきょう|influence; effect
+効果|こうか|effect
+関係者|かんけいしゃ|person concerned
+条件|じょうけん|condition
+状態|じょうたい|state; condition
+状況|じょうきょう|situation
+事情|じじょう|circumstances
+場面|ばめん|scene
+例|れい|example
+特徴|とくちょう|characteristic
+性質|せいしつ|nature; property
+種類|しゅるい|kind; type
+内容|ないよう|content
+中身|なかみ|contents (of a box)
+全て|すべて|everything; all
+様子|ようす|appearance; state
+姿|すがた|figure; appearance
+見た目|みため|looks
+雰囲気|ふんいき|atmosphere; mood
+調子|ちょうし|condition; tone
+傾向|けいこう|tendency
+基準|きじゅん|standard; criterion
+原則|げんそく|principle
+方針|ほうしん|policy
+手段|しゅだん|means
+方式|ほうしき|method; system
+仕組み|しくみ|structure; mechanism
+役割|やくわり|role
+立場|たちば|position; standpoint
+目安|めやす|guideline; rough standard
+限界|げんかい|limit
+限度|げんど|limit (amount)
+存在|そんざい|existence
+現象|げんしょう|phenomenon
+問題点|もんだいてん|problem; issue
+長所|ちょうしょ|strong point
+短所|たんしょ|weak point
+欠点|けってん|fault; defect
+利点|りてん|advantage
+
+## 3 Trouble & accidents
+危機|きき|crisis
+火災|かさい|fire (formal)
+爆発|ばくはつ|explosion
+衝突|しょうとつ|collision
+停電|ていでん|power outage
+断水|だんすい|water cut-off
+遅刻|ちこく|being late
+紛失|ふんしつ|loss (of an item)
+落とし物|おとしもの|lost item
+忘れ物|わすれもの|thing left behind
+盗難|とうなん|theft
+苦情|くじょう|complaint (formal)
+騒音|そうおん|noise
+警報|けいほう|warning; alarm
+非常口|ひじょうぐち|emergency exit
+救助|きゅうじょ|rescue
+助け|たすけ|help
+
+## 3 Events & occasions
+誕生|たんじょう|birth
+記念|きねん|commemoration
+記念日|きねんび|anniversary
+成人式|せいじんしき|coming-of-age ceremony
+入学式|にゅうがくしき|entrance ceremony
+卒業式|そつぎょうしき|graduation ceremony
+葬式|そうしき|funeral
+お盆|おぼん|Obon (summer festival of the dead)
+大晦日|おおみそか|New Year's Eve
+年賀状|ねんがじょう|New Year's card
+お年玉|おとしだま|New Year's money gift
+花火|はなび|fireworks
+歓迎会|かんげいかい|welcome party
+送別会|そうべつかい|farewell party
+忘年会|ぼうねんかい|year-end party
+飲み会|のみかい|drinking party
+招待|しょうたい|invitation
+出席|しゅっせき|attendance
+欠席|けっせき|absence
+参加者|さんかしゃ|participant
+主催|しゅさい|hosting; sponsorship
+
+## 3 Clothes & looks
+服装|ふくそう|clothes; attire
+格好|かっこう|appearance; outfit
+制服|せいふく|uniform
+私服|しふく|everyday clothes
+袖|そで|sleeve
+襟|えり|collar
+裾|すそ|hem
+柄|がら|pattern (on cloth)
+縞|しま|stripes
+水玉|みずたま|polka dots
+無地|むじ|plain (no pattern)
+生地|きじ|cloth; fabric
+綿|めん|cotton
+毛|け|hair; wool
+革|かわ|leather
+ベルト|belt
+マフラー|scarf
+エプロン|apron
+パジャマ|pajamas
+ブーツ|boots
+サンダル|sandals
+アクセサリー|accessories
+ネックレス|necklace
+イヤリング|earrings
+香水|こうすい|perfume
+髪型|かみがた|hairstyle
+ひげ|beard; mustache
+おしゃれ|fashionable
+
+## 3 Language & writing
+言語|げんご|language
+母語|ぼご|mother tongue
+外国語|がいこくご|foreign language
+方言|ほうげん|dialect
+標準語|ひょうじゅんご|standard language
+単語|たんご|word; vocabulary item
+語彙|ごい|vocabulary
+文法|ぶんぽう|grammar
+文章|ぶんしょう|writing; text
+文|ぶん|sentence
+段落|だんらく|paragraph
+発音|はつおん|pronunciation
+表現|ひょうげん|expression
+敬語|けいご|polite language
+翻訳|ほんやく|translation
+通訳|つうやく|interpreting; interpreter
+読み方|よみかた|way of reading
+書き方|かきかた|way of writing
+ローマ字|ローマじ|romaji
+記号|きごう|symbol; sign
+題名|だいめい|title
+見出し|みだし|headline
+目次|もくじ|table of contents
+表紙|ひょうし|cover (of a book)
+筆者|ひっしゃ|writer (of a text)
+日記|にっき|diary
+メモ|memo; note
+
+## 3 More verbs
+噛む|かむ|to bite; to chew
+飲み込む|のみこむ|to swallow
+味見|あじみ|tasting
+嗅ぐ|かぐ|to smell (something)
+触れる|ふれる|to touch (lightly); to mention
+なでる|to stroke; to pat
+くすぐる|to tickle
+抱きしめる|だきしめる|to hug
+寄る|よる|to drop by; to come near
+寄せる|よせる|to bring near; to send
+立ち寄る|たちよる|to stop by
+引き返す|ひきかえす|to turn back
+通じる|つうじる|to get through; to be understood
+通す|とおす|to let through
+届く|とどく|to reach; to be delivered
+至る|いたる|to reach; to lead to
+備える|そなえる|to prepare for
+蓄える|たくわえる|to store; to save up
+貯める|ためる|to save (money)
+溜まる|たまる|to pile up; to accumulate
+溜める|ためる|to collect; to let pile up
+数える|かぞえる|to count
+測る|はかる|to measure
+量る|はかる|to weigh
+計る|はかる|to time; to measure (time)
+図る|はかる|to plan; to attempt
+計画する|けいかくする|to plan
+誤る|あやまる|to make an error
+馴染む|なじむ|to fit in; to get used to
+目立つ|めだつ|to stand out
+輝く|かがやく|to sparkle; to shine brightly
+照らす|てらす|to light up
+冷え込む|ひえこむ|to get very cold
+暮れる|くれる|to get dark
+明ける|あける|to dawn; to end (rainy season)
+生える|はえる|to grow (hair, plants)
+枯れる|かれる|to wither
+散る|ちる|to fall (petals, leaves)
+実る|みのる|to bear fruit
+育つ|そだつ|to grow up
+稼ぐ|かせぐ|to earn
+儲かる|もうかる|to be profitable
+儲ける|もうける|to make a profit
+費やす|ついやす|to spend (time, money)
+雇う|やとう|to hire
+辞める|やめる|to quit (a job)
+休憩|きゅうけい|break; rest
+働きかける|はたらきかける|to work on (someone); to appeal
+問い合わせる|といあわせる|to inquire
+問い合わせ|といあわせ|inquiry
+知らせる|しらせる|to inform
+知らせ|しらせ|news; notice
+記入|きにゅう|filling in (a form)
+署名|しょめい|signature
+提出|ていしゅつ|submission
+貼り付ける|はりつける|to stick on; to paste
+剥がれる|はがれる|to come off; to peel off
+
+## 3 Everyday things
+日用品|にちようひん|daily necessities
+ごみ袋|ごみぶくろ|garbage bag
+ティッシュ|tissue
+タオル|towel
+歯ブラシ|はブラシ|toothbrush
+シャンプー|shampoo
+くし|comb
+ドライヤー|hair dryer
+爪切り|つめきり|nail clipper
+懐中電灯|かいちゅうでんとう|flashlight
+ろうそく|candle
+マッチ|match (for fire)
+ライター|lighter
+灰皿|はいざら|ashtray
+花瓶|かびん|vase
+額縁|がくぶち|picture frame
+置き時計|おきどけい|table clock
+腕時計|うでどけい|wristwatch
+鉢|はち|bowl; flowerpot
+湯飲み|ゆのみ|teacup (Japanese)
+急須|きゅうす|teapot (Japanese)
+やかん|kettle
+鍋|なべ|pot; pan
+フライパン|frying pan
+包丁|ほうちょう|kitchen knife
+まな板|まないた|cutting board
+炊飯器|すいはんき|rice cooker
+電子レンジ|でんしレンジ|microwave oven
+食器|しょっき|tableware
+
+## 3 Health & body actions
+体力|たいりょく|physical strength
+健康診断|けんこうしんだん|health checkup
+検診|けんしん|medical checkup
+予防|よぼう|prevention
+予防接種|よぼうせっしゅ|vaccination
+感染|かんせん|infection
+うつる|to be infected; to be passed on
+うつす|to infect; to pass on
+花粉症|かふんしょう|hay fever
+アレルギー|allergy
+睡眠|すいみん|sleep
+睡眠不足|すいみんぶそく|lack of sleep
+運動不足|うんどうぶそく|lack of exercise
+ダイエット|diet (to lose weight)
+太る|ふとる|to gain weight
+痩せる|やせる|to lose weight
+鍛える|きたえる|to train; to strengthen
+深呼吸|しんこきゅう|deep breath
+休養|きゅうよう|rest (to recover)
+くたくた|exhausted
+ふらふら|unsteady; dizzy
+ずきずき|throbbing (pain)
+ひりひり|stinging

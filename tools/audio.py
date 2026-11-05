@@ -11,7 +11,7 @@ SHA-1 of what is said ("written|reading" for words). When OpenJTalk would read a
 differently from our reading (一日 as いちにち instead of ついたち), the clip is made from the kana instead.
 
 The neural voice sometimes slurs a short word. --recheck lets a speech recognizer (Whisper small) listen
-to every clip; when it can't make one out, the clip is made again with other random seeds and, for words,
+to every clip; when it can't make one out, the clip is made again with two other random seeds and, for words,
 finally with the plain voice, and the first take the recognizer gets right is kept.
 """
 import argparse
@@ -102,14 +102,14 @@ def clips():
             continue
         ja, reading, _ = line.split("|")
         out[ja.replace(" ", "")] = (spoken(ja.replace(" ", ""), reading.replace(" ", "")), False)
-    for name in ("grammar-n5.txt", "grammar-n4.txt"):
+    for name in ("grammar-n5.txt", "grammar-n4.txt", "grammar-n3.txt"):
         for line in lines(name):
             if line.startswith("ex: "):
                 ja, reading, _ = [x.strip() for x in line[4:].split("|")]
                 out.setdefault(ja, (spoken(ja, reading), False))
             elif line.startswith("q: "):
                 f = line[3:].split("|")
-                filled = f[0].replace("＿＿", f[2]).split("(")[0].strip()
+                filled = f[0].replace("＿＿", f[2].split("=")[0]).split("(")[0].strip()  # "着られます=きられます": answer=reading
                 out.setdefault(filled, (filled, False))
     return out
 
@@ -182,7 +182,8 @@ def recheck(model, todo):
                              capture_output=True, check=True).stdout
         if understood(asr, np.frombuffer(raw, dtype="<i2").astype(np.float32) / 32768.0, 16000, k, say):
             continue
-        takes = [(say, False, seed) for seed in (1, 2, 3)] + ([(say, True, 0)] if "|" in k else [])
+        # A third seed rarely helped (8 of 99 remakes for N3), so two, then the plain voice for words.
+        takes = [(say, False, seed) for seed in (1, 2)] + ([(say, True, 0)] if "|" in k else [])
         for args in takes:
             audio, sr = make(model, *args)
             if understood(asr, audio, sr, k, say):

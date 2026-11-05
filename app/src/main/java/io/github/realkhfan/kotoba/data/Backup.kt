@@ -15,8 +15,14 @@ import androidx.core.net.toUri
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
 
-/** A backup found in a folder: what it holds and when it was written. */
-data class Found(val states: Map<String, SrsState>, val savedAt: Long, val folderName: String)
+/** What a backup holds (progress, day log, settings as text), and where and when it was written. */
+data class Found(
+    val states: Map<String, SrsState>,
+    val days: Map<String, Day> = emptyMap(),
+    val settings: Map<String, String> = emptyMap(),
+    val savedAt: Long = 0L,
+    val folderName: String = "",
+)
 
 /**
  * Keeps a copy of the progress file in a folder the user picked with the system picker (no storage
@@ -61,7 +67,7 @@ class Backup(private val context: Context, private val prefs: SharedPreferences)
     /** The backup in [tree], or null if there is none or it isn't a Kotoba progress file. */
     fun read(tree: Uri): Found? = try {
         findFile(tree)?.let { (uri, modified) ->
-            context.contentResolver.openInputStream(uri)?.use { parse(readLimited(it)) }?.let { Found(it, modified, nameOf(tree)) }
+            context.contentResolver.openInputStream(uri)?.use { parse(readLimited(it)) }?.copy(savedAt = modified, folderName = nameOf(tree))
         }
     } catch (e: Exception) { // a provider can fail in many ways; there just is no backup to offer then
         null
@@ -169,10 +175,18 @@ class Backup(private val context: Context, private val prefs: SharedPreferences)
             }
         }
 
-        /** The progress in a backup file, or null if it isn't one (it must start with the progress header). */
-        fun parse(bytes: ByteArray?): Map<String, SrsState>? {
+        private const val SETTING = "@set"
+
+        /** The progress file's text plus the settings, one "@set" line each: what goes into the folder. */
+        fun contents(progress: String, settings: Settings) =
+            progress + settings.toMap().entries.joinToString("") { "$SETTING\t${it.key}\t${it.value}\n" }
+
+        /** What a backup file holds, or null if it isn't one (it must start with the progress header). */
+        fun parse(bytes: ByteArray?): Found? {
             val text = bytes?.toString(Charsets.UTF_8) ?: return null
-            return if (text.startsWith(Progress.HEADER_PREFIX)) Progress.decode(text) else null
+            if (!text.startsWith(Progress.HEADER_PREFIX)) return null
+            val settings = text.lineSequence().map { it.split('\t') }.filter { it.size == 3 && it[0] == SETTING }.associate { it[1] to it[2] }
+            return Found(Progress.decode(text), Progress.decodeDays(text), settings)
         }
     }
 }

@@ -32,12 +32,14 @@ private object Store {
     fun get(context: Context): AppData = data ?: synchronized(this) {
         data ?: run {
             val backup = Backup(context, context.getSharedPreferences("backup", Context.MODE_PRIVATE))
+            val settings = SettingsStore(context.getSharedPreferences("settings", Context.MODE_PRIVATE))
+            val progress = Progress(File(context.filesDir, "progress.tsv")).apply { load() }
+            // The backup holds the progress file plus the settings, and is rewritten when either changes.
+            progress.copyTo = { text -> backup.write(Backup.contents(text, settings.value)) }
+            settings.onChange = progress::copyNow
             AppData(
                 Library.load { name -> context.assets.open(name).bufferedReader().use { it.readText() } },
-                Progress(File(context.filesDir, "progress.tsv")).apply { load(); copyTo = backup::write },
-                SettingsStore(context.getSharedPreferences("settings", Context.MODE_PRIVATE)),
-                AssetSpeaker(context),
-                backup,
+                progress, settings, AssetSpeaker(context), backup,
             )
         }.also { data = it }
     }

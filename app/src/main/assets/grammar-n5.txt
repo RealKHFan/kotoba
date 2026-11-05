@@ -1,6 +1,7 @@
 # Kotoba grammar, JLPT N5.
 # "= id" starts a grammar point. Fields: title, meaning, form, note (one paragraph per line),
 # ex: japanese|reading|english, q: sentence with ＿＿|english|correct answer|wrong|wrong|wrong
+# A correct answer with kanji carries its reading after "=" (着られます=きられます), so it can be typed.
 ## 5
 
 = wa-desu
@@ -121,7 +122,7 @@ ex: 毎日コーヒーを飲みます。|まいにちコーヒーをのみます
 ex: 明日東京へ行きます。|あしたとうきょうへいきます。|I will go to Tokyo tomorrow.
 ex: 七時に起きます。|しちじにおきます。|I get up at seven.
 q: 毎朝パンを食べ＿＿。|I eat bread every morning.|ます|ません|ました|ましょう
-q: 明日手紙を＿＿。(書く)|I will write a letter tomorrow.|書きます|書くます|書けます|書ます
+q: 明日手紙を＿＿。(書く)|I will write a letter tomorrow.|書きます=かきます|書くます|書けます|書ます
 
 = masen
 title: ～ません
@@ -349,7 +350,7 @@ ex: 図書館へ本を借りに行きます。|としょかんへほんをかり
 ex: 友達が遊びに来ました。|ともだちがあそびにきました。|A friend came over to hang out.
 ex: デパートへ買い物に行きました。|デパートへかいものにいきました。|I went shopping at the department store.
 q: 公園へ写真を撮り＿＿行きます。|I'm going to the park to take photos.|に|を|で|へ
-q: 昼ご飯を＿＿に帰ります。(食べる)|I go home to eat lunch.|食べ|食べる|食べて|食べた
+q: 昼ご飯を＿＿に帰ります。(食べる)|I go home to eat lunch.|食べ=たべ|食べる|食べて|食べた
 
 = te-form
 title: て-form
@@ -360,8 +361,8 @@ note: Ichidan: 食べる → 食べて. Godan verbs change by their last sound: 
 ex: 窓を開けて、空気を入れます。|まどをあけて、くうきをいれます。|I open the window and let some air in.
 ex: 手紙を書いて、出しました。|てがみをかいて、だしました。|I wrote a letter and sent it.
 ex: 駅まで歩いて行きます。|えきまであるいていきます。|I walk to the station.
-q: 薬を＿＿、寝ました。(飲む)|I took the medicine and went to sleep.|飲んで|飲みて|飲って|飲いて
-q: 友達と＿＿、楽しかったです。(話す)|I talked with a friend, and it was fun.|話して|話って|話いて|話んで
+q: 薬を＿＿、寝ました。(飲む)|I took the medicine and went to sleep.|飲んで=のんで|飲みて|飲って|飲いて
+q: 友達と＿＿、楽しかったです。(話す)|I talked with a friend, and it was fun.|話して=はなして|話って|話いて|話んで
 
 = te-kudasai
 title: ～てください
@@ -373,7 +374,7 @@ ex: ここに名前を書いてください。|ここになまえをかいてく
 ex: ちょっと待ってください。|ちょっとまってください。|Please wait a moment.
 ex: もう一度言ってください。|もういちどいってください。|Please say it again.
 q: ゆっくり話し＿＿ください。|Please speak slowly.|て|た|ます|に
-q: ドアを＿＿ください。(閉める)|Please close the door.|閉めて|閉めって|閉めんで|閉まて
+q: ドアを＿＿ください。(閉める)|Please close the door.|閉めて=しめて|閉めって|閉めんで|閉まて
 
 = te-imasu
 title: ～ています
@@ -397,7 +398,7 @@ ex: ここに座ってもいいですか。|ここにすわってもいいです
 ex: 写真を撮ってもいいです。|しゃしんをとってもいいです。|You may take photos.
 ex: もう帰ってもいいですよ。|もうかえってもいいですよ。|You can go home now.
 q: 窓を開けて＿＿いいですか。|May I open the window?|も|は|が|に
-q: この傘を＿＿もいいですか。(借りる)|May I borrow this umbrella?|借りて|借りって|借りた|借りり
+q: この傘を＿＿もいいですか。(借りる)|May I borrow this umbrella?|借りて=かりて|借りって|借りた|借りり
 
 = te-wa-ikemasen
 title: ～てはいけません
@@ -444,8 +445,8 @@ note: Godan verbs: 書く → 書かない, 飲む → 飲まない, 話す → 
 ex: 私は肉を食べない。|わたしはにくをたべない。|I don't eat meat.
 ex: 今日は学校へ行かない。|きょうはがっこうへいかない。|I'm not going to school today.
 ex: お金がない。|おかねがない。|I have no money.
-q: 朝はコーヒーを＿＿ない。(飲む)|I don't drink coffee in the morning.|飲ま|飲み|飲む|飲め
-q: 明日は友達に＿＿ない。(会う)|I'm not meeting my friend tomorrow.|会わ|会あ|会い|会え
+q: 朝はコーヒーを＿＿ない。(飲む)|I don't drink coffee in the morning.|飲ま=のま|飲み|飲む|飲め
+q: 明日は友達に＿＿ない。(会う)|I'm not meeting my friend tomorrow.|会わ=あわ|会あ|会い|会え
 
 = naide-kudasai
 title: ～ないでください
@@ -457,7 +458,7 @@ ex: ここに車を止めないでください。|ここにくるまをとめな
 ex: 心配しないでください。|しんぱいしないでください。|Please don't worry.
 ex: 宿題を忘れないでください。|しゅくだいをわすれないでください。|Please don't forget your homework.
 q: 写真を撮ら＿＿ください。|Please don't take photos.|ないで|なくて|ないて|なくで
-q: 部屋で＿＿でください。(騒ぐ)|Please don't make noise in the room.|騒がない|騒ぐない|騒がなく|騒ぎない
+q: 部屋で＿＿でください。(騒ぐ)|Please don't make noise in the room.|騒がない=さわがない|騒ぐない|騒がなく|騒ぎない
 
 = nakereba
 title: ～なければなりません
@@ -469,7 +470,7 @@ ex: 明日は早く起きなければなりません。|あしたははやくお
 ex: 薬を飲まなければなりません。|くすりをのまなければなりません。|I have to take my medicine.
 ex: もう帰らなければいけません。|もうかえらなければいけません。|I have to go home now.
 q: 宿題をし＿＿なりません。|I have to do my homework.|なければ|なくても|ないで|なくて
-q: 毎日漢字を＿＿なければなりません。(覚える)|I have to memorize kanji every day.|覚え|覚える|覚えて|覚えら
+q: 毎日漢字を＿＿なければなりません。(覚える)|I have to memorize kanji every day.|覚え=おぼえ|覚える|覚えて|覚えら
 
 = nakute-mo-ii
 title: ～なくてもいいです
@@ -516,8 +517,8 @@ note: The plain past negative is ～なかった: 食べなかった (didn't eat
 ex: 昨日、映画を見た。|きのう、えいがをみた。|I saw a movie yesterday.
 ex: 本を読んだ。|ほんをよんだ。|I read a book.
 ex: 朝ご飯を食べなかった。|あさごはんをたべなかった。|I didn't eat breakfast.
-q: 昨日、友達と＿＿。(遊ぶ)|I hung out with friends yesterday.|遊んだ|遊った|遊いだ|遊びた
-q: 先週、東京へ＿＿。(行く)|I went to Tokyo last week.|行った|行いた|行んだ|行きた
+q: 昨日、友達と＿＿。(遊ぶ)|I hung out with friends yesterday.|遊んだ=あそんだ|遊った|遊いだ|遊びた
+q: 先週、東京へ＿＿。(行く)|I went to Tokyo last week.|行った=いった|行いた|行んだ|行きた
 
 = ta-koto-ga-aru
 title: ～たことがある
@@ -552,8 +553,8 @@ note: Nouns take の: 食事の前に (before the meal). Lengths of time take no
 ex: 寝る前に歯を磨きます。|ねるまえにはをみがきます。|I brush my teeth before going to bed.
 ex: 食事の前に手を洗います。|しょくじのまえにてをあらいます。|I wash my hands before meals.
 ex: 三年前に日本へ来ました。|さんねんまえににほんへきました。|I came to Japan three years ago.
-q: 出かける＿＿、電話してください。|Please call me before you go out.|前に|後で|ながら|から
-q: 日本へ＿＿前に、日本語を勉強しました。(来る)|I studied Japanese before coming to Japan.|来る|来た|来て|来ない
+q: 出かける＿＿、電話してください。|Please call me before you go out.|前に=まえに|後で|ながら|から
+q: 日本へ＿＿前に、日本語を勉強しました。(来る)|I studied Japanese before coming to Japan.|来る=くる|来た|来て|来ない
 
 = ato-de
 title: ～後で
@@ -564,7 +565,7 @@ note: It is close to ～てから, but 後で stresses the time afterwards, whil
 ex: 仕事の後で、飲みに行きませんか。|しごとのあとで、のみにいきませんか。|Shall we go for a drink after work?
 ex: 晩ご飯を食べた後で、散歩します。|ばんごはんをたべたあとで、さんぽします。|I take a walk after dinner.
 ex: 授業の後で、先生に質問しました。|じゅぎょうのあとで、せんせいにしつもんしました。|After class I asked the teacher a question.
-q: 映画を見た＿＿、食事をしました。|After watching the movie, we had a meal.|後で|前に|ながら|まで
+q: 映画を見た＿＿、食事をしました。|After watching the movie, we had a meal.|後で=あとで|前に|ながら|まで
 q: 宿題を＿＿後で、遊びます。(する)|I'll play after I've done my homework.|した|する|して|しない
 
 = nagara
@@ -577,7 +578,7 @@ ex: 音楽を聞きながら勉強します。|おんがくをききながらべ
 ex: 歩きながら話しましょう。|あるきながらはなしましょう。|Let's talk while we walk.
 ex: テレビを見ながらご飯を食べないでください。|テレビをみながらごはんをたべないでください。|Please don't eat while watching TV.
 q: コーヒーを飲み＿＿新聞を読みます。|I read the newspaper while drinking coffee.|ながら|たり|てから|まえに
-q: 歌を＿＿ながら料理をします。(歌う)|I cook while singing.|歌い|歌う|歌って|歌わ
+q: 歌を＿＿ながら料理をします。(歌う)|I cook while singing.|歌い=うたい|歌う|歌って|歌わ
 
 = kara-because
 title: ～から (because)
@@ -660,8 +661,8 @@ note: Ask with a question word: 何が, 誰が, どこが, いつが 一番 ... 
 ex: 果物の中でりんごが一番好きです。|くだもののなかでりんごがいちばんすきです。|Of all fruits I like apples best.
 ex: 家族の中で父が一番背が高いです。|かぞくのなかでちちがいちばんせがたかいです。|My father is the tallest in my family.
 ex: 日本で一番高い山は富士山です。|にほんでいちばんたかいやまはふじさんです。|The highest mountain in Japan is Mount Fuji.
-q: スポーツの中でテニスが＿＿好きです。|Of all sports I like tennis best.|一番|より|ほう|まで
-q: クラスの＿＿で誰が一番若いですか。|Who is the youngest in the class?|中|上|前|間
+q: スポーツの中でテニスが＿＿好きです。|Of all sports I like tennis best.|一番=いちばん|より|ほう|まで
+q: クラスの＿＿で誰が一番若いですか。|Who is the youngest in the class?|中=なか|上|前|間
 
 = mashouka
 title: ～ましょうか
@@ -696,8 +697,8 @@ note: The number usually comes after the particle: りんごを三つ買いま�
 ex: 切手を五枚ください。|きってをごまいください。|Five stamps, please.
 ex: 鉛筆が三本あります。|えんぴつがさんぼんあります。|There are three pencils.
 ex: 本を二冊借りました。|ほんをにさつかりました。|I borrowed two books.
-q: 紙を一＿＿ください。|One sheet of paper, please.|枚|本|台|冊
-q: 家に猫が二＿＿います。|There are two cats at home.|匹|枚|冊|台
+q: 紙を一＿＿ください。|One sheet of paper, please.|枚=まい|本|台|冊
+q: 家に猫が二＿＿います。|There are two cats at home.|匹=ひき|枚|冊|台
 
 = nanika
 title: 何か・何も

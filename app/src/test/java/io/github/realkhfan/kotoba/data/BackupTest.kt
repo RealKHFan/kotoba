@@ -38,14 +38,25 @@ class BackupTest {
 
     @Test fun onlyKotobaProgressFilesAreRead() {
         val text = Progress.encode(mapOf("h:あ" to SrsState(2, 100L)))
-        assertEquals(mapOf("h:あ" to SrsState(2, 100L)), Backup.parse(text.toByteArray()))
+        assertEquals(mapOf("h:あ" to SrsState(2, 100L)), Backup.parse(text.toByteArray())!!.states)
         assertNull(Backup.parse("shopping list\nh:あ\t2\t100\n".toByteArray()))
         assertNull(Backup.parse(null))
-        assertTrue(Backup.parse("# kotoba progress 1\n".toByteArray())!!.isEmpty())
+        assertTrue(Backup.parse("# kotoba progress 1\n".toByteArray())!!.states.isEmpty())
     }
 
     @Test fun hugeFilesAreNotRead() {
         assertEquals(5, Backup.readLimited(ByteArrayInputStream(ByteArray(5)))!!.size)
         assertNull(Backup.readLimited(ByteArrayInputStream(ByteArray(5 * 1024 * 1024))))
+    }
+
+    @Test fun settingsAndDaysTravelWithTheBackup() {
+        val settings = Settings(answers = AnswerMode.TYPE, wordsPerLesson = 20, writing = false)
+        val text = Backup.contents(Progress.encode(mapOf("h:あ" to SrsState(2, 100L)), mapOf("2026-11-05" to Day(3, 2, 1))), settings)
+        val found = Backup.parse(text.toByteArray())!!
+        assertEquals(1, found.states.size)
+        assertEquals(Day(3, 2, 1), found.days["2026-11-05"])
+        assertEquals(settings, Settings.from(found.settings))
+        // Odd values keep what was there.
+        assertEquals(Settings(), Settings.from(mapOf("wordsPerLesson" to "7", "answers" to "SHOUT", "romaji" to "maybe")))
     }
 }

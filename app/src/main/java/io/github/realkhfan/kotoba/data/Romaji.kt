@@ -67,7 +67,7 @@ object Romaji {
     }
 
     /** Kana with hiragana and katakana treated the same, without spaces or end punctuation. */
-    fun normalize(s: String) = toHiragana(s).filterNot { it.isWhitespace() || it in "。、.,!?！？" }
+    fun normalize(s: String) = toHiragana(s).filterNot { it.isWhitespace() || it in "。、.,!?！？「」『』…・" }
 
     /** ー written out as the vowel before it, so "koohii" counts for コーヒー like "ko-hi-" does. */
     fun spellLong(kana: String) = buildString { kana.forEach { c -> append(if (c == 'ー' && isNotEmpty()) vowelOf[last()] ?: c else c) } }

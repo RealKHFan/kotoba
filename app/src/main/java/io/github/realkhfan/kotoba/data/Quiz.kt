@@ -2,7 +2,11 @@ package io.github.realkhfan.kotoba.data
 
 import kotlin.random.Random
 
-sealed interface Question { val item: Item }
+sealed interface Question {
+    val item: Item
+    /** A clip to play as the question; the prompt stays hidden until the question is answered. */
+    val listen: String? get() = null
+}
 
 /** Multiple choice. [reading] is shown small above a Japanese [prompt]; [hint] below it. */
 data class Choice(
@@ -15,11 +19,13 @@ data class Choice(
     val options: List<String>,
     val optionsJapanese: Boolean,
     val answer: Int,
+    override val listen: String? = null,
 ) : Question
 
 /**
  * Type the answer. With [kana], romaji turns into kana while typing. Any of [accepted] counts,
- * typed as it is or as romaji (so "shi", "si" and し are all right for し).
+ * typed as it is or as romaji (so "shi", "si" and し are all right for し). With [english], the
+ * answer is an English meaning and small typos are forgiven.
  */
 data class Typed(
     override val item: Item,
@@ -30,13 +36,17 @@ data class Typed(
     val hint: String? = null,
     val kana: Boolean,
     val accepted: List<String>,
+    val english: Boolean = false,
+    override val listen: String? = null,
 ) : Question {
     val answer get() = accepted.first()
 
     fun isRight(input: String): Boolean {
         val raw = input.trim()
+        if (raw.isEmpty()) return false
+        if (english) return accepted.any { Meaning.matches(raw, it) }
         val asKana = Romaji.spellLong(Romaji.normalize(Romaji.toKana(raw, final = true)))
-        return raw.isNotEmpty() && accepted.any { it.equals(raw, ignoreCase = true) || Romaji.spellLong(Romaji.normalize(it)) == asKana }
+        return accepted.any { it.equals(raw, ignoreCase = true) || Romaji.spellLong(Romaji.normalize(it)) == asKana }
     }
 }
 
@@ -45,10 +55,49 @@ data class Order(override val item: Sentence, val tiles: List<String>) : Questio
     fun isRight(picked: List<Int>) = picked.joinToString("") { tiles[it] } == item.japanese
 }
 
+/** Write [char] from memory on the writing pad, from its meaning or sound ([prompt]) and [hint]. */
+data class Write(override val item: Item, val char: String, val ask: String, val prompt: String, val hint: String? = null) : Question
+
 /** True when two meanings share a sense ("why" and "why; how come"), so one can't be a wrong option for the other. */
 fun sameMeaning(a: String, b: String): Boolean {
     fun senses(s: String) = s.lowercase().split(";").map(String::trim).toSet()
     return senses(a).intersect(senses(b)).isNotEmpty()
+}
+
+/** Checks a typed English meaning against a meaning like "to go out with; to keep company with". */
+object Meaning {
+    private val fillers = setOf("to", "a", "an", "the")
+
+    /** Lower case, letters and digits only, without a leading "to", "a" or "the". */
+    fun normalize(s: String): String =
+        s.lowercase().replace(Regex("[^a-z0-9' ]"), " ").replace("'", "").split(' ').filter(String::isNotEmpty)
+            .dropWhile { it in fillers }.joinToString(" ")
+
+    /** Every sense on its own, with and without the part in brackets: "(my) husband" gives "husband" and "my husband". */
+    fun answers(meaning: String): Set<String> = (meaning.split(';', ',').flatMap { sense ->
+        listOf(normalize(sense.replace(Regex("\\(.*?\\)"), " ")), normalize(sense))
+    } + normalize(meaning)).filter(String::isNotEmpty).toSet()
+
+    /** Right when it equals one sense; one typo is forgiven from five letters on, two from nine. */
+    fun matches(input: String, meaning: String): Boolean {
+        val typed = normalize(input)
+        if (typed.isEmpty()) return false
+        return answers(meaning).any { it == typed || (it.length >= 5 && distance(it, typed) <= if (it.length >= 9) 2 else 1) }
+    }
+
+    private fun distance(a: String, b: String): Int {
+        val d = IntArray(b.length + 1) { it }
+        for (i in 1..a.length) {
+            var prev = d[0]
+            d[0] = i
+            for (j in 1..b.length) {
+                val keep = d[j]
+                d[j] = minOf(d[j] + 1, d[j - 1] + 1, prev + if (a[i - 1] == b[j - 1]) 0 else 1)
+                prev = keep
+            }
+        }
+        return d[b.length]
+    }
 }
 
 class Quiz(private val library: Library, private val random: Random, private val settings: Settings = Settings()) {
@@ -59,9 +108,7 @@ class Quiz(private val library: Library, private val random: Random, private val
         AnswerMode.MIX -> random.nextBoolean()
     }
 
-    private fun isKana(s: String) = s.all { it in 'ぁ'..'ゖ' || it in 'ァ'..'ヺ' || it == 'ー' }
-
-    fun question(item: Item): Question = when (item) {
+    fun question(item: Item): Question = writing(item) ?: listening(item) ?: when (item) {
         is Kana -> kana(item)
         is Word -> word(item)
         is Kanji -> kanji(item)
@@ -81,12 +128,62 @@ class Quiz(private val library: Library, private val random: Random, private val
         return all to all.indexOf(right)
     }
 
+    /** A kanji or a single kana, written from memory, about one question in three when writing is on. */
+    private fun writing(item: Item): Write? {
+        if (!settings.writing) return null
+        val char = when (item) {
+            is Kanji -> item.char
+            is Kana -> item.char.takeIf { it.length == 1 }
+            else -> null
+        } ?: return null
+        if (library.strokesOf(char) == null || random.nextInt(3) != 0) return null
+        return when (item) {
+            is Kanji -> Write(item, char, "Write the kanji", item.meaning, (item.on + item.kun).take(4).joinToString("、") { it.replace(".", "") })
+            else -> Write(item, char, "Write it in ${item.section.title.lowercase()}", (item as Kana).romaji)
+        }
+    }
+
+    /** Hear a word, kana or sentence and say what it was, about one question in four when listening is on. */
+    private fun listening(item: Item): Question? {
+        if (!settings.listening) return null
+        val clip = Audio.of(item) ?: return null
+        if (random.nextInt(4) != 0) return null
+        val type = typing()
+        return when (item) {
+            is Kana -> if (type) {
+                Typed(item, "Type what you hear", item.char, true, kana = false, accepted = listOf(item.romaji, item.char), listen = clip)
+            } else {
+                val (opts, i) = options(item.char, wrong(item, library.items(item.section).filterIsInstance<Kana>(), Kana::char) { it.romaji == item.romaji })
+                Choice(item, "What do you hear?", item.char, true, options = opts, optionsJapanese = true, answer = i, listen = clip)
+            }
+            is Word -> if (type) {
+                Typed(item, "Type what you hear", item.written, true, reading = item.reading.takeIf { item.hasKanji }, kana = true,
+                    accepted = listOf(item.reading, item.written), listen = clip)
+            } else {
+                val clash = { o: Word -> sameMeaning(o.meaning, item.meaning) || o.reading == item.reading }
+                val (opts, i) = options(item.meaning, wrong(item, library.words, Word::meaning, clash))
+                Choice(item, "What does it mean?", item.written, true, reading = item.reading.takeIf { item.hasKanji },
+                    options = opts, optionsJapanese = false, answer = i, listen = clip)
+            }
+            is Sentence -> dictation(item).takeIf { type } ?: run {
+                val (opts, i) = options(item.english, wrong(item, library.sentences, Sentence::english) { it.english == item.english })
+                Choice(item, "What does it mean?", item.japanese, true, reading = item.reading, options = opts, optionsJapanese = false, answer = i, listen = clip)
+            }
+            else -> null
+        }
+    }
+
+    private fun dictation(s: Sentence) = Typed(
+        s, "Type what you hear", s.japanese, true, reading = s.reading, hint = s.english, kana = true,
+        accepted = listOf(s.reading, s.japanese), listen = Audio.of(s),
+    )
+
     private fun kana(k: Kana): Question {
         val pool = library.items(k.section).filterIsInstance<Kana>()
         val clash = { o: Kana -> o.romaji == k.romaji }
-        val readIt = random.nextBoolean()
-        if (readIt && typing()) return Typed(k, "Type the romaji", k.char, true, kana = false, accepted = listOf(k.romaji, k.char))
-        return if (readIt) {
+        // Typing the kana for a romaji would be done by the romaji converter, so typed kana questions always ask for the romaji.
+        if (typing()) return Typed(k, "Type the romaji", k.char, true, kana = false, accepted = listOf(k.romaji, k.char))
+        return if (random.nextBoolean()) {
             val (opts, i) = options(k.romaji, wrong(k, pool, Kana::romaji, clash))
             Choice(k, "How do you read it?", k.char, true, options = opts, optionsJapanese = false, answer = i)
         } else {
@@ -98,14 +195,15 @@ class Quiz(private val library: Library, private val random: Random, private val
     private fun word(w: Word): Question {
         val clash = { o: Word -> sameMeaning(o.meaning, w.meaning) || o.reading == w.reading || o.written == w.written }
         val kind = random.nextInt(if (w.hasKanji) 3 else 2)
-        if (kind > 0 && typing()) {
-            return if (kind == 1) Typed(w, "Type it in Japanese", w.meaning, false, kana = true, accepted = listOf(w.reading, w.written))
-            else Typed(w, "Type the reading", w.written, true, kana = true, accepted = listOf(w.reading))
+        val reading = w.reading.takeIf { w.hasKanji && settings.quizReadings }
+        if (typing()) return when (kind) {
+            0 -> Typed(w, "What does it mean?", w.written, true, reading = reading, kana = false, accepted = listOf(w.meaning), english = true)
+            1 -> Typed(w, "Type it in Japanese", w.meaning, false, kana = true, accepted = listOf(w.reading, w.written))
+            else -> Typed(w, "Type the reading", w.written, true, kana = true, accepted = listOf(w.reading))
         }
         return when (kind) {
             0 -> {
                 val (opts, i) = options(w.meaning, wrong(w, library.words, Word::meaning, clash))
-                val reading = w.reading.takeIf { w.hasKanji && settings.quizReadings }
                 Choice(w, "What does it mean?", w.written, true, reading = reading, options = opts, optionsJapanese = false, answer = i)
             }
             1 -> {
@@ -120,12 +218,14 @@ class Quiz(private val library: Library, private val random: Random, private val
     }
 
     private fun kanji(k: Kanji): Question {
+        val type = typing()
         if (random.nextBoolean()) {
+            if (type) return Typed(k, "What does it mean?", k.char, true, kana = false, accepted = listOf(k.meaning), english = true)
             val (opts, i) = options(k.meaning, wrong(k, library.kanji, Kanji::meaning) { sameMeaning(it.meaning, k.meaning) })
             return Choice(k, "What does it mean?", k.char, true, options = opts, optionsJapanese = false, answer = i)
         }
         val e = k.examples.random(random)
-        if (typing()) return Typed(k, "Type the reading of this word", e.japanese, true, hint = e.english, kana = true, accepted = listOf(e.reading))
+        if (type) return Typed(k, "Type the reading of this word", e.japanese, true, hint = e.english, kana = true, accepted = listOf(e.reading))
         val wrong = library.kanji.filter { it.key != k.key }.flatMap { it.examples }.map { it.reading }
             .filter { it != e.reading }.distinct().shuffled(random).take(3)
         val (opts, i) = options(e.reading, wrong)
@@ -134,12 +234,19 @@ class Quiz(private val library: Library, private val random: Random, private val
 
     private fun grammar(g: Grammar): Question {
         val q = g.questions.random(random)
-        if (isKana(q.answer) && typing()) return Typed(g, "Type the missing part", q.sentence, true, hint = q.english, kana = true, accepted = listOf(q.answer))
+        if (typing()) {
+            return Typed(g, "Type the missing part", q.sentence, true, hint = q.english, kana = true, accepted = listOfNotNull(q.answer, q.reading))
+        }
         val (opts, i) = options(q.answer, q.wrong)
         return Choice(g, "Fill the gap", q.sentence, true, hint = q.english, options = opts, optionsJapanese = true, answer = i)
     }
 
     private fun sentence(s: Sentence): Question {
+        if (typing()) {
+            // A translation can't be checked by typing, so typed sentence questions ask for what is heard or how it is read.
+            return if (settings.listening && random.nextBoolean()) dictation(s)
+            else Typed(s, "Type how it is read", s.japanese, true, hint = s.english, kana = true, accepted = listOf(s.reading))
+        }
         if (s.chunks.size >= 3 && random.nextBoolean()) {
             var tiles = s.chunks.shuffled(random)
             repeat(5) { if (tiles == s.chunks) tiles = s.chunks.shuffled(random) }
@@ -153,10 +260,13 @@ class Quiz(private val library: Library, private val random: Random, private val
 /**
  * One run through [items]. A wrong answer sends the item to the back of the queue until it is
  * answered right; only the first answer per item is passed to [grade] (null in lessons).
+ * An answer counts when the next question comes (or [commit]), so a typed answer the app got
+ * wrong can still be [overrule]d.
  */
 class Session(items: List<Item>, private val quiz: Quiz, random: Random, private val grade: ((Item, Boolean) -> Unit)?) {
     private val queue = ArrayDeque(items.shuffled(random))
     private val missed = HashSet<String>()
+    private var pending: Boolean? = null
     val total = items.size
     var finished = 0
         private set
@@ -166,7 +276,19 @@ class Session(items: List<Item>, private val quiz: Quiz, random: Random, private
         private set
 
     fun answer(correct: Boolean) {
+        if (current != null) pending = correct
+    }
+
+    /** The user says the answer the app marked wrong was right (a meaning in other words, a typo). */
+    fun overrule() {
+        if (pending == false) pending = true
+    }
+
+    /** Counts the answer to the current question, once. */
+    fun commit() {
         val item = current?.item ?: return
+        val correct = pending ?: return
+        pending = null
         if (item.key !in missed) {
             grade?.invoke(item, correct)
             if (correct) rightFirstTime++
@@ -175,6 +297,7 @@ class Session(items: List<Item>, private val quiz: Quiz, random: Random, private
     }
 
     fun next() {
+        commit()
         current = queue.removeFirstOrNull()?.let(quiz::question)
     }
 }

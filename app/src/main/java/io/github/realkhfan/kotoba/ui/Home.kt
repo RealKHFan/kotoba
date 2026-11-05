@@ -13,6 +13,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Button
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.ui.Alignment
@@ -56,6 +57,7 @@ fun HomeScreen(library: Library, progress: Progress, now: Long, backupFailing: B
                         Text("Kotoba", style = MaterialTheme.typography.headlineLarge)
                         Text("言葉 · a little Japanese every day", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
+                    IconButton(onClick = { open("stats") }) { Icon(StatsIcon, contentDescription = "Stats") }
                     IconButton(onClick = { open("settings") }) { Icon(Icons.Filled.Settings, contentDescription = "Settings") }
                 }
             }
@@ -71,13 +73,26 @@ fun HomeScreen(library: Library, progress: Progress, now: Long, backupFailing: B
                 }
             }
             item { ReviewCard(all, progress.nextDue(library.all, now)?.let { it - now }) { open("review:all") } }
+            val hard = progress.hard(library.all).size
+            if (hard > 0) item {
+                Card(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(20.dp)) {
+                        Text(if (hard == 1) "1 hard item" else "$hard hard items", style = MaterialTheme.typography.titleMedium)
+                        Text(
+                            "Missed three times or more. Practise them as often as you like; it doesn't change their reviews.",
+                            style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(top = 4.dp),
+                        )
+                        OutlinedButton(onClick = { open("practice:hard") }, modifier = Modifier.padding(top = 12.dp)) { Text("Practise") }
+                    }
+                }
+            }
             item {
                 Row(Modifier.height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     SectionCard(Section.HIRAGANA, library, progress, now, Modifier.weight(1f).fillMaxHeight(), open)
                     SectionCard(Section.KATAKANA, library, progress, now, Modifier.weight(1f).fillMaxHeight(), open)
                 }
             }
-            item { SectionCard(Section.WORDS, library, progress, now, Modifier.fillMaxWidth(), open, "Everyday words for JLPT N5 and N4") }
+            item { SectionCard(Section.WORDS, library, progress, now, Modifier.fillMaxWidth(), open, "Everyday words for JLPT N5 to N3") }
             item { SectionCard(Section.GRAMMAR, library, progress, now, Modifier.fillMaxWidth(), open, "Patterns explained, with examples and gap quizzes") }
             item {
                 Row(Modifier.height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(12.dp)) {

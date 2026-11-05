@@ -74,6 +74,12 @@ val SpeakerIcon: ImageVector = ImageVector.Builder("Speaker", 24.dp, 24.dp, 24f,
     fill = SolidColor(Color.Black),
 ).build()
 
+// Material "bar chart" icon (Apache 2.0).
+val StatsIcon: ImageVector = ImageVector.Builder("Stats", 24.dp, 24.dp, 24f, 24f).addPath(
+    PathParser().parsePathString("M5,9.2h3V19H5V9.2zM10.6,5h2.8v14h-2.8V5zM16.2,13H19v6h-2.8V13z").toNodes(),
+    fill = SolidColor(Color.Black),
+).build()
+
 /** A play button for one clip; shows nothing when the clip doesn't exist. */
 @Composable
 fun SpeakButton(key: String?, label: String = "Play") {

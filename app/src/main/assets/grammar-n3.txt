@@ -1,0 +1,1417 @@
+# Kotoba grammar, JLPT N3. Same format as grammar-n5.txt.
+## 3
+
+= wake-da
+title: ～わけだ
+meaning: that's why; no wonder; so it means
+form: Plain form + わけだ (な-adjective + な / noun + という)
+note: わけだ shows a conclusion that follows naturally from what you just learned: 道理で ("no wonder") often comes with it.
+note: It can also restate something in other words: つまり～わけだ.
+ex: 十年もアメリカに住んでいたのか。英語が上手なわけだ。|じゅうねんもアメリカにすんでいたのか。えいごがじょうずなわけだ。|He lived in America for ten years? No wonder his English is good.
+ex: 窓が開いている。寒いわけだ。|まどがあいている。さむいわけだ。|The window is open. That's why it's cold.
+ex: 毎日三時間練習しているから、上手になるわけです。|まいにちさんじかんれんしゅうしているから、じょうずになるわけです。|She practices three hours a day, so of course she's getting good.
+q: 彼は昨日寝ていないそうだ。眠そうな＿＿だ。|I hear he didn't sleep yesterday. No wonder he looks sleepy.|わけ|ため|こと|もの
+q: 駅まで歩いて五分か。便利な＿＿ですね。|Five minutes' walk to the station? That's why it's so convenient.|わけ|ため|ところ|まま
+
+= wake-dewa-nai
+title: ～わけではない
+meaning: it doesn't mean that; not necessarily
+form: Plain form + わけではない (な-adjective + な / noun + という)
+note: This softens or corrects what the listener might conclude: 嫌いなわけではない (it's not that I dislike it).
+note: With 全部・いつも・必ずしも it means "not all" or "not always".
+ex: 肉が嫌いなわけではありませんが、あまり食べません。|にくがきらいなわけではありませんが、あまりたべません。|It's not that I dislike meat, but I don't eat much of it.
+ex: 日本人がみんな納豆を好きなわけではない。|にほんじんがみんななっとうをすきなわけではない。|Not all Japanese people like natto.
+ex: 忙しいわけじゃないけど、今日は行きたくない。|いそがしいわけじゃないけど、きょうはいきたくない。|It's not that I'm busy, but I don't want to go today.
+q: お金があれば幸せになれる＿＿ではない。|Having money doesn't necessarily make you happy.|わけ|はず|べき|もの
+q: 高い物がいつも良い＿＿ではありません。|Expensive things are not always good.|わけ|ため|ほど|ばかり
+
+= wake-niwa-ikanai
+title: ～わけにはいかない
+meaning: can't (because of the situation); can't afford to
+form: Dictionary form + わけにはいかない / ない-form + わけにはいかない (must)
+note: You could do it, but social or moral reasons stop you: 約束したから、行かないわけにはいかない.
+note: With the ない-form it means "have to, there is no way around it".
+ex: 明日は試験だから、遊びに行くわけにはいかない。|あしたはしけんだから、あそびにいくわけにはいかない。|I have an exam tomorrow, so I can't go out to play.
+ex: 車で来たので、お酒を飲むわけにはいきません。|くるまできたので、おさけをのむわけにはいきません。|I came by car, so I can't drink.
+ex: 先生に頼まれたら、断るわけにはいかない。|せんせいにたのまれたら、ことわるわけにはいかない。|If the teacher asks me, I can't say no.
+q: 大事な会議があるので、休む＿＿にはいかない。|There's an important meeting, so I can't take the day off.|わけ|はず|こと|ため
+q: 友達の結婚式だから、行かない＿＿にはいかない。|It's my friend's wedding, so I have to go.|わけ|もの|ところ|まま
+
+= wake-ga-nai
+title: ～わけがない
+meaning: there's no way; it can't be
+form: Plain form + わけがない (な-adjective + な / noun + の)
+note: A strong denial based on the speaker's reasoning. In speech: わけない.
+note: It is close to はずがない; わけがない sounds more emotional.
+ex: あんなに練習したんだから、負けるわけがない。|あんなにれんしゅうしたんだから、まけるわけがない。|We practiced so hard, there's no way we'll lose.
+ex: 子供にこんな難しい問題が分かるわけがない。|こどもにこんなむずかしいもんだいがわかるわけがない。|There's no way a child could understand such a hard problem.
+ex: 彼がうそをつくわけがありません。|かれがうそをつくわけがありません。|There's no way he would lie.
+q: こんなに安い時計が本物の＿＿がない。|There's no way a watch this cheap is real.|わけ|ため|ほう|ところ
+q: 一日で千ページも読める＿＿がない。|There's no way you can read a thousand pages in a day.|わけ|こと|もの|まま
+
+= hazu-ga-nai
+title: ～はずがない
+meaning: it can't be that; there's no reason to expect
+form: Plain form + はずがない (な-adjective + な / noun + の)
+note: The speaker is sure something is impossible from the facts they know: 鍵をかけたから、開いているはずがない.
+note: Compare はずだ (it should be) from N4.
+ex: 彼は今日休みだから、会社にいるはずがない。|かれはきょうやすみだから、かいしゃにいるはずがない。|He's off today, so he can't be at the office.
+ex: 昨日送ったから、まだ届いていないはずがない。|きのうおくったから、まだとどいていないはずがない。|I sent it yesterday, so it can't still not have arrived.
+ex: あの真面目な人が遅刻するはずがありません。|あのまじめなひとがちこくするはずがありません。|That serious person can't possibly be late.
+q: 鍵をかけたのだから、ドアが開いている＿＿がない。|I locked it, so the door can't be open.|はず|べき|ほど|つもり
+q: 彼女はベジタリアンだから、肉を注文する＿＿がない。|She's a vegetarian, so she can't have ordered meat.|はず|ばかり|ところ|ため
+
+= ni-chigainai
+title: ～に違いない
+meaning: must be; no doubt
+form: Plain form + に違いない (な-adjective / noun without だ)
+note: A confident guess based on evidence. It sounds a little written; in speech, きっと～と思う is common.
+note: The polite form is に違いありません.
+ex: 電気がついている。誰かいるに違いない。|でんきがついている。だれかいるにちがいない。|The lights are on. Someone must be there.
+ex: あんなに勉強したのだから、合格するに違いない。|あんなにべんきょうしたのだから、ごうかくするにちがいない。|He studied so hard he's sure to pass.
+ex: この字は田中さんの字に違いありません。|このじはたなかさんのじにちがいありません。|This handwriting must be Mr. Tanaka's.
+q: 彼の顔が赤い。熱がある＿＿違いない。|His face is red. He must have a fever.|に|と|で|が
+q: こんなに人が並んでいるのだから、おいしい店に＿＿。|With so many people in line, it must be a good restaurant.|違いない=ちがいない|違わない|違いがない|違っている
+
+= beki
+title: ～べきだ
+meaning: should; ought to
+form: Dictionary form + べきだ (する → するべき / すべき) / べきではない
+note: べき expresses what is right or necessary in the speaker's opinion. It is stronger than ～たほうがいい.
+note: べきではない means "should not". Don't use べき for other people's actions too directly; it can sound preachy.
+ex: 約束は守るべきだ。|やくそくはまもるべきだ。|You should keep your promises.
+ex: 若いうちにいろいろな経験をするべきです。|わかいうちにいろいろなけいけんをするべきです。|You should have many experiences while you're young.
+ex: 人の悪口を言うべきではない。|ひとのわるぐちをいうべきではない。|You shouldn't speak ill of others.
+q: 自分の間違いは素直に認める＿＿だ。|You should honestly admit your own mistakes.|べき|はず|わけ|もの
+q: 病気のときは無理をす＿＿ではない。|You shouldn't push yourself when you're ill.|べき|べく|べし|べきだ
+
+= you-to-suru
+title: ～ようとする
+meaning: try to; be about to
+form: Volitional form + とする
+note: ～ようとする describes an attempt, often one that doesn't work out: ドアを開けようとしたが、開かなかった.
+note: With a moment in time it means "just about to": 出かけようとしたとき、電話が鳴った. ～ようとしない means "won't (even try)".
+ex: 寝ようとしたとき、電話が鳴った。|ねようとしたとき、でんわがなった。|Just as I was about to go to sleep, the phone rang.
+ex: 赤ちゃんが立とうとしている。|あかちゃんがたとうとしている。|The baby is trying to stand up.
+ex: 何度聞いても、彼は答えようとしない。|なんどきいても、かれはこたえようとしない。|No matter how many times I ask, he won't answer.
+q: 思い出そう＿＿したが、名前が出てこなかった。|I tried to remember, but the name wouldn't come.|と|に|で|を
+q: 家を出よう＿＿とき、雨が降り始めた。|Just as I was about to leave the house, it started to rain.|とした|にした|とする|にする
+
+= koto-ni-shiteiru
+title: ～ことにしている
+meaning: make it a rule to
+form: Dictionary form / ない-form + ことにしている
+note: A personal rule you decided on and keep: 毎朝走ることにしている.
+note: Compare ことにする (decide once) from N4; ～ている shows the habit continues.
+ex: 寝る前にスマホを見ないことにしています。|ねるまえにスマホをみないことにしています。|I make it a rule not to look at my phone before bed.
+ex: 毎朝三十分歩くことにしている。|まいあささんじゅっぷんあるくことにしている。|I make it a rule to walk for thirty minutes every morning.
+ex: お金は借りないことにしています。|おかねはかりないことにしています。|I make it a rule not to borrow money.
+q: 健康のために、毎日野菜を食べる＿＿にしています。|For my health, I make it a rule to eat vegetables every day.|こと|もの|わけ|ため
+q: 夜十時以降は何も食べない＿＿。|I make it a rule not to eat anything after ten at night.|ことにしている|ことになっている|ことがある|ことができる
+
+= koto-ni-natteiru
+title: ～ことになっている
+meaning: it's arranged that; the rule is that
+form: Dictionary form / ない-form + ことになっている
+note: A rule or plan decided by others (a school, a company, a schedule), not by the speaker.
+note: Compare ことにしている, which is a personal rule.
+ex: この寮では、夜十一時までに帰ることになっている。|このりょうでは、よるじゅういちじまでにかえることになっている。|In this dorm, you're supposed to be back by eleven.
+ex: 明日の会議で私が発表することになっています。|あしたのかいぎでわたしがはっぴょうすることになっています。|I'm scheduled to give a presentation at tomorrow's meeting.
+ex: 教室で食べてはいけないことになっています。|きょうしつでたべてはいけないことになっています。|The rule is that you can't eat in the classroom.
+q: 会社の規則で、ここではタバコを吸わない＿＿。|By company rules, nobody is to smoke here.|ことになっている|ことにしている|ことがある|ことができる
+q: 来月から私が新しい担当になる＿＿になっています。|It's arranged that I'll be the new person in charge from next month.|こと|もの|わけ|はず
+
+= koto-wa-nai
+title: ～ことはない
+meaning: there's no need to
+form: Dictionary form + ことはない
+note: It tells someone not to worry or not to bother: 心配することはない.
+note: The meaning is close to ～なくてもいい, but more reassuring.
+ex: そんなに心配することはないよ。|そんなにしんぱいすることはないよ。|There's no need to worry so much.
+ex: 電話で済むから、わざわざ来ることはありません。|でんわですむから、わざわざくることはありません。|A phone call will do, so there's no need to come all the way here.
+ex: 小さなミスだから、謝ることはない。|ちいさなミスだから、あやまることはない。|It's a small mistake, so there's no need to apologize.
+q: まだ時間があるから、急ぐ＿＿はないよ。|There's still time, so there's no need to hurry.|こと|もの|わけ|はず
+q: 簡単な手続きだから、心配する＿＿。|It's an easy procedure, so you don't need to worry.|ことはない|ことがない|ことはある|ことにする
+
+= mono-da
+title: ～ものだ
+meaning: used to (memories); that's the way it is
+form: た-form + ものだ (memories) / Dictionary form + ものだ (natural tendency, advice)
+note: With the past it looks back fondly on what used to happen: 子供のころはよくここで遊んだものだ.
+note: With the dictionary form it states what is natural or proper: 人の話は最後まで聞くものだ.
+ex: 学生のころは、よく徹夜したものだ。|がくせいのころは、よくてつやしたものだ。|When I was a student, I often used to stay up all night.
+ex: 時間がたつのは早いものですね。|じかんがたつのははやいものですね。|Time really does fly, doesn't it.
+ex: 先生には敬語を使うものだ。|せんせいにはけいごをつかうものだ。|You should use polite language with your teacher.
+q: 子供のころ、この公園でよく遊んだ＿＿だ。|I often used to play in this park as a child.|もの|こと|わけ|はず
+q: 年を取ると、昔のことを思い出す＿＿だ。|As you get older, you tend to recall the past.|もの|まま|ほう|ところ
+
+= ni-tsuite
+title: ～について
+meaning: about; concerning
+form: Noun + について / についての + noun
+note: について marks the topic of talking, thinking, writing or researching.
+note: Before a noun, use についての: 日本の歴史についての本.
+ex: 日本の文化について調べています。|にほんのぶんかについてしらべています。|I'm researching Japanese culture.
+ex: その問題について話し合いましょう。|そのもんだいについてはなしあいましょう。|Let's discuss that problem.
+ex: 環境についてのレポートを書きました。|かんきょうについてのレポートをかきました。|I wrote a report on the environment.
+q: 将来の仕事＿＿両親と相談した。|I talked with my parents about my future job.|について|にとって|によって|に対して
+q: 地震＿＿の本を借りた。|I borrowed a book about earthquakes.|について|に対して|によって|として
+
+= ni-taishite
+title: ～に対して
+meaning: toward; against; in contrast to
+form: Noun + に対して / に対する + noun
+note: It marks the person or thing an action or feeling is directed at: 先生に対して失礼だ.
+note: After a clause (+ のに対して) it contrasts two things: 兄は背が高いのに対して、弟は低い.
+ex: お客様に対して丁寧に話してください。|おきゃくさまにたいしてていねいにはなしてください。|Please speak politely to customers.
+ex: 彼の意見に対して反対する人が多かった。|かれのいけんにたいしてはんたいするひとがおおかった。|Many people were against his opinion.
+ex: 姉は外で遊ぶのが好きなのに対して、私は家にいるのが好きだ。|あねはそとであそぶのがすきなのにたいして、わたしはいえにいるのがすきだ。|My sister likes playing outside, while I like staying home.
+q: 目上の人＿＿その言い方は失礼です。|That way of speaking is rude toward someone above you.|に対して=にたいして|について|にとって|によって
+q: 質問＿＿、すぐに答えた。|He answered the question right away.|に対して=にたいして|にとって|として|にかけて
+
+= ni-yotte
+title: ～によって・～による
+meaning: by; depending on; due to
+form: Noun + によって / による + noun
+note: It marks the cause (事故によって電車が止まった), the doer in passive sentences (この絵はピカソによって描かれた) or variation (人によって違う).
+note: による comes before a noun: 台風による被害.
+ex: この絵は有名な画家によって描かれました。|このえはゆうめいながかによってかかれました。|This picture was painted by a famous painter.
+ex: 考え方は人によって違います。|かんがえかたはひとによってちがいます。|Ways of thinking differ from person to person.
+ex: 台風による被害は大きかった。|たいふうによるひがいはおおきかった。|The damage from the typhoon was great.
+q: 値段は季節＿＿変わります。|The price changes depending on the season.|によって|に対して|について|にとって
+q: 大雨＿＿電車が止まった。|The trains stopped because of the heavy rain.|によって|にとって|として|について
+
+= ni-yoruto
+title: ～によると・～によれば
+meaning: according to
+form: Noun + によると / によれば ～そうだ・～らしい
+note: It names the source of information. The sentence usually ends with そうだ, らしい or ということだ.
+note: によれば means the same and sounds a little more formal.
+ex: 天気予報によると、明日は雪が降るそうです。|てんきよほうによると、あしたはゆきがふるそうです。|According to the weather forecast, it will snow tomorrow.
+ex: 新聞によれば、物価がまた上がるらしい。|しんぶんによれば、ぶっかがまたあがるらしい。|According to the newspaper, prices will go up again.
+ex: 友達の話によると、あの店は来月閉まるそうだ。|ともだちのはなしによると、あのみせはらいげつしまるそうだ。|According to my friend, that shop closes next month.
+q: ニュース＿＿、事故で三人けがをしたそうだ。|According to the news, three people were hurt in the accident.|によると|にとって|に対して|として
+q: 先生の話に＿＿、試験は来週だそうです。|According to the teacher, the exam is next week.|よると|とって|ついて|対して
+
+= ni-totte
+title: ～にとって
+meaning: for; to (from someone's point of view)
+form: Noun + にとって / にとっての + noun
+note: にとって gives the point of view from which something is judged: 私にとって大切な人.
+note: It is followed by an evaluation (大切だ、難しい、問題だ), not by an action.
+ex: 私にとって、家族が一番大切です。|わたしにとって、かぞくがいちばんたいせつです。|For me, family is the most important thing.
+ex: 外国人にとって、敬語は難しい。|がいこくじんにとって、けいごはむずかしい。|Honorific language is hard for foreigners.
+ex: これは子供にとっての良い経験になるだろう。|これはこどもにとってのよいけいけんになるだろう。|This will probably be a good experience for the children.
+q: 学生＿＿、夏休みは楽しみなものだ。|For students, summer vacation is something to look forward to.|にとって|について|によって|に対して
+q: この写真は私に＿＿宝物です。|This photo is a treasure to me.|とって|ついて|よって|対して
+
+= to-shite
+title: ～として
+meaning: as; in the role of
+form: Noun + として / としての + noun
+note: として gives the role, position or capacity: 通訳として働く (work as an interpreter).
+note: としては can mean "for (a ...)": 日本人としては背が高い.
+ex: 留学生として日本に来ました。|りゅうがくせいとしてにほんにきました。|I came to Japan as an exchange student.
+ex: 彼はガイドとして働いています。|かれはガイドとしてはたらいています。|He works as a guide.
+ex: この部屋は会議室として使われている。|このへやはかいぎしつとしてつかわれている。|This room is used as a meeting room.
+q: 彼女は歌手＿＿有名だ。|She is famous as a singer.|として|にとって|について|によって
+q: クラスの代表＿＿スピーチをした。|I gave a speech as the class representative.|として|にとって|に対して|によって
+
+= ni-kanshite
+title: ～に関して・～に関する
+meaning: regarding; related to
+form: Noun + に関して / に関する + noun
+note: A more formal version of について, common in announcements and writing.
+note: に関する comes before a noun: 安全に関する規則.
+ex: この件に関して、ご質問はありますか。|このけんにかんして、ごしつもんはありますか。|Do you have any questions regarding this matter?
+ex: 経済に関する本を読んでいます。|けいざいにかんするほんをよんでいます。|I'm reading a book about economics.
+ex: 事故の原因に関して調査が行われた。|じこのげんいんにかんしてちょうさがおこなわれた。|An investigation was carried out regarding the cause of the accident.
+q: 日本の歴史に＿＿本を探しています。|I'm looking for a book about Japanese history.|関する=かんする|関して|対して|とって
+q: 新しい制度＿＿説明会があります。|There is an information session about the new system.|に関する=にかんする|にとって|によって|として
+
+= okage-de
+title: ～おかげで
+meaning: thanks to
+form: Plain form + おかげで (な-adjective + な / noun + の)
+note: おかげで gives a cause that led to a good result. It often comes with thanks.
+note: Used ironically, it can complain: 君のおかげで遅れたよ.
+ex: 先生のおかげで、試験に合格できました。|せんせいのおかげで、しけんにごうかくできました。|Thanks to my teacher, I was able to pass the exam.
+ex: 薬を飲んだおかげで、熱が下がった。|くすりをのんだおかげで、ねつがさがった。|Thanks to the medicine, my fever went down.
+ex: 天気が良かったおかげで、楽しい旅行になった。|てんきがよかったおかげで、たのしいりょこうになった。|Thanks to the good weather, it was a fun trip.
+q: 友達が手伝ってくれた＿＿、早く終わった。|Thanks to my friend helping me, I finished early.|おかげで|せいで|ように|くせに
+q: みなさんの＿＿で、イベントは成功しました。|Thanks to all of you, the event was a success.|おかげ|せい|わけ|ため
+
+= sei-de
+title: ～せいで・～せいだ
+meaning: because of (something bad)
+form: Plain form + せいで (な-adjective + な / noun + の)
+note: せいで blames a cause for a bad result. Compare おかげで for good results.
+note: ～のせいにする means "to blame something": 人のせいにしないで.
+ex: 雨のせいで、試合が中止になった。|あめのせいで、しあいがちゅうしになった。|The game was canceled because of the rain.
+ex: 寝坊したせいで、バスに乗り遅れた。|ねぼうしたせいで、バスにのりおくれた。|I overslept, so I missed the bus.
+ex: 失敗を人のせいにしてはいけない。|しっぱいをひとのせいにしてはいけない。|Don't blame others for your failures.
+q: 甘い物を食べすぎた＿＿、太ってしまった。|I gained weight because I ate too many sweets.|せいで|おかげで|ように|くせに
+q: 渋滞の＿＿で、遅刻しました。|I was late because of the traffic jam.|せい|おかげ|はず|つもり
+
+= tame-cause
+title: ～ため (because)
+meaning: because of; due to (formal)
+form: Plain form + ため(に) (な-adjective + な / noun + の)
+note: ため gives a cause in a formal, written style, often in announcements: 事故のため、電車が遅れています.
+note: Don't confuse it with ために (in order to) from N4: the cause is often a past or non-volitional event.
+ex: 事故のため、電車が遅れています。|じこのため、でんしゃがおくれています。|The trains are delayed due to an accident.
+ex: 大雪のため、学校が休みになった。|おおゆきのため、がっこうがやすみになった。|School was closed because of heavy snow.
+ex: 体調が悪いため、本日は欠席します。|たいちょうがわるいため、ほんじつはけっせきします。|I will be absent today because I'm not feeling well.
+q: 工事中の＿＿、この道は通れません。|This road is closed because of construction.|ため|おかげ|ほど|わけ
+q: 台風が近づいている＿＿、飛行機が欠航した。|The flight was canceled because a typhoon was approaching.|ため|ように|くせに|ほど
+
+= dake-de-naku
+title: ～だけでなく・～ばかりでなく
+meaning: not only ... but also
+form: Plain form + だけでなく (な-adjective + な / noun) ～も
+note: The second part usually has も: 英語だけでなく、中国語も話せる.
+note: ばかりでなく means the same and sounds more written. のみならず is even more formal.
+ex: 彼は英語だけでなく、フランス語も話せる。|かれはえいごだけでなく、フランスごもはなせる。|He can speak not only English but also French.
+ex: この店は安いだけでなく、おいしい。|このみせはやすいだけでなく、おいしい。|This restaurant is not only cheap but also good.
+ex: 子供ばかりでなく、大人も楽しめる映画です。|こどもばかりでなく、おとなもたのしめるえいがです。|It's a movie that not only children but adults can enjoy.
+q: 彼女は歌＿＿でなく、ダンスも上手だ。|She's good not only at singing but also at dancing.|だけ|しか|ほど|まで
+q: 雨＿＿でなく、風も強くなってきた。|Not only the rain, the wind has also gotten stronger.|ばかり|しか|こそ|さえ
+
+= sae
+title: ～さえ
+meaning: even
+form: Noun + さえ (subject: noun + でさえ)
+note: さえ shows an extreme example: "even this (so of course the rest)". 子供でさえ知っている.
+note: It often comes with negative sentences: 名前さえ書けない.
+ex: 忙しくて、昼ご飯を食べる時間さえない。|いそがしくて、ひるごはんをたべるじかんさえない。|I'm so busy I don't even have time to eat lunch.
+ex: そんな簡単なことは子供でさえ分かる。|そんなかんたんなことはこどもでさえわかる。|Even a child understands something that simple.
+ex: 疲れて、立つことさえできなかった。|つかれて、たつことさえできなかった。|I was so tired I couldn't even stand.
+q: 彼はひらがな＿＿読めない。|He can't even read hiragana.|さえ|こそ|だけ|ほど
+q: 先生で＿＿その問題は解けなかった。|Even the teacher couldn't solve that problem.|さえ|しか|ばかり|まで
+
+= sae-ba
+title: ～さえ～ば
+meaning: if only; as long as
+form: Noun + さえ + ば-form / ます-stem + さえすれば
+note: Only one condition is needed: お金さえあれば (if only I had money).
+note: With verbs: 練習しさえすれば、うまくなる.
+ex: 時間さえあれば、もっと旅行したい。|じかんさえあれば、もっとりょこうしたい。|If only I had time, I'd travel more.
+ex: この薬を飲みさえすれば、すぐ治りますよ。|このくすりをのみさえすれば、すぐなおりますよ。|As long as you take this medicine, you'll get better soon.
+ex: 天気さえ良ければ、富士山が見えます。|てんきさえよければ、ふじさんがみえます。|As long as the weather is good, you can see Mount Fuji.
+q: 地図＿＿あれば、一人で行けます。|As long as I have a map, I can go by myself.|さえ|こそ|しか|ほど
+q: あなたがそばにいて＿＿くれれば、それでいい。|As long as you're by my side, that's enough.|さえ|まで|しか|ばかり
+
+= koso
+title: ～こそ
+meaning: precisely; it is ... that
+form: Noun + こそ / ～からこそ
+note: こそ strongly emphasizes one item: 今年こそ (this year for sure).
+note: からこそ stresses a reason: 好きだからこそ、厳しく言う.
+ex: 今年こそ日本語能力試験に合格したい。|ことしこそにほんごのうりょくしけんにごうかくしたい。|This year for sure I want to pass the Japanese proficiency test.
+ex: こちらこそ、よろしくお願いします。|こちらこそ、よろしくおねがいします。|The pleasure is mine. (Likewise, nice to meet you.)
+ex: 君のことを思うからこそ、厳しく言うんだ。|きみのことをおもうからこそ、きびしくいうんだ。|It's precisely because I care about you that I'm being strict.
+q: 「ありがとう。」「いいえ、こちら＿＿ありがとう。」|"Thank you." "No, thank you."|こそ|さえ|しか|ほど
+q: 今度＿＿負けないぞ。|This time I definitely won't lose!|こそ|ばかり|まで|だけ
+
+= nado-nante
+title: ～など・～なんて
+meaning: things like; such as (often looking down on it)
+form: Noun / plain form + など・なんて
+note: など gives an example and softens: お茶などいかがですか.
+note: なんて (casual) adds surprise or contempt: 宿題を忘れるなんて信じられない.
+ex: 京都や奈良などの古い町が好きです。|きょうとやならなどのふるいまちがすきです。|I like old towns such as Kyoto and Nara.
+ex: 彼がそんなことを言うなんて、信じられない。|かれがそんなことをいうなんて、しんじられない。|I can't believe he'd say something like that.
+ex: 幽霊なんているわけがない。|ゆうれいなんているわけがない。|There's no way things like ghosts exist.
+q: 一人で海外旅行に行く＿＿、すごいですね。|Traveling abroad by yourself — that's amazing.|なんて|こそ|さえ|しか
+q: 飲み物はお茶やジュース＿＿があります。|For drinks, we have things like tea and juice.|など|ほど|まで|さえ
+
+= hodo-nai
+title: ～ほど～ない
+meaning: not as ... as
+form: Noun / dictionary form + ほど + negative
+note: A ほど B ない: B doesn't reach the level of A. 今年は去年ほど寒くない.
+note: ～ほど～はない means "nothing is as ... as": 健康ほど大切なものはない.
+ex: 今日は昨日ほど暑くない。|きょうはきのうほどあつくない。|Today isn't as hot as yesterday.
+ex: 思ったほど難しくなかった。|おもったほどむずかしくなかった。|It wasn't as difficult as I thought.
+ex: 家族ほど大切なものはない。|かぞくほどたいせつなものはない。|Nothing is as important as family.
+q: この映画は前の映画＿＿面白くなかった。|This movie wasn't as interesting as the last one.|ほど|より|まで|だけ
+q: 東京は大阪ほど物価が安＿＿。|Prices in Tokyo aren't as low as in Osaka.|くない|い|かった|くて
+
+= kurai-hodo
+title: ～くらい・～ほど (extent)
+meaning: so ... that; to the extent that
+form: Plain form + くらい / ほど
+note: These show how strong a state is by giving an example: 泣きたいくらい痛い (it hurts so much I want to cry).
+note: ほど sounds a little more formal and stronger than くらい (ぐらい).
+ex: 歩けないくらい疲れた。|あるけないくらいつかれた。|I was so tired I couldn't walk.
+ex: 死ぬほど笑った。|しぬほどわらった。|I laughed so hard I nearly died.
+ex: 声が出ないほど驚いた。|こえがでないほどおどろいた。|I was so surprised I couldn't make a sound.
+q: 涙が出る＿＿うれしかった。|I was so happy I cried.|くらい|ばかり|しか|ずつ
+q: 信じられない＿＿安い値段だ。|It's an unbelievably low price.|ほど|まで|こそ|さえ
+
+= ba-hodo
+title: ～ば～ほど
+meaning: the more ..., the more ...
+form: ば-form + same word + ほど
+note: The same verb or adjective is repeated: 食べれば食べるほど太る.
+note: For な-adjectives: 静かなら静かなほど / 静かであればあるほど.
+ex: 練習すればするほど上手になります。|れんしゅうすればするほどじょうずになります。|The more you practice, the better you get.
+ex: 考えれば考えるほど分からなくなる。|かんがえればかんがえるほどわからなくなる。|The more I think about it, the less I understand.
+ex: 部屋は広ければ広いほどいい。|へやはひろければひろいほどいい。|The bigger the room, the better.
+q: 日本語は勉強すれば＿＿ほど面白くなる。|The more you study Japanese, the more interesting it gets.|する|した|して|すれ
+q: 野菜は新しければ新しい＿＿おいしい。|The fresher vegetables are, the better they taste.|ほど|まで|ばかり|だけ
+
+= you-ni-iu
+title: ～ように言う・～ように頼む
+meaning: tell or ask (someone) to
+form: Dictionary form / ない-form + ように言う・頼む・注意する
+note: This reports an instruction or request indirectly: 先生は静かにするように言った.
+note: Compare the direct quote: 先生は「静かにしなさい」と言った.
+ex: 医者にお酒を飲まないように言われました。|いしゃにおさけをのまないようにいわれました。|The doctor told me not to drink.
+ex: 母に早く帰るように頼まれた。|ははにはやくかえるようにたのまれた。|My mother asked me to come home early.
+ex: 部長に書類を明日までに出すように言ってください。|ぶちょうにしょるいをあしたまでにだすようにいってください。|Please tell the manager to submit the documents by tomorrow.
+q: 先生は学生に遅刻しない＿＿注意した。|The teacher warned the students not to be late.|ように|ために|ほど|まで
+q: 友達に駅で待っている＿＿頼んだ。|I asked my friend to wait at the station.|ように|ことに|ほどに|ばかりに
+
+= masu-you-ni
+title: ～ますように
+meaning: I hope; may ...
+form: ます-form + ように
+note: A wish or prayer, often written on cards or said at shrines: 合格できますように.
+note: It is also used for wishes for others: 早く良くなりますように.
+ex: 試験に合格できますように。|しけんにごうかくできますように。|I hope I pass the exam.
+ex: 明日、晴れますように。|あした、はれますように。|I hope it's sunny tomorrow.
+ex: 早く元気になりますように。|はやくげんきになりますように。|I hope you get well soon.
+q: 家族がみんな健康でいられます＿＿。|May everyone in my family stay healthy.|ように|ために|ことに|ほど
+q: 夢がかないます＿＿。|I hope my dream comes true.|ように|ような|ようだ|ようで
+
+= you-na
+title: ～ような・～ように (like)
+meaning: like; as if; such as
+form: Noun + の + ような (+ noun) / ように (+ verb or adjective)
+note: ような describes a noun by likeness: 夢のような話. ように describes a verb or adjective: 子供のように笑う.
+note: まるで often comes before it for "just like": まるで雪のように白い.
+ex: まるで夢のような一日だった。|まるでゆめのようないちにちだった。|It was a day just like a dream.
+ex: 彼は子供のように喜んだ。|かれはこどものようによろこんだ。|He was as happy as a child.
+ex: 東京のような大きな町に住みたい。|とうきょうのようなおおきなまちにすみたい。|I want to live in a big city like Tokyo.
+q: 彼は子供の＿＿泣いている。|He's crying like a child.|ように|ような|ようだ|ようで
+q: 彼女は天使の＿＿人だ。|She's like an angel.|ような|ように|ようで|ようは
+
+= mitai
+title: ～みたいな・～みたいに
+meaning: like; such as (casual)
+form: Noun / plain form + みたいな (+ noun) / みたいに (+ verb or adjective)
+note: The casual version of ような・ように. It is also used for guesses: 雨みたいだ (it seems to be raining).
+note: Nouns connect directly: 子供みたい, not 子供のみたい.
+ex: 犬みたいな猫ですね。|いぬみたいなねこですね。|It's a cat that acts like a dog.
+ex: 彼はプロみたいに歌が上手だ。|かれはプロみたいにうたがじょうずだ。|He sings as well as a professional.
+ex: 夏みたいに暑い日が続いている。|なつみたいにあついひがつづいている。|Days as hot as summer continue.
+q: 魔法＿＿な話ですね。|That sounds like magic.|みたい|らしい|っぽい|ような
+q: 子供＿＿に騒がないでください。|Please don't make noise like a child.|みたい|らしい|ような|そう
+
+= ppoi
+title: ～っぽい
+meaning: -ish; tends to; looks like
+form: Noun / い-adjective stem / ます-stem + っぽい
+note: With nouns it means "seems like": 子供っぽい (childish), 白っぽい (whitish).
+note: With verbs it means "tends to": 忘れっぽい (forgetful), 怒りっぽい (quick to anger). It is casual.
+ex: 彼は年のわりに子供っぽい。|かれはとしのわりにこどもっぽい。|He's childish for his age.
+ex: 最近、忘れっぽくなった。|さいきん、わすれっぽくなった。|Lately I've become forgetful.
+ex: 白っぽいシャツを着ている人が田中さんです。|しろっぽいシャツをきているひとがたなかさんです。|The person in the whitish shirt is Mr. Tanaka.
+q: 父は怒り＿＿性格だ。|My father is quick to anger.|っぽい|らしい|みたい|そうな
+q: この料理は少し油＿＿。|This dish is a bit oily.|っぽい|ような|らしく|みたいに
+
+= gachi
+title: ～がち
+meaning: tend to; be prone to (something bad)
+form: ます-stem / noun + がち
+note: がち is used for bad or unwanted tendencies: 遅れがち (often late), 病気がち (sickly).
+note: It works like a な-adjective: 忘れがちなこと.
+ex: 冬は運動不足になりがちだ。|ふゆはうんどうぶそくになりがちだ。|In winter we tend to get too little exercise.
+ex: 彼女は子供のころ病気がちだった。|かのじょはこどものころびょうきがちだった。|She was often sick as a child.
+ex: 忙しいと、食事が不規則になりがちです。|いそがしいと、しょくじがふきそくになりがちです。|When you're busy, your meals tend to become irregular.
+q: 雨の日は電車が遅れ＿＿だ。|Trains tend to be late on rainy days.|がち|っぽい|らしい|まま
+q: 一人暮らしだと、外食が多くなり＿＿です。|Living alone, you tend to eat out a lot.|がち|ため|ほど|まま
+
+= rashii-typical
+title: ～らしい (typical of)
+meaning: like a (proper) ...; typical of
+form: Noun + らしい
+note: This らしい means a person or thing has the qualities expected of it: 男らしい, 春らしい天気.
+note: ～らしくない means "unlike": 彼らしくない (not like him). Don't confuse it with らしい (hearsay) from N4.
+ex: 今日は春らしい暖かい日ですね。|きょうははるらしいあたたかいひですね。|It's a warm, spring-like day today.
+ex: 遅刻するなんて、彼らしくないですね。|ちこくするなんて、かれらしくないですね。|Being late isn't like him.
+ex: もっと学生らしい服を着なさい。|もっとがくせいらしいふくをきなさい。|Wear clothes more appropriate for a student.
+q: 文句を言うなんて、あなた＿＿ないね。|Complaining isn't like you.|らしく|らしい|らしさ|らしくて
+q: 今日は秋＿＿涼しい日です。|Today is a cool day typical of autumn.|らしい|みたい|そうな|ような
+
+= furi
+title: ～ふりをする
+meaning: pretend to
+form: Plain form + ふりをする (な-adjective + な / noun + の)
+note: ふりをする describes acting as if something were true: 知らないふりをする.
+note: It usually suggests the person is hiding the truth.
+ex: 彼は私を見て、見なかったふりをした。|かれはわたしをみて、みなかったふりをした。|He saw me but pretended not to.
+ex: 弟は寝たふりをしている。|おとうとはねたふりをしている。|My younger brother is pretending to be asleep.
+ex: 分からないのに、分かったふりをしてはいけない。|わからないのに、わかったふりをしてはいけない。|Don't pretend to understand when you don't.
+q: 母に呼ばれたが、聞こえない＿＿をした。|My mother called me, but I pretended not to hear.|ふり|まま|ほう|ため
+q: 彼女は元気な＿＿をしているが、本当は疲れている。|She's pretending to be fine, but she's actually tired.|ふり|もの|わけ|こと
+
+= ta-tsumori
+title: ～たつもり
+meaning: thought I had (but); be sure that
+form: た-form + つもり / noun + の + つもり
+note: The speaker believed something was done, but the facts may differ: 鍵をかけたつもりだった.
+note: ～つもりで can also mean "pretending, as if": 旅行したつもりで貯金する.
+ex: 宿題を持ってきたつもりだったが、家に忘れていた。|しゅくだいをもってきたつもりだったが、いえにわすれていた。|I thought I'd brought my homework, but I'd left it at home.
+ex: 丁寧に説明したつもりですが、分かりましたか。|ていねいにせつめいしたつもりですが、わかりましたか。|I think I explained carefully — did you understand?
+ex: 若いつもりでいても、体は正直だ。|わかいつもりでいても、からだはしょうじきだ。|Even if you feel young, your body doesn't lie.
+q: 電気を消した＿＿だったが、ついていた。|I thought I'd turned off the light, but it was on.|つもり|はず|わけ|ため
+q: 全部覚えた＿＿でも、テストではすぐ忘れてしまう。|Even when I think I've memorized it all, I forget it right away on the test.|つもり|ふり|まま|ほど
+
+= kawari-ni
+title: ～かわりに
+meaning: instead of; in exchange for
+form: Plain form / noun + の + かわりに
+note: It means one thing replaces another: 父のかわりに私が行く.
+note: It can also mean "in return": 英語を教えるかわりに、日本語を教えてもらう.
+ex: 今日は母のかわりに私が料理を作ります。|きょうはははのかわりにわたしがりょうりをつくります。|Today I'll cook instead of my mother.
+ex: ペンのかわりに鉛筆を使ってもいいですか。|ペンのかわりにえんぴつをつかってもいいですか。|May I use a pencil instead of a pen?
+ex: 英語を教えるかわりに、日本語を教えてもらった。|えいごをおしえるかわりに、にほんごをおしえてもらった。|In exchange for teaching English, I was taught Japanese.
+q: 社長の＿＿に、部長が会議に出た。|The manager attended the meeting in place of the president.|かわり|ため|おかげ|せい
+q: 映画を見に行く＿＿、家でゆっくり休んだ。|Instead of going to see a movie, I relaxed at home.|かわりに|ために|うちに|とおりに
+
+= uchi-ni
+title: ～うちに
+meaning: while; before (it changes)
+form: Dictionary form / ている / い-adjective / な-adjective + な / noun + の + うちに
+note: Do something while a state lasts, because it will change: 若いうちに, 熱いうちに.
+note: ～ないうちに means "before something happens": 暗くならないうちに帰ろう. ～ているうちに can also mean "while doing, without noticing".
+ex: 熱いうちに食べてください。|あついうちにたべてください。|Please eat it while it's hot.
+ex: 若いうちにいろいろな国へ行きたい。|わかいうちにいろいろなくにへいきたい。|I want to go to many countries while I'm young.
+ex: 雨が降らないうちに、洗濯物を入れよう。|あめがふらないうちに、せんたくものをいれよう。|Let's bring in the laundry before it rains.
+q: 忘れない＿＿にメモしておこう。|I'll make a note before I forget.|うち|まえ|ため|まま
+q: 本を読んでいる＿＿に、寝てしまった。|I fell asleep while reading a book.|うち|まえ|ほど|ため
+
+= saichuu
+title: ～最中
+meaning: in the middle of
+form: ている + 最中 / noun + の + 最中
+note: Something happens right in the middle of an activity, often an interruption: 会議の最中に電話が鳴った.
+note: It stresses that the activity is at its peak, more than ～ているとき.
+ex: 食事の最中に地震が起きた。|しょくじのさいちゅうにじしんがおきた。|An earthquake struck in the middle of the meal.
+ex: 今、考えている最中だから、話しかけないで。|いま、かんがえているさいちゅうだから、はなしかけないで。|I'm right in the middle of thinking, so don't talk to me.
+ex: 試合の最中に雨が降ってきた。|しあいのさいちゅうにあめがふってきた。|It started to rain in the middle of the game.
+q: 会議の＿＿に、携帯が鳴ってしまった。|My phone rang in the middle of the meeting.|最中=さいちゅう|途中で|間で|うち
+q: シャワーを浴びている最中＿＿、電話が来た。|A call came while I was in the middle of a shower.|に|を|で|が
+
+= toori
+title: ～とおり(に)
+meaning: as; just as; in the way that
+form: Dictionary form / た-form + とおり / noun + の + とおり・noun + どおり
+note: Do or happen exactly as said or planned: 説明書のとおりに組み立てる.
+note: After a noun it can also be どおり: 予定どおり, 思いどおり.
+ex: 先生が言ったとおりに書いてください。|せんせいがいったとおりにかいてください。|Please write it just as the teacher said.
+ex: 予想したとおり、試験は難しかった。|よそうしたとおり、しけんはむずかしかった。|Just as I expected, the exam was hard.
+ex: 計画どおりに工事が終わった。|けいかくどおりにこうじがおわった。|The construction finished as planned.
+q: 地図の＿＿に行ったら、すぐ見つかった。|When I went as the map showed, I found it right away.|とおり|まま|ほど|うち
+q: 電車は時間＿＿に到着した。|The train arrived on time.|どおり|ばかり|まで|ほど
+
+= tabi-ni
+title: ～たびに
+meaning: every time
+form: Dictionary form / noun + の + たびに
+note: Every time A happens, B happens too: この歌を聞くたびに、学生時代を思い出す.
+note: It is stronger than ～とき and stresses repetition.
+ex: この写真を見るたびに、祖母を思い出します。|このしゃしんをみるたびに、そぼをおもいだします。|Every time I see this photo, I remember my grandmother.
+ex: 旅行のたびに、お土産を買ってくれる。|りょこうのたびに、おみやげをかってくれる。|She buys me a souvenir every time she travels.
+ex: 会うたびに、彼は背が高くなっている。|あうたびに、かれはせがたかくなっている。|Every time I see him, he's grown taller.
+q: 彼は会う＿＿文句を言う。|He complains every time we meet.|たびに|うちに|ままに|ほどに
+q: 引っ越しの＿＿に、物が増える。|Every time I move, I have more things.|たび|うち|まま|ほど
+
+= te-hajimete
+title: ～てはじめて
+meaning: only after; not until
+form: て-form + はじめて
+note: Only after experiencing something do you realize something: 病気になってはじめて健康の大切さが分かった.
+note: It stresses that the realization came late.
+ex: 一人で暮らしてはじめて、親のありがたさが分かった。|ひとりでくらしてはじめて、おやのありがたさがわかった。|Only after living alone did I understand how much my parents did for me.
+ex: 日本に来てはじめて、本物の桜を見ました。|にほんにきてはじめて、ほんもののさくらをみました。|I saw real cherry blossoms for the first time after coming to Japan.
+ex: 失ってはじめて、その大切さに気づく。|うしなってはじめて、そのたいせつさにきづく。|You only realize how important something is once you lose it.
+q: 自分で働いて＿＿、お金の大切さを知った。|Only after working myself did I learn the value of money.|はじめて|はじめに|はじまって|はじめた
+q: 病気になっ＿＿はじめて、健康のありがたさが分かった。|Only after falling ill did I appreciate my health.|て|た|たら|ては
+
+= te-kara-denai-to
+title: ～てからでないと
+meaning: not until; unless (you) first
+form: て-form + からでないと + negative / difficult result
+note: B can't happen before A is done: 予約してからでないと入れません.
+note: The second part is usually negative (できない, だめだ, 分からない).
+ex: 料金を払ってからでないと、入れません。|りょうきんをはらってからでないと、はいれません。|You can't go in until you've paid the fee.
+ex: 実物を見てからでないと、買うかどうか決められない。|じつぶつをみてからでないと、かうかどうかきめられない。|I can't decide whether to buy it until I've seen the real thing.
+ex: 手を洗ってからでないと、食べてはいけません。|てをあらってからでないと、たべてはいけません。|You mustn't eat until you've washed your hands.
+q: 両親に相談して＿＿でないと、決められません。|I can't decide until I've talked to my parents.|から|まで|ほど|ため
+q: 予約して＿＿、そのレストランには入れない。|You can't get into that restaurant unless you book first.|からでないと|からこそ|からには|からも
+
+= to-tan
+title: ～たとたん(に)
+meaning: as soon as; the moment
+form: た-form + とたん(に)
+note: B happens suddenly, right after A, often unexpectedly: 立ち上がったとたん、めまいがした.
+note: The second part is not the speaker's intention (not a request or plan).
+ex: 家を出たとたん、雨が降り出した。|いえをでたとたん、あめがふりだした。|The moment I left the house, it started to rain.
+ex: 席に座ったとたんに、寝てしまった。|せきにすわったとたんに、ねてしまった。|I fell asleep the moment I sat down.
+ex: ドアを開けたとたん、猫が飛び出してきた。|ドアをあけたとたん、ねこがとびだしてきた。|The moment I opened the door, the cat jumped out.
+q: 電気を消した＿＿、子供が泣き出した。|The moment I turned off the light, the child started crying.|とたん|ばかり|ほど|まで
+q: 彼は私の顔を見＿＿とたん、笑い出した。|He burst out laughing the moment he saw my face.|た|る|て|ない
+
+= nai-to
+title: ～ないと・～なくちゃ・～なきゃ
+meaning: have to; must (casual)
+form: ない-form (drop い) + と / くちゃ / きゃ (+ いけない・ならない)
+note: These are casual short forms of ～なければならない. The ending (いけない) is often left out.
+note: なくちゃ and なきゃ are very casual; use them with friends.
+ex: もう行かないと。|もういかないと。|I have to go now.
+ex: 明日までにレポートを書かなくちゃ。|あしたまでにレポートをかかなくちゃ。|I have to write my report by tomorrow.
+ex: 早く寝なきゃ。|はやくねなきゃ。|I'd better go to bed early.
+q: 明日は早いから、もう寝＿＿。|I have to get up early tomorrow, so I should go to bed now.|なきゃ|なくて|ないで|なかった
+q: 薬を飲まない＿＿いけない。|I have to take my medicine.|と|で|て|から
+
+= chau
+title: ～ちゃう・～じゃう
+meaning: (casual) end up; do completely
+form: て-form → ちゃう (～でしまう → ～じゃう)
+note: Casual speech shortens ～てしまう to ～ちゃう and ～でしまう to ～じゃう: 食べちゃった, 飲んじゃった.
+note: ～ておく similarly becomes ～とく: 買っとく, 読んどく.
+ex: ケーキを全部食べちゃった。|ケーキをぜんぶたべちゃった。|I ate the whole cake.
+ex: 財布をなくしちゃった。|さいふをなくしちゃった。|I lost my wallet.
+ex: ビールを飲んじゃったから、運転できない。|ビールをのんじゃったから、うんてんできない。|I drank a beer, so I can't drive.
+q: 宿題を家に忘れ＿＿。|I left my homework at home.|ちゃった|じゃった|とった|どいた
+q: 時間がないから、急いで読ん＿＿。|There's no time, so I read it in a hurry.|じゃった|ちゃった|どった|とった
+
+= tte
+title: ～って
+meaning: (casual) the one called; I heard; said that
+form: Plain form / noun + って
+note: って is a casual version of と (quote), という (called) and は (topic): 明日休みだって (I heard tomorrow's a day off).
+note: As a topic marker: 日本語って難しいね.
+ex: 田中さん、明日来られないって。|たなかさん、あしたこられないって。|Mr. Tanaka says he can't come tomorrow.
+ex: 「すし」って何ですか。|「すし」ってなんですか。|What is "sushi"?
+ex: あの映画って、面白かった？|あのえいがって、おもしろかった？|That movie — was it good?
+q: 天気予報で、明日は雪だ＿＿。|The forecast said it will snow tomorrow.|って|けど|のに|から
+q: 「ナマステ」＿＿どういう意味？|What does "namaste" mean?|って|まで|ほど|しか
+
+= toiu-koto-da
+title: ～ということだ
+meaning: I hear that; it means that
+form: Plain form + ということだ
+note: It reports information formally, like そうだ: 電車が止まっているということだ.
+note: It can also give a conclusion: つまり、明日は休みということですね.
+ex: ニュースによると、高速道路は通行止めだということです。|ニュースによると、こうそくどうろはつうこうどめだということです。|According to the news, the expressway is closed.
+ex: 部長は今日休むということです。|ぶちょうはきょうやすむということです。|I'm told the manager is off today.
+ex: 返事がないということは、来ないということだろう。|へんじがないということは、こないということだろう。|No reply means he probably isn't coming.
+q: 新聞によると、来年から税金が上がる＿＿だ。|According to the newspaper, taxes will rise from next year.|ということ|というもの|というわけ|というはず
+q: つまり、会議は中止＿＿ですね。|So the meeting is canceled, then.|ということ|というもの|ということに|ということで
+
+= kke
+title: ～っけ
+meaning: was it? (trying to remember)
+form: Plain past form / だ + っけ (polite: でしたっけ・ましたっけ)
+note: っけ is used when you are trying to recall something, or checking with someone: 会議は何時だっけ.
+note: It is casual; the polite version is ～でしたっけ.
+ex: 明日の会議は何時からだっけ。|あしたのかいぎはなんじからだっけ。|What time does tomorrow's meeting start again?
+ex: あの人の名前、何でしたっけ。|あのひとのなまえ、なんでしたっけ。|What was that person's name again?
+ex: 鍵、どこに置いたっけ。|かぎ、どこにおいたっけ。|Where did I put my keys?
+q: 誕生日はいつだった＿＿。|When was your birthday again?|っけ|かな|ので|のに
+q: 私、この話、前にしました＿＿。|Have I told you this story before?|っけ|ほど|まで|ばかり
+
+= kana-kashira
+title: ～かな・～かしら
+meaning: I wonder
+form: Plain form + かな / かしら
+note: The speaker wonders to themselves: 明日は晴れるかな.
+note: ～ないかな expresses a wish: 早く夏休みにならないかな. かしら sounds old-fashioned or feminine.
+ex: 彼は来るかな。|かれはくるかな。|I wonder if he'll come.
+ex: この服、似合うかしら。|このふく、にあうかしら。|I wonder if this outfit suits me.
+ex: 早く週末にならないかな。|はやくしゅうまつにならないかな。|I can't wait for the weekend.
+q: このケーキ、おいしい＿＿。|I wonder if this cake is good.|かな|ほど|まで|ばかり
+q: 早くバスが来ない＿＿。|I wish the bus would come soon.|かな|ほど|まで|より
+
+= janai-ka
+title: ～じゃないか・～ではないか
+meaning: isn't it?; let's (strongly)
+form: Plain form + じゃないか (polite: じゃないですか)
+note: It asks for agreement or points something out, sometimes with surprise: 何だ、田中じゃないか.
+note: Volitional + じゃないか means "let's": 一緒にやろうじゃないか.
+ex: ほら、言ったじゃないか。|ほら、いったじゃないか。|See, I told you, didn't I?
+ex: これ、いいじゃないですか。|これ、いいじゃないですか。|Hey, this is nice, isn't it?
+ex: 一緒に頑張ろうじゃないか。|いっしょにがんばろうじゃないか。|Come on, let's do our best together.
+q: 雨が降ってきた＿＿。傘を持ってきてよかった。|Look, it's started raining. Good thing I brought an umbrella.|じゃないか|だろうか|でしょうか|かしら
+q: なんだ、山田さん＿＿。久しぶりだね。|Oh, it's you, Yamada! Long time no see.|じゃないか|かもしれない|らしい|みたい
+
+= ba-yokatta
+title: ～ばよかった
+meaning: should have; I wish I had
+form: ば-form + よかった / ない-form → なければよかった
+note: Regret about the past: もっと勉強すればよかった (I should have studied more).
+note: ～たらよかった means the same; ～ばよかったのに adds criticism of someone else.
+ex: 傘を持ってくればよかった。|かさをもってくればよかった。|I should have brought an umbrella.
+ex: あんなことを言わなければよかった。|あんなことをいわなければよかった。|I wish I hadn't said that.
+ex: もっと早く家を出ればよかったのに。|もっとはやくいえをでればよかったのに。|You should have left home earlier.
+q: もっと早く予約す＿＿よかった。|I should have booked earlier.|れば|ると|るなら|ったら
+q: あの時、彼にお礼を言え＿＿よかった。|I wish I had thanked him then.|ば|て|ても|と
+
+= tara-dou
+title: ～たらどうですか
+meaning: why don't you; how about
+form: た-form + ら + どうですか (casual: どう？)
+note: A suggestion or advice to someone: 少し休んだらどうですか.
+note: ～てはどうですか is more formal; ～たら？ alone is very casual.
+ex: 疲れているなら、少し休んだらどうですか。|つかれているなら、すこしやすんだらどうですか。|If you're tired, why don't you rest a little?
+ex: 分からなければ、先生に聞いたらどう？|わからなければ、せんせいにきいたらどう？|If you don't understand, why not ask the teacher?
+ex: 一度医者に診てもらったらどうですか。|いちどいしゃにみてもらったらどうですか。|How about getting a doctor to look at it once?
+q: 寒いなら、上着を着＿＿どうですか。|If you're cold, why don't you put on a jacket?|たら|ても|ると|れば
+q: そんなに好きなら、彼女に言ってみ＿＿？|If you like her so much, why not tell her?|たら|ても|ると|ないで
+
+= te-mo-kamawanai
+title: ～てもかまわない
+meaning: it's all right if; I don't mind if
+form: て-form + も + かまわない (polite: かまいません)
+note: A softer, more formal version of ～てもいい: ここに座ってもかまいませんか.
+note: ～なくてもかまわない means "it's fine if you don't".
+ex: 鉛筆で書いてもかまいません。|えんぴつでかいてもかまいません。|It's fine to write in pencil.
+ex: 遅れてもかまわないので、必ず来てください。|おくれてもかまわないので、かならずきてください。|It's OK if you're late, but please be sure to come.
+ex: 無理に食べなくてもかまいませんよ。|むりにたべなくてもかまいませんよ。|You don't have to force yourself to eat.
+q: この部屋を使って＿＿かまいませんか。|Do you mind if I use this room?|も|は|が|に
+q: 明日は来なく＿＿かまいません。|You don't have to come tomorrow.|ても|ては|たら|ないで
+
+= te-tamaranai
+title: ～てたまらない・～てしょうがない
+meaning: unbearably; extremely; can't help
+form: て-form of an adjective or feeling verb + たまらない / しょうがない
+note: A feeling or sensation is so strong the speaker can't stand it: 暑くてたまらない, 会いたくてしょうがない.
+note: These are used for the speaker's own feelings. しかたがない is a more formal form of しょうがない.
+ex: 喉が渇いてたまらない。|のどがかわいてたまらない。|I'm terribly thirsty.
+ex: 国の家族に会いたくてしょうがない。|くにのかぞくにあいたくてしょうがない。|I miss my family back home so much.
+ex: 明日の旅行が楽しみでたまらない。|あしたのりょこうがたのしみでたまらない。|I'm so excited about tomorrow's trip.
+q: 試験の結果が心配で＿＿。|I'm terribly worried about the exam results.|たまらない|いけない|かまわない|すまない
+q: 歯が痛く＿＿しょうがない。|My tooth hurts so much I can't stand it.|て|で|と|に
+
+= te-mo-shikata-ga-nai
+title: ～てもしかたがない
+meaning: there's no point in; it can't be helped
+form: て-form + も + しかたがない (casual: しょうがない)
+note: Doing something won't change anything: 今さら後悔してもしかたがない.
+note: しかたがない alone means "it can't be helped".
+ex: 終わったことを考えてもしかたがない。|おわったことをかんがえてもしかたがない。|There's no point thinking about what's already over.
+ex: 今から急いでもしかたがない。もう間に合わない。|いまからいそいでもしかたがない。もうまにあわない。|There's no point hurrying now. We won't make it.
+ex: 雨だから、試合が中止になってもしかたがない。|あめだから、しあいがちゅうしになってもしかたがない。|It's raining, so it can't be helped if the game is canceled.
+q: 一人で悩んで＿＿しかたがないよ。|There's no point worrying about it alone.|も|は|が|を
+q: 怒っ＿＿しかたがない。冷静に話そう。|There's no point getting angry. Let's talk calmly.|ても|ては|たら|てから
+
+= to-shitara
+title: ～としたら・～とすれば
+meaning: if; supposing that
+form: Plain form + としたら / とすれば
+note: An assumption, often an unlikely or hypothetical one: もし百万円あったとしたら.
+note: It can also draw a conclusion from known facts: 彼が来ないとすれば、会議は延期だ.
+ex: もし生まれ変われるとしたら、鳥になりたい。|もしうまれかわれるとしたら、とりになりたい。|If I could be reborn, I'd want to be a bird.
+ex: 家を買うとすれば、どこがいいですか。|いえをかうとすれば、どこがいいですか。|If you were to buy a house, where would be good?
+ex: 彼が犯人だとしたら、理由は何だろう。|かれがはんにんだとしたら、りゆうはなんだろう。|If he's the culprit, what could the reason be?
+q: 一つだけ願いがかなう＿＿したら、何を願いますか。|If you could have just one wish, what would you wish for?|と|に|で|も
+q: 留学する＿＿すれば、どの国がいいと思いますか。|If you were to study abroad, which country do you think would be good?|と|に|が|を
+
+= to-shitemo
+title: ～としても
+meaning: even if
+form: Plain form + としても
+note: Even if A is (or were) true, B still holds: 今から出発したとしても、間に合わない.
+note: It is stronger and more hypothetical than ～ても.
+ex: たとえ反対されたとしても、私はやります。|たとえはんたいされたとしても、わたしはやります。|Even if people oppose me, I'll do it.
+ex: 今から走ったとしても、電車には間に合わないだろう。|いまからはしったとしても、でんしゃにはまにあわないだろう。|Even if we run now, we probably won't make the train.
+ex: 宝くじが当たったとしても、仕事は辞めない。|たからくじがあたったとしても、しごとはやめない。|Even if I won the lottery, I wouldn't quit my job.
+q: 雨が降った＿＿、試合は行われます。|Even if it rains, the game will go ahead.|としても|としたら|としての|として
+q: お金があった＿＿、そんな高い車は買わない。|Even if I had the money, I wouldn't buy such an expensive car.|としても|とすれば|としたら|として
+
+= ni-shitewa
+title: ～にしては
+meaning: for (considering it is)
+form: Noun / plain form + にしては
+note: The result is different from what you'd expect from the starting point: 初めてにしては上手だ (good for a first time).
+note: It is about one specific person or thing; for general groups, ～わりに is often used.
+ex: 初めてにしては、よくできました。|はじめてにしては、よくできました。|You did well for a first try.
+ex: 彼は日本に十年いるにしては、日本語が下手だ。|かれはにほんにじゅうねんいるにしては、にほんごがへただ。|For someone who's been in Japan for ten years, his Japanese is poor.
+ex: 十月にしては暑い日ですね。|じゅうがつにしてはあついひですね。|It's a hot day for October.
+q: 子供が描いた＿＿上手な絵だ。|For a child's drawing, it's very good.|にしては|にとって|について|に対して
+q: 冬＿＿暖かい日が続いている。|We've had a run of warm days for winter.|にしては|として|にとって|によって
+
+= wari-ni
+title: ～わりに(は)
+meaning: considering; for (compared with what you'd expect)
+form: Plain form + わりに (な-adjective + な / noun + の)
+note: The result doesn't match what the starting point suggests: 値段のわりにおいしい (good for the price).
+note: It can describe both pleasant and unpleasant surprises.
+ex: この店は値段のわりにおいしい。|このみせはねだんのわりにおいしい。|This restaurant is good for the price.
+ex: 彼はよく食べるわりに太らない。|かれはよくたべるわりにふとらない。|He doesn't gain weight considering how much he eats.
+ex: 一生懸命勉強したわりには、点数が悪かった。|いっしょうけんめいべんきょうしたわりには、てんすうがわるかった。|My score was bad considering how hard I studied.
+q: 祖父は年の＿＿元気だ。|My grandfather is healthy for his age.|わりに|ために|せいで|うちに
+q: このかばんは軽い＿＿、たくさん入る。|This bag holds a lot for how light it is.|わりに|かわりに|ように|ほどに
+
+= kuse-ni
+title: ～くせに
+meaning: even though (with criticism)
+form: Plain form + くせに (な-adjective + な / noun + の)
+note: くせに criticizes someone whose action doesn't match the situation: 知っているくせに教えてくれない.
+note: It sounds strong and is used about others, not oneself. It is casual.
+ex: 知っているくせに、教えてくれない。|しっているくせに、おしえてくれない。|He knows, yet he won't tell me.
+ex: 子供のくせに、生意気なことを言うな。|こどものくせに、なまいきなことをいうな。|Don't be cheeky, you're just a child.
+ex: 自分ではできないくせに、文句ばかり言う。|じぶんではできないくせに、もんくばかりいう。|He can't do it himself, yet he does nothing but complain.
+q: 下手な＿＿、彼はいつも自慢する。|Even though he's bad at it, he always brags.|くせに|おかげで|ために|ように
+q: お金がない＿＿、高い物ばかり買う。|She has no money, yet she buys only expensive things.|くせに|ように|ために|ほど
+
+= tsuide-ni
+title: ～ついでに
+meaning: while you're at it; on the way
+form: Dictionary form / た-form / noun + の + ついでに
+note: Use an opportunity to do something extra: 買い物のついでに銀行に寄る.
+note: The main action comes first, the extra one after ついでに.
+ex: 散歩のついでに、手紙を出してきた。|さんぽのついでに、てがみをだしてきた。|I posted a letter while I was out for a walk.
+ex: コンビニに行くついでに、牛乳を買ってきて。|コンビニにいくついでに、ぎゅうにゅうをかってきて。|While you're going to the convenience store, get some milk.
+ex: 大阪へ出張したついでに、友達に会った。|おおさかへしゅっちょうしたついでに、ともだちにあった。|While on a business trip to Osaka, I met a friend.
+q: 買い物の＿＿に、郵便局に寄った。|I dropped by the post office while out shopping.|ついで|かわり|ため|おかげ
+q: 駅へ行く＿＿、この手紙を出してくれる？|Could you mail this letter on your way to the station?|ついでに|ために|かわりに|うちに
+
+= mama
+title: ～まま
+meaning: as it is; leaving unchanged
+form: た-form / ない-form / noun + の / い-adjective + まま
+note: A state continues without changing, often when it shouldn't: 電気をつけたまま寝た.
+note: このまま means "as it is now".
+ex: 窓を開けたまま出かけてしまった。|まどをあけたままでかけてしまった。|I went out leaving the window open.
+ex: 靴を履いたまま部屋に入らないでください。|くつをはいたままへやにはいらないでください。|Please don't enter the room with your shoes on.
+ex: 野菜は生のまま食べてもおいしい。|やさいはなまのままたべてもおいしい。|The vegetables are good eaten raw, too.
+q: テレビをつけた＿＿寝てしまった。|I fell asleep with the TV on.|まま|ほど|ため|うち
+q: 料理が冷たい＿＿で、おいしくなかった。|The food was still cold and didn't taste good.|まま|ほど|ばかり|うち
+
+= kiru
+title: ～きる
+meaning: do completely; to the end
+form: ます-stem + きる
+note: きる means an action is done to the end: 全部食べきった (ate it all). ～きれない means "can't do it all".
+note: 疲れきる and 困りきる mean "completely" tired or troubled.
+ex: マラソンを最後まで走りきった。|マラソンをさいごまではしりきった。|I ran the marathon to the end.
+ex: こんなにたくさんの料理は、一人では食べきれない。|こんなにたくさんのりょうりは、ひとりではたべきれない。|I can't eat this much food by myself.
+ex: 一日でこの本を読みきった。|いちにちでこのほんをよみきった。|I read this whole book in a day.
+q: 一か月の給料を一週間で使い＿＿しまった。|I used up a month's salary in one week.|きって|かけて|あって|だして
+q: 数え＿＿ないほど星が出ている。|There are more stars out than you can count.|きれ|かけ|あわ|だせ
+
+= kakeru
+title: ～かける・～かけ
+meaning: half-done; about to; start to
+form: ます-stem + かける / かけの + noun
+note: An action has started but isn't finished: 読みかけの本 (a half-read book).
+note: With sudden changes it means "on the verge of": 死にかける (nearly die).
+ex: 読みかけの本が机の上にある。|よみかけのほんがつくえのうえにある。|There's a half-read book on the desk.
+ex: 何か言いかけて、やめた。|なにかいいかけて、やめた。|He started to say something, then stopped.
+ex: 食べかけのパンを捨てないで。|たべかけのパンをすてないで。|Don't throw away the half-eaten bread.
+q: 書き＿＿の手紙が引き出しに入っていた。|There was a half-written letter in the drawer.|かけ|きり|あい|だし
+q: 彼女は何か言い＿＿たが、黙ってしまった。|She started to say something, but went quiet.|かけ|きっ|あっ|なおし
+
+= au
+title: ～合う
+meaning: each other; together
+form: ます-stem + 合う
+note: 合う shows a mutual action: 助け合う (help each other), 話し合う (discuss together).
+note: Many of these are fixed words: 知り合う, 付き合う, 分け合う.
+ex: 困ったときは助け合いましょう。|こまったときはたすけあいましょう。|Let's help each other when we're in trouble.
+ex: 二人は目を見合わせて笑った。|ふたりはめをみあわせてわらった。|The two looked at each other and laughed.
+ex: みんなで意見を出し合った。|みんなでいけんをだしあった。|Everyone put forward their opinions.
+q: 問題について、クラスで話し＿＿ました。|We discussed the problem as a class.|合い=あい|切り|掛け|直し
+q: 二人はお互いに愛し＿＿いる。|The two love each other.|合って=あって|切って|掛けて|直して
+
+= naosu
+title: ～直す
+meaning: do again; redo
+form: ます-stem + 直す
+note: Redo something, usually to fix or improve it: 書き直す, やり直す, 考え直す.
+note: 見直す can also mean "to think better of (someone)".
+ex: 間違いが多いので、レポートを書き直した。|まちがいがおおいので、レポートをかきなおした。|There were many mistakes, so I rewrote the report.
+ex: もう一度最初からやり直そう。|もういちどさいしょからやりなおそう。|Let's do it over again from the start.
+ex: よく考え直してから、返事をください。|よくかんがえなおしてから、へんじをください。|Please reconsider carefully before you answer.
+q: 声が小さくて聞こえなかったので、電話をかけ＿＿。|The voice was too quiet to hear, so I called again.|直した=なおした|切った|合った|出した
+q: 計算を間違えたので、やり＿＿ます。|I made a calculation mistake, so I'll redo it.|直し=なおし|切り|合い|かけ
+
+= tsuzukeru
+title: ～続ける
+meaning: keep on; continue
+form: ます-stem + 続ける
+note: An action goes on: 歩き続ける, 雨が降り続ける.
+note: The opposite is ～やめる (stop doing).
+ex: 三時間歩き続けて、足が痛くなった。|さんじかんあるきつづけて、あしがいたくなった。|I kept walking for three hours, and my feet started to hurt.
+ex: 雨が一週間も降り続いている。|あめがいっしゅうかんもふりつづいている。|It's been raining for a whole week.
+ex: 夢をあきらめずに、努力し続けます。|ゆめをあきらめずに、どりょくしつづけます。|I'll keep working hard without giving up on my dream.
+q: 赤ちゃんは朝まで泣き＿＿。|The baby kept crying until morning.|続けた=つづけた|切った|直した|合った
+q: 同じ会社で三十年働き＿＿ています。|I've kept working at the same company for thirty years.|続け=つづけ|切っ|直し|合っ
+
+= you-ga-nai
+title: ～ようがない
+meaning: there's no way to
+form: ます-stem + ようがない
+note: There is no method or means to do it: 連絡先が分からないから、連絡しようがない.
+note: しようがない (no way to do it) is related to しょうがない (it can't be helped).
+ex: 住所が分からないので、手紙の送りようがない。|じゅうしょがわからないので、てがみのおくりようがない。|I don't know the address, so there's no way to send the letter.
+ex: こんなに壊れていたら、直しようがない。|こんなにこわれていたら、なおしようがない。|If it's this broken, there's no way to fix it.
+ex: 説明のしようがないほど美しい景色だった。|せつめいのしようがないほどうつくしいけしきだった。|The view was beautiful beyond description.
+q: 道具がないので、直し＿＿がない。|There are no tools, so there's no way to fix it.|よう|こと|もの|ため
+q: 電話番号を知らないから、連絡のし＿＿がない。|I don't know the number, so there's no way to contact them.|よう|ため|もの|こと
+
+= ni-suru
+title: ～にする
+meaning: decide on; choose
+form: Noun + にする
+note: Used when choosing from options, especially when ordering: 私はコーヒーにします.
+note: ～ことにする (N4) is for deciding to do something; ～にする is for choosing a thing.
+ex: 飲み物は何にしますか。|のみものはなににしますか。|What will you have to drink?
+ex: 私はカレーにします。|わたしはカレーにします。|I'll have the curry.
+ex: 会議は来週の月曜日にしましょう。|かいぎはらいしゅうのげつようびにしましょう。|Let's make the meeting next Monday.
+q: プレゼントは花＿＿しよう。|Let's go with flowers for the present.|に|を|で|が
+q: 色は白と黒とどちら＿＿しますか。|Which color will you choose, white or black?|に|で|を|と
+
+= sasete-kudasai
+title: ～させてください
+meaning: please let me
+form: Causative て-form + ください (more polite: ～させていただけませんか)
+note: Asking for permission to do something yourself: 私に払わせてください.
+note: ～させていただきます announces your own action very politely.
+ex: 今日は私に払わせてください。|きょうはわたしにはらわせてください。|Please let me pay today.
+ex: 少し考えさせてください。|すこしかんがえさせてください。|Please let me think about it a little.
+ex: 体調が悪いので、早く帰らせていただけませんか。|たいちょうがわるいので、はやくかえらせていただけませんか。|I'm not feeling well — could you let me go home early?
+q: その仕事、私にやら＿＿ください。|Please let me do that job.|せて|れて|して|させ
+q: ちょっと休ま＿＿いただけませんか。|Could you let me rest a little?|せて|れて|して|させ
+
+= darake
+title: ～だらけ
+meaning: full of; covered in (something bad)
+form: Noun + だらけ
+note: だらけ means something is covered with or full of something unpleasant: 泥だらけ, 間違いだらけ.
+note: Compare ～でいっぱい, which is neutral.
+ex: 子供たちは泥だらけになって遊んだ。|こどもたちはどろだらけになってあそんだ。|The children played until they were covered in mud.
+ex: この作文は間違いだらけだ。|このさくぶんはまちがいだらけだ。|This essay is full of mistakes.
+ex: 部屋がごみだらけで、足の踏み場もない。|へやがごみだらけで、あしのふみばもない。|The room is so full of trash there's nowhere to step.
+q: 雨の中を歩いたので、靴が泥＿＿になった。|I walked in the rain, so my shoes got covered in mud.|だらけ|っぽい|がち|らしい
+q: 彼の部屋は本＿＿だ。|His room is full of books.|だらけ|ばかりに|がち|っぽい
+
+= shika-nai
+title: ～しか～ない
+meaning: only; nothing but
+form: Noun (+ particle) + しか + negative
+note: しか always takes a negative verb: 百円しかない (I only have 100 yen).
+note: It stresses that the amount is small, unlike だけ, which is neutral.
+ex: 財布に千円しかありません。|さいふにせんえんしかありません。|I only have a thousand yen in my wallet.
+ex: この店は日曜日しか開いていない。|このみせはにちようびしかあいていない。|This shop is only open on Sundays.
+ex: 彼のことは名前しか知らない。|かれのことはなまえしかしらない。|I only know his name.
+q: 冷蔵庫に卵が一つ＿＿ない。|There's only one egg in the fridge.|しか|だけ|ほど|まで
+q: 昨日は三時間＿＿寝ませんでした。|I only slept three hours last night.|しか|だけ|ばかり|ほど
+
+= shika-nai-choice
+title: ～しかない
+meaning: have no choice but to
+form: Dictionary form + しかない
+note: There is only one thing left to do: 歩いて帰るしかない.
+note: ～ほかない means the same and is more written.
+ex: 終電がないから、タクシーで帰るしかない。|しゅうでんがないから、タクシーでかえるしかない。|There's no last train, so I have no choice but to take a taxi home.
+ex: 自分で決めたことだから、やるしかない。|じぶんできめたことだから、やるしかない。|I decided it myself, so I just have to do it.
+ex: 壊れたら、新しいのを買うしかない。|こわれたら、あたらしいのをかうしかない。|If it breaks, I'll have no choice but to buy a new one.
+q: 誰も手伝ってくれないなら、一人でやる＿＿。|If nobody helps me, I'll have to do it alone.|しかない|だけない|ほどない|までない
+q: バスが来ないから、歩く＿＿ない。|The bus isn't coming, so I have no choice but to walk.|しか|だけ|ほど|まで
+
+= zutsu
+title: ～ずつ
+meaning: each; at a time
+form: Quantity + ずつ
+note: ずつ divides equally or describes steady progress: 一人二つずつ (two each), 少しずつ (little by little).
+ex: お菓子を一人三つずつ取ってください。|おかしをひとりみっつずつとってください。|Please take three sweets each.
+ex: 日本語が少しずつ上手になってきた。|にほんごがすこしずつじょうずになってきた。|My Japanese has been getting better little by little.
+ex: 毎日漢字を十個ずつ覚えています。|まいにちかんじをじゅっこずつおぼえています。|I'm memorizing ten kanji a day.
+q: 少し＿＿暖かくなってきました。|It's gotten warmer little by little.|ずつ|ごと|おき|だけ
+q: 一人一枚＿＿紙を取ってください。|Please take one sheet of paper each.|ずつ|ごと|おき|しか
+
+= oki-ni
+title: ～おきに・～ごとに
+meaning: every other; at intervals of; every
+form: Quantity + おきに / noun or quantity + ごとに
+note: 一日おきに means "every other day". With distances and times it gives the gap: 五分おきに.
+note: ごとに means "each, every": 一時間ごとに, 季節ごとに.
+ex: 一日おきにジムに通っています。|いちにちおきにジムにかよっています。|I go to the gym every other day.
+ex: バスは十分おきに来ます。|バスはじゅっぷんおきにきます。|The bus comes every ten minutes.
+ex: 季節ごとに服を入れ替える。|きせつごとにふくをいれかえる。|I switch my clothes out every season.
+q: この薬は六時間＿＿に飲んでください。|Take this medicine every six hours.|おき|ずつ|だけ|ほど
+q: 会員は一年＿＿に会費を払います。|Members pay a fee every year.|ごと|ずつ|ほど|まで
+
+= zu-ni
+title: ～ず(に)
+meaning: without doing
+form: ない-form (drop ない) + ず(に) / する → せずに
+note: A written or formal version of ～ないで: 朝ご飯を食べずに出かけた.
+note: する becomes せず, not しず.
+ex: 朝ご飯を食べずに学校へ行った。|あさごはんをたべずにがっこうへいった。|I went to school without eating breakfast.
+ex: 誰にも言わずに、国へ帰った。|だれにもいわずに、くにへかえった。|He went back to his country without telling anyone.
+ex: 辞書を使わずに読めるようになりたい。|じしょをつかわずによめるようになりたい。|I want to be able to read without using a dictionary.
+q: 勉強＿＿試験を受けた。|I took the exam without studying.|せずに|しずに|さずに|すずに
+q: 傘を持た＿＿出かけて、ぬれてしまった。|I went out without an umbrella and got wet.|ずに|ないに|ずで|なくに
+
+= ba-noni
+title: ～ばいいのに
+meaning: I wish; it would be nice if
+form: ば-form + いいのに
+note: A wish that things were different, or mild advice: 雨がやめばいいのに.
+note: About someone else's action it sounds like gentle criticism: 早く寝ればいいのに.
+ex: 毎日が休みならいいのに。|まいにちがやすみならいいのに。|I wish every day were a holiday.
+ex: もっと時間があればいいのに。|もっとじかんがあればいいのに。|I wish I had more time.
+ex: そんなに眠いなら、早く寝ればいいのに。|そんなにねむいなら、はやくねればいいのに。|If you're that sleepy, you should just go to bed early.
+q: 雨が早くやめ＿＿いいのに。|I wish the rain would stop soon.|ば|て|ても|ず
+q: 痛いなら、病院へ行けばいい＿＿。|If it hurts, you should just go to the hospital.|のに|ので|ため|まで
+
+= wa-mochiron
+title: ～はもちろん
+meaning: not to mention; of course ... and also
+form: Noun + はもちろん ～も
+note: The first item is obvious; the second is added: 週末はもちろん、平日も混んでいる.
+note: It sounds a little more formal than ～だけでなく.
+ex: この店は週末はもちろん、平日も混んでいる。|このみせはしゅうまつはもちろん、へいじつもこんでいる。|This restaurant is crowded on weekdays, not to mention weekends.
+ex: 彼は英語はもちろん、中国語も話せる。|かれはえいごはもちろん、ちゅうごくごもはなせる。|He speaks Chinese, not to mention English.
+ex: 子供はもちろん、大人も楽しめるゲームです。|こどもはもちろん、おとなもたのしめるゲームです。|It's a game that adults can enjoy, not to mention children.
+q: 彼女は料理＿＿もちろん、掃除も得意だ。|She's good at cleaning, not to mention cooking.|は|が|を|に
+q: 日本人は＿＿、外国人にも人気がある。|It's popular with foreigners, not to mention Japanese people.|もちろん|だけでなく|ばかり|さえ
+
+= o-hajime
+title: ～をはじめ(として)
+meaning: starting with; including
+form: Noun + をはじめ / をはじめとして
+note: It names the main or most typical example, followed by others: 東京をはじめ、大阪や名古屋でも.
+note: The rest of the sentence talks about a whole group.
+ex: 東京をはじめ、日本の大都市は物価が高い。|とうきょうをはじめ、にほんのだいとしはぶっかがたかい。|Prices are high in Japan's big cities, starting with Tokyo.
+ex: 校長先生をはじめ、多くの先生が出席した。|こうちょうせんせいをはじめ、おおくのせんせいがしゅっせきした。|Many teachers attended, including the principal.
+ex: すしをはじめとして、日本料理は世界中で人気がある。|すしをはじめとして、にほんりょうりはせかいじゅうでにんきがある。|Japanese food, starting with sushi, is popular all over the world.
+q: 社長を＿＿、社員全員がパーティーに参加した。|All the employees took part in the party, including the president.|はじめ|もちろん|通して|もとに
+q: 京都をはじめ＿＿、古い町をたくさん旅行した。|I traveled to many old towns, starting with Kyoto.|として|にとって|によって|について
+
+= o-tooshite
+title: ～を通して・～を通じて
+meaning: through; via; throughout
+form: Noun + を通して / を通じて
+note: It shows the means or channel: 友達を通して知り合った (met through a friend).
+note: With a period it means "throughout": 一年を通して暖かい.
+ex: 友達を通して、今の妻と知り合いました。|ともだちをとおして、いまのつまとしりあいました。|I met my wife through a friend.
+ex: ボランティア活動を通して、多くのことを学んだ。|ボランティアかつどうをとおして、おおくのことをまなんだ。|I learned a lot through volunteer work.
+ex: この島は一年を通じて暖かい。|このしまはいちねんをつうじてあたたかい。|This island is warm all year round.
+q: インターネットを＿＿、世界中の人と話せる。|Through the internet, you can talk with people all over the world.|通して=とおして|はじめ|もとに|込めて
+q: 沖縄は一年を通じ＿＿暖かい。|Okinawa is warm throughout the year.|て|に|で|と
+
+= ni-kurabete
+title: ～に比べて
+meaning: compared with
+form: Noun / plain form + の + に比べて
+note: It compares two things: 去年に比べて、今年は雨が多い.
+note: に比べると and と比べて are also common.
+ex: 去年に比べて、今年は雪が少ない。|きょねんにくらべて、ことしはゆきがすくない。|Compared with last year, there's less snow this year.
+ex: 兄に比べて、弟は背が高い。|あににくらべて、おとうとはせがたかい。|Compared with his older brother, the younger one is tall.
+ex: 都会に比べると、田舎は家賃が安い。|とかいにくらべると、いなかはやちんがやすい。|Compared with the city, rent is cheap in the countryside.
+q: 昔に＿＿、今は便利になった。|Compared with the past, things are convenient now.|比べて=くらべて|比べる|比べた|比べれ
+q: 先月＿＿比べて、売り上げが増えた。|Sales went up compared with last month.|に|を|で|が
+
+= ni-kuwaete
+title: ～に加えて
+meaning: in addition to
+form: Noun + に加えて
+note: Something is added to what was mentioned: 雨に加えて、風も強くなった.
+note: It is a bit formal; in speech ～だけじゃなくて is common.
+ex: 雨に加えて、風も強くなってきた。|あめにくわえて、かぜもつよくなってきた。|On top of the rain, the wind has gotten strong.
+ex: 給料に加えて、交通費も支給されます。|きゅうりょうにくわえて、こうつうひもしきゅうされます。|In addition to salary, travel expenses are paid.
+ex: 彼は仕事に加えて、親の世話もしている。|かれはしごとにくわえて、おやのせわもしている。|On top of his job, he also looks after his parents.
+q: 頭痛に＿＿、熱も出てきた。|In addition to a headache, I've developed a fever.|加えて=くわえて|比べて|対して|関して
+q: 英語に加え＿＿、スペイン語も勉強している。|In addition to English, I'm studying Spanish.|て|た|る|に
+
+= kara-nikakete
+title: ～から～にかけて
+meaning: from ... through; over (a period or area)
+form: Noun + から + noun + にかけて
+note: It gives a rough range of time or space, less exact than から～まで: 夜から朝にかけて雪が降る.
+note: にかけて can be used alone: 週末にかけて.
+ex: 今夜から明日の朝にかけて、雨が降るでしょう。|こんやからあしたのあさにかけて、あめがふるでしょう。|It will rain from tonight through tomorrow morning.
+ex: 関東から東北にかけて、大雪になった。|かんとうからとうほくにかけて、おおゆきになった。|There was heavy snow from the Kanto to the Tohoku region.
+ex: 三月から四月にかけて、桜が咲きます。|さんがつからしがつにかけて、さくらがさきます。|The cherry blossoms bloom between March and April.
+q: 九州から四国＿＿、台風の影響を受けた。|The typhoon affected the area from Kyushu to Shikoku.|にかけて|にとって|に対して|について
+q: 年末から正月に＿＿、実家に帰ります。|I'll go back to my parents' home from the end of the year through New Year's.|かけて|ついて|よって|とって
+
+= o-motoni
+title: ～をもとに(して)
+meaning: based on
+form: Noun + をもとに / をもとにした + noun
+note: Something is made using another thing as its basis: 実話をもとにした映画.
+note: Before a noun, use をもとにした.
+ex: この映画は本当の話をもとに作られた。|このえいがはほんとうのはなしをもとにつくられた。|This movie was made based on a true story.
+ex: アンケートの結果をもとに、新しい商品を考えた。|アンケートのけっかをもとに、あたらしいしょうひんをかんがえた。|We came up with a new product based on the survey results.
+ex: 自分の経験をもとにして、小説を書いた。|じぶんのけいけんをもとにして、しょうせつをかいた。|She wrote a novel based on her own experiences.
+q: 調査のデータを＿＿、レポートを書きます。|I'll write a report based on the survey data.|もとに|通して|はじめ|込めて
+q: 昔話をもとに＿＿アニメが人気だ。|An anime based on an old folk tale is popular.|した|して|する|しない
+
+= o-kikkake-ni
+title: ～をきっかけに
+meaning: with ... as the trigger; since
+form: Noun / plain form + の + をきっかけに
+note: An event becomes the start of a change: 留学をきっかけに、料理を始めた.
+note: きっかけ alone means "chance, trigger".
+ex: 日本のアニメをきっかけに、日本語を勉強し始めた。|にほんのアニメをきっかけに、にほんごをべんきょうしはじめた。|Japanese anime got me started studying Japanese.
+ex: 病気をきっかけに、タバコをやめた。|びょうきをきっかけに、タバコをやめた。|My illness made me quit smoking.
+ex: 引っ越しをきっかけに、いらない物を捨てた。|ひっこしをきっかけに、いらないものをすてた。|I used the move as a chance to throw away things I didn't need.
+q: 結婚を＿＿に、料理を習い始めた。|Getting married made me start learning to cook.|きっかけ|もと|はじめ|ため
+q: 旅行をきっかけ＿＿、写真に興味を持つようになった。|The trip got me interested in photography.|に|を|で|と
+
+= muke-muki
+title: ～向け・～向き
+meaning: aimed at; suitable for
+form: Noun + 向け / 向き (+ の noun / に)
+note: 向け means made for a target group: 子供向けの番組.
+note: 向き means naturally suitable: この部屋は南向きだ (faces south), 初心者向き.
+ex: これは子供向けの本です。|これはこどもむけのほんです。|This is a book for children.
+ex: 外国人向けの日本語教室に通っている。|がいこくじんむけのにほんごきょうしつにかよっている。|I go to a Japanese class for foreigners.
+ex: このコースは初心者向きだ。|このコースはしょしんしゃむきだ。|This course is suitable for beginners.
+q: 高齢者＿＿の商品が増えている。|Products aimed at the elderly are increasing.|向け=むけ|向かい|向かう|向いて
+q: この仕事は、人と話すのが好きな人＿＿だ。|This job suits people who like talking to others.|向き=むき|向かい|向く|向いて
+
+= juu-chuu
+title: ～中 (じゅう・ちゅう)
+meaning: throughout; during; in the middle of
+form: Noun + 中 (じゅう: throughout / ちゅう: in progress)
+note: じゅう means "all through": 一日中, 世界中, 町中. ちゅう means "in the middle of": 会議中, 工事中, 食事中.
+note: 午前中 is read ごぜんちゅう.
+ex: 昨日は一日中雨だった。|きのうはいちにちじゅうあめだった。|It rained all day yesterday.
+ex: この歌は世界中で歌われている。|このうたはせかいじゅうでうたわれている。|This song is sung all over the world.
+ex: ただいま会議中ですので、後でお電話いたします。|ただいまかいぎちゅうですので、あとでおでんわいたします。|He's in a meeting right now, so we'll call you back later.
+q: 夏休み＿＿、ずっとアルバイトをしていた。|I was working part-time throughout the summer vacation.|中=じゅう|間に|ころ|ほど
+q: 食事＿＿にテレビを見ないでください。|Please don't watch TV during meals.|中=ちゅう|間|頃|内
+
+= osore-ga-aru
+title: ～おそれがある
+meaning: there is a risk that; may (something bad)
+form: Dictionary form / noun + の + おそれがある
+note: A formal warning that something bad might happen, common in news and weather reports.
+note: It is only used for bad possibilities.
+ex: 明日は大雨のおそれがあります。|あしたはおおあめのおそれがあります。|There's a risk of heavy rain tomorrow.
+ex: この薬は眠くなるおそれがあるので、運転しないでください。|このくすりはねむくなるおそれがあるので、うんてんしないでください。|This medicine may make you sleepy, so please don't drive.
+ex: このままでは、計画が失敗するおそれがある。|このままでは、けいかくがしっぱいするおそれがある。|If things go on like this, the plan may fail.
+q: 地震の後は、津波が来る＿＿があります。|After an earthquake, there is a risk of a tsunami.|おそれ|はず|わけ|つもり
+q: 台風が上陸する＿＿がある。|There is a risk that the typhoon will make landfall.|おそれ|こと|もの|ため
+
+= ippou-de
+title: ～一方で・～反面
+meaning: while; on the other hand
+form: Plain form + 一方(で) / 反面 (な-adjective + な / noun + である)
+note: Two sides of one thing are contrasted: 便利な反面、高い.
+note: 一方 can also contrast two different things: 兄は背が高い一方、弟は低い.
+ex: 都会は便利な反面、家賃が高い。|とかいはべんりなはんめん、やちんがたかい。|The city is convenient, but on the other hand rent is high.
+ex: 彼は仕事に厳しい一方で、家族には優しい。|かれはしごとにきびしいいっぽうで、かぞくにはやさしい。|He's strict at work, while being kind to his family.
+ex: スマホは便利な一方で、使いすぎると目に悪い。|スマホはべんりないっぽうで、つかいすぎるとめにわるい。|Smartphones are convenient, but using them too much is bad for your eyes.
+q: 一人暮らしは自由な＿＿、寂しいこともある。|Living alone is free, but it can also be lonely.|反面=はんめん|ために|うちに|わりに
+q: 給料が上がった一方＿＿、仕事も増えた。|My salary went up, but so did my work.|で|に|を|が
+
+= towa-kagiranai
+title: ～とは限らない
+meaning: not necessarily; not always
+form: Plain form + とは限らない
+note: Something that is generally believed is not always true: 高い物がいい物だとは限らない.
+note: It often comes with 必ずしも or いつも.
+ex: 高い物がいつもいい物だとは限らない。|たかいものがいつもいいものだとはかぎらない。|Expensive things aren't always good things.
+ex: 先生が言うことが必ずしも正しいとは限らない。|せんせいがいうことがかならずしもただしいとはかぎらない。|What the teacher says isn't necessarily right.
+ex: 日本人だからといって、敬語が上手だとは限らない。|にほんじんだからといって、けいごがじょうずだとはかぎらない。|Being Japanese doesn't necessarily mean being good at honorifics.
+q: 有名な店がおいしいとは＿＿。|Famous restaurants aren't necessarily good.|限らない=かぎらない|限る|限った|限って
+q: 天気予報がいつも当たる＿＿限らない。|The weather forecast isn't always right.|とは|には|では|からは
+
+= marude
+title: まるで～ようだ・まるで～みたいだ
+meaning: just like; as if
+form: まるで + noun + の + ようだ / plain form + ようだ
+note: まるで strengthens a comparison with something that isn't really true: まるで夢のようだ.
+note: In casual speech: まるで～みたい.
+ex: まるで夢を見ているようだ。|まるでゆめをみているようだ。|It's as if I'm dreaming.
+ex: 彼女の日本語はまるで日本人のようだ。|かのじょのにほんごはまるでにほんじんのようだ。|Her Japanese is just like a native speaker's.
+ex: 今日はまるで夏みたいに暑い。|きょうはまるでなつみたいにあつい。|Today is as hot as summer.
+q: ＿＿子供のように喜んでいる。|He's as happy as a child.|まるで|きっと|たぶん|まさか
+q: 部屋がきれいで、まるでホテルの＿＿だ。|The room is so clean, it's just like a hotel.|よう|ふう|らしい|そう
+
+= te-goran
+title: ～てごらん
+meaning: try (doing); have a look (to a junior)
+form: て-form + ごらん (なさい)
+note: A gentle command to someone younger or lower, often to children: 食べてごらん.
+note: ごらん comes from ご覧になる (to look, honorific), but the expression is not polite to superiors.
+ex: このお菓子、おいしいから食べてごらん。|このおかし、おいしいからたべてごらん。|These sweets are good — try one.
+ex: 空を見てごらん。きれいな虹だよ。|そらをみてごらん。きれいなにじだよ。|Look at the sky. There's a beautiful rainbow.
+ex: もう一度言ってごらんなさい。|もういちどいってごらんなさい。|Say it once more.
+q: 自分でやって＿＿。きっとできるよ。|Try doing it yourself. I'm sure you can.|ごらん|いる|ある|おく
+q: この本、面白いから読んで＿＿。|This book is interesting — give it a read.|ごらん|いらっしゃる|おる|まいる
+
+= tatoe-temo
+title: たとえ～ても
+meaning: even if
+form: たとえ + て-form + も (noun / な-adjective + でも)
+note: たとえ emphasizes that the result doesn't change whatever happens: たとえ雨が降っても、行きます.
+note: It is a stronger ～ても.
+ex: たとえ反対されても、私は留学します。|たとえはんたいされても、わたしはりゅうがくします。|Even if people oppose it, I'll study abroad.
+ex: たとえ高くても、この時計が欲しい。|たとえたかくても、このとけいがほしい。|Even if it's expensive, I want this watch.
+ex: たとえ冗談でも、そんなことを言ってはいけない。|たとえじょうだんでも、そんなことをいってはいけない。|You shouldn't say that, even as a joke.
+q: ＿＿失敗しても、あきらめない。|Even if I fail, I won't give up.|たとえ|やはり|まるで|まさか
+q: たとえ雨が降っ＿＿、試合は中止になりません。|Even if it rains, the game won't be called off.|ても|たら|ては|たり
+
+= datte
+title: ～だって
+meaning: even; also (casual); but (because)
+form: Noun + だって / sentence start: だって
+note: After a noun, だって is a casual でも or も: 子供だって知っている.
+note: At the start of a sentence it gives a reason or excuse: だって、時間がなかったんだもん.
+ex: そんなこと、子供だって知っているよ。|そんなこと、こどもだってしっているよ。|Even a child knows that.
+ex: 私だって、たまには休みたい。|わたしだって、たまにはやすみたい。|I want a break once in a while too.
+ex: 「どうして食べないの？」「だって、まずいんだもん。」|「どうしてたべないの？」「だって、まずいんだもん。」|"Why aren't you eating?" "Because it tastes bad."
+q: 先生＿＿間違えることはある。|Even teachers make mistakes.|だって|こそ|しか|ほど
+q: 「なぜ遅れたの？」「＿＿、電車が止まったんだもん。」|"Why were you late?" "Because the train stopped."|だって|それに|そこで|ところで
+
+= toka
+title: ～とか
+meaning: things like; I heard (casual)
+form: Noun / plain form + とか (～とか～とか)
+note: とか lists examples casually, like や: 映画とか音楽とか.
+note: At the end of a sentence it reports something heard, vaguely: 明日は雨だとか.
+ex: 休みの日は映画を見るとか、本を読むとかしています。|やすみのひはえいがをみるとか、ほんをよむとかしています。|On my days off, I do things like watch movies or read books.
+ex: りんごとかみかんとか、果物が好きです。|りんごとかみかんとか、くだものがすきです。|I like fruit, things like apples and mandarins.
+ex: 田中さん、来月結婚するとか。|たなかさん、らいげつけっこんするとか。|I hear Mr. Tanaka is getting married next month.
+q: 週末は掃除＿＿洗濯とかで忙しい。|On weekends I'm busy with cleaning, laundry and so on.|とか|しか|こそ|さえ
+q: 彼女、会社を辞める＿＿。|I hear she's quitting the company.|とか|ほど|だけ|まで
+
+= hazu-datta
+title: ～はずだった
+meaning: was supposed to; should have (but)
+form: Plain form + はずだった
+note: Something that was expected didn't happen: 来るはずだったのに、来なかった.
+note: It often comes with のに or が to show the surprise.
+ex: 彼は九時に来るはずだったのに、まだ来ない。|かれはくじにくるはずだったのに、まだこない。|He was supposed to come at nine, but he's still not here.
+ex: 今日届くはずだった荷物が、まだ届いていない。|きょうとどくはずだったにもつが、まだとどいていない。|The package that was supposed to arrive today still hasn't come.
+ex: こんなはずじゃなかった。|こんなはずじゃなかった。|This wasn't how it was supposed to be.
+q: 試合は昨日行われる＿＿だったが、雨で延期になった。|The game was supposed to be held yesterday, but it was postponed due to rain.|はず|わけ|ため|もの
+q: 鍵はここに置いた＿＿だったのに、ない。|I was sure I'd put the key here, but it's gone.|はず|ため|ほど|まま
+
+= mi
+title: ～み (adjective → noun)
+meaning: -ness (a felt quality)
+form: Adjective stem + み
+note: Some adjectives turn into nouns with み for a quality you feel: 楽しみ, 痛み, 悲しみ, 甘み, 重み.
+note: さ (N4) measures degree (重さ = weight); み is the feeling or flavor (重み = significance).
+ex: 夏休みの旅行が楽しみです。|なつやすみのりょこうがたのしみです。|I'm looking forward to the summer vacation trip.
+ex: 背中に痛みがあります。|せなかにいたみがあります。|I have a pain in my back.
+ex: このトマトは甘みが強い。|このトマトはあまみがつよい。|This tomato has a strong sweetness.
+q: 友達に会えるのが楽し＿＿だ。|I'm looking forward to seeing my friends.|み|さ|く|かっ
+q: 彼の悲し＿＿は誰にも分からない。|Nobody understands his sorrow.|み|げ|く|そう
+
+= teki-ka-sei
+title: ～的・～化・～性
+meaning: -ic/-al; -ization; -ness (nature)
+form: Noun + 的 (な) / 化 (する) / 性
+note: 的 turns a noun into a な-adjective: 経済的な, 国際的な. 化 means "becoming": 国際化, 少子化.
+note: 性 means "nature, property": 安全性, 可能性.
+ex: このやり方は経済的だ。|このやりかたはけいざいてきだ。|This method is economical.
+ex: 日本の少子化が問題になっている。|にほんのしょうしかがもんだいになっている。|Japan's falling birth rate has become a problem.
+ex: 成功する可能性は低い。|せいこうするかのうせいはひくい。|The chances of success are low.
+q: 彼はとても積極＿＿な人だ。|He's a very proactive person.|的=てき|化|性|感
+q: この町の高齢＿＿が進んでいる。|The population of this town is aging.|化=か|的|性|感
+
+= houdai
+title: ～放題
+meaning: as much as you like; unchecked
+form: ます-stem + 放題 / noun + 放題
+note: In shops it means "all you can": 食べ放題 (all you can eat), 飲み放題.
+note: It can also criticize letting something go unchecked: 言いたい放題, 散らかし放題.
+ex: この店は二千円で食べ放題です。|このみせはにせんえんでたべほうだいです。|This restaurant is all-you-can-eat for 2,000 yen.
+ex: 飲み放題のコースを予約しました。|のみほうだいのコースをよやくしました。|I booked an all-you-can-drink course.
+ex: 庭が荒れ放題になっている。|にわがあれほうだいになっている。|The garden has been left to grow wild.
+q: 九十分飲み＿＿で三千円です。|It's 3,000 yen for ninety minutes of all you can drink.|放題=ほうだい|すぎ|がち|だらけ
+q: 彼は親がいないと、遊び＿＿だ。|When his parents aren't around, he plays all he wants.|放題=ほうだい|がち|っぽい|ずつ
+
+= tate
+title: ～たて
+meaning: freshly; just (done)
+form: ます-stem + たて
+note: たて means something was just done and is still fresh: 焼きたてのパン (freshly baked bread).
+note: It is used with a limited set of verbs: 焼く, 作る, 生まれる, 入る, 塗る.
+ex: 焼きたてのパンはおいしい。|やきたてのパンはおいしい。|Freshly baked bread is delicious.
+ex: 塗りたてのペンキに注意してください。|ぬりたてのペンキにちゅういしてください。|Watch out for the wet paint.
+ex: 彼はまだ大学を出たての新人だ。|かれはまだだいがくをでたてのしんじんだ。|He's a newcomer, fresh out of university.
+q: 作り＿＿の料理を食べてください。|Please eat the food while it's freshly made.|たて|かけ|ぎみ|がち
+q: 生まれ＿＿の赤ちゃんはとても小さい。|Newborn babies are very small.|たて|すぎ|かけ|がち
+
+= tokoro-datta
+title: ～ところだった
+meaning: almost; nearly (but didn't)
+form: Dictionary form + ところだった
+note: Something bad nearly happened, but didn't: 車にひかれるところだった.
+note: もう少しで often comes with it.
+ex: 寝坊して、もう少しで遅刻するところだった。|ねぼうして、もうすこしでちこくするところだった。|I overslept and was nearly late.
+ex: 危ない！車にぶつかるところだった。|あぶない！くるまにぶつかるところだった。|Watch out! I almost hit a car.
+ex: 大事な書類を捨てるところだった。|だいじなしょるいをすてるところだった。|I nearly threw away an important document.
+q: 階段で転ぶ＿＿だった。|I nearly fell on the stairs.|ところ|ばかり|はず|わけ
+q: もう少しで電車に乗り遅れる＿＿。|I nearly missed the train.|ところだった|ばかりだった|わけだった|ものだった
+
+= dake-amount
+title: ～だけ (as much as)
+meaning: as much as; all that
+form: Dictionary form / たい-form / potential + だけ
+note: だけ here means "to the full extent": 好きなだけ食べてください (eat as much as you like).
+note: できるだけ means "as much as possible".
+ex: 好きなだけ食べてください。|すきなだけたべてください。|Please eat as much as you like.
+ex: できるだけ早く返事をください。|できるだけはやくへんじをください。|Please reply as soon as possible.
+ex: やるだけやったから、後悔はない。|やるだけやったから、こうかいはない。|I did everything I could, so I have no regrets.
+q: 欲しい＿＿持っていっていいですよ。|You can take as many as you want.|だけ|しか|ほど|まで
+q: できる＿＿毎日運動するようにしている。|I try to exercise every day as much as I can.|だけ|ほど|まで|しか
+
+= toiu-yori
+title: ～というより
+meaning: rather than; more ... than
+form: Plain form / noun + というより
+note: It corrects a description with a better one: 寒いというより痛い (it's more painful than cold).
+note: むしろ often comes after it.
+ex: 今日は暖かいというより、暑いくらいだ。|きょうはあたたかいというより、あついくらいだ。|Today is more hot than warm.
+ex: 彼は友達というより、家族のような存在だ。|かれはともだちというより、かぞくのようなそんざいだ。|He's more like family than a friend.
+ex: この料理は辛いというより、むしろ甘い。|このりょうりはからいというより、むしろあまい。|This dish is sweet rather than spicy.
+q: 彼女はきれい＿＿、かわいい感じだ。|She's cute rather than beautiful.|というより|というと|といえば|というのは
+q: 疲れたというより＿＿眠い。|I'm not so much tired as sleepy.|むしろ|まるで|やはり|たとえ
+
+= to-ieba
+title: ～といえば・～というと
+meaning: speaking of; when it comes to
+form: Noun + といえば / というと
+note: It takes up a topic just mentioned, or gives the first thing that comes to mind: 日本といえば富士山.
+note: というと can also check the meaning: 来週というと、十日ですか.
+ex: 日本の山といえば、やはり富士山だ。|にほんのやまといえば、やはりふじさんだ。|When it comes to Japanese mountains, it has to be Mount Fuji.
+ex: 夏といえば、花火ですね。|なつといえば、はなびですね。|Speaking of summer, it's got to be fireworks.
+ex: 京都というと、古いお寺が多いイメージがあります。|きょうとというと、ふるいおてらがおおいイメージがあります。|Kyoto makes me think of lots of old temples.
+q: 北海道＿＿、おいしい食べ物が多いですね。|Speaking of Hokkaido, there's lots of good food there.|といえば|として|について|にとって
+q: 「旅行に行きたいな。」「旅行と＿＿、夏休みはどこへ行くの？」|"I want to travel." "Speaking of travel, where are you going for summer vacation?"|いえば|いって|いう|いった
+
+= ni-shitagatte
+title: ～に従って・～につれて
+meaning: as (one thing changes, so does another)
+form: Dictionary form / noun + に従って・につれて
+note: As A changes, B changes along with it: 年を取るにつれて、体が弱くなる.
+note: に従って can also mean "following (instructions)": 説明に従って操作する.
+ex: 山を登るにつれて、気温が下がった。|やまをのぼるにつれて、きおんがさがった。|As we climbed the mountain, the temperature dropped.
+ex: 日本語が上手になるに従って、日本の生活が楽しくなった。|にほんごがじょうずになるにしたがって、にほんのせいかつがたのしくなった。|As my Japanese improved, life in Japan became more fun.
+ex: 係員の指示に従って、避難してください。|かかりいんのしじにしたがって、ひなんしてください。|Please evacuate following the staff's instructions.
+q: 時間がたつに＿＿、痛みが消えていった。|As time passed, the pain went away.|つれて|ついて|とって|よって
+q: 説明書に＿＿、組み立ててください。|Please assemble it following the instructions.|従って=したがって|比べて|加えて|関して
+
+= zu-ni-sumu
+title: ～ずに済む・～ないで済む
+meaning: get by without; don't have to (luckily)
+form: ない-form (drop ない) + ずに済む / ない-form + で済む
+note: Something you expected to have to do turned out unnecessary: 傘を買わずに済んだ.
+note: ～で済む (noun) means "be settled with only": 軽いけがで済んだ.
+ex: 友達が車で送ってくれたので、タクシーに乗らずに済んだ。|ともだちがくるまでおくってくれたので、タクシーにのらずにすんだ。|A friend drove me, so I didn't have to take a taxi.
+ex: 早く気づいたので、大きな問題にならないで済んだ。|はやくきづいたので、おおきなもんだいにならないですんだ。|We noticed early, so it didn't become a big problem.
+ex: 事故だったが、軽いけがで済んだ。|じこだったが、かるいけがですんだ。|It was an accident, but I got away with a minor injury.
+q: 雨がやんだので、傘を買わ＿＿済んだ。|The rain stopped, so I didn't have to buy an umbrella.|ずに|ないに|ずで|なく
+q: 電話で説明できたので、行かない＿＿済んだ。|I could explain on the phone, so I didn't have to go.|で|に|と|が
+
+= koto-da
+title: ～ことだ (advice)
+meaning: you should; the best thing is
+form: Dictionary form / ない-form + ことだ
+note: Advice from someone with experience or authority: 上手になりたければ、毎日練習することだ.
+note: It sounds firm; it is not used to superiors.
+ex: 日本語が上手になりたければ、日本人と話すことだ。|にほんごがじょうずになりたければ、にほんじんとはなすことだ。|If you want to get good at Japanese, you should talk with Japanese people.
+ex: 風邪を早く治したいなら、よく寝ることです。|かぜをはやくなおしたいなら、よくねることです。|If you want to get over your cold quickly, the best thing is to sleep well.
+ex: 失敗したくなければ、準備を忘れないことだ。|しっぱいしたくなければ、じゅんびをわすれないことだ。|If you don't want to fail, don't forget to prepare.
+q: やせたいなら、甘い物を食べない＿＿だ。|If you want to lose weight, don't eat sweets.|こと|ため|わけ|はず
+q: 合格したければ、毎日少しずつ勉強する＿＿。|If you want to pass, study a little every day.|ことだ|ためだ|わけだ|はずだ
+
+= o-komete
+title: ～をこめて
+meaning: with (feeling); full of
+form: Noun + をこめて
+note: An action is done with a feeling put into it: 心をこめて, 愛をこめて.
+note: It is often used for gifts, letters and cooking.
+ex: 心をこめて手紙を書きました。|こころをこめててがみをかきました。|I wrote the letter with all my heart.
+ex: 母のために、愛をこめてケーキを作った。|ははのために、あいをこめてケーキをつくった。|I made a cake for my mother with love.
+ex: 感謝の気持ちをこめて、花を贈ります。|かんしゃのきもちをこめて、はなをおくります。|I'm sending flowers with gratitude.
+q: 一つ一つ心を＿＿作りました。|I made each one with care.|こめて|通して|もとに|はじめ
+q: 平和への願いを＿＿、歌を歌った。|We sang a song full of our wish for peace.|こめて|加えて|比べて|もとに
+
+= tokoro-ni
+title: ～ところに・～ところへ・～ところを
+meaning: just when; at the moment when
+form: Dictionary form / ている / た-form + ところに・ところへ・ところを
+note: Something happens at a particular moment, often interrupting: 出かけようとしたところに電話が来た.
+note: ところを often goes with being seen or helped: 困っているところを助けてもらった.
+ex: 家を出ようとしたところに、友達が来た。|いえをでようとしたところに、ともだちがきた。|Just as I was about to leave, a friend came.
+ex: ちょうどいいところへ来ましたね。|ちょうどいいところへきましたね。|You've come at just the right time.
+ex: 道に迷っているところを、親切な人に助けてもらった。|みちにまよっているところを、しんせつなひとにたすけてもらった。|While I was lost, a kind person helped me.
+q: 寝ようとしている＿＿に、電話がかかってきた。|Just as I was going to bed, the phone rang.|ところ|ばかり|うち|まま
+q: 困っているところ＿＿、先輩が助けてくれた。|When I was in trouble, my senior helped me.|を|が|で|へ
+
+= nai-koto-wa-nai
+title: ～ないことはない
+meaning: it's not that ... not; can (if I have to)
+form: ない-form + ことはない
+note: A double negative that means "it's possible, but...": 食べられないことはない (I can eat it, sort of).
+note: It sounds reluctant or uncertain.
+ex: 辛い料理は食べられないことはないが、あまり好きじゃない。|からいりょうりはたべられないことはないが、あまりすきじゃない。|It's not that I can't eat spicy food, but I don't really like it.
+ex: 急げば、間に合わないことはない。|いそげば、まにあわないことはない。|If we hurry, we might just make it.
+ex: 行きたくないことはないけど、今日は疲れている。|いきたくないことはないけど、きょうはつかれている。|It's not that I don't want to go, but I'm tired today.
+q: 難しいけど、できない＿＿はない。|It's hard, but not impossible.|こと|もの|わけ|はず
+q: 歩いて行けない＿＿、ちょっと遠い。|It's not that you can't walk there, but it's a bit far.|ことはないが|ことがないが|ことにして|ことになって
+
+= buri
+title: ～ぶり
+meaning: for the first time in; way of doing
+form: Period + ぶり / ます-stem + ぶり
+note: After a period of time: 三年ぶりに会った (met for the first time in three years). 久しぶり is a fixed word.
+note: After a verb stem it means "way of doing": 話しぶり, 仕事ぶり.
+ex: 五年ぶりに国へ帰りました。|ごねんぶりにくにへかえりました。|I went back to my country for the first time in five years.
+ex: 久しぶりですね。お元気でしたか。|ひさしぶりですね。おげんきでしたか。|Long time no see. How have you been?
+ex: 彼の真面目な仕事ぶりは、みんなに評価されている。|かれのまじめなしごとぶりは、みんなにひょうかされている。|His serious way of working is valued by everyone.
+q: 十年＿＿に小学校の友達に会った。|I met my elementary school friend for the first time in ten years.|ぶり|ごと|おき|ずつ
+q: 久し＿＿に映画館へ行った。|I went to the movies for the first time in a long while.|ぶり|ごろ|まえ|あと
+
+= ki-ga-suru
+title: ～気がする
+meaning: I have a feeling that; it seems
+form: Plain form / noun + の + 気がする
+note: A vague feeling or impression: 誰かに見られている気がする.
+note: It is softer than 思う and is often used for uncertain memories: 前に会った気がする.
+ex: 前にどこかで会ったような気がします。|まえにどこかであったようなきがします。|I feel like I've met you somewhere before.
+ex: 明日はいいことがある気がする。|あしたはいいことがあるきがする。|I have a feeling something good will happen tomorrow.
+ex: 誰かに呼ばれた気がして、振り向いた。|だれかによばれたきがして、ふりむいた。|I felt someone had called me, so I turned around.
+q: この話、前にも聞いた＿＿がする。|I feel like I've heard this story before.|気=き|心|顔|声
+q: 今日は何か忘れているような気＿＿する。|I feel like I'm forgetting something today.|が|を|に|で
+
+= koto-wa-ga
+title: ～ことは～が
+meaning: it's true that ... but
+form: Verb / adjective + ことは + same word + が・けど
+note: The speaker admits something, but adds a limit: 読んだことは読んだが、よく分からなかった.
+note: The same word is repeated before and after ことは.
+ex: 読んだことは読んだけど、内容は覚えていない。|よんだことはよんだけど、ないようはおぼえていない。|I did read it, but I don't remember the content.
+ex: この服は安いことは安いが、すぐ破れる。|このふくはやすいことはやすいが、すぐやぶれる。|These clothes are cheap, sure, but they tear easily.
+ex: 行くことは行くけど、遅くなるかもしれない。|いくことはいくけど、おそくなるかもしれない。|I'll go, but I might be late.
+q: おいしい＿＿おいしいが、ちょっと高い。|It's good, sure, but a bit expensive.|ことは|ものは|わけは|はずは
+q: 宿題はやったことは＿＿けど、自信がない。|I did do the homework, but I'm not confident about it.|やった|やる|やって|やれ
+
+= mono-reason
+title: ～もの・～もん (because)
+meaning: because (casual, excuse)
+form: Plain form + もの / もん (often: ～んだもの・～んだもん)
+note: A casual way to give a reason, sometimes childish or as an excuse: だって、眠いんだもん.
+note: It is often paired with だって at the start.
+ex: だって、知らなかったんだもん。|だって、しらなかったんだもん。|But I didn't know!
+ex: 行きたくない。疲れているんだもの。|いきたくない。つかれているんだもの。|I don't want to go. I'm tired, you know.
+ex: 食べられないよ。辛いんだもん。|たべられないよ。からいんだもん。|I can't eat it. It's spicy!
+q: 「なんで泣いてるの？」「だって、悲しいんだ＿＿。」|"Why are you crying?" "Because I'm sad!"|もん|もんか|ものか|ものの
+q: 遅れても仕方ないよ。雨だった＿＿。|It can't be helped that I was late. It was raining.|んだもの|わけだ|はずだ|ことだ

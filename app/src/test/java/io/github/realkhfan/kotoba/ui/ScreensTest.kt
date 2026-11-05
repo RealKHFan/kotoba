@@ -53,6 +53,9 @@ class ScreensTest {
         learn(lib.words.drop(60).take(10), now - 6 * hour)
         learn(lib.grammar.take(5), now - hour)
         learn(lib.kanji.take(14), now - 5 * hour)
+        // A few words missed again and again (hard items), and some days of activity for the stats.
+        lib.words.drop(60).take(3).forEach { item -> repeat(3) { answer(item, false, now - 6 * hour) } }
+        for (d in 1..9) if (d != 4) learn(listOf(lib.katakana[20 + d]), now - d * 24 * hour)
     }
 
     private fun shot(name: String, dark: Boolean = false, content: @Composable () -> Unit) {
@@ -97,7 +100,7 @@ class ScreensTest {
 
     @Test fun wordQuiz() {
         val items = listOf(lib.words.first { it.written == "図書館" })
-        val seed = seedFor(items) { it is Choice && it.ask == "What does it mean?" }
+        val seed = seedFor(items) { it is Choice && it.ask == "What does it mean?" && it.listen == null }
         shot("10-quiz-word") { QuizScreen("Reviews", items, lib, null, {}, {}, "", Random(seed)) }
     }
 
@@ -139,12 +142,47 @@ class ScreensTest {
 
     @Test fun writing() = shot("16-write") { WriteScreen("書", lib) {} }
 
+    @Test fun stats() = shot("21-stats") { StatsScreen(lib, sample(), now, {}, {}) }
+
+    @Test fun listeningQuiz() {
+        val items = listOf(lib.words.first { it.written == "図書館" })
+        val seed = seedFor(items) { it is Choice && it.listen != null }
+        shot("22-quiz-listen") { QuizScreen("Reviews", items, lib, null, {}, {}, "", Random(seed)) }
+    }
+
+    @Test fun writingQuiz() {
+        val items = listOf(lib.kanji.first { it.char == "書" })
+        val seed = seedFor(items) { it is io.github.realkhfan.kotoba.data.Write }
+        shot("23-quiz-write") { QuizScreen("Reviews", items, lib, null, {}, {}, "", Random(seed)) }
+    }
+
+    @Test fun typedMeaningOverruled() {
+        val items = listOf(lib.words.first { it.written == "図書館" })
+        val settings = io.github.realkhfan.kotoba.data.Settings(answers = io.github.realkhfan.kotoba.data.AnswerMode.TYPE, listening = false)
+        val seed = (0..500).first { s ->
+            Random(s).let { r -> (Session(items, Quiz(lib, r, settings), r, null).current as? io.github.realkhfan.kotoba.data.Typed)?.english == true }
+        }
+        compose.setContent {
+            KotobaTheme(dark = false) {
+                androidx.compose.runtime.CompositionLocalProvider(LocalSettings provides settings) {
+                    QuizScreen("Reviews", items, lib, null, {}, {}, "", Random(seed))
+                }
+            }
+        }
+        compose.onNode(androidx.compose.ui.test.hasSetTextAction()).performTextInput("place with books")
+        compose.onNodeWithText("Check").performClick()
+        compose.onRoot().captureRoboImage("src/test/screenshots/24-quiz-meaning.png")
+        compose.onNodeWithText("I was right").assertExists()
+    }
+
     @Test fun kanaWithStrokes() = shot("17-kana") { DetailScreen(lib.hiragana.first { it.char == "あ" }, lib, sample(), {}, {}) }
 
     @Test fun typedQuiz() {
         val items = listOf(lib.words.first { it.written == "図書館" })
         val settings = io.github.realkhfan.kotoba.data.Settings(answers = io.github.realkhfan.kotoba.data.AnswerMode.TYPE)
-        val seed = (0..500).first { s -> Random(s).let { r -> Session(items, Quiz(lib, r, settings), r, null).current is io.github.realkhfan.kotoba.data.Typed } }
+        val seed = (0..500).first { s ->
+            Random(s).let { r -> (Session(items, Quiz(lib, r, settings), r, null).current as? io.github.realkhfan.kotoba.data.Typed)?.ask == "Type it in Japanese" }
+        }
         compose.setContent {
             KotobaTheme(dark = false) {
                 androidx.compose.runtime.CompositionLocalProvider(LocalSettings provides settings) {

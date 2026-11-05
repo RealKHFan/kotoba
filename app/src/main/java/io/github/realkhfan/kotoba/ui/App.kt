@@ -34,7 +34,7 @@ import io.github.realkhfan.kotoba.data.Srs
 
 /**
  * Screens are routes on a small back stack: "home", "section:WORDS", "item:<key>", "lesson:WORDS",
- * "review:WORDS" or "review:all", "write:<characters>" and "settings". The stack and each screen's saved state survive process death.
+ * "review:WORDS" or "review:all", "write:<characters>", "settings", "stats" and "practice:hard". The stack and each screen's saved state survive process death.
  */
 @Composable
 fun KotobaApp(
@@ -85,10 +85,12 @@ private fun Screens(library: Library, progress: Progress, settings: SettingsStor
             "lesson" -> LessonScreen(Section.valueOf(arg), library, progress, open, back)
             "write" -> WriteScreen(arg, library, back)
             "settings" -> SettingsScreen(settings, progress, version, backup, back)
+            "stats" -> StatsScreen(library, progress, now, open, back)
+            "practice" -> PracticeScreen(library, progress, back)
             "review" -> ReviewScreen(Section.entries.firstOrNull { it.name == arg }, library, progress, now, back)
             else -> {
                 HomeScreen(library, progress, now, backup?.failing == true, open)
-                if (backup != null && backup.folder == null && !backup.asked) BackupQuestion(backup, progress)
+                if (backup != null && backup.folder == null && !backup.asked) BackupQuestion(backup, progress, settings)
             }
         }
     }

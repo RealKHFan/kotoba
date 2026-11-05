@@ -15,7 +15,7 @@ sealed interface Item {
     val section: Section
     /** Lesson group: a kana row, a word topic, ... */
     val group: String
-    /** JLPT level: 5 or 4. */
+    /** JLPT level: 5, 4 or 3. */
     val level: Int
     val searchText: String
 }
@@ -70,8 +70,8 @@ data class Sentence(
     override val searchText get() = "$japanese $reading $english"
 }
 
-/** A fill-in-the-gap question. The sentence contains ＿＿ where the answer goes. */
-data class Gap(val sentence: String, val english: String, val answer: String, val wrong: List<String>)
+/** A fill-in-the-gap question. The sentence contains ＿＿ where the answer goes; [reading] is set when the answer has kanji. */
+data class Gap(val sentence: String, val english: String, val answer: String, val wrong: List<String>, val reading: String? = null)
 
 data class Grammar(
     val id: String,
@@ -171,7 +171,11 @@ object Parser {
                     when (key) {
                         "note" -> notes += value
                         "ex" -> { require(f.size == 3) { "Bad example: $line" }; examples += Example(f[0], f[1], f[2]) }
-                        "q" -> { require(f.size == 6) { "Bad question: $line" }; questions += Gap(f[0], f[1], f[2], f.drop(3)) }
+                        "q" -> {
+                            require(f.size == 6) { "Bad question: $line" }
+                            val answer = f[2].substringBefore('=')
+                            questions += Gap(f[0], f[1], answer, f.drop(3), f[2].substringAfter('=', "").ifEmpty { null })
+                        }
                         else -> fields[key] = value
                     }
                 }
@@ -260,7 +264,7 @@ class Library(
             Parser.words(open("words.txt")),
             Parser.kanji(open("kanji.txt")),
             Parser.sentences(open("sentences.txt")),
-            Parser.grammar(open("grammar-n5.txt")) + Parser.grammar(open("grammar-n4.txt")),
+            listOf("grammar-n5.txt", "grammar-n4.txt", "grammar-n3.txt").flatMap { Parser.grammar(open(it)) },
             Strokes.parse(open("strokes.txt")),
         )
     }

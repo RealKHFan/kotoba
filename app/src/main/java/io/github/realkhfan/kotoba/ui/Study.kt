@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -24,6 +26,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Button
+import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -35,6 +39,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
@@ -80,6 +85,7 @@ import io.github.realkhfan.kotoba.data.Quiz
 import io.github.realkhfan.kotoba.data.Section
 import io.github.realkhfan.kotoba.data.Session
 import io.github.realkhfan.kotoba.data.Stage
+import io.github.realkhfan.kotoba.data.Write
 import kotlin.random.Random
 
 private fun noun(section: Section) = when (section) {
@@ -108,7 +114,7 @@ fun LessonScreen(section: Section, library: Library, progress: Progress, open: (
         QuizScreen(
             title = "Lesson quiz", items = items, library = library, grade = null, close = close,
             onFinished = { progress.learn(items, System.currentTimeMillis()) },
-            doneText = "You learned ${items.size} new ${noun(section)}. They come back for review in 4 hours.",
+            doneText = "You learned ${items.size} new ${noun(section)}. They come back for review in 4 hours.", writing = false,
         )
         return
     }
@@ -153,6 +159,20 @@ fun ReviewScreen(section: Section?, library: Library, progress: Progress, now: L
     )
 }
 
+/** Extra practice for hard items. It doesn't change review times, so it can be done any time. */
+@Composable
+fun PracticeScreen(library: Library, progress: Progress, close: () -> Unit) {
+    val items = remember { progress.hard(library.all).shuffled().take(20) }
+    if (items.isEmpty()) {
+        LaunchedEffect(Unit) { close() }
+        return
+    }
+    QuizScreen(
+        title = "Hard items", items = items, library = library, grade = null, close = close, onFinished = {},
+        doneText = "Practice doesn't change review times. An item leaves this list once reviews move it up to Known.",
+    )
+}
+
 @Composable
 fun QuizScreen(
     title: String,
@@ -163,8 +183,10 @@ fun QuizScreen(
     onFinished: () -> Unit,
     doneText: String,
     random: Random = Random.Default,
+    writing: Boolean = true,
 ) {
-    val settings = LocalSettings.current
+    // Writing from memory is for items you have seen before, so lessons leave it out.
+    val settings = LocalSettings.current.let { if (writing) it else it.copy(writing = false) }
     val speaker = LocalSpeaker.current
     val session = remember { Session(items, Quiz(library, random, settings), random, grade) }
     var question by remember { mutableStateOf(session.current) }
@@ -172,6 +194,8 @@ fun QuizScreen(
     var typed by remember { mutableStateOf("") }
     // Counts questions, so a missed item asked again right away starts with a fresh view (an equal question would keep its old state).
     var asked by remember { mutableIntStateOf(0) }
+    // An answer counts when the next question comes; leaving the quiz counts the last one too.
+    DisposableEffect(session) { onDispose { session.commit() } }
     fun answered(q: Question, right: Boolean) {
         session.answer(right)
         result = right
@@ -192,9 +216,14 @@ fun QuizScreen(
                         is Choice -> ChoiceView(q, result) { right -> answered(q, right) }
                         is Order -> OrderView(q, result) { right -> answered(q, right) }
                         is Typed -> TypedView(q, result) { right, text -> typed = text; answered(q, right) }
+                        is Write -> WriteView(q, library, result) { right -> answered(q, right) }
                     }
                 }
-                result?.let { Feedback(q, it, typed) }
+                result?.let { right ->
+                    // A typed answer can be right in other words; the user gets the last word.
+                    val overrule = if (q is Typed && !right) ({ session.overrule(); result = true }) else null
+                    Feedback(q, right, typed, overrule)
+                }
             }
             if (result != null) {
                 Button(
@@ -230,6 +259,7 @@ private fun Question.prompt() = when (this) {
     is Choice -> prompt
     is Typed -> prompt
     is Order -> item.english
+    is Write -> prompt
 }
 
 @Composable
@@ -237,15 +267,36 @@ private fun AskLabel(text: String) {
     Text(text.uppercase(), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
 }
 
+/**
+ * What a question asks. A listening question plays its clip when it appears and keeps the
+ * prompt hidden until it is answered; its hint (the English of a dictation) shows from the start.
+ */
+@Composable
+private fun PromptBlock(ask: String, prompt: String, japanese: Boolean, reading: String?, hint: String?, listen: String?, answered: Boolean) {
+    AskLabel(ask)
+    Spacer(Modifier.height(16.dp))
+    if (listen != null) {
+        val speaker = LocalSpeaker.current
+        LaunchedEffect(listen) { speaker.play(listen) }
+        FilledTonalButton(onClick = { speaker.play(listen) }, modifier = Modifier.heightIn(min = 56.dp)) {
+            Icon(SpeakerIcon, contentDescription = null)
+            Spacer(Modifier.width(8.dp))
+            Text("Play again")
+        }
+        Spacer(Modifier.height(12.dp))
+    }
+    if (listen == null || answered) {
+        reading?.let { Text(it, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+        Text(prompt, style = if (japanese) japaneseStyle(prompt) else MaterialTheme.typography.headlineMedium)
+    }
+    hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp)) }
+    Spacer(Modifier.height(24.dp))
+}
+
 @Composable
 private fun ChoiceView(q: Choice, result: Boolean?, onAnswer: (Boolean) -> Unit) {
     var picked by remember { mutableStateOf<Int?>(null) }
-    AskLabel(q.ask)
-    Spacer(Modifier.height(16.dp))
-    q.reading?.let { Text(it, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
-    Text(q.prompt, style = if (q.promptJapanese) japaneseStyle(q.prompt) else MaterialTheme.typography.headlineMedium)
-    q.hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp)) }
-    Spacer(Modifier.height(24.dp))
+    PromptBlock(q.ask, q.prompt, q.promptJapanese, q.reading, q.hint, q.listen, answered = result != null)
     q.options.forEachIndexed { i, option ->
         val state = when {
             result == null -> null
@@ -285,26 +336,36 @@ private fun TypedView(q: Typed, result: Boolean?, onAnswer: (Boolean, String) ->
         keyboard?.hide()
         onAnswer(q.isRight(text), text)
     }
-    AskLabel(q.ask)
-    Spacer(Modifier.height(16.dp))
-    q.reading?.let { Text(it, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
-    Text(q.prompt, style = if (q.promptJapanese) japaneseStyle(q.prompt) else MaterialTheme.typography.headlineMedium)
-    q.hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp)) }
-    Spacer(Modifier.height(24.dp))
+    PromptBlock(q.ask, q.prompt, q.promptJapanese, q.reading, q.hint, q.listen, answered = result != null)
     OutlinedTextField(
         value = text, onValueChange = { text = it }, enabled = result == null, singleLine = true, isError = result == false,
         textStyle = MaterialTheme.typography.headlineSmall,
-        placeholder = { Text(if (q.kana) "Type in romaji or kana" else "Type the romaji") },
+        placeholder = { Text(if (q.english) "Type the meaning in English" else if (q.kana) "Type in romaji or kana" else "Type the romaji") },
         visualTransformation = if (q.kana) KanaTransformation else VisualTransformation.None,
         keyboardOptions = KeyboardOptions(
-            capitalization = KeyboardCapitalization.None, autoCorrectEnabled = false,
-            keyboardType = if (q.kana) KeyboardType.Text else KeyboardType.Ascii, imeAction = ImeAction.Done,
+            capitalization = KeyboardCapitalization.None, autoCorrectEnabled = q.english,
+            keyboardType = if (q.kana || q.english) KeyboardType.Text else KeyboardType.Ascii, imeAction = ImeAction.Done,
         ),
         keyboardActions = KeyboardActions(onDone = { submit() }),
         modifier = Modifier.fillMaxWidth().focusRequester(focus),
     )
     if (result == null) {
         Button(onClick = { submit() }, enabled = text.isNotBlank(), modifier = Modifier.padding(top = 16.dp).fillMaxWidth()) { Text("Check") }
+    }
+}
+
+/** Write a character from memory; up to two missed strokes still count as right. Afterwards the stroke order plays. */
+@Composable
+private fun WriteView(q: Write, library: Library, result: Boolean?, onAnswer: (Boolean) -> Unit) {
+    val strokes = remember(q.char) { library.strokesOf(q.char).orEmpty() }
+    PromptBlock(q.ask, q.prompt, false, null, q.hint, null, answered = result != null)
+    Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+        if (result == null) {
+            WritingPad(strokes, trace = false, onFinished = { misses -> onAnswer(misses <= 2) }, modifier = Modifier.widthIn(max = 420.dp))
+            TextButton(onClick = { onAnswer(false) }, modifier = Modifier.padding(top = 8.dp)) { Text("I don't remember") }
+        } else {
+            StrokeOrder(q.char, strokes, Modifier.size(160.dp))
+        }
     }
 }
 
@@ -386,18 +447,18 @@ fun audioFor(q: Question): String? = when (val item = q.item) {
     is Grammar -> when (q) {
         is Choice -> Audio.gap(q.prompt, q.options[q.answer])
         is Typed -> Audio.gap(q.prompt, q.answer)
-        is Order -> null
+        is Order, is Write -> null
     }
     is Kanji -> when {
         q is Choice && q.prompt != item.char -> Audio.word(q.prompt, q.options[q.answer])
-        q is Typed -> Audio.word(q.prompt, q.answer)
+        q is Typed && !q.english && q.prompt != item.char -> Audio.word(q.prompt, q.answer)
         else -> null
     }
     else -> Audio.of(item)
 }
 
 @Composable
-private fun Feedback(q: Question, right: Boolean, typed: String) {
+private fun Feedback(q: Question, right: Boolean, typed: String, overrule: (() -> Unit)?) {
     val colors = MaterialTheme.colorScheme
     Surface(
         color = if (right) colors.primaryContainer else colors.errorContainer,
@@ -412,6 +473,7 @@ private fun Feedback(q: Question, right: Boolean, typed: String) {
             if (q is Typed && !right && typed.isNotBlank()) {
                 Text("You typed ${if (q.kana) Romaji.toKana(typed, final = true) else typed}", style = MaterialTheme.typography.bodyMedium)
             }
+            overrule?.let { TextButton(onClick = it, contentPadding = PaddingValues(0.dp)) { Text("I was right") } }
             Spacer(Modifier.height(8.dp))
             val item = q.item
             when {
@@ -426,7 +488,7 @@ private fun Feedback(q: Question, right: Boolean, typed: String) {
                     hint?.let { Text(it, style = MaterialTheme.typography.bodyLarge) }
                     Text("${item.title} · ${item.meaning}", style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(top = 8.dp))
                 }
-                item is Kanji && q.prompt() != item.char -> {
+                item is Kanji && q !is Write && q.prompt() != item.char -> {
                     val answer = if (q is Choice) q.options[q.answer] else (q as Typed).answer
                     Text("${q.prompt()}（$answer）", style = MaterialTheme.typography.titleLarge)
                     (if (q is Choice) q.hint else (q as Typed).hint)?.let { Text(it, style = MaterialTheme.typography.bodyLarge) }

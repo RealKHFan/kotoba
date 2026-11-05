@@ -64,4 +64,44 @@ class SrsTest {
         assertEquals(listOf(items[1]), p.due(items, 5 * hour))
         assertEquals(8 * hour, p.nextDue(items, 5 * hour))
     }
+
+    @Test fun missesMakeAnItemHardUntilItIsKnown() {
+        var s = Srs.learned(0)
+        repeat(3) { s = Srs.answer(s, false, 0) }
+        assertEquals(3, s.misses)
+        assertTrue(Srs.isHard(s))
+        repeat(3) { s = Srs.answer(s, true, 0) }
+        assertEquals(4, s.level)
+        assertTrue(Srs.isHard(s))
+        s = Srs.answer(s, true, 0)
+        assertTrue(!Srs.isHard(s)) // level 5 is Known
+    }
+
+    @Test fun missesAndDaysSurviveTheFileAndOldFilesStillLoad() {
+        val states = mapOf("h:あ" to SrsState(3, 123L, 2))
+        val days = mapOf("2026-11-05" to Day(12, 10, 5))
+        val text = Progress.encode(states, days)
+        assertEquals(states, Progress.decode(text))
+        assertEquals(days, Progress.decodeDays(text))
+        assertEquals(mapOf("h:い" to SrsState(2, 7L, 0)), Progress.decode("# kotoba progress 1\nh:い\t2\t7\n"))
+        assertEquals(emptyMap<String, Day>(), Progress.decodeDays("@day\tnot-a-date\t1\t1\t1\n@day\t2026-11-05\t-1\t0\t0\n"))
+    }
+
+    @Test fun streakAndForecast() {
+        val zone = java.time.ZoneOffset.UTC
+        val day = 86_400_000L
+        val today = 20_000 * day + 3_600_000L // 01:00 on some day
+        val p = Progress(null, zone)
+        val items = testLibrary.hiragana.take(3)
+        p.learn(items.take(1), today - 2 * day)
+        p.learn(items.drop(1).take(1), today - day)
+        assertEquals(2, p.streak(today)) // nothing yet today, so the streak still counts up to yesterday
+        p.learn(items.drop(2), today)
+        assertEquals(3, p.streak(today))
+        assertEquals(0, p.streak(today + 2 * day)) // a missed day breaks it
+        val f = p.forecast(today)
+        assertEquals(7, f.size)
+        assertEquals(3, f.sum()) // all three are due within 4 hours of learning, today or the overdue ones
+        assertEquals(Day(0, 0, 1), p.day(p.date(today)))
+    }
 }

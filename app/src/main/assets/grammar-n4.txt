@@ -11,7 +11,7 @@ ex: 私は漢字が読めます。|わたしはかんじがよめます。|I can
 ex: 納豆が食べられません。|なっとうがたべられません。|I can't eat natto.
 ex: 明日は来られますか。|あしたはこられますか。|Can you come tomorrow?
 q: 私はピアノが弾＿＿。|I can play the piano.|けます|きます|かれます|こえます
-q: 一人で着物が＿＿か。(着る)|Can you put on a kimono by yourself?|着られます|着れられます|着ります|着えます
+q: 一人で着物が＿＿か。(着る)|Can you put on a kimono by yourself?|着られます=きられます|着れられます|着ります|着えます
 
 = volitional
 title: Volitional form
@@ -23,7 +23,7 @@ ex: 一緒に帰ろう。|いっしょにかえろう。|Let's go home together.
 ex: 少し休もう。|すこしやすもう。|Let's take a little break.
 ex: 明日は早く起きよう。|あしたははやくおきよう。|I'll get up early tomorrow.
 q: 週末、海へ行＿＿よ。|Let's go to the beach this weekend!|こう|きよう|くよう|かう
-q: 晩ご飯、何を＿＿か。(食べる)|What shall we have for dinner?|食べよう|食べろう|食べおう|食べよ
+q: 晩ご飯、何を＿＿か。(食べる)|What shall we have for dinner?|食べよう=たべよう|食べろう|食べおう|食べよ
 
 = you-to-omou
 title: ～ようと思う
@@ -58,7 +58,7 @@ note: つもり is about your own will; 予定 is about the schedule.
 ex: 会議は三時に始まる予定です。|かいぎはさんじにはじまるよていです。|The meeting is scheduled to start at three.
 ex: 来週、大阪へ出張する予定です。|らいしゅう、おおさかへしゅっちょうするよていです。|I'm going on a business trip to Osaka next week.
 ex: 明日の予定は何ですか。|あしたのよていはなんですか。|What are your plans for tomorrow?
-q: 飛行機は十時に着く＿＿です。|The plane is scheduled to arrive at ten.|予定|つもり|ため|ように
+q: 飛行機は十時に着く＿＿です。|The plane is scheduled to arrive at ten.|予定=よてい|つもり|ため|ように
 q: 来月結婚＿＿予定です。|I'm planning to get married next month.|する|して|した|しよう
 
 = to-omou
@@ -226,7 +226,7 @@ note: Japanese also uses it when something annoying happens to you: 雨に降ら
 ex: 先生に褒められました。|せんせいにほめられました。|I was praised by my teacher.
 ex: 電車で足を踏まれました。|でんしゃであしをふまれました。|Someone stepped on my foot on the train.
 ex: この寺は八百年前に建てられました。|このてらははっぴゃくねんまえにたてられました。|This temple was built 800 years ago.
-q: 母に＿＿ました。(叱る)|I was scolded by my mother.|叱られ|叱させ|叱れ|叱り
+q: 母に＿＿ました。(叱る)|I was scolded by my mother.|叱られ=しかられ|叱させ|叱れ|叱り
 q: 弟にケーキを食べ＿＿ました。|My little brother ate my cake (on me).|られ|させ|て|たら
 
 = causative
@@ -430,8 +430,8 @@ note: The object takes の instead of を: 漢字の書き方 (how to write kanj
 ex: この漢字の読み方を教えてください。|このかんじのよみかたをおしえてください。|Please tell me how to read this kanji.
 ex: 駅への行き方が分かりません。|えきへのいきかたがわかりません。|I don't know how to get to the station.
 ex: 母にカレーの作り方を習いました。|ははにカレーのつくりかたをならいました。|My mother taught me how to make curry.
-q: 切符の買い＿＿を教えてください。|Please show me how to buy a ticket.|方|物|事|所
-q: この機械の＿＿方が分かりません。(使う)|I don't know how to use this machine.|使い|使う|使って|使わ
+q: 切符の買い＿＿を教えてください。|Please show me how to buy a ticket.|方=かた|物|事|所
+q: この機械の＿＿方が分かりません。(使う)|I don't know how to use this machine.|使い=つかい|使う|使って|使わ
 
 = shi
 title: ～し
@@ -502,7 +502,7 @@ note: 間に means "at some point during": 子供が寝ている間に、掃除�
 ex: 夏休みの間、ずっと国にいました。|なつやすみのあいだ、ずっとくににいました。|I was back home for the whole summer vacation.
 ex: 子供が寝ている間に、本を読みました。|こどもがねているあいだに、ほんをよみました。|I read a book while the children were asleep.
 ex: 留守の間に、友達が来ました。|るすのあいだに、ともだちがきました。|A friend came by while I was out.
-q: 待っている＿＿、雑誌を読みました。|I read a magazine while I was waiting.|間|前|後|中
+q: 待っている＿＿、雑誌を読みました。|I read a magazine while I was waiting.|間=あいだ|前|後|中
 q: 冬休みの間＿＿、引っ越しをしました。|I moved house during the winter break.|に|で|を|が
 
 = made-ni
@@ -538,7 +538,7 @@ note: Special forms: 行く・来る → 参る, 言う → 申す, 食べる・
 ex: 私が荷物をお持ちします。|わたしがにもつをおもちします。|Let me carry your bags.
 ex: 山田と申します。|やまだともうします。|My name is Yamada.
 ex: 明日、そちらに伺います。|あした、そちらにうかがいます。|I'll come and see you tomorrow.
-q: はじめまして。田中と＿＿。|Nice to meet you. My name is Tanaka.|申します|おっしゃいます|なさいます|いらっしゃいます
+q: はじめまして。田中と＿＿。|Nice to meet you. My name is Tanaka.|申します=もうします|おっしゃいます|なさいます|いらっしゃいます
 q: 私が駅までご案内＿＿。|I'll show you the way to the station.|します|なります|なさいます|いらっしゃいます
 
 = nasai
@@ -551,7 +551,7 @@ ex: 早く起きなさい。|はやくおきなさい。|Get up, quick.
 ex: 野菜も食べなさい。|やさいもたべなさい。|Eat your vegetables too.
 ex: 正しい答えを選びなさい。|ただしいこたえをえらびなさい。|Choose the correct answer.
 q: もう九時ですよ。早く寝＿＿。|It's already nine. Go to bed.|なさい|ました|たい|ません
-q: 次の文を＿＿なさい。(読む)|Read the following sentence.|読み|読む|読んで|読ま
+q: 次の文を＿＿なさい。(読む)|Read the following sentence.|読み=よみ|読む|読んで|読ま
 
 = imperative
 title: Command and prohibition (～ろ・～な)
@@ -599,7 +599,7 @@ ex: 早く寝たほうがいいですよ。|はやくねたほうがいいです
 ex: 傘を持っていったほうがいいですよ。|かさをもっていったほうがいいですよ。|You should take an umbrella.
 ex: 夜一人で歩かないほうがいいです。|よるひとりであるかないほうがいいです。|You shouldn't walk alone at night.
 q: 熱があるなら、休んだ＿＿いいですよ。|If you have a fever, you'd better rest.|ほうが|ことが|ために|ので
-q: お酒はあまり＿＿ほうがいいです。(飲む)|You shouldn't drink much alcohol.|飲まない|飲んだない|飲みない|飲めない
+q: お酒はあまり＿＿ほうがいいです。(飲む)|You shouldn't drink much alcohol.|飲まない=のまない|飲んだない|飲みない|飲めない
 
 = relative
 title: Describing nouns with sentences
@@ -635,7 +635,7 @@ ex: どうすればいいですか。|どうすればいいですか。|What sho
 ex: 駅までどうやって行ったらいいですか。|えきまでどうやっていったらいいですか。|How do I get to the station?
 ex: 分からなかったら、先生に聞けばいいですよ。|わからなかったら、せんせいにきけばいいですよ。|If you don't understand, just ask the teacher.
 q: 何時に来れ＿＿いいですか。|What time should I come?|ば|たら|と|て
-q: このお金はどこで＿＿らいいですか。(払う)|Where should I pay this?|払った|払う|払って|払え
+q: このお金はどこで＿＿らいいですか。(払う)|Where should I pay this?|払った=はらった|払う|払って|払え
 
 = compound-verbs
 title: ～始める・～終わる・～出す
@@ -646,8 +646,8 @@ note: 出す shows a sudden, unplanned start: 雨が降り出しました.
 ex: 三年前に日本語を勉強し始めました。|さんねんまえににほんごをべんきょうしはじめました。|I started studying Japanese three years ago.
 ex: その本はもう読み終わりました。|そのほんはもうよみおわりました。|I've already finished reading that book.
 ex: 急に雨が降り出しました。|きゅうにあめがふりだしました。|It suddenly started to rain.
-q: 手紙を書き＿＿ましたか。|Have you finished writing the letter?|終わり|始め|出し|続け
-q: 赤ちゃんが急に泣き＿＿ました。|The baby suddenly started crying.|出し|終わり|過ぎ|方
+q: 手紙を書き＿＿ましたか。|Have you finished writing the letter?|終わり=おわり|始め|出し|続け
+q: 赤ちゃんが急に泣き＿＿ました。|The baby suddenly started crying.|出し=だし|終わり|過ぎ|方
 
 = sa
 title: ～さ (adjective → noun)

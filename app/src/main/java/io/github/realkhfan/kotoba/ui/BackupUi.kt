@@ -25,6 +25,8 @@ import androidx.compose.ui.unit.dp
 import io.github.realkhfan.kotoba.data.Backup
 import io.github.realkhfan.kotoba.data.Found
 import io.github.realkhfan.kotoba.data.Progress
+import io.github.realkhfan.kotoba.data.Settings
+import io.github.realkhfan.kotoba.data.SettingsStore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -41,17 +43,21 @@ class BackupActions(val choose: () -> Unit, val restore: () -> Unit)
  * overwritten without asking.
  */
 @Composable
-fun rememberBackupActions(backup: Backup, progress: Progress): BackupActions {
+fun rememberBackupActions(backup: Backup, progress: Progress, settings: SettingsStore?): BackupActions {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     // A backup waiting for an answer. tree null: restoring from the folder already in use.
     var offer by remember { mutableStateOf<Pair<Uri?, Found>?>(null) }
-    fun start(tree: Uri, restore: Found?) = scope.launch {
+    fun restore(found: Found) {
+        progress.replaceAll(found.states, found.days)
+        if (found.settings.isNotEmpty()) settings?.let { it.replace(Settings.from(found.settings, it.value)) }
+    }
+    fun start(tree: Uri, found: Found?) = scope.launch {
         if (!withContext(Dispatchers.IO) { backup.use(tree) }) {
             Toast.makeText(context, "Kotoba can't save in that folder. Please choose another one.", Toast.LENGTH_LONG).show()
             return@launch
         }
-        if (restore != null) progress.replaceAll(restore.states) else progress.copyNow()
+        if (found != null) restore(found) else progress.copyNow()
     }
     val picker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { tree ->
         if (tree != null) scope.launch {
@@ -68,13 +74,13 @@ fun rememberBackupActions(backup: Backup, progress: Progress): BackupActions {
                 Text(
                     "“${found.folderName}” has a Kotoba backup with ${found.states.size} learned items, saved ${dateText(found.savedAt)}. " +
                         "This phone has ${progress.learnedCount}.\n\n" +
-                        if (picking) "Restore puts the backup on this phone. Keep puts this phone's progress into the backup." else "Restoring replaces this phone's progress with the backup.",
+                        if (picking) "Restore puts the backup's progress and settings on this phone. Keep puts this phone's progress into the backup." else "Restoring replaces this phone's progress and settings with the backup.",
                 )
             },
             confirmButton = {
                 TextButton(onClick = {
                     offer = null
-                    if (tree != null) start(tree, found) else progress.replaceAll(found.states)
+                    if (tree != null) start(tree, found) else restore(found)
                 }) { Text("Restore") }
             },
             dismissButton = {
@@ -100,8 +106,8 @@ fun rememberBackupActions(backup: Backup, progress: Progress): BackupActions {
 
 /** Asked once on start until a folder is chosen or the user says not now. */
 @Composable
-fun BackupQuestion(backup: Backup, progress: Progress) {
-    val actions = rememberBackupActions(backup, progress)
+fun BackupQuestion(backup: Backup, progress: Progress, settings: SettingsStore?) {
+    val actions = rememberBackupActions(backup, progress, settings)
     AlertDialog(
         onDismissRequest = {},
         title = { Text("Keep a backup?") },
@@ -118,8 +124,8 @@ fun BackupQuestion(backup: Backup, progress: Progress) {
 }
 
 @Composable
-fun BackupSettings(backup: Backup, progress: Progress) {
-    val actions = rememberBackupActions(backup, progress)
+fun BackupSettings(backup: Backup, progress: Progress, settings: SettingsStore?) {
+    val actions = rememberBackupActions(backup, progress, settings)
     val folder = backup.folder
     val muted = MaterialTheme.colorScheme.onSurfaceVariant
     if (folder == null) {
@@ -131,7 +137,7 @@ fun BackupSettings(backup: Backup, progress: Progress) {
         Button(onClick = actions.choose, modifier = Modifier.padding(top = 8.dp)) { Text("Choose folder") }
         return
     }
-    Text("Saving to “${backup.folderName}” as ${Backup.FILE_NAME} after every change.", style = MaterialTheme.typography.bodyMedium)
+    Text("Saving your progress and settings to “${backup.folderName}” as ${Backup.FILE_NAME} after every change.", style = MaterialTheme.typography.bodyMedium)
     Text(
         when {
             backup.failing -> "The last backup failed. The folder may be gone or Kotoba lost access to it. Choose it again."
