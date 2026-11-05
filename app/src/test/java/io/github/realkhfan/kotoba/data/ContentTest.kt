@@ -85,4 +85,14 @@ class ContentTest {
         val a = lib.katakana.first { it.char == "ア" }
         assertTrue(lib.wordsStartingWith(a).all { it.written.startsWith("ア") })
     }
+
+    @Test fun everyWordAndKanjiHasMoreAnswers() {
+        val also = Parser.also(File("src/main/assets/also.txt").readText())
+        also.keys.forEach { assertTrue("Unknown key $it", it in lib.byKey) }
+        assertTrue(also.values.none { "," in it })
+        // Most words have other ways to say them; the list must not quietly lose a section.
+        assertTrue(lib.words.count { it.key in also } > lib.words.size / 2)
+        assertTrue(lib.kanji.count { it.key in also } > lib.kanji.size / 2)
+        assertEquals(listOf("please (go ahead); here you are", "here you go; go ahead; after you; here"), lib.meanings(lib.words.first { it.written == "どうぞ" }))
+    }
 }

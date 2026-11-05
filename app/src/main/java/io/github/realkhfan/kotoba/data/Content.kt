@@ -184,6 +184,15 @@ object Parser {
         flush()
         return out
     }
+
+    /** More English answers for typed meanings, by item key: "w:どうぞ|どうぞ\there you go; go ahead". */
+    fun also(text: String): Map<String, String> = text.lineSequence().map(String::trim)
+        .filter { it.isNotEmpty() && !it.startsWith("#") }
+        .associate { line ->
+            val f = line.split('\t')
+            require(f.size == 2) { "Bad answers line: $line" }
+            f[0] to f[1]
+        }
 }
 
 class Library(
@@ -192,6 +201,7 @@ class Library(
     val sentences: List<Sentence>,
     val grammar: List<Grammar>,
     private val strokes: Map<String, List<Stroke>> = emptyMap(),
+    private val also: Map<String, String> = emptyMap(),
 ) {
     val hiragana = KanaChart.items(Section.HIRAGANA)
     val katakana = KanaChart.items(Section.KATAKANA)
@@ -220,6 +230,13 @@ class Library(
 
     /** Stroke order for one kana or kanji, or null if there is none. */
     fun strokesOf(char: String): List<Stroke>? = strokes[char]
+
+    /** Everything that counts as right when typing what [item] means: its meaning, then other ways to say it. */
+    fun meanings(item: Item): List<String> = when (item) {
+        is Word -> listOfNotNull(item.meaning, also[item.key])
+        is Kanji -> listOfNotNull(item.meaning, also[item.key])
+        else -> emptyList()
+    }
 
     fun kanjiIn(word: Word): List<Kanji> = word.written.mapNotNull { kanjiByChar[it.toString()] }.distinct()
 
@@ -266,6 +283,7 @@ class Library(
             Parser.sentences(open("sentences.txt")),
             listOf("grammar-n5.txt", "grammar-n4.txt", "grammar-n3.txt").flatMap { Parser.grammar(open(it)) },
             Strokes.parse(open("strokes.txt")),
+            Parser.also(open("also.txt")),
         )
     }
 }

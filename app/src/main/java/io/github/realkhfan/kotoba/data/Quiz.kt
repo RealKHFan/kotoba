@@ -68,9 +68,10 @@ fun sameMeaning(a: String, b: String): Boolean {
 object Meaning {
     private val fillers = setOf("to", "a", "an", "the")
 
-    /** Lower case, letters and digits only, without a leading "to", "a" or "the". */
+    /** Lower case, letters and digits only, without a leading "to", "a" or "the". "a.m." is "am" and "10,000" is "10000". */
     fun normalize(s: String): String =
-        s.lowercase().replace(Regex("[^a-z0-9' ]"), " ").replace("'", "").split(' ').filter(String::isNotEmpty)
+        s.lowercase().replace(".", "").replace(Regex("(?<=\\d),(?=\\d)"), "")
+            .replace(Regex("[^a-z0-9' ]"), " ").replace("'", "").split(' ').filter(String::isNotEmpty)
             .dropWhile { it in fillers }.joinToString(" ")
 
     /** Every sense on its own, with and without the part in brackets: "(my) husband" gives "husband" and "my husband". */
@@ -83,12 +84,74 @@ object Meaning {
 
     private fun core(s: String) = s.split(' ').filter { it !in small }.joinToString(" ")
 
+    // British spellings that differ from American ones in more than the endings handled in [spelling].
+    private val british = mapOf(
+        "grey" to "gray", "practise" to "practice", "practised" to "practiced", "practising" to "practicing",
+        "licence" to "license", "defence" to "defense", "offence" to "offense", "programme" to "program",
+        "programmes" to "programs", "cheque" to "check", "tyre" to "tire", "tyres" to "tires", "pyjamas" to "pajamas",
+        "aeroplane" to "airplane", "aeroplanes" to "airplanes", "mum" to "mom", "mums" to "moms", "moustache" to "mustache",
+        "storey" to "story", "storeys" to "stories", "plough" to "plow", "mould" to "mold", "enquire" to "inquire",
+        "enquiry" to "inquiry", "enquiries" to "inquiries", "ageing" to "aging", "judgement" to "judgment",
+        "jewellery" to "jewelry", "learnt" to "learned", "burnt" to "burned", "spelt" to "spelled", "dreamt" to "dreamed",
+        "spoilt" to "spoiled", "maths" to "math", "whilst" to "while", "kerb" to "curb", "sceptical" to "skeptical",
+    )
+
+    // Plurals that mean something else than the singular, so "glasses" isn't "glass" and "goods" isn't "good".
+    private val plurals = setOf(
+        "news", "glasses", "clothes", "goods", "times", "means", "customs", "manners", "arms", "works", "contents",
+        "savings", "papers", "sweets", "looks", "terms", "besides", "spectacles", "remains", "belongings", "spirits",
+    )
+
+    private val ize = Regex(
+        "^(organ|real|recogn|apolog|memor|special|critic|emphas|util|econom|civil|minim|maxim|summar|categor|priorit|" +
+            "final|standard|familiar|author|visual|local|custom|modern|sympath|harmon|global|normal|symbol|central|" +
+            "commercial|capital|hospital|individual|neutral|natural|legal|ideal|immun|optim|personal|character)is(e|ed|es|ing|ation|ations|er|ers)$",
+    )
+    private val doubled = Regex(
+        "^(travel|cancel|label|model|fuel|counsel|marvel|signal|quarrel|level|total|dial|equal|rival|tunnel|channel|panel|pencil|jewel)l(ed|er|ers|ing|ous|or|ors)$",
+    )
+    private val our = Regex("^([a-z]{3,})our(s|ed|ing|ite|ites|able|ably)?$")
+    private val tre = Regex("^([a-z]{2,})([tb])re(s|d)?$")
+    private val yse = Regex("^([a-z]{2,})yse(s|d)?$")
+    private val logue = Regex("^([a-z]+)logue(s)?$")
+
+    /** One word in American spelling: "colour" is "color", "centre" is "center", "organise" is "organize", "travelling" is "traveling". */
+    private fun spelling(w: String): String {
+        british[w]?.let { return it }
+        fun Regex.swap(s: String, to: (List<String>) -> String) = matchEntire(s)?.let { to(it.groupValues) } ?: s
+        var s = w
+        s = ize.swap(s) { "${it[1]}iz${it[2]}" }
+        s = doubled.swap(s) { "${it[1]}${it[2]}" }
+        s = our.swap(s) { if (it[1] in setOf("det", "dev", "cont")) s else "${it[1]}or${it[2]}" }
+        s = tre.swap(s) { "${it[1]}${it[2]}er${it[3]}" }
+        s = yse.swap(s) { "${it[1]}yze${it[2]}" }
+        s = logue.swap(s) { "${it[1]}log${it[2]}" }
+        return s
+    }
+
+    /** One word without a plural ending: "cities" is "city", "boxes" is "box", "dogs" is "dog". */
+    private fun singular(w: String): String = when {
+        w in plurals || w.length < 4 -> w
+        w.endsWith("ies") && w.length > 4 -> w.dropLast(3) + "y"
+        Regex("(ch|sh|x|ss|z)es$").containsMatchIn(w) -> w.dropLast(2)
+        w.endsWith("s") && !w.endsWith("ss") && !w.endsWith("us") && !w.endsWith("is") -> w.dropLast(1)
+        else -> w
+    }
+
+    /** The form two answers are compared in: American spelling, no plurals and no spaces, so "co-worker" is "coworkers". */
+    private fun fold(s: String) = s.split(' ').joinToString("") { singular(spelling(it)) }
+
     /** Right when it equals one sense, with or without small words; one typo is forgiven from five letters on, two from nine. */
     fun matches(input: String, meaning: String): Boolean {
         val typed = normalize(input)
         if (typed.isEmpty()) return false
-        fun close(a: String, b: String) = a.isNotEmpty() && (a == b || (a.length >= 5 && distance(a, b) <= if (a.length >= 9) 2 else 1))
-        return answers(meaning).any { close(it, typed) || close(core(it), core(typed)) }
+        // A typo is forgiven, but not one that turns "goods" into "good".
+        fun plural(a: String, b: String) = a in plurals && b == a.dropLast(1)
+        fun close(a: String, b: String) = a.isNotEmpty() &&
+            (a == b || (a.length >= 5 && distance(a, b) <= (if (a.length >= 9) 2 else 1) && !plural(a, b) && !plural(b, a)))
+        val word = fold(typed)
+        val small = fold(core(typed))
+        return answers(meaning).any { close(fold(it), word) || close(fold(core(it)), small) }
     }
 
     private fun distance(a: String, b: String): Int {
@@ -203,7 +266,7 @@ class Quiz(private val library: Library, private val random: Random, private val
         val kind = random.nextInt(if (w.hasKanji) 3 else 2)
         val reading = w.reading.takeIf { w.hasKanji && settings.quizReadings }
         if (typing()) return when (kind) {
-            0 -> Typed(w, "What does it mean?", w.written, true, reading = reading, kana = false, accepted = listOf(w.meaning), english = true)
+            0 -> Typed(w, "What does it mean?", w.written, true, reading = reading, kana = false, accepted = library.meanings(w), english = true)
             1 -> Typed(w, "Type it in Japanese", w.meaning, false, kana = true, accepted = listOf(w.reading, w.written))
             else -> Typed(w, "Type the reading", w.written, true, kana = true, accepted = listOf(w.reading))
         }
@@ -226,7 +289,7 @@ class Quiz(private val library: Library, private val random: Random, private val
     private fun kanji(k: Kanji): Question {
         val type = typing()
         if (random.nextBoolean()) {
-            if (type) return Typed(k, "What does it mean?", k.char, true, kana = false, accepted = listOf(k.meaning), english = true)
+            if (type) return Typed(k, "What does it mean?", k.char, true, kana = false, accepted = library.meanings(k), english = true)
             val (opts, i) = options(k.meaning, wrong(k, library.kanji, Kanji::meaning) { sameMeaning(it.meaning, k.meaning) })
             return Choice(k, "What does it mean?", k.char, true, options = opts, optionsJapanese = false, answer = i)
         }

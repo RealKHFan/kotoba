@@ -1,0 +1,2314 @@
+# Kotoba: more English answers that count as right when you type what a word or kanji means.
+# Lines are "<item key>\t<answers>", answers separated by "; ". Word keys are "w:written|reading",
+# kanji keys are "j:kanji". The meaning itself always counts, so it isn't repeated here.
+w:おはようございます|おはようございます	morning
+w:こんにちは|こんにちは	hi; good day
+w:こんばんは|こんばんは	hello (evening); evening
+w:さようなら|さようなら	bye; farewell
+w:おやすみなさい|おやすみなさい	sleep well
+w:ありがとうございます|ありがとうございます	thanks; thank you very much
+w:どうも|どうも	thank you
+w:すみません|すみません	sorry; pardon me
+w:ごめんなさい|ごめんなさい	sorry; I apologize
+w:はじめまして|はじめまして	how do you do; pleased to meet you
+w:どうぞよろしく|どうぞよろしく	nice to meet you; please treat me well
+w:お願いします|おねがいします	please do
+w:どうぞ|どうぞ	here you go; go ahead; after you; here
+w:はい|はい	yeah; okay
+w:いいえ|いいえ	not at all
+w:いただきます|いただきます	let's eat; thank you for the food; bon appetit
+w:ごちそうさまでした|ごちそうさまでした	thank you for the meal; thanks for the food; it was a feast
+w:いってきます|いってきます	I'm going; I'm leaving; see you later; I'll be back
+w:いってらっしゃい|いってらっしゃい	have a good day; take care; see you
+w:ただいま|ただいま	I'm back; I am home
+w:おかえりなさい|おかえりなさい	welcome back
+w:失礼します|しつれいします	pardon me; sorry to disturb you
+w:お元気ですか|おげんきですか	how are you doing; are you well
+w:じゃあ|じゃあ	then; so; see you
+w:では|では	then; well
+w:そうです|そうです	yes; that's so; correct
+w:僕|ぼく	I; me
+w:彼|かれ	him
+w:彼女|かのじょ	her
+w:人|ひと	people; human
+w:男の子|おとこのこ	little boy
+w:女の子|おんなのこ	little girl
+w:子供|こども	kid; children
+w:大人|おとな	grown-up
+w:友達|ともだち	friends
+w:先生|せんせい	doctor; professor
+w:生徒|せいと	student; schoolchild
+w:留学生|りゅうがくせい	foreign student; exchange student
+w:医者|いしゃ	physician
+w:会社員|かいしゃいん	office worker; employee
+w:お巡りさん|おまわりさん	policeman; cop
+w:皆さん|みなさん	everybody; all of you
+w:みんな|みんな	everybody
+w:これ|これ	this one
+w:それ|それ	that one; it
+w:あれ|あれ	that one over there
+w:どれ|どれ	which
+w:ここ|ここ	this place
+w:そこ|そこ	that place
+w:あそこ|あそこ	there
+w:どこ|どこ	what place
+w:こちら|こちら	here; this person
+w:そちら|そちら	there; you
+w:あちら|あちら	that way
+w:どちら|どちら	which; where
+w:こっち|こっち	here; this one
+w:そっち|そっち	there
+w:あっち|あっち	that way
+w:どっち|どっち	which; which way
+w:そう|そう	that way
+w:何|なん	what
+w:いつ|いつ	what time
+w:なぜ|なぜ	how come
+w:どう|どう	how about
+w:どんな|どんな	what sort of; what kind
+w:帰る|かえる	go back; come back
+w:ある|ある	have; there is
+w:いる|いる	exist; there is; stay
+w:見る|みる	look
+w:言う|いう	tell
+w:会う|あう	see
+w:起きる|おきる	wake
+w:分かる|わかる	know
+w:ゼロ|ゼロ	0
+w:一|いち	1
+w:二|に	2
+w:三|さん	3
+w:四|よん	4
+w:五|ご	5
+w:六|ろく	6
+w:七|なな	7
+w:八|はち	8
+w:九|きゅう	9
+w:十|じゅう	10
+w:百|ひゃく	one hundred; 100
+w:千|せん	one thousand; 1000
+w:万|まん	10000
+w:一つ|ひとつ	1
+w:二つ|ふたつ	2
+w:三つ|みっつ	3
+w:四つ|よっつ	4
+w:五つ|いつつ	5
+w:六つ|むっつ	6
+w:七つ|ななつ	7
+w:八つ|やっつ	8
+w:九つ|ここのつ	9
+w:十|とお	10
+w:一人|ひとり	by oneself; single person
+w:二人|ふたり	two persons; couple; both of them
+w:ご飯|ごはん	rice; food
+w:晩ご飯|ばんごはん	supper
+w:飲み物|のみもの	beverage; drinks
+w:紅茶|こうちゃ	tea
+w:お酒|おさけ	liquor; alcoholic drink
+w:卵|たまご	eggs
+w:野菜|やさい	vegetables; veggies
+w:果物|くだもの	fruits
+w:お菓子|おかし	candy; confectionery
+w:しょうゆ|しょうゆ	soya sauce
+w:料理|りょうり	food; cuisine
+w:お弁当|おべんとう	lunch box; bento
+w:食堂|しょくどう	canteen
+w:喫茶店|きっさてん	cafe; coffee shop
+w:茶碗|ちゃわん	bowl
+w:皿|さら	dish
+w:大きい|おおきい	large
+w:小さい|ちいさい	little
+w:安い|やすい	inexpensive
+w:いい|いい	nice; fine
+w:面白い|おもしろい	fun
+w:難しい|むずかしい	hard
+w:易しい|やさしい	simple
+w:おいしい|おいしい	tasty; good
+w:まずい|まずい	bad tasting; not tasty; awful
+w:多い|おおい	lots
+w:少ない|すくない	not many
+w:近い|ちかい	close
+w:遠い|とおい	far away; distant
+w:毎日|まいにち	daily
+w:昼|ひる	midday
+w:夜|よる	evening
+w:毎晩|まいばん	every evening
+w:時間|じかん	hour
+w:分|ふん	minutes
+w:半|はん	half; thirty
+w:毎週|まいしゅう	weekly
+w:毎月|まいつき	monthly
+w:毎年|まいとし	yearly
+w:休み|やすみ	rest; vacation
+w:夏休み|なつやすみ	summer holiday; summer holidays; summer break
+w:前|まえ	front
+w:後|あと	afterwards
+w:いつも|いつも	usually
+w:時々|ときどき	occasionally
+w:もう|もう	no longer
+w:すぐ|すぐ	immediately; at once
+w:町|まち	city
+w:国|くに	nation
+w:外国|がいこく	abroad; overseas
+w:道|みち	street; path
+w:本屋|ほんや	bookshop
+w:八百屋|やおや	vegetable shop; vegetable store; grocer
+w:映画館|えいがかん	movie theater; movie theatre
+w:交番|こうばん	police station
+w:駅|えき	train station
+w:大学|だいがく	college
+w:会社|かいしゃ	firm; office
+w:ビル|ビル	building
+w:アパート|アパート	flat
+w:プール|プール	pool
+w:交差点|こうさてん	crossing; crossroads
+w:海|うみ	ocean
+w:父|ちち	dad
+w:母|はは	mom; mum
+w:お父さん|おとうさん	dad
+w:お母さん|おかあさん	mom; mum
+w:兄|あに	big brother; brother
+w:姉|あね	big sister; sister
+w:弟|おとうと	little brother; brother
+w:妹|いもうと	little sister; sister
+w:お兄さん|おにいさん	big brother
+w:お姉さん|おねえさん	big sister
+w:兄弟|きょうだい	siblings; brothers
+w:おじいさん|おじいさん	grandpa
+w:おばあさん|おばあさん	grandma; old lady
+w:奥さん|おくさん	madam
+w:入る|はいる	come in
+w:出る|でる	exit; come out
+w:出す|だす	submit; put out
+w:休む|やすむ	take a break; be absent
+w:知る|しる	know
+w:教える|おしえる	show
+w:習う|ならう	study
+w:覚える|おぼえる	learn
+w:忘れる|わすれる	leave behind
+w:始まる|はじまる	start
+w:閉める|しめる	shut
+w:閉まる|しまる	shut
+w:つける|つける	switch on; attach; put on
+w:消す|けす	switch off; delete
+w:持つ|もつ	carry
+w:取る|とる	get
+w:置く|おく	leave
+w:作る|つくる	create; cook
+w:住む|すむ	reside
+w:立つ|たつ	stand up
+w:座る|すわる	sit down
+w:乗る|のる	take
+w:降りる|おりる	get down
+w:もらう|もらう	get
+w:くれる|くれる	give me
+w:なる|なる	turn into
+w:できる|できる	can; be able to; be ready
+w:うち|うち	house
+w:お手洗い|おてあらい	toilet; bathroom; washroom
+w:トイレ|トイレ	restroom; bathroom
+w:お風呂|おふろ	bathtub
+w:戸|と	door
+w:庭|にわ	yard
+w:玄関|げんかん	entrance; entryway; front door; hall
+w:階段|かいだん	staircase; steps
+w:本棚|ほんだな	bookcase
+w:電気|でんき	lights
+w:テレビ|テレビ	television
+w:電話|でんわ	phone; call
+w:冷蔵庫|れいぞうこ	fridge
+w:物|もの	object; stuff
+w:新聞|しんぶん	paper
+w:切手|きって	postage stamp
+w:はがき|はがき	card
+w:写真|しゃしん	photograph; picture
+w:かばん|かばん	briefcase
+w:財布|さいふ	purse
+w:眼鏡|めがね	spectacles
+w:かぎ|かぎ	lock
+w:ボールペン|ボールペン	pen; ballpoint
+w:ノート|ノート	notes
+w:パソコン|パソコン	laptop; personal computer
+w:荷物|にもつ	baggage; package; bags
+w:何曜日|なんようび	what day; which day
+w:一日|いちにち	a day
+w:一日|ついたち	first; first day of the month; first of the month
+w:二日|ふつか	second
+w:三日|みっか	third
+w:四日|よっか	fourth
+w:五日|いつか	fifth
+w:六日|むいか	sixth
+w:七日|なのか	seventh
+w:八日|ようか	eighth
+w:九日|ここのか	ninth
+w:十日|とおか	tenth
+w:二十日|はつか	twentieth
+w:一月|いちがつ	Jan
+w:二月|にがつ	Feb
+w:三月|さんがつ	Mar
+w:四月|しがつ	Apr
+w:六月|ろくがつ	Jun
+w:七月|しちがつ	Jul
+w:八月|はちがつ	Aug
+w:九月|くがつ	Sept; Sep
+w:十月|じゅうがつ	Oct
+w:十一月|じゅういちがつ	Nov
+w:十二月|じゅうにがつ	Dec
+w:短い|みじかい	brief
+w:広い|ひろい	broad; large
+w:狭い|せまい	small; tight
+w:軽い|かるい	lightweight
+w:早い|はやい	soon
+w:速い|はやい	quick; rapid
+w:冷たい|つめたい	chilly
+w:涼しい|すずしい	refreshing
+w:つまらない|つまらない	dull
+w:辛い|からい	hot
+w:痛い|いたい	hurts; sore; ouch
+w:強い|つよい	powerful
+w:明るい|あかるい	light
+w:暗い|くらい	gloomy
+w:かわいい|かわいい	pretty; adorable
+w:汚い|きたない	messy
+w:厚い|あつい	thick
+w:薄い|うすい	pale; light
+w:細い|ほそい	narrow; slim
+w:丸い|まるい	circular
+w:危ない|あぶない	watch out; unsafe; careful
+w:欲しい|ほしい	want; desired
+w:うるさい|うるさい	loud; shut up
+w:ぬるい|ぬるい	tepid
+w:青い|あおい	green
+w:色|いろ	colour
+w:好き|すき	like; favorite; love
+w:嫌い|きらい	dislike; hate
+w:大好き|だいすき	like very much; really like; favorite
+w:上手|じょうず	skilled; good
+w:下手|へた	unskilled; poor at; bad
+w:静か|しずか	calm; silent
+w:にぎやか|にぎやか	bustling; crowded
+w:きれい|きれい	beautiful
+w:有名|ゆうめい	well-known
+w:親切|しんせつ	nice; friendly
+w:元気|げんき	fine; well; lively
+w:暇|ひま	not busy
+w:便利|べんり	useful; handy
+w:大切|たいせつ	valuable
+w:大丈夫|だいじょうぶ	okay; fine; no problem
+w:大変|たいへん	tough; difficult
+w:いろいろ|いろいろ	many kinds; all sorts
+w:嫌|いや	disagreeable; hate
+w:立派|りっぱ	great; impressive
+w:結構|けっこう	quite; good
+w:丈夫|じょうぶ	sturdy; robust
+w:本当|ほんとう	true
+w:上|うえ	up; top; over
+w:下|した	down; beneath
+w:中|なか	in; middle
+w:外|そと	out
+w:後ろ|うしろ	back
+w:横|よこ	next to
+w:間|あいだ	among; space
+w:隣|となり	next door
+w:そば|そば	by
+w:近く|ちかく	near; close by; vicinity
+w:向こう|むこう	beyond
+w:入口|いりぐち	entry; way in
+w:出口|でぐち	way out
+w:自動車|じどうしゃ	car; motor vehicle
+w:自転車|じてんしゃ	bike
+w:地下鉄|ちかてつ	underground; metro
+w:タクシー|タクシー	cab
+w:飛行機|ひこうき	plane; aeroplane
+w:旅行|りょこう	journey; tour
+w:エレベーター|エレベーター	lift
+w:目|め	eyes
+w:耳|みみ	ears
+w:歯|は	teeth
+w:手|て	hands
+w:足|あし	feet; legs
+w:お腹|おなか	tummy
+w:病気|びょうき	sickness; disease; sick
+w:薬|くすり	drug
+w:服|ふく	clothing
+w:ワイシャツ|ワイシャツ	shirt; white shirt
+w:セーター|セーター	jumper
+w:上着|うわぎ	coat
+w:ズボン|ズボン	pants
+w:靴|くつ	shoe
+w:靴下|くつした	sock
+w:ネクタイ|ネクタイ	tie
+w:ハンカチ|ハンカチ	hanky
+w:着る|きる	put on
+w:脱ぐ|ぬぐ	undress
+w:履く|はく	wear; put on
+w:かぶる|かぶる	put on
+w:勉強|べんきょう	studying
+w:テスト|テスト	exam
+w:問題|もんだい	issue
+w:言葉|ことば	words
+w:漢字|かんじ	Chinese characters
+w:意味|いみ	sense
+w:作文|さくぶん	composition
+w:話|はなし	conversation
+w:字|じ	letter
+w:映画|えいが	film
+w:絵|え	drawing
+w:スポーツ|スポーツ	sport
+w:晴れる|はれる	be sunny; be clear
+w:曇る|くもる	cloud over; become cloudy
+w:降る|ふる	fall; rain
+w:咲く|さく	blossom
+w:答える|こたえる	reply
+w:借りる|かりる	rent
+w:返す|かえす	return
+w:押す|おす	press
+w:撮る|とる	take a picture
+w:並ぶ|ならぶ	queue
+w:並べる|ならべる	line up; arrange
+w:渡す|わたす	give
+w:かかる|かかる	take; cost
+w:かける|かける	call; put on
+w:浴びる|あびる	bathe
+w:頼む|たのむ	ask; request
+w:勤める|つとめる	work for
+w:貼る|はる	put up
+w:吸う|すう	inhale; suck
+w:鳴く|なく	chirp; meow
+w:疲れる|つかれる	be tired
+w:困る|こまる	be troubled
+w:練習する|れんしゅうする	practise
+w:結婚する|けっこんする	marry
+w:散歩する|さんぽする	walk; go for a walk
+w:洗濯する|せんたくする	do laundry; wash clothes
+w:旅行する|りょこうする	take a trip
+w:質問する|しつもんする	ask
+w:電話する|でんわする	call; telephone
+w:とても|とても	really
+w:たくさん|たくさん	much; lots
+w:少し|すこし	a bit; few
+w:ちょっと|ちょっと	a bit; just a moment
+w:全部|ぜんぶ	whole
+w:一番|いちばん	best; first
+w:あまり|あまり	not much
+w:全然|ぜんぜん	never
+w:だんだん|だんだん	little by little
+w:たいてい|たいてい	mostly
+w:多分|たぶん	maybe; perhaps
+w:本当に|ほんとうに	truly
+w:初めて|はじめて	first time
+w:一人で|ひとりで	by myself
+w:自分|じぶん	self; myself
+w:それから|それから	and then
+w:でも|でも	however
+w:社長|しゃちょう	president; CEO; boss
+w:部長|ぶちょう	manager; department manager
+w:店員|てんいん	clerk; shop assistant; salesperson
+w:親|おや	parents
+w:生活|せいかつ	living
+w:用事|ようじ	business
+w:準備|じゅんび	preparations
+w:留守|るす	away; absence; not at home; out
+w:形|かたち	form
+w:関係|かんけい	relation
+w:普通|ふつう	usual; ordinary
+w:集める|あつめる	gather
+w:集まる|あつまる	collect
+w:始める|はじめる	start
+w:考える|かんがえる	think
+w:探す|さがす	search; search for
+w:見つかる|みつかる	found
+w:調べる|しらべる	investigate
+w:運ぶ|はこぶ	transport
+w:選ぶ|えらぶ	select; pick
+w:戻る|もどる	come back
+w:間に合う|まにあう	make it
+w:足りる|たりる	be sufficient
+w:気持ち|きもち	feelings
+w:気分|きぶん	feeling
+w:力|ちから	force
+w:恥ずかしい|はずかしい	embarrassing
+w:怖い|こわい	scared
+w:眠い|ねむい	tired
+w:喜ぶ|よろこぶ	be happy; rejoice
+w:泣く|なく	weep
+w:怒る|おこる	be angry; scold
+w:心配する|しんぱいする	be worried
+w:安心する|あんしんする	be relieved
+w:びっくりする|びっくりする	be surprised
+w:頑張る|がんばる	try hard; hang in there
+w:優しい|やさしい	nice
+w:厳しい|きびしい	severe; harsh
+w:素晴らしい|すばらしい	great; amazing
+w:正しい|ただしい	right
+w:細かい|こまかい	small
+w:ひどい|ひどい	awful
+w:うまい|うまい	delicious; skillful
+w:必要|ひつよう	needed; need
+w:十分|じゅうぶん	sufficient
+w:残念|ざんねん	unfortunate; pity
+w:無理|むり	unreasonable
+w:変|へん	weird; odd
+w:真面目|まじめ	earnest
+w:苦手|にがて	not good at
+w:確か|たしか	sure; if I remember correctly
+w:昔|むかし	old days; the past; a long time ago
+w:最近|さいきん	lately
+w:最初|さいしょ	start
+w:最後|さいご	final
+w:夕べ|ゆうべ	last evening
+w:途中|とちゅう	halfway
+w:時代|じだい	age
+w:正月|しょうがつ	new years
+w:港|みなと	harbour
+w:駐車場|ちゅうしゃじょう	car park; parking
+w:工場|こうじょう	plant
+w:美術館|びじゅつかん	museum; gallery; art gallery
+w:神社|じんじゃ	shrine
+w:受付|うけつけ	front desk; reception desk
+w:会場|かいじょう	meeting place
+w:売り場|うりば	department
+w:近所|きんじょ	neighbourhood; vicinity; nearby
+w:場所|ばしょ	spot
+w:田舎|いなか	country; rural area
+w:森|もり	woods
+w:林|はやし	forest
+w:道路|どうろ	street
+w:通り|とおり	road
+w:信号|しんごう	signal; traffic signal
+w:交通|こうつう	transport
+w:特急|とっきゅう	express; express train
+w:乗り換える|のりかえる	transfer
+w:通る|とおる	pass; go through
+w:動く|うごく	work
+w:出発する|しゅっぱつする	leave; start
+w:迎える|むかえる	meet
+w:下がる|さがる	drop
+w:込む|こむ	be busy
+w:授業|じゅぎょう	lecture
+w:試験|しけん	test; examination
+w:答え|こたえ	reply
+w:規則|きそく	rules; regulation
+w:数学|すうがく	math; maths
+w:医学|いがく	medical science
+w:研究|けんきゅう	study
+w:専門|せんもん	speciality
+w:中学校|ちゅうがっこう	middle school; junior high
+w:小学校|しょうがっこう	primary school
+w:入学|にゅうがく	entering school; enrollment; admission
+w:留学|りゅうがく	study abroad
+w:漫画|まんが	comic
+w:会議|かいぎ	conference
+w:会議室|かいぎしつ	conference room
+w:給料|きゅうりょう	pay; wages
+w:アルバイト|アルバイト	side job
+w:番組|ばんぐみ	show; programme
+w:放送|ほうそう	broadcasting
+w:連絡する|れんらくする	get in touch
+w:相談する|そうだんする	ask for advice
+w:予約する|よやくする	make a reservation
+w:用意する|よういする	get ready
+w:準備する|じゅんびする	prepare
+w:注意する|ちゅういする	pay attention
+w:遠慮する|えんりょする	refrain
+w:指|ゆび	fingers
+w:熱|ねつ	temperature
+w:けが|けが	wound
+w:具合|ぐあい	health
+w:注射|ちゅうしゃ	shot
+w:入院する|にゅういんする	be hospitalized; go to hospital
+w:治る|なおる	recover; get better
+w:亡くなる|なくなる	die
+w:倒れる|たおれる	fall
+w:食料品|しょくりょうひん	food
+w:味|あじ	flavour
+w:匂い|におい	scent
+w:値段|ねだん	cost
+w:品物|しなもの	product; article
+w:お土産|おみやげ	gift
+w:贈り物|おくりもの	present
+w:焼く|やく	burn; roast
+w:焼ける|やける	be grilled
+w:道具|どうぐ	tools
+w:暖房|だんぼう	heater
+w:冷房|れいぼう	air conditioner; AC
+w:布団|ふとん	bedding
+w:石|いし	rock
+w:音|おと	noise
+w:葉|は	leaves
+w:光る|ひかる	glow
+w:増える|ふえる	grow
+w:減る|へる	go down
+w:壊す|こわす	destroy
+w:直す|なおす	fix
+w:直る|なおる	be fixed
+w:落ちる|おちる	drop
+w:捨てる|すてる	discard
+w:無くなる|なくなる	disappear
+w:片付ける|かたづける	clean up; put away
+w:起こす|おこす	wake
+w:逃げる|にげる	escape
+w:過ぎる|すぎる	pass by
+w:返事|へんじ	answer; response
+w:けんか|けんか	argument
+w:お礼|おれい	thank-you gift; gratitude
+w:花見|はなみ	flower viewing; hanami
+w:お見舞い|おみまい	get well visit
+w:お金持ち|おかねもち	rich
+w:謝る|あやまる	apologise
+w:助ける|たすける	rescue
+w:似合う|にあう	look good
+w:騒ぐ|さわぐ	make a fuss
+w:役に立つ|やくにたつ	be helpful; useful
+w:間違える|まちがえる	mistake
+w:故障する|こしょうする	break
+w:必ず|かならず	surely; definitely
+w:きっと|きっと	certainly; definitely
+w:絶対に|ぜったいに	definitely
+w:ずっと|ずっと	all the time; always
+w:とうとう|とうとう	at last
+w:ほとんど|ほとんど	nearly
+w:だいぶ|だいぶ	quite; a lot
+w:特に|とくに	particularly
+w:すっかり|すっかり	totally
+w:例えば|たとえば	for instance
+w:それで|それで	so; then
+w:しかし|しかし	but
+w:だから|だから	therefore
+w:それに|それに	also
+w:まず|まず	first
+w:以上|いじょう	above
+w:以下|いか	under
+w:以外|いがい	other than
+w:以内|いない	less than
+w:倍|ばい	twice
+w:仲間|なかま	buddy; colleague
+w:恋人|こいびと	boyfriend; girlfriend; partner
+w:夫婦|ふうふ	couple; husband and wife
+w:親戚|しんせき	relatives
+w:他人|たにん	others
+w:若者|わかもの	youth; young people
+w:老人|ろうじん	old people
+w:幼児|ようじ	infant
+w:少年|しょうねん	youth
+w:少女|しょうじょ	young girl
+w:青年|せいねん	youth
+w:孫|まご	grandson; granddaughter
+w:長男|ちょうなん	oldest son
+w:長女|ちょうじょ	oldest daughter
+w:双子|ふたご	twin
+w:家庭|かてい	family
+w:仲|なか	relations
+w:結婚式|けっこんしき	wedding ceremony
+w:付き合う|つきあう	date; keep company
+w:別れる|わかれる	break up; separate
+w:出会う|であう	come across
+w:知り合う|しりあう	get to know; become acquainted
+w:自身|じしん	oneself; himself; herself; itself
+w:本人|ほんにん	the person; the person himself; the person in question
+w:各自|かくじ	each; everyone
+w:個人|こじん	person; personal
+w:仲良し|なかよし	close friends; best friends
+w:味方|みかた	friend
+w:素直|すなお	frank
+w:大人しい|おとなしい	gentle; obedient
+w:短気|たんき	impatient; quick-tempered
+w:わがまま|わがまま	spoilt
+w:けち|けち	cheap; mean
+w:生意気|なまいき	sassy
+w:勇気|ゆうき	bravery
+w:勇ましい|いさましい	courageous
+w:臆病|おくびょう	coward
+w:積極的|せっきょくてき	proactive
+w:消極的|しょうきょくてき	negative
+w:自信|じしん	self-confidence
+w:自慢|じまん	bragging; brag
+w:賢い|かしこい	smart
+w:偉い|えらい	important
+w:上品|じょうひん	classy
+w:気が強い|きがつよい	assertive
+w:気が弱い|きがよわい	shy
+w:感情|かんじょう	feeling; feelings
+w:感動|かんどう	impression; emotion
+w:感謝|かんしゃ	appreciation
+w:感激|かんげき	deeply moved
+w:喜び|よろこび	delight; happiness
+w:悲しむ|かなしむ	mourn
+w:怒り|いかり	rage
+w:笑顔|えがお	smile
+w:涙|なみだ	tears
+w:泣き出す|なきだす	start crying
+w:笑い出す|わらいだす	start laughing
+w:不安|ふあん	worry; anxious
+w:緊張|きんちょう	nervous
+w:退屈|たいくつ	bored
+w:満足|まんぞく	satisfied
+w:不満|ふまん	discontent
+w:悔しい|くやしい	frustrated
+w:羨ましい|うらやましい	jealous
+w:恐ろしい|おそろしい	scary; terrifying
+w:恐れる|おそれる	be afraid
+w:がっかり|がっかり	disappointment
+w:ほっと|ほっと	relief
+w:いらいら|いらいら	annoyed
+w:どきどき|どきどき	excited
+w:むかむか|むかむか	nauseous; angry
+w:嫌がる|いやがる	hate
+w:憧れる|あこがれる	yearn
+w:恨む|うらむ	resent
+w:楽しむ|たのしむ	have fun
+w:我慢|がまん	endurance; perseverance
+w:同情|どうじょう	compassion; pity
+w:考え|かんがえ	thinking; opinion
+w:意志|いし	willpower
+w:判断|はんだん	judgement
+w:決心|けっしん	decision
+w:覚悟|かくご	resolve; preparedness
+w:記憶|きおく	recollection
+w:思いつく|おもいつく	come up with
+w:思い込む|おもいこむ	assume; believe wrongly
+w:迷う|まよう	hesitate; be lost
+w:悩む|なやむ	be worried
+w:悩み|なやみ	problem
+w:賛成|さんせい	agree
+w:反対|はんたい	disagree; against
+w:理解|りかい	comprehension
+w:納得|なっとく	understanding; agreement
+w:勘違い|かんちがい	mistake
+w:期待|きたい	anticipation
+w:目的|もくてき	aim
+w:目標|もくひょう	goal; objective
+w:事実|じじつ	truth
+w:感想|かんそう	opinion; feedback
+w:評価|ひょうか	assessment; rating
+w:区別|くべつ	difference
+w:選択|せんたく	option
+w:伝える|つたえる	convey; communicate
+w:伝わる|つたわる	spread
+w:話し合う|はなしあう	talk
+w:話し合い|はなしあい	talk
+w:相談|そうだん	advice
+w:連絡|れんらく	communication
+w:断る|ことわる	turn down
+w:頼み|たのみ	favour
+w:注意|ちゅうい	attention; care
+w:文句|もんく	complaints
+w:噂|うわさ	rumour; gossip
+w:発言|はつげん	comment
+w:話題|わだい	subject
+w:話しかける|はなしかける	talk to
+w:呼びかける|よびかける	call out
+w:黙る|だまる	be quiet; shut up
+w:叫ぶ|さけぶ	scream; yell
+w:怒鳴る|どなる	shout
+w:励ます|はげます	cheer up
+w:慰める|なぐさめる	console
+w:からかう|からかう	make fun of
+w:体調|たいちょう	condition; health
+w:健康|けんこう	healthy
+w:傷|きず	injury; cut
+w:鼻水|はなみず	snot
+w:腹痛|ふくつう	stomach ache; bellyache
+w:吐く|はく	vomit; exhale
+w:吐き気|はきけ	feeling sick
+w:めまい|めまい	dizzy; vertigo
+w:筋肉|きんにく	muscles
+w:眉|まゆ	eyebrows
+w:唇|くちびる	lips
+w:爪|つめ	fingernail
+w:胸|むね	breast
+w:腰|こし	waist
+w:肺|はい	lungs
+w:呼吸|こきゅう	breath; respiration
+w:体重|たいじゅう	weight
+w:治す|なおす	heal
+w:診察|しんさつ	examination; checkup
+w:治療|ちりょう	treatment
+w:看病|かんびょう	caring for the sick
+w:入院|にゅういん	hospitalization
+w:退院|たいいん	discharge from hospital
+w:症状|しょうじょう	symptoms
+w:痛み|いたみ	ache
+w:疲れ|つかれ	fatigue
+w:転ぶ|ころぶ	fall down
+w:骨折|こっせつ	fracture
+w:虫歯|むしば	tooth decay
+w:暮らし|くらし	life
+w:日課|にっか	routine
+w:目覚まし時計|めざましどけい	alarm
+w:寝坊|ねぼう	oversleep; sleeping in
+w:夜更かし|よふかし	stay up late
+w:徹夜|てつや	all-nighter
+w:居眠り|いねむり	nap; nodding off
+w:着替える|きがえる	change
+w:化粧|けしょう	make-up
+w:歯磨き|はみがき	toothbrushing; toothpaste
+w:家事|かじ	chores
+w:掃除機|そうじき	vacuum; hoover
+w:干す|ほす	dry; air
+w:散らかる|ちらかる	messy
+w:散らかす|ちらかす	scatter
+w:ごみ箱|ごみばこ	garbage can; rubbish bin; bin
+w:燃えるごみ|もえるごみ	burnable garbage
+w:分ける|わける	separate; split
+w:汚す|よごす	soil; dirty
+w:留守番|るすばん	house-sitting
+w:鍵をかける|かぎをかける	lock the door
+w:節約|せつやく	economy
+w:無駄|むだ	wasteful
+w:無駄遣い|むだづかい	waste; waste of money
+w:食品|しょくひん	food
+w:調味料|ちょうみりょう	condiment
+w:味わう|あじわう	savour; enjoy
+w:香り|かおり	fragrance; smell
+w:豆|まめ	beans
+w:納豆|なっとう	fermented soybeans
+w:小麦粉|こむぎこ	wheat flour
+w:ドレッシング|ドレッシング	dressing
+w:缶詰|かんづめ	tinned food; can
+w:主食|しゅしょく	staple
+w:刺身|さしみ	raw fish
+w:炒める|いためる	fry
+w:煮る|にる	stew
+w:揚げる|あげる	fry
+w:茹でる|ゆでる	boil
+w:混ぜる|まぜる	stir
+w:温める|あたためる	warm
+w:腐る|くさる	spoil
+w:栄養|えいよう	nourishment
+w:カロリー|カロリー	calories
+w:空腹|くうふく	hungry
+w:商品|しょうひん	product; products
+w:定価|ていか	regular price; fixed price
+w:値上がり|ねあがり	price increase
+w:値下がり|ねさがり	price decrease
+w:安売り|やすうり	sale; bargain sale
+w:送料|そうりょう	shipping; postage
+w:代金|だいきん	charge; cost
+w:料金|りょうきん	fare
+w:税金|ぜいきん	taxes
+w:消費税|しょうひぜい	sales tax
+w:小銭|こぜに	change
+w:札|さつ	note; banknote
+w:預金|よきん	deposit; savings
+w:預ける|あずける	entrust
+w:引き出す|ひきだす	take out
+w:払い戻す|はらいもどす	pay back
+w:両替|りょうがえ	exchange; currency exchange
+w:支出|ししゅつ	expenditure; spending
+w:家計|かけい	budget; household finances
+w:ポイント|ポイント	points
+w:高価|こうか	high-priced
+w:得|とく	gain
+w:もったいない|もったいない	what a waste
+w:住まい|すまい	house
+w:住宅|じゅうたく	residence
+w:一戸建て|いっこだて	house
+w:マンション|マンション	condo; flat
+w:引っ越し|ひっこし	move
+w:部屋代|へやだい	rent
+w:間取り|まどり	layout
+w:和室|わしつ	Japanese room
+w:洋室|ようしつ	western room
+w:柱|はしら	column; post
+w:廊下|ろうか	corridor
+w:物置|ものおき	storage
+w:カーテン|カーテン	curtains
+w:電球|でんきゅう	bulb
+w:コンセント|コンセント	outlet; socket
+w:修理|しゅうり	repairs
+w:都会|とかい	city
+w:地方|ちほう	area
+w:郊外|こうがい	suburb; outskirts
+w:地区|ちく	area
+w:番地|ばんち	house number; address number
+w:中心|ちゅうしん	centre
+w:商店街|しょうてんがい	shopping district; shopping arcade
+w:役所|やくしょ	government office
+w:市役所|しやくしょ	town hall
+w:美容院|びよういん	beauty salon; hairdresser
+w:床屋|とこや	barbershop
+w:薬局|やっきょく	drugstore
+w:劇場|げきじょう	theatre
+w:歩道|ほどう	pavement
+w:歩道橋|ほどうきょう	footbridge
+w:横断歩道|おうだんほどう	pedestrian crossing; zebra crossing
+w:突き当たり|つきあたり	end of the street; dead end; end
+w:大通り|おおどおり	avenue
+w:路地|ろじ	alleyway; lane
+w:乗り物|のりもの	ride
+w:乗り換え|のりかえ	change
+w:乗り越す|のりこす	miss one's stop
+w:各駅停車|かくえきていしゃ	local
+w:快速|かいそく	rapid
+w:新幹線|しんかんせん	shinkansen
+w:自由席|じゆうせき	non-reserved seat
+w:往復|おうふく	return; return trip
+w:定期券|ていきけん	season ticket
+w:改札|かいさつ	gate
+w:時刻表|じこくひょう	schedule
+w:免許|めんきょ	licence; driving license
+w:渋滞|じゅうたい	congestion
+w:国内|こくない	within the country
+w:海外|かいがい	abroad
+w:旅|たび	travel
+w:観光|かんこう	tourism
+w:観光地|かんこうち	tourist attraction; tourist destination
+w:名所|めいしょ	sight; landmark
+w:宿|やど	hotel
+w:宿泊|しゅくはく	lodging; stay
+w:予約|よやく	booking
+w:キャンセル|キャンセル	cancel
+w:案内|あんない	guide
+w:迷子|まいご	lost
+w:海岸|かいがん	beach; shore
+w:波|なみ	waves
+w:土|つち	dirt
+w:畑|はたけ	farm
+w:田んぼ|たんぼ	rice paddy; paddy
+w:芝生|しばふ	grass
+w:実|み	berry
+w:花びら|はなびら	petals
+w:落ち葉|おちば	fallen leaf; dead leaves
+w:紅葉|こうよう	fall colors; autumn colours; red leaves
+w:桜|さくら	cherry blossoms; cherry tree; sakura
+w:松|まつ	pine
+w:稲|いね	rice
+w:植物|しょくぶつ	plants
+w:生き物|いきもの	creature; living creature; animal
+w:蜂|はち	wasp
+w:猿|さる	ape
+w:兎|うさぎ	bunny; hare
+w:羊|ひつじ	lamb
+w:牛|うし	cattle; ox; bull
+w:羽|はね	wings
+w:餌|えさ	feed; food
+w:飼う|かう	have a pet; raise
+w:資源|しげん	resource
+w:汚染|おせん	contamination
+w:公害|こうがい	environmental pollution
+w:温暖化|おんだんか	warming
+w:リサイクル|リサイクル	recycle
+w:天気予報|てんきよほう	forecast
+w:気温|きおん	temperature
+w:晴れ|はれ	sunny; sunny weather; fine weather
+w:曇り|くもり	cloudy
+w:大雨|おおあめ	downpour
+w:にわか雨|にわかあめ	shower; sudden rain
+w:蒸し暑い|むしあつい	humid; muggy; hot and humid
+w:肌寒い|はださむい	cool
+w:暖まる|あたたまる	get warm
+w:冷える|ひえる	cool
+w:乾く|かわく	get dry
+w:湿る|しめる	become damp
+w:四季|しき	seasons
+w:真夏|まなつ	height of summer
+w:真冬|まふゆ	dead of winter
+w:日差し|ひざし	sunshine; sun
+w:夕日|ゆうひ	sunset; evening sun
+w:夜明け|よあけ	daybreak
+w:洪水|こうずい	flooding
+w:津波|つなみ	tidal wave
+w:被害|ひがい	harm
+w:避難|ひなん	evacuate; refuge
+w:期間|きかん	term; duration
+w:期限|きげん	expiry
+w:時期|じき	period
+w:一日中|いちにちじゅう	all day long; the whole day
+w:一晩中|ひとばんじゅう	all night long; the whole night
+w:年中|ねんじゅう	all year; always
+w:平日|へいじつ	weekdays
+w:祝日|しゅくじつ	public holiday; holiday
+w:連休|れんきゅう	long weekend; holidays
+w:年末|ねんまつ	year end
+w:年始|ねんし	beginning of the year; new year
+w:上旬|じょうじゅん	early in the month; beginning of the month
+w:中旬|ちゅうじゅん	middle of the month; mid-month
+w:下旬|げじゅん	end of the month; late in the month
+w:後半|こうはん	latter half
+w:今後|こんご	in the future
+w:以前|いぜん	previously; ago
+w:以後|いご	since
+w:当時|とうじ	then; back then
+w:現在|げんざい	currently
+w:先日|せんじつ	recently
+w:翌日|よくじつ	following day
+w:前日|ぜんじつ	previous day
+w:当日|とうじつ	that day; on the day
+w:深夜|しんや	midnight; late night
+w:日中|にっちゅう	daytime
+w:一瞬|いっしゅん	moment
+w:しばらく|しばらく	a while; for some time
+w:いつまでも|いつまでも	always
+w:いつの間にか|いつのまにか	before I knew it; without noticing
+w:職業|しょくぎょう	job; profession
+w:職場|しょくば	office; work
+w:勤務|きんむ	service
+w:出勤|しゅっきん	commute to work
+w:残業|ざんぎょう	overtime
+w:休暇|きゅうか	holiday; holidays
+w:有給|ゆうきゅう	paid vacation; paid holiday
+w:転勤|てんきん	transfer
+w:就職|しゅうしょく	employment; finding a job
+w:退職|たいしょく	resignation
+w:転職|てんしょく	job change
+w:面接|めんせつ	interview
+w:履歴書|りれきしょ	resume; CV; curriculum vitae
+w:採用|さいよう	employment
+w:応募|おうぼ	application; apply
+w:求人|きゅうじん	job vacancy; recruitment
+w:失業|しつぎょう	unemployed
+w:部下|ぶか	staff
+w:同僚|どうりょう	coworker; co-worker
+w:社員|しゃいん	staff; staff member
+w:課長|かちょう	section manager; manager
+w:係|かかり	staff
+w:担当|たんとう	in charge; responsibility
+w:役目|やくめ	job
+w:業務|ぎょうむ	work; operations
+w:作業|さぎょう	operation
+w:会計|かいけい	check
+w:書類|しょるい	papers; paperwork
+w:資料|しりょう	documents
+w:企画|きかく	planning
+w:打ち合わせ|うちあわせ	arrangements
+w:取引|とりひき	transaction; trade
+w:契約|けいやく	agreement
+w:本社|ほんしゃ	headquarters
+w:支店|してん	branch
+w:社会人|しゃかいじん	member of society; adult
+w:給与|きゅうよ	salary; wages
+w:努力|どりょく	hard work
+w:能力|のうりょく	skill; capability
+w:技術|ぎじゅつ	skill
+w:経営|けいえい	running a business
+w:学期|がっき	term; semester
+w:学年|がくねん	year
+w:新学期|しんがっき	new semester; new school year
+w:授業料|じゅぎょうりょう	tuition fee; school fees
+w:入試|にゅうし	entrance examination
+w:受験|じゅけん	exam
+w:合格|ごうかく	pass
+w:不合格|ふごうかく	fail; failure
+w:成績|せいせき	marks; performance
+w:点数|てんすう	marks
+w:満点|まんてん	perfect score
+w:採点|さいてん	scoring
+w:解答|かいとう	solution
+w:正解|せいかい	right answer; correct
+w:間違い|まちがい	error
+w:復習|ふくしゅう	revision
+w:予習|よしゅう	preparing for class
+w:暗記|あんき	memorization; learning by heart
+w:課題|かだい	homework; issue
+w:レポート|レポート	essay
+w:論文|ろんぶん	dissertation
+w:参考書|さんこうしょ	study guide
+w:黒板|こくばん	chalkboard
+w:チャイム|チャイム	bell
+w:校長|こうちょう	headmaster; head teacher
+w:担任|たんにん	class teacher
+w:部活|ぶかつ	club activities; club; school club
+w:運動会|うんどうかい	sports festival; field day
+w:遠足|えんそく	field trip; outing
+w:修学旅行|しゅうがくりょこう	school excursion
+w:大学院|だいがくいん	grad school
+w:専門学校|せんもんがっこう	technical school
+w:学部|がくぶ	school
+w:国語|こくご	national language
+w:算数|さんすう	math; maths
+w:生物|せいぶつ	creature
+w:体育|たいいく	PE; gym
+w:国民|こくみん	nation
+w:市民|しみん	citizens
+w:住民|じゅうみん	inhabitants
+w:民族|みんぞく	people; nation
+w:国会|こっかい	parliament; diet; congress; national diet
+w:首相|しゅしょう	PM
+w:議員|ぎいん	lawmaker; politician; MP
+w:投票|とうひょう	voting
+w:政党|せいとう	party
+w:権利|けんり	rights
+w:平等|びょうどう	equal
+w:戦う|たたかう	battle
+w:争い|あらそい	quarrel; fight
+w:軍隊|ぐんたい	military; armed forces
+w:武器|ぶき	weapons
+w:国境|こっきょう	border
+w:首都|しゅと	capital
+w:都道府県|とどうふけん	prefectures
+w:少子化|しょうしか	declining birth rate; low birth rate
+w:高齢化|こうれいか	aging society; ageing
+w:豊か|ゆたか	wealthy
+w:不景気|ふけいき	depression; bad economy
+w:物価|ぶっか	cost of living
+w:工業|こうぎょう	industry; manufacturing
+w:農業|のうぎょう	farming
+w:漁業|ぎょぎょう	fishing; fishery
+w:商業|しょうぎょう	business; trade
+w:貿易|ぼうえき	foreign trade
+w:輸出|ゆしゅつ	exports
+w:輸入|ゆにゅう	imports
+w:製品|せいひん	products
+w:製造|せいぞう	manufacture; production
+w:消費者|しょうひしゃ	consumers
+w:企業|きぎょう	business; corporation
+w:利益|りえき	benefit
+w:売り上げ|うりあげ	revenue
+w:費用|ひよう	expenses
+w:赤字|あかじ	loss
+w:黒字|くろじ	profit
+w:株|かぶ	shares
+w:銀行員|ぎんこういん	bank employee; banker
+w:発展|はってん	progress
+w:情報|じょうほう	info
+w:報道|ほうどう	news; reporting
+w:新聞社|しんぶんしゃ	newspaper
+w:出版|しゅっぱん	publishing
+w:広告|こうこく	ad; advert
+w:宣伝|せんでん	promotion
+w:放送局|ほうそうきょく	TV station; radio station
+w:生放送|なまほうそう	live
+w:映像|えいぞう	image; video
+w:録画|ろくが	recording
+w:録音|ろくおん	recording
+w:通信|つうしん	communications
+w:電波|でんぱ	reception
+w:携帯電話|けいたいでんわ	cell phone; cellphone
+w:スマートフォン|スマートフォン	smart phone
+w:メール|メール	e-mail; mail
+w:アドレス|アドレス	email address
+w:アプリ|アプリ	application
+w:入力|にゅうりょく	entry; typing
+w:保存|ほぞん	save
+w:削除|さくじょ	delete
+w:送信|そうしん	send
+w:受信|じゅしん	receive; reception
+w:充電|じゅうでん	charge
+w:画像|がぞう	picture
+w:操作|そうさ	handling
+w:ルール|ルール	rules
+w:禁止|きんし	ban; forbidden
+w:違反|いはん	breach
+w:罰金|ばっきん	penalty
+w:犯人|はんにん	offender
+w:泥棒|どろぼう	burglar
+w:事件|じけん	event
+w:証拠|しょうこ	proof
+w:裁判|さいばん	court case
+w:弁護士|べんごし	attorney
+w:警官|けいかん	policeman
+w:騙す|だます	trick; cheat; fool
+w:守る|まもる	defend; obey
+w:破る|やぶる	break
+w:許す|ゆるす	allow
+w:認める|みとめる	recognise; accept
+w:届け出|とどけで	report
+w:手続き|てつづき	formalities; paperwork
+w:申し込む|もうしこむ	apply
+w:登録|とうろく	register
+w:運動|うんどう	sports
+w:体操|たいそう	calisthenics
+w:競技|きょうぎ	event; sport
+w:大会|たいかい	competition; championship
+w:監督|かんとく	coach
+w:優勝|ゆうしょう	championship; victory; win
+w:得点|とくてん	points
+w:観客|かんきゃく	crowd
+w:サッカー|サッカー	football
+w:相撲|すもう	sumo wrestling
+w:登山|とざん	climbing; hiking
+w:キャンプ|キャンプ	camp
+w:ハイキング|ハイキング	hike
+w:スキー|スキー	ski
+w:ゲーム|ゲーム	video game
+w:将棋|しょうぎ	Japanese chess
+w:手品|てじな	magic
+w:旅行者|りょこうしゃ	traveller; tourist
+w:園芸|えんげい	horticulture
+w:芸術|げいじゅつ	arts
+w:美術|びじゅつ	art; fine art
+w:作品|さくひん	piece; artwork
+w:作者|さくしゃ	writer; artist
+w:作家|さっか	author
+w:画家|がか	artist
+w:詩|し	poetry; verse
+w:物語|ものがたり	narrative
+w:童話|どうわ	fairy tale; fairytale; children's book
+w:演劇|えんげき	theatre; drama; play; acting
+w:役者|やくしゃ	stage actor; performer
+w:主人公|しゅじんこう	protagonist; hero; heroine
+w:演奏|えんそう	performance; playing; recital
+w:楽器|がっき	instrument
+w:歌手|かしゅ	vocalist
+w:曲|きょく	song; music; track
+w:展覧会|てんらんかい	exhibit; show
+w:文化祭|ぶんかさい	culture festival; cultural festival
+w:茶道|さどう	way of tea
+w:生け花|いけばな	flower arrangement; ikebana
+w:行事|ぎょうじ	ceremony
+w:儀式|ぎしき	rite
+w:神|かみ	gods; deity
+w:数字|すうじ	numeral; digit
+w:計算|けいさん	computation; calculating
+w:合計|ごうけい	sum
+w:平均|へいきん	mean
+w:割合|わりあい	rate; percentage
+w:割合に|わりあいに	relatively; rather
+w:差|さ	gap
+w:量|りょう	volume
+w:大量|たいりょう	large amount; mass; lots
+w:少量|しょうりょう	small amount; little
+w:全体|ぜんたい	entirety; overall
+w:部分|ぶぶん	section
+w:一部|いちぶ	portion
+w:全員|ぜんいん	everybody; all
+w:大半|たいはん	most; greater part
+w:多数|たすう	many
+w:少数|しょうすう	few
+w:回数|かいすう	frequency
+w:番目|ばんめ	nth; ordinal
+w:最高|さいこう	maximum
+w:最低|さいてい	minimum
+w:最大|さいだい	biggest; greatest
+w:増加|ぞうか	growth; rise
+w:減少|げんしょう	decline; reduction; drop
+w:引き算|ひきざん	minus
+w:足し算|たしざん	plus
+w:掛け算|かけざん	times
+w:単位|たんい	credits
+w:面積|めんせき	surface area
+w:速さ|はやさ	speed; velocity
+w:大きさ|おおきさ	size; bigness
+w:幅|はば	breadth
+w:キロ|キロ	kilo; kilogram; kilometre; kg; km
+w:メートル|メートル	metre; m
+w:センチ|センチ	centimetre; cm
+w:グラム|グラム	gramme; g
+w:リットル|リットル	litre; l
+w:パーセント|パーセント	per cent; percentage
+w:丸|まる	round; ring
+w:四角|しかく	rectangle; quadrilateral
+w:点|てん	mark; score
+w:縦|たて	height; lengthwise
+w:直線|ちょくせん	line
+w:曲線|きょくせん	curved line
+w:平ら|たいら	even
+w:斜め|ななめ	slanted; oblique; tilted
+w:逆|ぎゃく	inverse; backwards
+w:裏|うら	back; behind; rear
+w:表|おもて	front; face; outside
+w:底|そこ	sole
+w:端|はし	tip; side
+w:隅|すみ	nook
+w:周り|まわり	circumference; nearby
+w:辺り|あたり	neighborhood; around
+w:付近|ふきん	neighbourhood; nearby; area
+w:手前|てまえ	in front
+w:奥|おく	interior; depths
+w:内側|うちがわ	inside; interior
+w:外側|そとがわ	outside; exterior
+w:左右|さゆう	both sides
+w:上下|じょうげ	top and bottom; above and below
+w:前後|ぜんご	about; approximately; before and after
+w:方向|ほうこう	way
+w:向き|むき	facing; orientation
+w:位置|いち	location; place
+w:範囲|はんい	extent
+w:変化|へんか	variation; transformation
+w:移動|いどう	move; transfer
+w:移る|うつる	shift; transfer
+w:移す|うつす	shift
+w:進む|すすむ	progress; proceed
+w:進める|すすめる	advance; push forward
+w:戻す|もどす	give back; restore
+w:回る|まわる	rotate; spin
+w:回す|まわす	spin; rotate
+w:転がる|ころがる	tumble
+w:流れる|ながれる	run; stream
+w:流す|ながす	drain; flush
+w:浮かぶ|うかぶ	occur to
+w:沈む|しずむ	set; go down
+w:跳ぶ|とぶ	leap; hop
+w:跳ねる|はねる	jump; leap
+w:滑る|すべる	skate
+w:揺らす|ゆらす	swing; sway
+w:傾く|かたむく	incline; slope
+w:伸びる|のびる	extend; lengthen
+w:伸ばす|のばす	extend; grow; stretch
+w:縮む|ちぢむ	contract
+w:広がる|ひろがる	expand; widen; extend
+w:広げる|ひろげる	expand; open
+w:狭まる|せばまる	get narrower
+w:重なる|かさなる	be piled up; coincide
+w:重ねる|かさねる	stack
+w:離れる|はなれる	be separated; separate
+w:離す|はなす	part; release
+w:近づく|ちかづく	come near; get closer; draw near
+w:近づける|ちかづける	bring near
+w:遠ざかる|とおざかる	go away; recede
+w:抜ける|ぬける	be missing
+w:抜く|ぬく	remove; extract
+w:外れる|はずれる	be off; be disconnected
+w:外す|はずす	undo
+w:はまる|はまる	fit; be hooked; get addicted
+w:動かす|うごかす	run; shift
+w:起きあがる|おきあがる	sit up; rise
+w:振る|ふる	swing
+w:振り向く|ふりむく	look back
+w:覗く|のぞく	peep; look in
+w:見上げる|みあげる	look up
+w:見下ろす|みおろす	look down
+w:見送る|みおくる	let pass
+w:眺める|ながめる	look at; view; watch
+w:にらむ|にらむ	glare; stare at
+w:指す|さす	point; point to
+w:示す|しめす	point out
+w:叩く|たたく	tap; slap; beat
+w:殴る|なぐる	beat; strike
+w:踏む|ふむ	tread on; step
+w:押さえる|おさえる	press down; hold
+w:握る|にぎる	hold; clench
+w:つかむ|つかむ	grasp; catch; seize
+w:抱く|だく	hold; hug; embrace
+w:抱える|かかえる	carry
+w:担ぐ|かつぐ	shoulder; carry
+w:背負う|せおう	carry; shoulder
+w:引っ張る|ひっぱる	pull; drag
+w:押し込む|おしこむ	push in; cram
+w:突く|つく	push; jab
+w:刺す|さす	pierce; bite
+w:埋める|うめる	fill
+w:削る|けずる	cut; reduce; whittle
+w:結ぶ|むすぶ	link; bind
+w:ほどく|ほどく	undo; unravel
+w:縛る|しばる	bind; tie
+w:巻く|まく	wrap; coil
+w:挟む|はさむ	sandwich; insert; pinch
+w:吊るす|つるす	suspend
+w:扱う|あつかう	deal with
+w:与える|あたえる	provide; award
+w:受け取る|うけとる	receive; get
+w:預かる|あずかる	take care of; hold
+w:貸し出す|かしだす	loan; rent out; lend
+w:配る|くばる	distribute; deliver
+w:分かれる|わかれる	branch; separate
+w:揃える|そろえる	arrange; gather; line up
+w:揃う|そろう	be gathered; match
+w:詰める|つめる	fill; cram
+w:詰まる|つまる	be clogged; be stuffed
+w:包み|つつみ	parcel
+w:袋|ふくろ	bag; pouch; plastic bag; paper bag
+w:入れ物|いれもの	case; box
+w:容器|ようき	vessel
+w:缶|かん	tin
+w:蓋|ふた	cover; cap
+w:栓|せん	plug; cap
+w:紐|ひも	strap
+w:糸|いと	yarn; string
+w:針|はり	pin; hand
+w:のり|のり	paste
+w:部品|ぶひん	parts; component; components
+w:現れる|あらわれる	emerge; show up
+w:表す|あらわす	represent
+w:起こる|おこる	take place
+w:生じる|しょうじる	occur; happen
+w:当たる|あたる	be right
+w:当てる|あてる	apply
+w:合う|あう	suit
+w:合わせる|あわせる	combine; adjust
+w:余る|あまる	remain; be in excess
+w:残る|のこる	stay
+w:奪う|うばう	steal; rob
+w:得る|える	obtain; earn
+w:求める|もとめる	ask for; demand; want
+w:望む|のぞむ	desire; want; hope for
+w:願う|ねがう	hope; pray
+w:争う|あらそう	fight; dispute
+w:勝る|まさる	surpass; excel; be better
+w:劣る|おとる	be worse
+w:越える|こえる	get over
+w:超える|こえる	surpass; go beyond
+w:過ごす|すごす	pass
+w:過ぎ去る|すぎさる	go by
+w:経つ|たつ	elapse; go by
+w:迫る|せまる	approach; close in
+w:避ける|さける	dodge
+w:防ぐ|ふせぐ	protect; guard
+w:助かる|たすかる	be rescued; be a help
+w:支える|ささえる	hold up
+w:救う|すくう	save
+w:務める|つとめる	act as
+w:努める|つとめる	try; strive; endeavor; endeavour
+w:試す|ためす	try
+w:確かめる|たしかめる	confirm; verify
+w:確認|かくにん	check; verification
+w:間違う|まちがう	make a mistake; be mistaken
+w:迷惑|めいわく	bother; annoyance
+w:邪魔|じゃま	obstacle; disturbance; in the way
+w:任せる|まかせる	leave to; entrust
+w:逆らう|さからう	defy
+w:命じる|めいじる	command
+w:決まり|きまり	regulation
+w:向かう|むかう	head for; go toward
+w:向ける|むける	point; direct; aim
+w:向く|むく	turn; look
+w:迎え|むかえ	pick up; pickup
+w:通り過ぎる|とおりすぎる	go past; pass
+w:立ち止まる|たちどまる	halt; stand still
+w:立ち上がる|たちあがる	get up; rise
+w:飛び出す|とびだす	run out
+w:飛び込む|とびこむ	dive into
+w:追う|おう	pursue
+w:追いかける|おいかける	chase
+w:追い越す|おいこす	pass
+w:落ち着く|おちつく	settle; relax
+w:慌てる|あわてる	hurry
+w:焦る|あせる	rush; panic
+w:怠ける|なまける	slack off; idle
+w:サボる|サボる	skip; skip work; slack off; cut class
+w:見逃す|みのがす	let pass
+w:見直す|みなおす	review; re-examine
+w:見かける|みかける	see; notice; spot
+w:見つめる|みつめる	gaze at; stare
+w:聞き取る|ききとる	hear; make out
+w:言い出す|いいだす	suggest; bring up
+w:食べ過ぎる|たべすぎる	eat too much
+w:取り出す|とりだす	pull out
+w:取り替える|とりかえる	swap; change
+w:取り消す|とりけす	take back; revoke
+w:取り上げる|とりあげる	pick up; confiscate
+w:取り組む|とりくむ	deal with
+w:受け入れる|うけいれる	receive
+w:組み立てる|くみたてる	put together; build
+w:言い返す|いいかえす	answer back
+w:思い切る|おもいきる	decide; give up
+w:思い切り|おもいきり	as hard as possible; to one's heart's content
+w:降り出す|ふりだす	begin to rain
+w:付ける|つける	turn on; add
+w:付く|つく	be on
+w:くっつく|くっつく	stick; cling
+w:剥がす|はがす	tear off; remove
+w:破れる|やぶれる	tear; rip
+w:折れる|おれる	be broken
+w:砕ける|くだける	shatter; break
+w:崩れる|くずれる	crumble; fall apart
+w:崩す|くずす	break; demolish
+w:潰す|つぶす	squash
+w:潰れる|つぶれる	be squashed; collapse
+w:焦げる|こげる	burn; be burnt
+w:冷ます|さます	let cool; cool down
+w:覚める|さめる	awake
+w:済む|すむ	end
+w:済ませる|すませる	complete
+w:間に合わせる|まにあわせる	manage
+w:仕上げる|しあげる	finish; complete
+w:実行|じっこう	execution; practice; implementation
+w:実現|じつげん	realisation; coming true
+w:実験|じっけん	test
+w:活動|かつどう	activities
+w:行動|こうどう	behaviour; conduct
+w:参加|さんか	joining; taking part
+w:協力|きょうりょく	collaboration; help
+w:協調|きょうちょう	coordination
+w:完成|かんせい	complete; completed
+w:解決|かいけつ	resolution; solving
+w:決定|けってい	determination
+w:変更|へんこう	modification
+w:中止|ちゅうし	suspension; stop
+w:延期|えんき	delay
+w:終了|しゅうりょう	termination; close
+w:利用|りよう	utilisation; usage
+w:使用|しよう	usage
+w:応用|おうよう	practical use
+w:調査|ちょうさ	research; inquiry
+w:検査|けんさ	test; check
+w:整理|せいり	organizing; organising; tidying
+w:支度|したく	preparation; preparations
+w:発達|はったつ	development; growth
+w:進歩|しんぽ	advance; improvement
+w:上達|じょうたつ	progress
+w:挑戦|ちょうせん	attempt; try
+w:反省|はんせい	self-reflection
+w:感心|かんしん	being impressed; impressed
+w:信用|しんよう	confidence
+w:信頼|しんらい	confidence
+w:配慮|はいりょ	care
+w:注意深い|ちゅういぶかい	attentive; cautious
+w:指示|しじ	directions; instruction; orders
+w:指導|しどう	instruction; teaching
+w:要求|ようきゅう	request
+w:要望|ようぼう	demand
+w:訪問|ほうもん	call
+w:帰国|きこく	return home; going home
+w:帰宅|きたく	going home; coming home
+w:外出|がいしゅつ	outing
+w:通勤|つうきん	commute
+w:通学|つうがく	commute to school; going to school
+w:移住|いじゅう	migration; emigration; immigration
+w:怪しい|あやしい	doubtful; dubious; fishy
+w:荒い|あらい	wild
+w:粗い|あらい	rough
+w:緩い|ゆるい	slack; lenient
+w:きつい|きつい	tough; harsh
+w:鋭い|するどい	keen
+w:鈍い|にぶい	blunt
+w:濃い|こい	strong; dark; deep
+w:淡い|あわい	faint
+w:眩しい|まぶしい	bright; glaring
+w:臭い|くさい	stinky; stinking
+w:ずるい|ずるい	cunning; sneaky
+w:もったいぶる|もったいぶる	act important; show off
+w:騒がしい|さわがしい	loud; boisterous
+w:大人っぽい|おとなっぽい	mature; grown-up; adult-like
+w:子供っぽい|こどもっぽい	childlike; immature
+w:面倒くさい|めんどうくさい	troublesome; tedious; annoying; a pain
+w:詳しい|くわしい	knowledgeable; well informed
+w:等しい|ひとしい	equivalent; the same
+w:激しい|はげしい	fierce; strong; heavy
+w:素早い|すばやい	fast; swift
+w:貴い|とうとい	valuable
+w:険しい|けわしい	harsh; rough
+w:物凄い|ものすごい	amazing; awesome; incredible
+w:凄い|すごい	great; awesome; incredible; wonderful
+w:頼もしい|たのもしい	dependable; promising
+w:親しい|したしい	friendly; familiar
+w:乏しい|とぼしい	poor; meager; meagre
+w:恐い|こわい	scary; afraid; frightened
+w:清い|きよい	clear
+w:幼い|おさない	little; young
+w:くどい|くどい	long-winded; repetitive; rich
+w:だるい|だるい	tired; lethargic
+w:つらい|つらい	hard; tough; difficult
+w:しつこい|しつこい	pushy
+w:ありがたい|ありがたい	thankful; appreciated
+w:めでたい|めでたい	auspicious
+w:もろい|もろい	brittle
+w:新た|あらた	anew
+w:確実|かくじつ	sure; definite
+w:正確|せいかく	exact; correct; precise
+w:明確|めいかく	definite
+w:曖昧|あいまい	ambiguous; unclear
+w:複雑|ふくざつ	complex
+w:重大|じゅうだい	grave; significant
+w:重要|じゅうよう	significant
+w:主要|しゅよう	major; chief; key
+w:基本|きほん	basis; foundation; fundamentals
+w:基本的|きほんてき	basically
+w:一般的|いっぱんてき	typical; generally
+w:個人的|こじんてき	private; personally
+w:経済的|けいざいてき	financial
+w:自動的|じどうてき	automatically
+w:平気|へいき	fine; okay; all right; unbothered
+w:素敵|すてき	wonderful; great; beautiful
+w:派手|はで	gaudy; loud
+w:地味|じみ	simple; modest
+w:豪華|ごうか	gorgeous; deluxe; lavish
+w:贅沢|ぜいたく	luxurious; extravagance
+w:適当|てきとう	appropriate; random; sloppy
+w:適切|てきせつ	suitable; proper
+w:充分|じゅうぶん	enough
+w:不思議|ふしぎ	wonder; wondrous; odd
+w:意外|いがい	surprising
+w:真剣|しんけん	earnest
+w:楽|らく	relaxed; ease
+w:気楽|きらく	easygoing; relaxed
+w:面倒|めんどう	troublesome; hassle; bother; nuisance
+w:幸福|こうふく	happy
+w:不幸|ふこう	unhappy; unfortunate
+w:不自由|ふじゆう	inconvenient
+w:不安定|ふあんてい	unsteady; insecure
+w:安定|あんてい	stable; steady
+w:完全|かんぜん	completely; whole
+w:完璧|かんぺき	perfect; perfection
+w:無事|ぶじ	safely; safe and sound
+w:活発|かっぱつ	energetic
+w:穏やか|おだやか	mild; peaceful
+w:様々|さまざま	diverse; different
+w:別|べつ	another; other
+w:特殊|とくしゅ	particular
+w:異常|いじょう	unusual; abnormality
+w:かなり|かなり	quite; pretty; rather
+w:相当|そうとう	fairly; pretty
+w:非常に|ひじょうに	very; exceedingly
+w:更に|さらに	further; moreover
+w:ますます|ますます	increasingly
+w:一層|いっそう	all the more; much more
+w:ほぼ|ほぼ	nearly; approximately
+w:約|やく	around; roughly
+w:およそ|およそ	approximately; around
+w:せいぜい|せいぜい	at best
+w:わずか|わずか	few; little
+w:たった|たった	merely
+w:ただ|ただ	just; merely
+w:単に|たんに	only; just
+w:主に|おもに	mostly; chiefly
+w:ことに|ことに	particularly
+w:なるべく|なるべく	if possible
+w:できるだけ|できるだけ	as much as one can
+w:とにかく|とにかく	anyhow; in any case
+w:いずれ|いずれ	eventually; someday
+w:いつか|いつか	some day; sometime; one day
+w:ついに|ついに	at last; in the end
+w:ようやく|ようやく	finally
+w:たちまち|たちまち	at once; immediately
+w:すぐに|すぐに	right away; soon; at once
+w:直ちに|ただちに	immediately; right away
+w:早速|さっそく	immediately; at once
+w:突然|とつぜん	abruptly; all of a sudden
+w:いきなり|いきなり	suddenly
+w:ふと|ふと	casually
+w:偶然|ぐうぜん	accidentally; by accident
+w:たまたま|たまたま	accidentally; coincidentally
+w:たまに|たまに	sometimes; once in a while
+w:しばしば|しばしば	frequently
+w:度々|たびたび	frequently
+w:常に|つねに	constantly
+w:絶えず|たえず	continually; always
+w:相変わらず|あいかわらず	as always; as ever
+w:再び|ふたたび	once again
+w:改めて|あらためて	again
+w:順に|じゅんに	in turn
+w:互いに|たがいに	one another
+w:共に|ともに	with
+w:別々|べつべつ	separate
+w:直接|ちょくせつ	direct
+w:自ら|みずから	for oneself
+w:わざわざ|わざわざ	on purpose; specially
+w:わざと|わざと	deliberately; intentionally
+w:思わず|おもわず	involuntarily; unintentionally
+w:つい|つい	carelessly
+w:うっかり|うっかり	accidentally; absentmindedly
+w:案外|あんがい	surprisingly
+w:やはり|やはり	after all
+w:やっぱり|やっぱり	after all; still
+w:もちろん|もちろん	certainly; sure
+w:確かに|たしかに	surely; indeed; definitely
+w:必ずしも|かならずしも	not always
+w:まさか|まさか	impossible
+w:どうしても|どうしても	by all means
+w:なんとか|なんとか	somehow or other
+w:ぜひ|ぜひ	definitely; certainly
+w:どうせ|どうせ	anyhow; after all
+w:せっかく|せっかく	especially
+w:さすが|さすが	as expected
+w:むしろ|むしろ	instead
+w:かえって|かえって	instead; rather
+w:一応|いちおう	for now; tentatively
+w:とりあえず|とりあえず	for the time being
+w:全く|まったく	entirely; totally; really
+w:少しも|すこしも	not even a little
+w:ちっとも|ちっとも	not a bit
+w:さっぱり|さっぱり	not at all; refreshed
+w:すっきり|すっきり	clear; refreshing
+w:ぐっすり|ぐっすり	sound asleep; deeply
+w:ぴったり|ぴったり	perfect fit
+w:ぎりぎり|ぎりぎり	barely; just in time; at the last minute
+w:ぎっしり|ぎっしり	packed; full
+w:そっと|そっと	quietly
+w:じっと|じっと	motionless
+w:にこにこ|にこにこ	smile
+w:にっこり|にっこり	smile; smiling
+w:ぺらぺら|ぺらぺら	fluent
+w:ぺこぺこ|ぺこぺこ	hungry; very hungry
+w:からから|からから	very dry
+w:ぶつぶつ|ぶつぶつ	muttering; grumble
+w:ぼんやり|ぼんやり	dimly; blankly
+w:のんびり|のんびり	carefree
+w:ゆったり|ゆったり	loose; comfortable
+w:ばらばら|ばらばら	apart
+w:ごろごろ|ごろごろ	rolling
+w:しとしと|しとしと	drizzle
+w:びしょびしょ|びしょびしょ	soaked; drenched
+w:ぬるぬる|ぬるぬる	slippery
+w:ざらざら|ざらざら	gritty; coarse
+w:ぐらぐら|ぐらぐら	shaky
+w:きらきら|きらきら	sparkling; twinkling
+w:ぎらぎら|ぎらぎら	dazzling
+w:ちらっと|ちらっと	glance; briefly
+w:ちゃんと|ちゃんと	correctly
+w:きちんと|きちんと	properly
+w:どんどん|どんどん	quickly
+w:ぐんぐん|ぐんぐん	rapidly
+w:うとうと|うとうと	dozing off; drowsy
+w:ぶらぶら|ぶらぶら	wandering
+w:或いは|あるいは	perhaps; maybe
+w:もしくは|もしくは	or
+w:及び|および	as well as
+w:並びに|ならびに	and; as well as
+w:しかも|しかも	besides; furthermore
+w:その上|そのうえ	besides; moreover
+w:なお|なお	still; furthermore
+w:ただし|ただし	but
+w:もっとも|もっとも	however
+w:それでも|それでも	still; nevertheless; but still
+w:それなのに|それなのに	even so; despite that
+w:にもかかわらず|にもかかわらず	despite; nevertheless; even so
+w:ところが|ところが	but
+w:けれども|けれども	although
+w:そこで|そこで	therefore
+w:したがって|したがって	accordingly; consequently
+w:従って|したがって	therefore; consequently
+w:つまり|つまり	that is; in short
+w:すなわち|すなわち	that is; namely
+w:要するに|ようするに	in a word; basically
+w:というのは|というのは	because
+w:そういえば|そういえば	speaking of which
+w:ちなみに|ちなみに	incidentally
+w:さて|さて	well; now
+w:一方|いっぽう	meanwhile
+w:反面|はんめん	on the other hand
+w:アンケート|アンケート	survey
+w:エアコン|エアコン	air conditioning; AC
+w:オープン|オープン	open
+w:カタログ|カタログ	catalogue
+w:コンビニ|コンビニ	konbini
+w:サイズ|サイズ	size
+w:サイン|サイン	autograph
+w:シーズン|シーズン	season
+w:センター|センター	centre
+w:チャンス|チャンス	opportunity
+w:ドラマ|ドラマ	drama
+w:バーゲン|バーゲン	bargain sale
+w:パート|パート	part-time job; part time
+w:プレゼント|プレゼント	gift
+w:プロ|プロ	pro
+w:ミス|ミス	mistake
+w:メンバー|メンバー	members
+w:ユーモア|ユーモア	humour
+w:ラッシュ|ラッシュ	rush
+w:原因|げんいん	reason; origin
+w:結果|けっか	outcome; consequence
+w:影響|えいきょう	impact
+w:効果|こうか	effectiveness; result
+w:関係者|かんけいしゃ	people involved; those concerned; stakeholder
+w:条件|じょうけん	conditions; terms; requirement
+w:状態|じょうたい	status
+w:状況|じょうきょう	circumstances; conditions
+w:事情|じじょう	situation; reasons
+w:場面|ばめん	situation
+w:例|れい	instance
+w:特徴|とくちょう	feature; trait
+w:性質|せいしつ	character; quality
+w:種類|しゅるい	sort; variety
+w:内容|ないよう	contents; substance
+w:中身|なかみ	content; inside
+w:全て|すべて	whole
+w:様子|ようす	condition; look; situation
+w:姿|すがた	form; shape
+w:見た目|みため	appearance
+w:雰囲気|ふんいき	ambience; vibe
+w:調子|ちょうし	shape; state
+w:傾向|けいこう	trend
+w:基準|きじゅん	criteria; benchmark
+w:原則|げんそく	rule
+w:方針|ほうしん	course; plan
+w:手段|しゅだん	way; measure; method
+w:方式|ほうしき	format; style
+w:仕組み|しくみ	system
+w:役割|やくわり	part
+w:立場|たちば	stance; situation
+w:目安|めやす	standard; criterion; rough idea
+w:限界|げんかい	limits; boundary
+w:限度|げんど	maximum
+w:存在|そんざい	presence; being
+w:問題点|もんだいてん	problem point
+w:長所|ちょうしょ	strength; merit; advantage
+w:短所|たんしょ	weakness; fault; shortcoming
+w:欠点|けってん	flaw; weakness; shortcoming
+w:利点|りてん	merit; benefit
+w:爆発|ばくはつ	blast
+w:衝突|しょうとつ	crash; clash; conflict
+w:停電|ていでん	blackout; power cut; power failure
+w:断水|だんすい	water outage; water stoppage
+w:遅刻|ちこく	lateness; late
+w:紛失|ふんしつ	losing
+w:落とし物|おとしもの	lost property; something dropped
+w:忘れ物|わすれもの	forgotten item; something forgotten
+w:盗難|とうなん	robbery
+w:苦情|くじょう	complaints
+w:警報|けいほう	alert
+w:非常口|ひじょうぐち	fire exit
+w:助け|たすけ	assistance; aid
+w:記念|きねん	memory; souvenir; memorial
+w:記念日|きねんび	memorial day
+w:成人式|せいじんしき	coming of age day
+w:入学式|にゅうがくしき	school entrance ceremony
+w:卒業式|そつぎょうしき	graduation
+w:お盆|おぼん	Bon festival; festival of the dead
+w:年賀状|ねんがじょう	New Year card
+w:お年玉|おとしだま	New Year's money; New Year gift
+w:花火|はなび	firework
+w:送別会|そうべつかい	goodbye party
+w:忘年会|ぼうねんかい	end of year party
+w:飲み会|のみかい	party; nomikai
+w:出席|しゅっせき	presence
+w:参加者|さんかしゃ	participants
+w:主催|しゅさい	organizing; organising
+w:服装|ふくそう	outfit; clothing; dress
+w:格好|かっこう	look; shape
+w:私服|しふく	casual clothes; plain clothes; own clothes
+w:袖|そで	sleeves
+w:柄|がら	design
+w:縞|しま	stripe
+w:水玉|みずたま	polka dot; dots
+w:無地|むじ	solid color; solid colour
+w:生地|きじ	material; dough
+w:毛|け	fur
+w:マフラー|マフラー	muffler
+w:パジャマ|パジャマ	pyjamas
+w:アクセサリー|アクセサリー	accessory; jewelry; jewellery
+w:イヤリング|イヤリング	earring
+w:香水|こうすい	fragrance
+w:髪型|かみがた	haircut; hairdo
+w:ひげ|ひげ	moustache; whiskers
+w:おしゃれ|おしゃれ	stylish
+w:母語|ぼご	native language; first language
+w:標準語|ひょうじゅんご	standard Japanese
+w:単語|たんご	vocabulary
+w:文章|ぶんしょう	sentences; passage
+w:敬語|けいご	honorifics; keigo; honorific language
+w:通訳|つうやく	interpretation
+w:読み方|よみかた	reading; pronunciation
+w:書き方|かきかた	how to write
+w:ローマ字|ローマじ	roman letters; latin alphabet
+w:記号|きごう	mark
+w:見出し|みだし	heading
+w:目次|もくじ	contents
+w:表紙|ひょうし	book cover
+w:筆者|ひっしゃ	author
+w:日記|にっき	journal
+w:メモ|メモ	notes
+w:味見|あじみ	taste
+w:嗅ぐ|かぐ	sniff
+w:なでる|なでる	pet
+w:抱きしめる|だきしめる	embrace
+w:寄る|よる	stop by; approach
+w:寄せる|よせる	bring closer
+w:立ち寄る|たちよる	drop by; drop in
+w:引き返す|ひきかえす	go back; return
+w:通じる|つうじる	connect; lead to
+w:通す|とおす	let pass; pass
+w:届く|とどく	arrive
+w:至る|いたる	arrive at
+w:備える|そなえる	prepare; equip
+w:蓄える|たくわえる	save; stock
+w:貯める|ためる	save up
+w:溜まる|たまる	collect
+w:溜める|ためる	accumulate; store
+w:量る|はかる	measure
+w:誤る|あやまる	make a mistake; err
+w:馴染む|なじむ	adapt
+w:目立つ|めだつ	be conspicuous
+w:輝く|かがやく	shine; glitter
+w:照らす|てらす	illuminate; shine on
+w:冷え込む|ひえこむ	get cold
+w:明ける|あける	begin
+w:生える|はえる	grow; sprout
+w:枯れる|かれる	die
+w:散る|ちる	fall; scatter
+w:実る|みのる	ripen
+w:育つ|そだつ	grow; be raised
+w:稼ぐ|かせぐ	earn money
+w:儲かる|もうかる	make money; profit
+w:儲ける|もうける	make money; profit
+w:費やす|ついやす	spend
+w:雇う|やとう	employ
+w:辞める|やめる	resign; leave
+w:休憩|きゅうけい	recess
+w:働きかける|はたらきかける	approach
+w:問い合わせる|といあわせる	enquire; ask
+w:問い合わせ|といあわせ	enquiry; question
+w:知らせる|しらせる	notify; let know; tell
+w:知らせ|しらせ	notification
+w:記入|きにゅう	filling out; entry
+w:署名|しょめい	sign
+w:提出|ていしゅつ	handing in
+w:貼り付ける|はりつける	attach
+w:日用品|にちようひん	daily goods; everyday items
+w:ごみ袋|ごみぶくろ	trash bag; rubbish bag; bin bag
+w:ティッシュ|ティッシュ	tissues
+w:ドライヤー|ドライヤー	hairdryer; dryer
+w:爪切り|つめきり	nail clippers
+w:懐中電灯|かいちゅうでんとう	torch
+w:マッチ|マッチ	matches
+w:花瓶|かびん	flower vase
+w:額縁|がくぶち	frame
+w:置き時計|おきどけい	clock; desk clock
+w:腕時計|うでどけい	watch
+w:鉢|はち	pot
+w:湯飲み|ゆのみ	cup
+w:鍋|なべ	saucepan; hot pot
+w:フライパン|フライパン	pan; skillet
+w:包丁|ほうちょう	knife
+w:まな板|まないた	chopping board
+w:電子レンジ|でんしレンジ	microwave
+w:食器|しょっき	dishes
+w:体力|たいりょく	stamina; strength
+w:健康診断|けんこうしんだん	medical checkup; checkup; physical
+w:検診|けんしん	checkup; examination
+w:予防接種|よぼうせっしゅ	vaccine; immunization
+w:うつる|うつる	catch
+w:うつす|うつす	give
+w:花粉症|かふんしょう	pollen allergy
+w:アレルギー|アレルギー	allergies
+w:睡眠不足|すいみんぶそく	sleep deprivation
+w:太る|ふとる	get fat; put on weight
+w:痩せる|やせる	get thin; become thin
+w:鍛える|きたえる	build up
+w:深呼吸|しんこきゅう	deep breathing
+w:休養|きゅうよう	recuperation
+w:くたくた|くたくた	worn out; tired
+w:ふらふら|ふらふら	wobbly
+w:ひりひり|ひりひり	burning
+j:一	1
+j:二	2
+j:三	3
+j:四	4
+j:五	5
+j:六	6
+j:七	7
+j:八	8
+j:九	9
+j:十	10
+j:百	one hundred; 100
+j:千	one thousand; 1000
+j:万	10000
+j:円	round
+j:日	Japan
+j:金	metal
+j:土	ground; dirt
+j:人	people; human
+j:子	kid
+j:女	female
+j:男	male
+j:父	dad
+j:母	mom; mum
+j:年	age
+j:時	when
+j:分	divide
+j:午	midday
+j:前	in front
+j:後	back; later
+j:毎	each
+j:間	space; among
+j:上	on; top
+j:下	under
+j:中	in; center; centre
+j:外	out
+j:大	large; great
+j:小	little
+j:長	leader; head
+j:高	tall
+j:気	mind; energy; mood; feeling
+j:本	main; true
+j:学	learning; learn
+j:生	birth; live; raw
+j:先	before; tip
+j:名	famous
+j:国	nation
+j:行	line
+j:出	exit; leave
+j:入	go in; put in
+j:見	look; watch
+j:聞	listen
+j:書	book
+j:話	speak; story
+j:休	holiday
+j:電	electric
+j:兄	big brother; brother
+j:弟	little brother; brother
+j:姉	big sister; sister
+j:妹	little sister; sister
+j:親	close
+j:家	home; family
+j:私	me
+j:自	self
+j:主	lord; owner
+j:者	one who
+j:員	staff
+j:足	leg; enough
+j:力	strength; force
+j:病	sickness; disease; sick
+j:医	doctor
+j:昼	noon; day
+j:秋	fall
+j:曜	weekday
+j:去	go away
+j:代	generation; fee; age
+j:早	fast
+j:度	occurrence
+j:青	green
+j:色	colour
+j:明	light; clear
+j:重	important
+j:近	close
+j:多	much; a lot
+j:広	broad; spacious
+j:悪	evil
+j:正	right; proper
+j:安	safe; calm
+j:真	real; truth
+j:有	be
+j:別	different; another
+j:不	non; negative
+j:元	beginning; former
+j:館	building; hall
+j:店	store
+j:屋	house; store
+j:院	temple
+j:場	location
+j:地	earth; land; place
+j:道	path; street
+j:海	ocean
+j:世	society
+j:田	field; paddy
+j:野	plain; wild
+j:風	style
+j:台	counter for machines
+j:会	meeting; society
+j:通	commute; pass; go through
+j:言	word; speak
+j:動	motion
+j:作	create
+j:用	errand
+j:持	have; carry
+j:知	knowledge
+j:考	think
+j:集	collect
+j:始	start
+j:終	finish
+j:運	fate
+j:転	revolve
+j:住	dwell; reside
+j:起	wake up; rise
+j:着	put on
+j:帰	go home
+j:急	urgent
+j:写	photograph
+j:発	start; departure
+j:死	die
+j:仕	do
+j:事	affair
+j:社	society
+j:業	work; industry
+j:勉	effort; study
+j:問	ask; problem
+j:題	subject
+j:質	question
+j:意	idea; will
+j:味	flavor; flavour
+j:文	sentence; text; letter
+j:字	letter
+j:漢	Chinese
+j:英	English
+j:試	attempt
+j:験	verify; examination
+j:研	sharpen
+j:究	study
+j:図	diagram; plan
+j:画	drawing; stroke
+j:映	movie
+j:計	plan; plot
+j:理	principle
+j:料	charge
+j:工	construction; industry
+j:以	by means of; since
+j:方	way; side
+j:品	product; article; elegance
+j:物	object
+j:注	note
+j:楽	comfort; easy; enjoy
+j:音	noise
+j:飯	food
+j:茶	brown
+j:肉	flesh
+j:牛	cattle; bull
+j:洋	west
+j:服	clothing
+j:旅	travel; journey
+j:婦	lady
+j:彼	him
+j:君	junior
+j:皆	everybody
+j:様	Mr; Ms; Mrs; way
+j:氏	clan; surname
+j:娘	girl
+j:老	old; elderly
+j:性	gender
+j:歯	teeth
+j:背	stature
+j:腹	stomach; abdomen
+j:胸	breast
+j:皮	hide
+j:涙	tears
+j:薬	drug
+j:痛	hurt; painful
+j:疲	fatigue; exhausted
+j:眠	sleepy
+j:健	health
+j:治	heal
+j:療	cure; heal
+j:症	illness
+j:傷	injury; hurt
+j:喜	happy; rejoice
+j:悲	sorrow; grief
+j:怒	angry
+j:笑	smile
+j:泣	weep
+j:怖	scary; dread
+j:恐	dread
+j:驚	surprised
+j:感	emotion; sense; feel
+j:念	idea; sense
+j:想	think
+j:望	desire
+j:幸	happy; luck; fortune
+j:福	luck; blessing; fortune
+j:苦	hardship
+j:困	troubled; in trouble
+j:迷	astray; confused
+j:悩	trouble
+j:疑	suspect
+j:信	faith
+j:頼	trust
+j:覚	memorize; learn
+j:慣	accustomed; habit
+j:恥	embarrassment
+j:昔	old times; past
+j:将	general
+j:未	un
+j:過	too much
+j:現	now; current
+j:末	tip
+j:初	beginning
+j:最	utmost; best
+j:次	following
+j:期	term; time
+j:刻	engrave; moment
+j:秒	seconds
+j:晩	night
+j:頃	around
+j:暑	heat
+j:暖	warmth
+j:冷	chill
+j:温	warmth
+j:晴	sunny; clear; fine weather
+j:曇	cloud
+j:雷	lightning
+j:光	shine
+j:陽	sunshine; yang
+j:波	waves
+j:林	forest
+j:森	woods
+j:石	rock
+j:港	harbour; port
+j:坂	hill
+j:草	weed
+j:葉	leaves
+j:種	type; species
+j:桜	cherry; cherry blossom; sakura
+j:松	pine tree
+j:虫	bug
+j:鳴	chirp; sing; sound
+j:然	like that
+j:環	circle
+j:境	boundary
+j:宇	space
+j:宙	air
+j:球	globe
+j:凍	frozen
+j:溶	dissolve
+j:湿	moist; wet; humid
+j:濡	wet
+j:軽	lightweight
+j:太	big
+j:細	slender; narrow
+j:遠	distant
+j:美	beauty
+j:薄	light; weak
+j:濃	strong; deep
+j:固	solid
+j:静	calm; still
+j:便	convenient
+j:利	advantage; benefit
+j:必	necessary; inevitable; must
+j:要	necessary; essential
+j:難	hard; difficulty
+j:易	simple
+j:単	unit
+j:複	multiple
+j:雑	miscellaneous
+j:完	perfect; finish
+j:全	complete
+j:適	fit; appropriate
+j:危	danger
+j:険	dangerous
+j:珍	unusual
+j:速	quick; speed
+j:熱	hot
+j:辛	hot; bitter
+j:丸	circle
+j:平	even; level
+j:等	etc; grade
+j:似	similar
+j:違	different; wrong
+j:宅	house; residence
+j:庭	yard
+j:階	story; storey
+j:除	exclude
+j:片	one side
+j:付	stick
+j:脱	remove; undress
+j:靴	shoe
+j:皿	dish
+j:杯	glass
+j:袋	sack
+j:捨	discard
+j:政	government
+j:党	political party
+j:選	select; election
+j:議	debate; deliberation
+j:権	power
+j:府	government; prefecture
+j:区	district
+j:相	each other
+j:官	government
+j:警	warning
+j:察	inspect
+j:軍	military
+j:戦	battle
+j:争	dispute; fight
+j:和	harmony
+j:際	edge; when
+j:領	rule
+j:犯	criminal; offense
+j:罪	guilt
+j:盗	theft
+j:捕	capture; arrest
+j:許	allow; forgive
+j:禁	forbid; ban
+j:経	pass
+j:済	end
+j:産	product
+j:商	business; commerce
+j:営	business
+j:費	cost
+j:値	cost
+j:給	pay; wage
+j:収	collect
+j:貯	store
+j:預	entrust
+j:職	work; employment; occupation
+j:務	task
+j:働	labor; labour
+j:退	withdraw
+j:資	funds
+j:製	made in; make
+j:造	create
+j:農	agriculture
+j:共	both
+j:任	responsibility
+j:責	responsibility
+j:努	strive
+j:説	explanation
+j:伝	transmit; tell
+j:報	news
+j:告	inform
+j:識	knowledge
+j:調	check
+j:査	inspect
+j:記	record; note
+j:示	indicate
+j:表	table; show
+j:論	discussion
+j:談	conversation
+j:決	decision
+j:定	set
+j:連	connect
+j:号	issue
+j:返	give back
+j:受	accept
+j:求	want
+j:案	proposal
+j:解	understand
+j:練	practise
+j:復	again
+j:達	achieve
+j:科	course
+j:算	calculation
+j:点	dot; score
+j:級	rank
+j:卒	graduation
+j:打	strike
+j:押	press
+j:追	follow
+j:逃	run away; flee
+j:探	look for
+j:落	drop
+j:越	cross; go over
+j:進	proceed; progress
+j:回	round
+j:曲	song; music
+j:結	connect
+j:組	team
+j:並	row; ordinary
+j:交	exchange
+j:減	reduce
+j:残	leave
+j:消	turn off; disappear
+j:守	guard; defend
+j:壊	destroy
+j:配	hand out
+j:抜	extract
+j:降	get off; rain
+j:乗	get on
+j:認	recognise; admit; acknowledge
+j:断	decline
+j:判	judgment; judgement
+j:確	sure; confirm
+j:吸	inhale
+j:留	stop
+j:船	boat
+j:航	sail
+j:荷	baggage; cargo
+j:予	in advance; previous
+j:約	approximately
+j:内	within
+j:観	see; look
+j:泊	stay
+j:宿	inn
+j:路	route; path
+j:駐	park
+j:符	sign
+j:都	metropolis
+j:神	gods; spirit
+j:第	ordinal; number
+j:各	every
+j:互	each other
+j:他	others
+j:由	cause
+j:実	reality; real
+j:無	none; no
+j:非	non; un
+j:的	mark
+j:化	transform
+j:式	formula; method
+j:関	relation
+j:係	connection; relation
+j:因	reason
+j:原	original
+j:件	item
+j:条	article
+j:状	state
+j:態	state; attitude
+j:容	form
+j:程	degree
+j:存	know
+j:寄	draw near
+j:込	put in; include
+j:申	humble say
+j:迎	greet
+j:招	beckon
+j:祝	celebration
+j:礼	manners; gratitude

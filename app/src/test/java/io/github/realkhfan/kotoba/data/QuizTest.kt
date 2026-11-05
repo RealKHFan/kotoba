@@ -98,6 +98,46 @@ class QuizTest {
         assertFalse(Meaning.matches("", "to eat"))
     }
 
+    @Test fun typedMeaningsForgiveSpellingAndPlurals() {
+        assertTrue(Meaning.matches("colour", "color"))
+        assertTrue(Meaning.matches("color", "colour"))
+        assertTrue(Meaning.matches("centre", "center"))
+        assertTrue(Meaning.matches("theatre", "theater (art form)"))
+        assertTrue(Meaning.matches("kilometres", "kilometer"))
+        assertTrue(Meaning.matches("organise", "to organize"))
+        assertTrue(Meaning.matches("travelling", "traveling"))
+        assertTrue(Meaning.matches("favourite", "favorite"))
+        assertTrue(Meaning.matches("grey", "gray"))
+        assertTrue(Meaning.matches("analyse", "analyze"))
+        assertTrue(Meaning.matches("catalogue", "catalog"))
+        assertTrue(Meaning.matches("dogs", "dog"))
+        assertTrue(Meaning.matches("dog", "dogs"))
+        assertTrue(Meaning.matches("cities", "city"))
+        assertTrue(Meaning.matches("box", "boxes"))
+        assertTrue(Meaning.matches("shoe", "shoes"))
+        assertTrue(Meaning.matches("co-worker", "coworker"))
+        assertTrue(Meaning.matches("10,000", "10000"))
+        assertTrue(Meaning.matches("a.m.", "am"))
+        assertFalse(Meaning.matches("glass", "glasses"))
+        assertFalse(Meaning.matches("good", "goods"))
+        assertFalse(Meaning.matches("new", "news"))
+        assertFalse(Meaning.matches("hour", "her"))
+        assertFalse(Meaning.matches("four", "for"))
+    }
+
+    @Test fun otherWaysToSayAMeaningCount() {
+        val quiz = Quiz(lib, Random(3), Settings(answers = AnswerMode.TYPE, writing = false, listening = false))
+        val douzo = lib.words.first { it.written == "どうぞ" }
+        val q = (0..50).map { quiz.question(douzo) as Typed }.first { it.english }
+        assertEquals("please (go ahead); here you are", q.answer)
+        listOf("Here you go", "go ahead", "please", "here you are", "after you").forEach { assertTrue(it, q.isRight(it)) }
+        assertFalse(q.isRight("thank you"))
+        val sorry = lib.words.first { it.written == "すみません" }
+        assertTrue((0..50).map { quiz.question(sorry) as Typed }.first { it.english }.isRight("pardon me"))
+        val en = lib.kanji.first { it.char == "円" }
+        assertTrue((0..50).map { quiz.question(en) as Typed }.first { it.english }.isRight("round"))
+    }
+
     @Test fun typeModeTypesEverything() {
         val quiz = Quiz(lib, Random(9), Settings(answers = AnswerMode.TYPE))
         repeat(2) {
