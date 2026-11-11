@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.provider.DocumentsContract
+import android.provider.OpenableColumns
 import android.provider.DocumentsContract.Document
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableLongStateOf
@@ -15,13 +16,13 @@ import androidx.core.net.toUri
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
 
-/** What a backup holds (progress, day log, settings as text), and where and when it was written. */
+/** What a backup holds (progress, day log, settings as text), and the folder or file it came from and when it was written. */
 data class Found(
     val states: Map<String, SrsState>,
     val days: Map<String, Day> = emptyMap(),
     val settings: Map<String, String> = emptyMap(),
     val savedAt: Long = 0L,
-    val folderName: String = "",
+    val name: String = "",
 )
 
 /**
@@ -67,7 +68,7 @@ class Backup(private val context: Context, private val prefs: SharedPreferences)
     /** The backup in [tree], or null if there is none or it isn't a Kotoba progress file. */
     fun read(tree: Uri): Found? = try {
         findFile(tree)?.let { (uri, modified) ->
-            context.contentResolver.openInputStream(uri)?.use { parse(readLimited(it)) }?.copy(savedAt = modified, folderName = nameOf(tree))
+            context.contentResolver.openInputStream(uri)?.use { parse(readLimited(it)) }?.copy(savedAt = modified, name = nameOf(tree))
         }
     } catch (e: Exception) { // a provider can fail in many ways; there just is no backup to offer then
         null
@@ -126,6 +127,32 @@ class Backup(private val context: Context, private val prefs: SharedPreferences)
     } catch (e: Exception) { // SecurityException, FileNotFoundException, IllegalArgumentException, NPE from a missing provider ...
         file = null
         false
+    }
+
+    /** Saves [text] into a new file the user created with the system picker (Export). False if it can't be written there. */
+    fun export(file: Uri, text: String): Boolean = try {
+        // The document was just created and is empty: plain "w" works on every provider, "wt" not on all.
+        context.contentResolver.openOutputStream(file, "w")!!.use { it.write(text.toByteArray()) }
+        true
+    } catch (e: Exception) { // SecurityException, FileNotFoundException, a provider that returns no stream ...
+        false
+    }
+
+    /** The backup in a file the user picked (Import), or null if it isn't a Kotoba progress file or can't be read. */
+    fun readFile(file: Uri): Found? = try {
+        context.contentResolver.openInputStream(file)?.use { parse(readLimited(it)) }?.copy(
+            name = column(file, OpenableColumns.DISPLAY_NAME) ?: "the chosen file",
+            savedAt = column(file, Document.COLUMN_LAST_MODIFIED)?.toLongOrNull() ?: 0L,
+        )
+    } catch (e: Exception) { // the file came from another app: anything can go wrong, and then there is just no backup
+        null
+    }
+
+    /** One column of [uri], or null if the provider doesn't have it (not every file comes from a documents provider). */
+    private fun column(uri: Uri, column: String): String? = try {
+        context.contentResolver.query(uri, arrayOf(column), null, null, null)?.use { c -> if (c.moveToFirst()) c.getString(0) else null }
+    } catch (e: Exception) {
+        null
     }
 
     private fun findFile(tree: Uri): Pair<Uri, Long>? {

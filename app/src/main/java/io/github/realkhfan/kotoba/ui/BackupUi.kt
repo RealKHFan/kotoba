@@ -31,16 +31,17 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.text.DateFormat
+import java.time.LocalDate
 import java.util.Date
 
 fun dateText(ms: Long): String = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(ms))
 
-class BackupActions(val choose: () -> Unit, val restore: () -> Unit)
+class BackupActions(val choose: () -> Unit, val restore: () -> Unit, val exportFile: () -> Unit, val importFile: () -> Unit)
 
 /**
- * Picking a folder and restoring from it. A folder that already holds a different backup (a reinstall,
- * a new phone) is only used after the user says which progress to keep, so a backup is never
- * overwritten without asking.
+ * Picking a folder and restoring from it, and exporting to or importing from a single file. A folder that
+ * already holds a different backup (a reinstall, a new phone) is only used after the user says which
+ * progress to keep, so a backup is never overwritten without asking; an import also asks first.
  */
 @Composable
 fun rememberBackupActions(backup: Backup, progress: Progress, settings: SettingsStore?): BackupActions {
@@ -48,13 +49,14 @@ fun rememberBackupActions(backup: Backup, progress: Progress, settings: Settings
     val scope = rememberCoroutineScope()
     // A backup waiting for an answer. tree null: restoring from the folder already in use.
     var offer by remember { mutableStateOf<Pair<Uri?, Found>?>(null) }
+    fun toast(text: String) = Toast.makeText(context, text, Toast.LENGTH_LONG).show()
     fun restore(found: Found) {
         progress.replaceAll(found.states, found.days)
         if (found.settings.isNotEmpty()) settings?.let { it.replace(Settings.from(found.settings, it.value)) }
     }
     fun start(tree: Uri, found: Found?) = scope.launch {
         if (!withContext(Dispatchers.IO) { backup.use(tree) }) {
-            Toast.makeText(context, "Kotoba can't save in that folder. Please choose another one.", Toast.LENGTH_LONG).show()
+            toast("Kotoba can't save in that folder. Please choose another one.")
             return@launch
         }
         if (found != null) restore(found) else progress.copyNow()
@@ -65,14 +67,32 @@ fun rememberBackupActions(backup: Backup, progress: Progress, settings: Settings
             if (found == null || found.states.isEmpty() || found.states == progress.snapshot()) start(tree, null) else offer = tree to found
         }
     }
+    val saver = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("text/plain")) { file ->
+        if (file != null) scope.launch {
+            val text = progress.text().let { t -> settings?.let { Backup.contents(t, it.value) } ?: t }
+            val ok = withContext(Dispatchers.IO) { backup.export(file, text) }
+            toast(if (ok) "Exported ${progress.learnedCount} learned items and your settings." else "Kotoba can't save a file there. Please choose another place.")
+        }
+    }
+    val opener = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { file ->
+        if (file != null) scope.launch {
+            val found = withContext(Dispatchers.IO) { backup.readFile(file) }
+            when {
+                found == null -> toast("That file isn't a Kotoba backup.")
+                found.states.isEmpty() -> toast("There is no progress in that file.")
+                else -> offer = null to found
+            }
+        }
+    }
     offer?.let { (tree, found) ->
         val picking = tree != null
+        val saved = if (found.savedAt > 0) ", saved ${dateText(found.savedAt)}" else ""
         AlertDialog(
             onDismissRequest = { offer = null },
             title = { Text("Restore your progress?") },
             text = {
                 Text(
-                    "“${found.folderName}” has a Kotoba backup with ${found.states.size} learned items, saved ${dateText(found.savedAt)}. " +
+                    "“${found.name}” has a Kotoba backup with ${found.states.size} learned items$saved. " +
                         "This phone has ${progress.learnedCount}.\n\n" +
                         if (picking) "Restore puts the backup's progress and settings on this phone. Keep puts this phone's progress into the backup." else "Restoring replaces this phone's progress and settings with the backup.",
                 )
@@ -97,10 +117,16 @@ fun rememberBackupActions(backup: Backup, progress: Progress, settings: Settings
             val tree = backup.folder
             if (tree != null) scope.launch {
                 val found = withContext(Dispatchers.IO) { backup.read(tree) }
-                if (found == null || found.states.isEmpty()) Toast.makeText(context, "There is no backup in this folder yet.", Toast.LENGTH_LONG).show()
+                if (found == null || found.states.isEmpty()) toast("There is no backup in this folder yet.")
                 else offer = null to found
             }
         },
+        exportFile = {
+            if (progress.learnedCount == 0) toast("Nothing to export yet. Learn a lesson first.")
+            else saver.launch("kotoba-progress-${LocalDate.now()}.txt")
+        },
+        // Also unknown types: some providers don't know a .txt is text.
+        importFile = { opener.launch(arrayOf("text/plain", "application/octet-stream")) },
     )
 }
 
@@ -135,22 +161,32 @@ fun BackupSettings(backup: Backup, progress: Progress, settings: SettingsStore?)
             style = MaterialTheme.typography.bodyMedium,
         )
         Button(onClick = actions.choose, modifier = Modifier.padding(top = 8.dp)) { Text("Choose folder") }
-        return
+    } else {
+        Text("Saving your progress and settings to “${backup.folderName}” as ${Backup.FILE_NAME} after every change.", style = MaterialTheme.typography.bodyMedium)
+        Text(
+            when {
+                backup.failing -> "The last backup failed. The folder may be gone or Kotoba lost access to it. Choose it again."
+                backup.savedAt > 0 -> "Last saved ${dateText(backup.savedAt)}."
+                else -> "Saved after your next lesson or review."
+            },
+            style = MaterialTheme.typography.bodyMedium,
+            color = if (backup.failing) MaterialTheme.colorScheme.error else muted,
+            modifier = Modifier.padding(top = 4.dp),
+        )
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp)) {
+            OutlinedButton(onClick = actions.choose) { Text("Change folder") }
+            OutlinedButton(onClick = actions.restore) { Text("Restore") }
+            TextButton(onClick = backup::stop) { Text("Stop") }
+        }
     }
-    Text("Saving your progress and settings to “${backup.folderName}” as ${Backup.FILE_NAME} after every change.", style = MaterialTheme.typography.bodyMedium)
     Text(
-        when {
-            backup.failing -> "The last backup failed. The folder may be gone or Kotoba lost access to it. Choose it again."
-            backup.savedAt > 0 -> "Last saved ${dateText(backup.savedAt)}."
-            else -> "Saved after your next lesson or review."
-        },
+        "Export saves your progress and settings once, as a file wherever you like. Import puts them back from such a file, " +
+            "for example on a new phone.",
         style = MaterialTheme.typography.bodyMedium,
-        color = if (backup.failing) MaterialTheme.colorScheme.error else muted,
-        modifier = Modifier.padding(top = 4.dp),
+        modifier = Modifier.padding(top = 16.dp),
     )
     FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp)) {
-        OutlinedButton(onClick = actions.choose) { Text("Change folder") }
-        OutlinedButton(onClick = actions.restore) { Text("Restore") }
-        TextButton(onClick = backup::stop) { Text("Stop") }
+        OutlinedButton(onClick = actions.exportFile) { Text("Export") }
+        OutlinedButton(onClick = actions.importFile) { Text("Import") }
     }
 }

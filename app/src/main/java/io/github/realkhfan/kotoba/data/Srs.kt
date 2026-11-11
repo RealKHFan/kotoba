@@ -118,9 +118,12 @@ class Progress(
         save()
     }
 
+    /** The progress file's text as it is now. */
+    fun text(): String = encode(states.toMap(), days.toMap())
+
     /** Copies the current progress now, e.g. into a newly chosen backup folder or after a settings change. */
     fun copyNow() {
-        val text = encode(states.toMap(), days.toMap())
+        val text = text()
         if (states.isNotEmpty()) io.execute { copyTo?.invoke(text) }
     }
 
@@ -164,7 +167,7 @@ class Progress(
 
     private fun save() {
         val f = file ?: return
-        val text = encode(states.toMap(), days.toMap())
+        val text = text()
         // Nothing learned (after a reset) isn't copied, so the backup can still undo a reset until the next lesson.
         val copy = states.isNotEmpty()
         io.execute {

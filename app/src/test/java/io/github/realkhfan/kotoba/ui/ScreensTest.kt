@@ -136,7 +136,7 @@ class ScreensTest {
 
     @Test fun settingsBackup() {
         shot("20-settings-backup") { SettingsScreen(io.github.realkhfan.kotoba.data.SettingsStore(null), sample(), "0.3.0", backup()) {} }
-        compose.onNodeWithText("Choose folder").performScrollTo()
+        compose.onNodeWithText("Import").performScrollTo()
         compose.onRoot().captureRoboImage("src/test/screenshots/20-settings-backup.png")
     }
 
