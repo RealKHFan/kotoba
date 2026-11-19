@@ -192,6 +192,8 @@ fun QuizScreen(
     var question by remember { mutableStateOf(session.current) }
     var result by remember { mutableStateOf<Boolean?>(null) }
     var typed by remember { mutableStateOf("") }
+    var gaveUp by remember { mutableStateOf(false) }
+    val keyboard = LocalSoftwareKeyboardController.current
     // Counts questions, so a missed item asked again right away starts with a fresh view (an equal question would keep its old state).
     var asked by remember { mutableIntStateOf(0) }
     // An answer counts when the next question comes; leaving the quiz counts the last one too.
@@ -219,10 +221,17 @@ fun QuizScreen(
                         is Write -> WriteView(q, library, result) { right -> answered(q, right) }
                     }
                 }
+                if (result == null) {
+                    // Better than a guess: it counts as wrong, shows the answer and asks again later.
+                    TextButton(
+                        onClick = { keyboard?.hide(); typed = ""; gaveUp = true; answered(q, false) },
+                        modifier = Modifier.align(Alignment.CenterHorizontally).padding(top = 8.dp),
+                    ) { Text("I don't know") }
+                }
                 result?.let { right ->
                     // A typed answer can be right in other words; the user gets the last word.
-                    val overrule = if (q is Typed && !right) ({ session.overrule(); result = true }) else null
-                    Feedback(q, right, typed, overrule)
+                    val overrule = if (q is Typed && !right && !gaveUp) ({ session.overrule(); result = true }) else null
+                    Feedback(q, right, typed, overrule, gaveUp)
                 }
             }
             if (result != null) {
@@ -232,6 +241,7 @@ fun QuizScreen(
                         asked++
                         question = session.current
                         result = null
+                        gaveUp = false
                         if (question == null) onFinished()
                     },
                     modifier = Modifier.fillMaxWidth().padding(16.dp),
@@ -367,7 +377,6 @@ private fun WriteView(q: Write, library: Library, result: Boolean?, onAnswer: (B
                 strokes, trace = false, onFinished = { misses -> onAnswer(!help || misses <= 2) }, modifier = Modifier.widthIn(max = 420.dp),
                 help = help, onFailed = { onAnswer(false) },
             )
-            TextButton(onClick = { onAnswer(false) }, modifier = Modifier.padding(top = 8.dp)) { Text("I don't remember") }
         } else {
             StrokeOrder(q.char, strokes, Modifier.size(160.dp))
         }
@@ -463,7 +472,7 @@ fun audioFor(q: Question): String? = when (val item = q.item) {
 }
 
 @Composable
-private fun Feedback(q: Question, right: Boolean, typed: String, overrule: (() -> Unit)?) {
+private fun Feedback(q: Question, right: Boolean, typed: String, overrule: (() -> Unit)?, gaveUp: Boolean = false) {
     val colors = MaterialTheme.colorScheme
     Surface(
         color = if (right) colors.primaryContainer else colors.errorContainer,
@@ -472,7 +481,7 @@ private fun Feedback(q: Question, right: Boolean, typed: String, overrule: (() -
     ) {
         Column(Modifier.padding(16.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(if (right) "Right!" else "Not quite", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                Text(if (right) "Right!" else if (gaveUp) "Here's the answer" else "Not quite", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
                 SpeakButton(audioFor(q))
             }
             if (q is Typed && !right && typed.isNotBlank()) {

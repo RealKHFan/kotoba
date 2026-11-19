@@ -18,6 +18,7 @@ import io.github.realkhfan.kotoba.data.Quiz
 import io.github.realkhfan.kotoba.data.Section
 import io.github.realkhfan.kotoba.data.Session
 import io.github.realkhfan.kotoba.data.testLibrary
+import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -175,7 +176,32 @@ class ScreensTest {
         compose.onNodeWithText("I was right").assertExists()
     }
 
-    @Test fun kanaWithStrokes() = shot("17-kana") { DetailScreen(lib.hiragana.first { it.char == "あ" }, lib, sample(), {}, {}) }
+    @Test fun dontKnowShowsTheAnswerAndCountsAsWrong() {
+        val items = listOf(lib.words.first { it.written == "図書館" })
+        val settings = io.github.realkhfan.kotoba.data.Settings(answers = io.github.realkhfan.kotoba.data.AnswerMode.TYPE, listening = false)
+        val seed = (0..500).first { s ->
+            Random(s).let { r -> (Session(items, Quiz(lib, r, settings), r, null).current as? io.github.realkhfan.kotoba.data.Typed)?.english == true }
+        }
+        val graded = mutableListOf<Boolean>()
+        compose.setContent {
+            KotobaTheme(dark = false) {
+                androidx.compose.runtime.CompositionLocalProvider(LocalSettings provides settings) {
+                    QuizScreen("Reviews", items, lib, { _, right -> graded += right }, {}, {}, "", Random(seed))
+                }
+            }
+        }
+        compose.onNodeWithText("I don't know").performClick()
+        compose.onNodeWithText("Here's the answer").assertExists()
+        compose.onNodeWithText("library", substring = true).assertExists()
+        compose.onNodeWithText("I was right").assertDoesNotExist()
+        compose.onNodeWithText("I don't know").assertDoesNotExist()
+        compose.onRoot().captureRoboImage("src/test/screenshots/25-quiz-dont-know.png")
+        compose.onNodeWithText("Continue").performClick()
+        assertEquals(listOf(false), graded)
+        compose.onNodeWithText("I don't know").assertExists()
+    }
+
+    @Test fun kanaWithStrokes() =shot("17-kana") { DetailScreen(lib.hiragana.first { it.char == "あ" }, lib, sample(), {}, {}) }
 
     @Test fun typedQuiz() {
         val items = listOf(lib.words.first { it.written == "図書館" })
